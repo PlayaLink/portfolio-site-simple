@@ -9,7 +9,7 @@ class Home extends React.Component {
     return (
       <div>
         Jordan England-Nelson
-        <Link to='/timeline'>Timeline</Link>
+        <Link to={process.env.PUBLIC_URL + '/timeline'}>Timeline</Link>
       </div>
     )
   }

@@ -48,7 +48,7 @@ class Timeline extends React.Component {
   render () {
     return (
       <div>
-        <VerticalTimeline layout={'two-columns'}>
+        <VerticalTimeline layout={'1-column'}>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2011 - present"
@@ -113,7 +113,7 @@ class Timeline extends React.Component {
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
-        <Link to="/timeline/">Go to page 2</Link>
+        <Link to={process.env.PUBLIC_URL + '/'}>Go back</Link>
       </div>
     )
   }
