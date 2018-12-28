@@ -2,6 +2,7 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Link } from 'react-router-dom';
+import './Timelines.css'
 
 
 class TimelineCard extends React.Component {
@@ -15,12 +16,12 @@ class TimelineCard extends React.Component {
     this.setState({ open: !this.state.open});
   }
   render() {
+    const { title, description } = this.props;
     return (
       <div>
-        <h3 className="vertical-timeline-element-title">Creative Director</h3>
-        <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+        <h3 className="vertical-timeline-element-title">{title}</h3>
         <p>
-          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+          {description}
         </p>
         <a onClick={this.expandCard}><span>Show {this.state.open ? 'less' : 'more'}</span></a>
         { this.state.open && (
@@ -47,14 +48,17 @@ class Timeline extends React.Component {
   }
   render () {
     return (
-      <div>
+      <div className="timeline">
         <VerticalTimeline layout={'1-column'}>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2011 - present"
+            date="2011 - 2014"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           >
-            <TimelineCard/>
+            <TimelineCard
+              title="Journalist"
+              description="Wrote about tech, aerospace and entrepeurship in Southern California"
+            />
 
           </VerticalTimelineElement>
           <VerticalTimelineElement
