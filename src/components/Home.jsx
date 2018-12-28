@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import './Home.scss';
 
 class Home extends React.Component {
   constructor (props){
@@ -8,7 +9,8 @@ class Home extends React.Component {
   render () {
     return (
       <div>
-        Jordan England-Nelson
+        <div className="header">Jordan England-Nelson</div>
+        
         <Link to={process.env.PUBLIC_URL + '/timeline'}>Timeline</Link>
       </div>
     )
