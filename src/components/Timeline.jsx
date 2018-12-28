@@ -3,6 +3,8 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { Link } from 'react-router-dom';
 import './Timelines.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 class TimelineCard extends React.Component {
@@ -23,7 +25,7 @@ class TimelineCard extends React.Component {
         <p>
           {description}
         </p>
-        <a onClick={this.expandCard}><span>Show {this.state.open ? 'less' : 'more'}</span></a>
+        <a onClick={this.expandCard}><span><FontAwesomeIcon icon="chevron-down" /> {this.state.open ? 'less' : 'more'}</span></a>
         { this.state.open && (
           <p>
             Creative Direction, User Experience, Visual Design, Project Management, Team Leading
