@@ -30,6 +30,12 @@ svg {
   left: 0;
   overflow: visible;
 }
+.background-image {
+  background-image: url(../img/portfolio_circle.png);
+  background-size: cover;
+  height: 40em;
+  width: 40em;
+}
 circle {
   fill:rgba(0,0,0,0);
   stroke-width:31.8309886184;

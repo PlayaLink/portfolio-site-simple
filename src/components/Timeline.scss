@@ -1,0 +1,11 @@
+@import '../stylesheets/base';
+
+.timeline {
+  background-color: gray;
+  border-radius: 0.5rem;
+}
+
+.vertical-timeline::before {
+  top: 37px;
+  height:87%;
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Link } from 'react-router-dom';
-import './Timelines.css'
+import './Timeline.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
@@ -51,7 +51,7 @@ class Timeline extends React.Component {
   render () {
     return (
       <div className="timeline">
-        <VerticalTimeline layout={'1-column'}>
+        <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2011 - 2014"
