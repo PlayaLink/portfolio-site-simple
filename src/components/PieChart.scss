@@ -35,20 +35,35 @@ circle {
   stroke-width:31.8309886184;
   stroke-dasharray: 0,0,0,100;
   stroke-dashoffset: 25;
-  animation-name: pie1;
   animation-duration: 6s;
   animation-timing-function: ease;
   animation-fill-mode: both;
-  animation-direction: reverse;
-  -webkit-animation-name: pie1;
   -webkit-animation-duration: 6s;
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: both;
-  -webkit-animation-direction: reverse;
+  animation-direction: normal;
+  -webkit-animation-direction: normal;
+  &.reverse {
+    fill:rgba(0,0,0,0);
+    stroke-width:31.8309886184;
+    stroke-dasharray: 0,0,0,100;
+    stroke-dashoffset: 25;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    animation-direction: reverse;
+    -webkit-animation-direction: reverse;
+  }
 }
 
 .pie1 {
   stroke:$blue;
+  animation-name: pie1;
+  -webkit-animation-name: pie1;
+
 }
 .pie2 {
   stroke:$red;
