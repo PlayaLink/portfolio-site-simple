@@ -6,34 +6,27 @@ class PieChart extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      reverse: false,
+      hidePie1: false,
+      hidePie2: false,
+      hidePie3: false,
+      hidePie4: false,
       animate: false
     }
   }
-  componentDidMount() {
-    this.animate();
-  }
 
-  animate = () => {
-    this.setState({animate: true})
-  }
+  hide = (slice) => {
+    this.setState({[slice]: !this.state[slice]});
+  };
 
-  reverse() {
-    console.log("reverse!");
-    this.setState({
-      reverse: !this.state.reverse,
-      animate: !this.state.animate
-    });
-  }
   render () {
     return (
       <figure>
         <figcaption>SVG PIE Chart with CSS animation</figcaption>
-        <svg viewBox="0 0 63.6619772368 63.6619772368" onClick={() => this.reverse()}>
-          <circle className={`pie1 ${this.state.reverse ? 'reverse' : ''} ${this.state.animate ? 'animate' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          <circle className={`pie2 ${this.state.reverse ? 'reverse' : ''} ${this.state.animate ? 'animate' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          <circle className={`pie3 ${this.state.reverse ? 'reverse' : ''} ${this.state.animate ? 'animate' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          <circle className={`pie4 ${this.state.reverse ? 'reverse' : ''} ${this.state.animate ? 'animate' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+        <svg viewBox="0 0 63.6619772368 63.6619772368">
+          <circle onClick={() => this.hide('hidePie1')} className={`pie1 ${this.state.hidePie1 ? 'hide' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+          <circle onClick={() => this.hide('hidePie2')} className={`pie2 ${this.state.hidePie2 ? 'hide' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+          <circle onClick={() => this.hide('hidePie3')} className={`pie3 ${this.state.hidePie3 ? 'hide' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+          <circle onClick={() => this.hide('hidePie4')} className={`pie4 ${this.state.hidePie4 ? 'hide' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
         </svg>
       </figure>
     );

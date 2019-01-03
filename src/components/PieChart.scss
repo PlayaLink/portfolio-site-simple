@@ -31,56 +31,72 @@ svg {
   overflow: visible;
 }
 circle {
+  fill:rgba(0,0,0,0);
+  stroke-width:31.8309886184;
+  stroke-dasharray: 0,0,0,100;
+  stroke-dashoffset: 25;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-direction: normal;
+  -webkit-animation-direction: normal;
   &.animate {
-    fill:rgba(0,0,0,0);
-    stroke-width:31.8309886184;
-    stroke-dasharray: 0,0,0,100;
-    stroke-dashoffset: 25;
-    animation-duration: 6s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 6s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-    animation-direction: normal;
-    -webkit-animation-direction: normal;
+
   }
-  &.reverse {
-    fill:rgba(0,0,0,0);
-    stroke-width:31.8309886184;
-    stroke-dasharray: 0,0,0,100;
-    stroke-dashoffset: 25;
-    animation-duration: 6s;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 6s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: both;
-    animation-direction: reverse;
-    -webkit-animation-direction: reverse;
-  }
+  //&.reverse {
+  //  fill:rgba(0,0,0,0);
+  //  stroke-width:31.8309886184;
+  //  stroke-dasharray: 0,0,0,100;
+  //  stroke-dashoffset: 25;
+  //  animation-duration: 6s;
+  //  animation-timing-function: ease;
+  //  animation-fill-mode: both;
+  //  -webkit-animation-duration: 6s;
+  //  -webkit-animation-timing-function: ease;
+  //  -webkit-animation-fill-mode: both;
+  //  animation-direction: reverse;
+  //  -webkit-animation-direction: reverse;
+  //}
 }
 
 .pie1 {
+  cursor: pointer;
   stroke:$blue;
   animation-name: pie1;
   -webkit-animation-name: pie1;
-
+  &.hide {
+    opacity: 0;
+  }
 }
 .pie2 {
+  cursor: pointer;
   stroke:$red;
   -webkit-animation-name: pie2;
   animation-name: pie2;
+  &.hide {
+    opacity: 0;
+  }
 }
 .pie3 {
+  cursor: pointer;
   stroke:$teal;
   -webkit-animation-name: pie3;
   animation-name: pie3;
+  &.hide {
+    opacity: 0;
+  }
 }
 .pie4 {
-  stroke:yellow;
+  cursor: pointer;
+  stroke:black;
   -webkit-animation-name: pie4;
   animation-name: pie4;
+  &.hide {
+    opacity: 0;
+  }
 }
 /*
  pie percentage made by stroke-dasharray.
