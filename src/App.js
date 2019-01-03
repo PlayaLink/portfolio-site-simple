@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Timeline from './components/Timeline';
 import Home from './components/Home';
+import PieChart from './components/PieChart';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 //Font Awesome
@@ -14,7 +15,7 @@ library.add(faChevronDown);
 class App extends Component {
   render() {
     return (
-      <div className="">
+      <div className="container">
         <BrowserRouter>
           <div>
             <Route
@@ -25,6 +26,10 @@ class App extends Component {
               exact
               path={process.env.PUBLIC_URL + '/timeline'}
               component={Timeline} />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + '/pie-chart'}
+              component={PieChart} />
           </div>
         </BrowserRouter>
       </div>
