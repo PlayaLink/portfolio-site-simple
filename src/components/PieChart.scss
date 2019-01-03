@@ -35,12 +35,12 @@ circle {
   stroke-width:31.8309886184;
   stroke-dasharray: 0,0,0,100;
   stroke-dashoffset: 25;
-  animation-name: pie1reverse;
+  animation-name: pie1;
   animation-duration: 6s;
   animation-timing-function: ease;
   animation-fill-mode: both;
   animation-direction: reverse;
-  -webkit-animation-name: pie1reverse;
+  -webkit-animation-name: pie1;
   -webkit-animation-duration: 6s;
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: both;
@@ -52,18 +52,18 @@ circle {
 }
 .pie2 {
   stroke:$red;
-  -webkit-animation-name: pie2reverse;
-  animation-name: pie2reverse;
+  -webkit-animation-name: pie2;
+  animation-name: pie2;
 }
 .pie3 {
   stroke:$teal;
-  -webkit-animation-name: pie3reverse;
-  animation-name: pie3reverse;
+  -webkit-animation-name: pie3;
+  animation-name: pie3;
 }
 .pie4 {
   stroke:yellow;
-  -webkit-animation-name: pie4reverse;
-  animation-name: pie4reverse;
+  -webkit-animation-name: pie4;
+  animation-name: pie4;
 }
 /*
  pie percentage made by stroke-dasharray.
@@ -101,34 +101,4 @@ circle {
 }
 @keyframes pie4 {
   50%,100% {stroke-dasharray: 0,90,10,0;}
-}
-
-
-/* 1st pie is 40% */
-@-webkit-keyframes pie1reverse {
-  100%,50% {stroke-dasharray: 40,60,0,0;}
-}
-@keyframes pie1reverse {
-  100%,50% {stroke-dasharray: 40,60,0,0;}
-}
-/* 2nd pie is 30% */
-@-webkit-keyframes pie2reverse {
-  100%,50% {stroke-dasharray: 0,40,30,30;}
-}
-@keyframes pie2reverse {
-  100%,50% {stroke-dasharray: 0,40,30,30;}
-}
-/* 3rd pie is 30% */
-@-webkit-keyframes pie3reverse {
-  100%,50% {stroke-dasharray: 0,70,20,10;}
-}
-@keyframes pie3reverse {
-  100%,50% {stroke-dasharray: 0,70,20,10;}
-}
-/* 4th pie is 10% */
-@-webkit-keyframes pie4reverse {
-  100%,50% {stroke-dasharray: 0,90,10,0;}
-}
-@keyframes pie4reverse {
-  100%,50% {stroke-dasharray: 0,90,10,0;}
 }
