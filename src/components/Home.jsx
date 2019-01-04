@@ -8,9 +8,9 @@ const Header = () => (
   <div className="header">
     <div className="title">Jordan England-Nelson</div>
     <div className="tagline">
-      <p style={{textAlign: 'left'}}>I like to <span className="blue">understand</span> people</p>
+      <p style={{textAlign: 'left'}}>I try to <span className="blue">understand</span> people</p>
       <p style={{textAlign: 'center'}}>So I can <span className="red">design</span> things they need</p>
-      <p style={{textAlign: 'right'}}>And <span className="teal">build</span> things they use.</p>
+      <p style={{textAlign: 'right'}}>And <span className="teal">build</span> things they will use.</p>
     </div>
   </div>
 );

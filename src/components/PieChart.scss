@@ -112,7 +112,20 @@ circle {
   &.animate {
     opacity: 1;
     animation: show-pie-labels 3s;
+    &.pie-label-1.hide {
+      opacity: 0;
+    }
+    &.pie-label-2.hide {
+      opacity: 0;
+    }
+    &.pie-label-3.hide {
+      opacity: 0;
+    }
+    &.pie-label-4.hide {
+      opacity: 0;
+    }
   }
+
 }
 
 @keyframes show-pie-labels {
