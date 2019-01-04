@@ -115,29 +115,29 @@ circle {
 
 /* 1st pie is 40% */
 @-webkit-keyframes pie1 {
-  50%,100% {stroke-dasharray: 40,60,0,0;}
+  100%,50% {stroke-dasharray: 33,67,0,0;}
 }
 @keyframes pie1 {
-  50%,100% {stroke-dasharray: 40,60,0,0;}
+  100%,50% {stroke-dasharray: 33,67,0,0;}
 }
 /* 2nd pie is 30% */
 @-webkit-keyframes pie2 {
-  50%,100% {stroke-dasharray: 0,40,30,30;}
+  100%,50% {stroke-dasharray: 0,33,15,52;}
 }
 @keyframes pie2 {
-  50%,100% {stroke-dasharray: 0,40,30,30;}
+  100%,50% {stroke-dasharray: 0,33,15,52;}
 }
 /* 3rd pie is 30% */
 @-webkit-keyframes pie3 {
-  50%,100% {stroke-dasharray: 0,70,20,10;}
+  100%,50% {stroke-dasharray: 0,48,10,42;}
 }
 @keyframes pie3 {
-  50%,100% {stroke-dasharray: 0,70,20,10;}
+  100%,50% {stroke-dasharray: 0,48,10,42;}
 }
 /* 4th pie is 10% */
 @-webkit-keyframes pie4 {
-  50%,100% {stroke-dasharray: 0,90,10,0;}
+  100%,50% {stroke-dasharray: 0,58,42,0;}
 }
 @keyframes pie4 {
-  50%,100% {stroke-dasharray: 0,90,10,0;}
+  100%,50% {stroke-dasharray: 0,58,42,0;}
 }
