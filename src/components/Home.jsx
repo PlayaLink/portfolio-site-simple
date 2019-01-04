@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.scss';
-import PieChart from './PieChart'
-import Timeline from './Timeline'
+import PieChart from './PieChart';
+import Timeline from './Timeline';
+import Projects from './Projects';
 
 const Header = () => (
   <div className="header">
@@ -59,6 +60,7 @@ class Home extends React.Component {
       <div className="home">
         <Header/>
         <PieChart/>
+        <Projects />
         <Timeline />
         <Link to={ process.env.PUBLIC_URL + '/timeline' }>Timeline</Link>
       </div>
