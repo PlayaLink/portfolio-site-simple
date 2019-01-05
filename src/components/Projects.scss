@@ -1,14 +1,9 @@
 @import '../stylesheets/base';
 
 .projects {
-  .section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin: 2rem auto;
-  }
   .iep-goal-tracker {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     .images {
       display: flex;
@@ -37,7 +32,8 @@
       }
     }
     .description {
-
+      width: 25rem;
+      text-align: center;
     }
   }
 }

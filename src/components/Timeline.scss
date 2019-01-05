@@ -8,6 +8,7 @@
 .vertical-timeline::before {
   top: 37px;
   height:87%;
+  background-color: lighten($red, 20%);
 }
 
 

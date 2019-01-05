@@ -51,6 +51,7 @@ class Timeline extends React.Component {
   render () {
     return (
       <div className="timeline">
+        {/*<div className="section-title">Timeline</div>*/}
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
