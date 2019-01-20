@@ -7,9 +7,10 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 //Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 library.add(faChevronDown);
+library.add(faInfoCircle);
 
 
 class App extends Component {

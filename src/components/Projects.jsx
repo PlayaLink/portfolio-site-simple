@@ -1,5 +1,7 @@
 import React from 'react';
 import './Projects.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 class Projects extends React.Component {
   constructor (props) {
@@ -26,6 +28,7 @@ class Projects extends React.Component {
             target="_blank"
             className="button">Learn More</a>
         </div>
+
         <div className="street-art-talks">
           <div className="images">
             <div className="phone influence" />
@@ -46,6 +49,19 @@ class Projects extends React.Component {
             href="http://www.streetarttalks.com/"
             target="_blank"
             className="button">Learn More</a>
+        </div>
+
+        <div className="scrum-ebook">
+          <div className="images">
+            <div className="ebook" />
+          </div>
+          <p className="description">
+            <strong>Tactical, Practical Scrum</strong> is a 50-page handbook that I ghostwrote for an executive Agile coaching consultancy started by Scott Downey, whose clients include 3M, Toyota, Grindr, Napster and MySpace.
+            Ghostwrote
+            <br/>
+            <br/>
+            <div>The idea was to take Scott Downey's 20 years of experience and turn it into an ebook that he could use as part of his corporate trainings.<span style={{position: 'relative', left: '0.25rem'}}><FontAwesomeIcon icon="info-circle" /></span></div>
+          </p>
         </div>
       </div>
     );
