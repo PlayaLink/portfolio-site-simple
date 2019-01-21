@@ -3,6 +3,32 @@
 .timeline {
   border-radius: 0.5rem;
   width: 100%;
+  .timeline-card {
+    .full-description {
+      max-height: 0;
+      transition: max-height 0.35s ease-in-out;
+      overflow:hidden;
+      &.open {
+        height: auto;
+        max-height: 600px;
+      }
+    }
+    .expand-arrow {
+      transition: transform 0.35s ease-in-out;
+      &.rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@keyframes dropDown {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 100%
+  }
 }
 
 .vertical-timeline::before {

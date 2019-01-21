@@ -20,23 +20,19 @@ class TimelineCard extends React.Component {
   render() {
     const { title, description } = this.props;
     return (
-      <div>
+      <div className={`timeline-card ${this.state.open ? 'open' : ''}`}>
         <h3 className="vertical-timeline-element-title">{title}</h3>
         <p>
           {description}
         </p>
-        <a onClick={this.expandCard}><span><FontAwesomeIcon icon="chevron-down" /> {this.state.open ? 'less' : 'more'}</span></a>
-        { this.state.open && (
-          <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-          </p>
-        )
-
-        }
+        <p className={`full-description ${this.state.open ? 'open' : ''}`}>
+          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+          Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+        </p>
+        <div style={{textAlign: 'center'}}><a onClick={this.expandCard}><span style={{position:'relative'}}><FontAwesomeIcon className={`expand-arrow ${this.state.open ? 'rotate' : ''}`} icon="chevron-down" /></span></a></div>
       </div>
     );
   }
