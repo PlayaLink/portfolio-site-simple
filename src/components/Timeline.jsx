@@ -124,11 +124,11 @@ class Timeline extends React.Component {
             iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
           >
             <TimelineCard
-              title="The Curious Reporter"
+              title="Research and Storytelling"
               summary="Learned about the world by writing hundreds of stories and interviewing thousands of people"
               bullet={true}
               details={ [
-                'Started my career writing about the U.S.-Mexico for the Union-Tribune of San Diego',
+                'Started my journalism career writing about the U.S.-Mexico for the Union-Tribune of San Diego',
                 'Wrote about education and city government for the Orange County Register',
                 'Covered aerospace, technology and entrepreneurship for the Los Angeles Newspaper Group'
               ] }
@@ -179,12 +179,12 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Product & Engineering"
-              summary="Nothing is more empowering than being able to build your "
+              summary="It's one thing to have an idea. It's another thing to be able to build it."
               bullet={true}
               details={ [
-                'Enrolled in a small bootcamp run by a cousin of mine in Utah',
-                'After my cohort finished, I continued on as a tutor while continuing to study and work on personal projects',
-                'Took on several freelance gigs that I found through the bootcamp\'s network'
+                'Worked on very product-focused engineering team, building out and maintaining the web version of POPin, an employee engagement survey application',
+                'Interviewed over 30 users to develop distinct user personas',
+                'Implemented and managed tracking analytics via Mixpanel, Google Analytics and Hubspot'
               ] }
             />
           </VerticalTimelineElement>
@@ -197,64 +197,16 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Design Research"
-              summary="Journalism taught me how to investigate and understand people's problems. Engineering taught me how to build solutions."
+              summary="The cleanest code is the code you never wrote – because you asked the right questions first."
               bullet={true}
               details={ [
-                'Enrolled in a small bootcamp run by a cousin of mine in Utah',
-                'After my cohort finished, I continued on as a tutor while continuing to study and work on personal projects',
-                'Took on several freelance gigs that I found through the bootcamp\'s network'
+                'Conducted market and user research before product managing the development of a live polling feature for POPin',
+                'Interviewed special education instructors and administrators before designing and building a tool to help track students\' progress on their Individualized Education Plans',
+                'Developed interview materials and managed a team of intern interviewers to assess user needs for a fintech startup focused on microloans for undocumented workers in Utah'
               ] }
             />
           </VerticalTimelineElement>
-
-
-
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date=""
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
-          >
-            <h3 className="vertical-timeline-element-title">Design Research</h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
-          >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2011 - present"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
-          >
-            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
-          >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-            </p>
-          </VerticalTimelineElement>
         </VerticalTimeline>
-        <Link to={ process.env.PUBLIC_URL + '/' }>Go back</Link>
       </div>
     );
   }
