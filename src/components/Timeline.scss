@@ -12,6 +12,15 @@
         height: auto;
         max-height: 600px;
       }
+      li {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        list-style-type: circle;
+        list-style-position: outside;
+        position: relative;
+        left: 1.5rem;
+        padding-right: 1rem;
+      }
     }
     .expand-arrow {
       transition: transform 0.35s ease-in-out;
@@ -39,7 +48,8 @@
 
 
 .vertical-timeline-element-content {
-  background-color: lighten($red, 20%);
+  border: 3px solid lighten($red, 20%);
+  box-shadow: none;
 }
 .vertical-timeline-element-content:nth-of-type(odd) {
   &::before {
