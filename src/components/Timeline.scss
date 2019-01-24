@@ -6,7 +6,7 @@
   .timeline-card {
     .full-description {
       max-height: 0;
-      transition: max-height 0.35s ease-in-out;
+      transition: max-height 1s ease-in-out;
       overflow:hidden;
       &.open {
         height: auto;
@@ -22,27 +22,33 @@
         padding-right: 1rem;
       }
     }
-    .expand-arrow {
-      transition: transform 0.35s ease-in-out;
-      &.rotate {
-        transform: rotate(180deg);
+    .arrow-container {
+      animation: dropDown 1.5s infinite ease;
+      .expand-arrow {
+        transition: transform 0.35s 0.35s ease;
+        &.rotate {
+          transform: rotate(180deg);
+        }
       }
     }
   }
 }
 
 @keyframes dropDown {
-  from {
-    max-height: 0;
+  0% {
+    top: 0;
   }
-  to {
-    max-height: 100%
+  50% {
+    top: 0.25rem;
+  }
+  100% {
+    top: 0;
   }
 }
 
 .vertical-timeline::before {
   top: 37px;
-  height:87%;
+  height:89%;
   background-color: lighten($red, 20%);
 }
 

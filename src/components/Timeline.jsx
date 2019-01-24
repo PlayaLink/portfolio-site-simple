@@ -43,7 +43,7 @@ class TimelineCard extends React.Component {
 
         }
         <div style={ { textAlign: 'center' } }>
-          <a onClick={ this.expandCard }><span style={ { position: 'relative' } }><FontAwesomeIcon
+          <a onClick={ this.expandCard }><span className="arrow-container" style={ { position: 'relative' } }><FontAwesomeIcon
             className={ `expand-arrow ${this.state.open ? 'rotate' : ''}` }
             icon="chevron-down" /></span></a></div>
       </div>
