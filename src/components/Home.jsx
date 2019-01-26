@@ -36,33 +36,43 @@ const Summary = () => (
   </div>
 );
 
-const BarCharts = () => (
-  <div className="bar-charts">
-    <div className="bar journalism">
-      <span className="title">Journalism</span>
-    </div>
-    <div className="bar engineering">
-      <span className="title">Software Engineering</span>
-    </div>
-    <div className="bar product">
-      <span className="title">Product</span>
-    </div>
-  </div>
-)
-
 class Home extends React.Component {
   constructor (props) {
     super(props);
     this.iepRef = React.createRef();
+    this.prodRef = React.createRef();
+    this.journalismRef = React.createRef();
+    this.scrumRef = React.createRef();
+    this.marketingRef = React.createRef();
   }
+
+  scrollToRef = (ref) => {
+    console.log("ref: ", ref);
+    console.log("this.props: ", this.props);
+    debugger;
+    this.props[ref].current.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth'})
+  };
 
   render () {
     return (
       <div className="home">
         <Header/>
-        <PieChart/>
-        <Timeline iepRef={this.iepRef} />
-        <Projects iepRef={this.iepRef} />
+        <PieChart
+          prodRef={this.prodRef}
+          journalismRef={this.journalismRef}
+          scrumRef={this.scrumRef}
+          marketingRef={this.marketingRef}
+        />
+        <Timeline
+          iepRef={this.iepRef}
+          prodRef={this.prodRef}
+          marketingRef={this.marketingRef}
+          scrollToRef={this.scrollToRef}
+        />
+        <Projects
+          iepRef={this.iepRef}
+          scrumRef={this.scrumRef}
+        />
       </div>
     );
   }
