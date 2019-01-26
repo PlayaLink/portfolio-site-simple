@@ -1,6 +1,8 @@
 import React from 'react';
 import './Projects.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Element } from 'react-scroll';
+
 
 
 class Projects extends React.Component {
@@ -12,21 +14,21 @@ class Projects extends React.Component {
     return (
       <div className="projects">
         <div className="section-title">Recent Projects</div>
-        <div className="iep-goal-tracker">
+        <Element name="iep" className="iep-goal-tracker">
           <div className="images">
             <div className="phone evaluations" />
             <div className="phone login" />
             <div className="phone students" />
           </div>
-          <p className="description">
-            <strong>IEP Goal Tracker</strong> is a web app that helps teachers of students with
-            special needs by digitizing the paper evaluation forms used for tracking progress on state-enforced Individualized Education Plans (IEPs).
-          </p>
+            <p className="description">
+              <strong>IEP Goal Tracker</strong> is a web app that helps teachers of students with
+              special needs by digitizing the paper evaluation forms used for tracking progress on state-enforced Individualized Education Plans (IEPs).
+            </p>
           <a
             href="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
             target="_blank"
             className="button">Learn More</a>
-        </div>
+        </Element>
 
         <div className="street-art-talks">
           <div className="images">

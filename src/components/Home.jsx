@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Home.scss';
 import PieChart from './PieChart';
 import Timeline from './Timeline';
 import Projects from './Projects';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
 
 const Header = () => (
   <div className="header">
@@ -53,6 +54,26 @@ const BarCharts = () => (
 class Home extends React.Component {
   constructor (props) {
     super(props);
+    this.scrollToTop = this.scrollToTop.bind(this);
+  }
+
+  componentDidMount () {
+    Events.scrollEvent.register('begin', function () {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function () {
+      console.log("end", arguments);
+    });
+  }
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
+
+  scrollToTop() {
+    scroll.scrollToTop();
   }
 
   render () {

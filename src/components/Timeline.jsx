@@ -1,9 +1,9 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Link } from 'react-router-dom';
 import './Timeline.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-scroll/modules';
 
 class TimelineCard extends React.Component {
   constructor (props) {
@@ -200,7 +200,7 @@ class Timeline extends React.Component {
               bullet={true}
               details={ [
                 <p><strong>POPin</strong> - Conducted market and user research before product managing the development of a live polling feature for POPin</p>,
-                <p><strong><a>IEP Goal Tracker</a></strong> - Interviewed special education instructors and administrators before designing and building a tool to help track students' progress on their Individualized Education Plans</p>,
+                <p><strong><Link activeClass="active" to="iep" spy={true} smooth={true} duration={500} >IEP Goal Tracker</Link></strong> - Interviewed special education instructors and administrators before designing and building a tool to help track students' progress on their Individualized Education Plans</p>,
                 <p><strong>Rikra Loans</strong> - Developed interview materials and managed a team of intern interviewers to assess user needs for a fintech startup focused on microloans for undocumented workers in Utah</p>
               ] }
             />
