@@ -85,7 +85,6 @@ circle {
 }
 
 .pie1 {
-  cursor: pointer;
   stroke:$blue;
   animation-name: pie1;
   -webkit-animation-name: pie1;
@@ -94,7 +93,6 @@ circle {
   }
 }
 .pie2 {
-  cursor: pointer;
   stroke:$red;
   -webkit-animation-name: pie2;
   animation-name: pie2;
@@ -103,7 +101,6 @@ circle {
   }
 }
 .pie3 {
-  cursor: pointer;
   stroke:$teal;
   -webkit-animation-name: pie3;
   animation-name: pie3;
@@ -112,7 +109,6 @@ circle {
   }
 }
 .pie4 {
-  cursor: pointer;
   stroke: $gray;
   -webkit-animation-name: pie4;
   animation-name: pie4;
@@ -123,6 +119,7 @@ circle {
 
 
 .pie-label {
+  cursor: pointer;
   font-size: 0.3rem;
   opacity: 0;
   &.animate {

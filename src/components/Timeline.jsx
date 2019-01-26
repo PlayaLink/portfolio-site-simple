@@ -98,8 +98,7 @@ class Timeline extends React.Component {
               details={ [
                 'Taught English to employees at LG, SAP, and Amgen',
                 'Earned a Master\'s of Philosophy from the La Sorbonne (all coursework in French)',
-                'Couch-surfed and hitch-hiked across most of Europe',
-                'Figured out what kind of person I wanted to be'
+                'Couch-surfed and hitch-hiked across most of Europe'
               ] }
             />
           </VerticalTimelineElement>
@@ -114,7 +113,7 @@ class Timeline extends React.Component {
               summary="I wanted to perfect my Spanish before moving back to the California... and higher education is much cheaper in Europe."
               bullet={true}
               details={ [
-                'Enrolled Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona.',
+                'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona.',
                 'Reported on Catalan regional elections and the social effects of the euro crisis',
                 'Dropped acid for the first time'
               ] }
