@@ -8,19 +8,22 @@ import { Element } from 'react-scroll';
 class Projects extends React.Component {
   constructor (props) {
     super(props);
+    this.iepRef = React.createRef();
+    this.scrumRef = React.createRef();
   }
 
   render () {
+    const {pulseScrum, pulseIep} = this.props;
     return (
       <div className="projects">
         <div className="section-title">Recent Projects</div>
-        <Element name="iep" className="iep-goal-tracker">
+        <Element name="iep" className={`iep-goal-tracker ${pulseIep ? 'pulse' : ''}`}>
           <div className="images">
             <div className="phone evaluations" />
             <div className="phone login" />
             <div className="phone students" />
           </div>
-            <p className="description">
+            <p className={`description`} ref={this.iepRef}>
               <strong>IEP Goal Tracker</strong> is a web app that helps teachers of students with
               special needs by digitizing the paper evaluation forms used for tracking progress on state-enforced Individualized Education Plans (IEPs).
             </p>
@@ -56,7 +59,7 @@ class Projects extends React.Component {
           <div className="images">
             <div className="ebook" />
           </div>
-          <p className="description">
+          <p className={`description ${pulseScrum ? 'pulse' : ''}`} ref={this.scrumRef}>
             <strong>Tactical, Practical Scrum</strong> is a 50-page handbook that I ghostwrote for an executive Agile coaching consultancy started by Scott Downey, whose clients include 3M, Toyota, Grindr, Napster and MySpace.
             Ghostwrote
             <br/>

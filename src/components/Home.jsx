@@ -43,7 +43,9 @@ class Home extends React.Component {
     this.scrollToTop = this.scrollToTop.bind(this);
     this.state = {
       pulseJournalism: false,
-      pulseMarketing: false
+      pulseMarketing: false,
+      pulseScrum: false,
+      pulseIep: false,
     }
   }
 
@@ -68,11 +70,19 @@ class Home extends React.Component {
 
   journalismClicked = () => {
     this.setState({pulseJournalism: true});
-  }
+  };
 
   marketingClicked = () => {
     this.setState({pulseMarketing: true});
-  }
+  };
+
+  scrumClicked = () => {
+    this.setState({pulseScrum: true});
+  };
+
+  productClicked = () => {
+    this.setState({pulseIep: true});
+  };
 
   render () {
     return (
@@ -81,12 +91,17 @@ class Home extends React.Component {
         <PieChart
           journalismClicked={this.journalismClicked}
           marketingClicked={this.marketingClicked}
+          scrumClicked={this.scrumClicked}
+          productClicked={this.productClicked}
         />
         <Timeline
           pulseJournalism={this.state.pulseJournalism}
           pulseMarketing={this.state.pulseMarketing}
         />
-        <Projects />
+        <Projects
+          pulseScrum={this.state.pulseScrum}
+          pulseIep={this.state.pulseIep}
+        />
       </div>
     );
   }

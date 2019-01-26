@@ -33,8 +33,14 @@
       }
     }
     .description {
-      width: 25rem;
+      max-width: 25rem;
       text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    &.pulse {
+      animation: pulseAnimate 1500ms 1500ms !important;
+      padding: 1rem;
     }
   }
   .street-art-talks {
@@ -55,6 +61,7 @@
         @media (max-width: 425px) {
           width: 7rem;
           height: 14rem;
+          margin: 0 auto;
         }
         &.influence {
           background-image: url(../img/influence.png);
@@ -63,6 +70,9 @@
         &.street-art-talks {
           background-image: url(../img/street_art_talks.png);
           margin: 0 1rem;
+          @media (max-width: 425px) {
+            margin: 0 0.35rem;
+          }
         }
         &.peace {
           background-image: url(../img/peace.png);
@@ -70,8 +80,10 @@
       }
     }
     .description {
-      width: 25rem;
+      max-width: 25rem;
       text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
   .scrum-ebook {
@@ -92,13 +104,31 @@
         background-image: url(../img/scrum_ebook.png);
         @media (max-width: 425px) {
           width: 7rem;
-          height: 14rem;
+          height: 10rem;
         }
       }
     }
     .description {
-      width: 25rem;
+      max-width: 25rem;
       text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      &.pulse {
+        animation: pulseAnimate 1500ms 1500ms !important;
+        padding: 1rem;
+      }
     }
+  }
+}
+
+@keyframes pulseAnimate {
+  0% {
+    box-shadow: unset;
+  }
+  50% {
+    box-shadow: 0 0 20px 20px lighten($red, 20%);
+  }
+  100% {
+    box-shadow: unset;
   }
 }

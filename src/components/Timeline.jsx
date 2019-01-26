@@ -120,7 +120,7 @@ class Timeline extends React.Component {
               <TimelineCard
                 title="Journalism School in Barcelona"
                 pulse={ pulseJournalism }
-                summary="I wanted to perfect my Spanish before moving back to the California... and higher education is much cheaper in Europe."
+                summary="I wanted to perfect my Spanish before moving back to the Southern California to write about border and immigration issues."
                 bullet={ true }
                 details={ [
                   'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona.',
@@ -160,11 +160,11 @@ class Timeline extends React.Component {
               <TimelineCard
                 title="Breaking into tech"
                 pulse={pulseMarketing}
-                summary="Disillusioned by the sorry state of journalism, and inspired by the tech entrepreneurs I was writing about, I parlayed my writing and communications skills into a marketing job at a tech startup in Venice."
+                summary="Disillusioned by the sorry state of journalism, and inspired by the tech entrepreneurs I was writing about, I parlayed my writing and communications skills into a product marketing job at a tech startup in Venice."
                 bullet={ true }
                 details={ [
-                  'As the only marketing person, I got to wear many hats and got to learn on the job',
-                  'Got familiar with tools like Excel, Hubspot and Salesforce',
+                  'Redesigned marketing site',
+                  'Created inbound and outbound lead generation funnels using Hubspot/Salesforce/Mailgun ',
                   'Realized that I am more interested in making/writing/coding things than selling/marketing/consuming things'
                 ] }
               />

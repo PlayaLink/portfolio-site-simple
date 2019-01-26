@@ -53,7 +53,7 @@ class PieChart extends React.Component {
   };
 
   render () {
-    const { journalismClicked, marketingClicked } = this.props;
+    const { journalismClicked, marketingClicked, scrumClicked, productClicked } = this.props;
     return (
       <figure>
         <svg viewBox="0 0 63.6619772368 63.6619772368">
@@ -101,7 +101,7 @@ class PieChart extends React.Component {
               offset={-50}
               smooth={ true }
               duration={ 500 }>
-              Inbound marketing
+              Product marketing
             </Link>
           </text>
 
@@ -122,8 +122,8 @@ class PieChart extends React.Component {
             x="5"
             y="62">
             <Link
-              onClick={ () => this.hide('hidePie3') }
-              delay={ 1500 }
+              onClick={ () => this.handleClick('hidePie3', scrumClicked) }
+              delay={ 1000 }
               activeClass="active"
               to="scrum"
               spy={ true }
@@ -138,12 +138,13 @@ class PieChart extends React.Component {
               ? 'animate'
               : ''} ${this.state.hidePie4 ? 'hide' : ''}` } x="-20" y="30">
             <Link
-              onClick={ () => this.hide('hidePie4') }
+              onClick={ () => this.handleClick('hidePie4', productClicked) }
               activeClass="active"
               to="iep"
               spy={ true }
               smooth={ true }
-              delay={ 1500 }
+              delay={ 1000 }
+              offset={-100}
               duration={ 500 }>
               Product/Engineering/UX
             </Link>
