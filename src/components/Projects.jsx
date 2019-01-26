@@ -9,11 +9,10 @@ class Projects extends React.Component {
   }
 
   render () {
-    const {iepRef} = this.props;
     return (
       <div className="projects">
         <div className="section-title">Recent Projects</div>
-        <div ref={iepRef} className="iep-goal-tracker">
+        <div className="iep-goal-tracker">
           <div className="images">
             <div className="phone evaluations" />
             <div className="phone login" />

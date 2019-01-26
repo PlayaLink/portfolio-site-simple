@@ -56,10 +56,6 @@ class Timeline extends React.Component {
     super(props);
   }
 
-  scrollToMyRef = () => {
-    this.props.iepRef.current.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth'})
-  };
-
   render () {
     return (
       <div className="timeline">
@@ -204,7 +200,7 @@ class Timeline extends React.Component {
               bullet={true}
               details={ [
                 <p><strong>POPin</strong> - Conducted market and user research before product managing the development of a live polling feature for POPin</p>,
-                <p><strong><a onClick={this.scrollToMyRef}>IEP Goal Tracker</a></strong> - Interviewed special education instructors and administrators before designing and building a tool to help track students' progress on their Individualized Education Plans</p>,
+                <p><strong><a>IEP Goal Tracker</a></strong> - Interviewed special education instructors and administrators before designing and building a tool to help track students' progress on their Individualized Education Plans</p>,
                 <p><strong>Rikra Loans</strong> - Developed interview materials and managed a team of intern interviewers to assess user needs for a fintech startup focused on microloans for undocumented workers in Utah</p>
               ] }
             />
