@@ -55,11 +55,11 @@ class Projects extends React.Component {
             className="button">Learn More</a>
         </div>
 
-        <Element name="scrum" className="scrum-ebook">
+        <Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>
           <div className="images">
             <div className="ebook" />
           </div>
-          <p className={`description ${pulseScrum ? 'pulse' : ''}`} ref={this.scrumRef}>
+          <p className={`description`} ref={this.scrumRef}>
             <strong>Tactical, Practical Scrum</strong> is a 50-page handbook that I ghostwrote for an executive Agile coaching consultancy started by Scott Downey, whose clients include 3M, Toyota, Grindr, Napster and MySpace.
             Ghostwrote
             <br/>
