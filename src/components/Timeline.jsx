@@ -11,6 +11,7 @@ class TimelineCard extends React.Component {
     this.state = {
       open: false
     };
+    this.ref = React.createRef();
   }
 
   expandCard = () => {
@@ -32,11 +33,17 @@ class TimelineCard extends React.Component {
     );
   };
 
+  pulseCard = () => {
+    this.ref.current.parentElement.classList.add('pulse')
+  }
+
   render () {
     const { title, summary, details, bullet, pulse } = this.props;
-    console.log('this.props: ', this.props);
+    if(!!pulse) {
+      this.pulseCard();
+    }
     return (
-      <div className={ `timeline-card ${this.state.open ? 'open' : ''} ${pulse ? 'pulse' : ''}` }>
+      <div ref={this.ref} className={ `timeline-card ${this.state.open ? 'open' : ''} ${pulse ? 'pulse' : ''}` }>
         <h3 className="vertical-timeline-element-title">{ title }</h3>
         <p>
           { summary }
@@ -61,11 +68,7 @@ class Timeline extends React.Component {
   }
 
   render () {
-<<<<<<< HEAD
     const { pulseJournalism } = this.props;
-=======
-    const {scrollToRef} = this.props;
->>>>>>> 530937935b6b2fcb2b15021cc370f41112421220
     return (
       <div className="timeline">
         { /*<div className="section-title">Timeline</div>*/ }
@@ -136,7 +139,7 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Research and Storytelling"
-              pulse={ this.props.journalismClicked }
+              pulse={ pulseJournalism }
               summary="Learned about the world by writing hundreds of stories and interviewing thousands of people"
               bullet={ true }
               details={ [
@@ -214,7 +217,6 @@ class Timeline extends React.Component {
               summary="The cleanest code is the code I never wrote – because I asked the right questions first."
               bullet={ true }
               details={ [
-<<<<<<< HEAD
                 <p><strong>POPin</strong> - Conducted market and user research before product
                   managing the development of a live polling feature for POPin</p>,
                 <p><strong><Link
@@ -228,11 +230,6 @@ class Timeline extends React.Component {
                 <p><strong>Rikra Loans</strong> - Developed interview materials and managed a team
                   of intern interviewers to assess user needs for a fintech startup focused on
                   microloans for undocumented workers in Utah</p>
-=======
-                <p><strong>POPin</strong> - Conducted market and user research before product managing the development of a live polling feature for POPin</p>,
-                <p><strong><a onClick={scrollToRef('iepRef')}>IEP Goal Tracker</a></strong> - Interviewed special education instructors and administrators before designing and building a tool to help track students' progress on their Individualized Education Plans</p>,
-                <p><strong>Rikra Loans</strong> - Developed interview materials and managed a team of intern interviewers to assess user needs for a fintech startup focused on microloans for undocumented workers in Utah</p>
->>>>>>> 530937935b6b2fcb2b15021cc370f41112421220
               ] }
             />
           </VerticalTimelineElement>

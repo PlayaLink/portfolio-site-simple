@@ -32,24 +32,20 @@
         }
       }
     }
-    &.pulse {
-      animation: pulseAnimate 1s ease;
-    }
-    @keyframes pulseAnimate {
-      0% {
-        background-color: $white;
-      }
-      50% {
-        background-color: $red;
-      }
-      100% {
-        background-color: $white;
-      }
-    }
   }
 }
 
-
+@keyframes pulseAnimate {
+  0% {
+    box-shadow: unset;
+  }
+  50% {
+    box-shadow: 0 0 20px 20px lighten($red, 20%);
+  }
+  100% {
+    box-shadow: unset;
+  }
+}
 
 @keyframes dropDown {
   0% {
@@ -73,6 +69,9 @@
 .vertical-timeline-element-content {
   border: 3px solid lighten($red, 20%);
   box-shadow: none;
+  &.pulse {
+    animation: pulseAnimate 1500ms 1500ms !important;
+  }
 }
 .vertical-timeline-element-content:nth-of-type(odd) {
   &::before {
