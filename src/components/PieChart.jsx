@@ -49,12 +49,11 @@ class PieChart extends React.Component {
 
   handleClick = (sliceToHide, callback) => {
     this.setState({ [ sliceToHide ]: !this.state[ sliceToHide ] });
-    console.log("handelClick");
     callback();
   };
 
   render () {
-    const { journalismClicked } = this.props;
+    const { journalismClicked, marketingClicked } = this.props;
     return (
       <figure>
         <svg viewBox="0 0 63.6619772368 63.6619772368">
@@ -94,11 +93,12 @@ class PieChart extends React.Component {
             x="40"
             y="55">
             <Link
-              onClick={ () => this.handleClick() }
-              delay={ 1500 }
+              onClick={ () => this.handleClick('hidePie2', marketingClicked) }
+              delay={ 1000 }
               activeClass="active"
               to="marketing"
               spy={ true }
+              offset={-50}
               smooth={ true }
               duration={ 500 }>
               Inbound marketing

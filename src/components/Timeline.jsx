@@ -68,7 +68,7 @@ class Timeline extends React.Component {
   }
 
   render () {
-    const { pulseJournalism } = this.props;
+    const { pulseJournalism, pulseMarketing } = this.props;
     return (
       <div className="timeline">
         { /*<div className="section-title">Timeline</div>*/ }
@@ -159,6 +159,7 @@ class Timeline extends React.Component {
             >
               <TimelineCard
                 title="Breaking into tech"
+                pulse={pulseMarketing}
                 summary="Disillusioned by the sorry state of journalism, and inspired by the tech entrepreneurs I was writing about, I parlayed my writing and communications skills into a marketing job at a tech startup in Venice."
                 bullet={ true }
                 details={ [

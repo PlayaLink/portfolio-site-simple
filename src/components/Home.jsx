@@ -42,7 +42,8 @@ class Home extends React.Component {
     super(props);
     this.scrollToTop = this.scrollToTop.bind(this);
     this.state = {
-      pulseJournalism: false
+      pulseJournalism: false,
+      pulseMarketing: false
     }
   }
 
@@ -66,16 +67,12 @@ class Home extends React.Component {
   }
 
   journalismClicked = () => {
-    console.log("journalismClicked");
     this.setState({pulseJournalism: true});
   }
 
-  scrollToRef = (ref) => {
-    console.log("ref: ", ref);
-    console.log("this.props: ", this.props);
-    debugger;
-    this.props[ref].current.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth'})
-  };
+  marketingClicked = () => {
+    this.setState({pulseMarketing: true});
+  }
 
   render () {
     return (
@@ -83,9 +80,11 @@ class Home extends React.Component {
         <Header/>
         <PieChart
           journalismClicked={this.journalismClicked}
+          marketingClicked={this.marketingClicked}
         />
         <Timeline
           pulseJournalism={this.state.pulseJournalism}
+          pulseMarketing={this.state.pulseMarketing}
         />
         <Projects />
       </div>
