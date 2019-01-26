@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-scroll/modules';
+import { Element, Link } from 'react-scroll/modules';
 
 class TimelineCard extends React.Component {
   constructor (props) {
@@ -20,21 +20,23 @@ class TimelineCard extends React.Component {
   renderBulletedList = (details) => {
     return (
       <ul className={ `full-description ${this.state.open ? 'open' : ''}` }>
-        { details.map( text => <li>{text}</li> )}
+        { details.map(text => <li>{ text }</li>) }
       </ul>
-    )
-  }
+    );
+  };
   renderParagraphs = (details) => {
     return (
       <div className={ `full-description ${this.state.open ? 'open' : ''}` }>
-        { details.map( text => <p>{text}</p> )}
+        { details.map(text => <p>{ text }</p>) }
       </div>
-    )
-  }
+    );
+  };
+
   render () {
-    const { title, summary, details, bullet } = this.props;
+    const { title, summary, details, bullet, pulse } = this.props;
+    console.log('this.props: ', this.props);
     return (
-      <div className={ `timeline-card ${this.state.open ? 'open' : ''}` }>
+      <div className={ `timeline-card ${this.state.open ? 'open' : ''} ${pulse ? 'pulse' : ''}` }>
         <h3 className="vertical-timeline-element-title">{ title }</h3>
         <p>
           { summary }
@@ -43,7 +45,9 @@ class TimelineCard extends React.Component {
 
         }
         <div style={ { textAlign: 'center' } }>
-          <a onClick={ this.expandCard }><span className="arrow-container" style={ { position: 'relative' } }><FontAwesomeIcon
+          <a onClick={ this.expandCard }><span
+            className="arrow-container"
+            style={ { position: 'relative' } }><FontAwesomeIcon
             className={ `expand-arrow ${this.state.open ? 'rotate' : ''}` }
             icon="chevron-down" /></span></a></div>
       </div>
@@ -57,12 +61,13 @@ class Timeline extends React.Component {
   }
 
   render () {
+    const { pulseJournalism } = this.props;
     return (
       <div className="timeline">
         { /*<div className="section-title">Timeline</div>*/ }
         <VerticalTimeline>
 
-          {/*COLLEGE*/}
+          { /*COLLEGE*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="4 years"
@@ -77,11 +82,11 @@ class Timeline extends React.Component {
                 'Studied abroad in Spain',
                 'Had a lot of pretentious conversations and protested a lot of things I probably didn\'t fully understand'
               ] }
-              bullet={true}
+              bullet={ true }
             />
           </VerticalTimelineElement>
 
-          {/*PARIS*/}
+          { /*PARIS*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="3.5 years"
@@ -90,7 +95,7 @@ class Timeline extends React.Component {
             <TimelineCard
               title="Living in Paris"
               summary="Taught English. Studied philosophy. Travelled with abandon."
-              bullet={true}
+              bullet={ true }
               details={ [
                 'Taught English to employees at LG, SAP, and Amgen',
                 'Earned a Master\'s of Philosophy from the La Sorbonne (all coursework in French)',
@@ -98,25 +103,28 @@ class Timeline extends React.Component {
               ] }
             />
           </VerticalTimelineElement>
-          {/*Barcelona*/}
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="1 year"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
-          >
-            <TimelineCard
-              title="Journalism School in Barcelona"
-              summary="I wanted to perfect my Spanish before moving back to the California... and higher education is much cheaper in Europe."
-              bullet={true}
-              details={ [
-                'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona.',
-                'Reported on Catalan regional elections and the social effects of the euro crisis',
-                'Dropped acid for the first time'
-              ] }
-            />
-          </VerticalTimelineElement>
+          { /*Barcelona*/ }
+          <Element name="journalism">
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="1 year"
+              iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
+            >
+              <TimelineCard
+                title="Journalism School in Barcelona"
+                pulse={ pulseJournalism }
+                summary="I wanted to perfect my Spanish before moving back to the California... and higher education is much cheaper in Europe."
+                bullet={ true }
+                details={ [
+                  'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona.',
+                  'Reported on Catalan regional elections and the social effects of the euro crisis',
+                  'Dropped acid for the first time'
+                ] }
+              />
+            </VerticalTimelineElement>
+          </Element>
 
-          {/*Journalism*/}
+          { /*Journalism*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="4 years"
@@ -124,8 +132,9 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Research and Storytelling"
+              pulse={ this.props.journalismClicked }
               summary="Learned about the world by writing hundreds of stories and interviewing thousands of people"
-              bullet={true}
+              bullet={ true }
               details={ [
                 'Started my journalism career writing about the U.S.-Mexico for the Union-Tribune of San Diego',
                 'Wrote about education and city government for the Orange County Register',
@@ -134,25 +143,27 @@ class Timeline extends React.Component {
             />
           </VerticalTimelineElement>
 
-          {/*Breaking into tech*/}
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="1 year"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
-          >
-            <TimelineCard
-              title="Breaking into tech"
-              summary="Disillusioned by the sorry state of journalism, and inspired by the tech entrepreneurs I was writing about, I parlayed my writing and communications skills into a marketing job at a tech startup in Venice."
-              bullet={true}
-              details={ [
-                'As the only marketing person, I got to wear many hats and got to learn on the job',
-                'Got familiar with tools like Excel, Hubspot and Salesforce',
-                'Realized that I am more interested in making/writing/coding things than selling/marketing/consuming things'
-              ] }
-            />
-          </VerticalTimelineElement>
+          { /*Breaking into tech*/ }
+          <Element name="marketing">
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="1 year"
+              iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
+            >
+              <TimelineCard
+                title="Breaking into tech"
+                summary="Disillusioned by the sorry state of journalism, and inspired by the tech entrepreneurs I was writing about, I parlayed my writing and communications skills into a marketing job at a tech startup in Venice."
+                bullet={ true }
+                details={ [
+                  'As the only marketing person, I got to wear many hats and got to learn on the job',
+                  'Got familiar with tools like Excel, Hubspot and Salesforce',
+                  'Realized that I am more interested in making/writing/coding things than selling/marketing/consuming things'
+                ] }
+              />
+            </VerticalTimelineElement>
+          </Element>
 
-          {/*Learning to Speak Javascript*/}
+          { /*Learning to Speak Javascript*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="1 year"
@@ -161,7 +172,7 @@ class Timeline extends React.Component {
             <TimelineCard
               title="Learning to speak Javascript"
               summary="If I was going to stay in tech, I wanted to have a deeper understanding of how things work under the hood. And since code is just a language, I realized computer programming might be something I could wrap my head around better than most non-technical folks."
-              bullet={true}
+              bullet={ true }
               details={ [
                 'Enrolled in a fullstack Javascript bootcamp run by a cousin of mine in Utah',
                 'After my cohort finished, I continued on as a tutor while continuing to study and work on personal projects',
@@ -170,7 +181,7 @@ class Timeline extends React.Component {
             />
           </VerticalTimelineElement>
 
-          {/*Product & Engineering*/}
+          { /*Product & Engineering*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2 years"
@@ -179,7 +190,7 @@ class Timeline extends React.Component {
             <TimelineCard
               title="Product & Engineering"
               summary="It's one thing to have an idea. It's another thing to be able to build it."
-              bullet={true}
+              bullet={ true }
               details={ [
                 'Worked on very product-focused engineering team, building out and maintaining the web version of POPin, an employee engagement survey application',
                 'Interviewed over 30 users to develop distinct user personas',
@@ -188,7 +199,7 @@ class Timeline extends React.Component {
             />
           </VerticalTimelineElement>
 
-          {/*Design Research*/}
+          { /*Design Research*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date=""
@@ -197,11 +208,21 @@ class Timeline extends React.Component {
             <TimelineCard
               title="Design Research"
               summary="The cleanest code is the code I never wrote – because I asked the right questions first."
-              bullet={true}
+              bullet={ true }
               details={ [
-                <p><strong>POPin</strong> - Conducted market and user research before product managing the development of a live polling feature for POPin</p>,
-                <p><strong><Link activeClass="active" to="iep" spy={true} smooth={true} duration={500} >IEP Goal Tracker</Link></strong> - Interviewed special education instructors and administrators before designing and building a tool to help track students' progress on their Individualized Education Plans</p>,
-                <p><strong>Rikra Loans</strong> - Developed interview materials and managed a team of intern interviewers to assess user needs for a fintech startup focused on microloans for undocumented workers in Utah</p>
+                <p><strong>POPin</strong> - Conducted market and user research before product
+                  managing the development of a live polling feature for POPin</p>,
+                <p><strong><Link
+                  activeClass="active"
+                  to="iep"
+                  spy={ true }
+                  smooth={ true }
+                  duration={ 500 }>IEP Goal Tracker</Link></strong> - Interviewed special education
+                  instructors and administrators before designing and building a tool to help track
+                  students' progress on their Individualized Education Plans</p>,
+                <p><strong>Rikra Loans</strong> - Developed interview materials and managed a team
+                  of intern interviewers to assess user needs for a fintech startup focused on
+                  microloans for undocumented workers in Utah</p>
               ] }
             />
           </VerticalTimelineElement>

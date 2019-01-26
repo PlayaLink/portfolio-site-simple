@@ -4,6 +4,7 @@
   border-radius: 0.5rem;
   width: 100%;
   .timeline-card {
+
     .full-description {
       max-height: 0;
       transition: max-height 1s ease-in-out;
@@ -31,8 +32,24 @@
         }
       }
     }
+    &.pulse {
+      animation: pulseAnimate 1s ease;
+    }
+    @keyframes pulseAnimate {
+      0% {
+        background-color: $white;
+      }
+      50% {
+        background-color: $red;
+      }
+      100% {
+        background-color: $white;
+      }
+    }
   }
 }
+
+
 
 @keyframes dropDown {
   0% {

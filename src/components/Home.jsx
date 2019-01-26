@@ -55,6 +55,9 @@ class Home extends React.Component {
   constructor (props) {
     super(props);
     this.scrollToTop = this.scrollToTop.bind(this);
+    this.state = {
+      pulseJournalism: false
+    }
   }
 
   componentDidMount () {
@@ -76,12 +79,21 @@ class Home extends React.Component {
     scroll.scrollToTop();
   }
 
+  journalismClicked = () => {
+    console.log("journalismClicked");
+    this.setState({pulseJournalism: true});
+  }
+
   render () {
     return (
       <div className="home">
         <Header/>
-        <PieChart/>
-        <Timeline />
+        <PieChart
+          journalismClicked={this.journalismClicked}
+        />
+        <Timeline
+          pulseJournalism={this.state.pulseJournalism}
+        />
         <Projects />
       </div>
     );

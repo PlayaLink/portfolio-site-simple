@@ -1,6 +1,6 @@
-import React from 'react'
-import './PieChart.scss'
-
+import React from 'react';
+import './PieChart.scss';
+import { Link } from 'react-scroll';
 
 class PieChart extends React.Component {
   constructor (props) {
@@ -10,8 +10,8 @@ class PieChart extends React.Component {
       hidePie2: false,
       hidePie3: false,
       hidePie4: false,
-      loadLabels: false,
-      }
+      loadLabels: false
+    };
   }
 
   componentDidMount = () => {
@@ -29,7 +29,7 @@ class PieChart extends React.Component {
     }
     // Remember the timer handle
     this.timerHandle = setTimeout(() => {
-      this.setState({loadLabels: true})
+      this.setState({ loadLabels: true });
       this.timerHandle = 0;
     }, 1000);
   };
@@ -44,21 +44,109 @@ class PieChart extends React.Component {
   };
 
   hide = (slice) => {
-    this.setState({[slice]: !this.state[slice]});
+    this.setState({ [ slice ]: !this.state[ slice ] });
+  };
+
+  handleClick = (sliceToHide, callback) => {
+    this.setState({ [ sliceToHide ]: !this.state[ sliceToHide ] });
+    console.log("handelClick");
+    callback();
   };
 
   render () {
+    const { journalismClicked } = this.props;
     return (
       <figure>
         <svg viewBox="0 0 63.6619772368 63.6619772368">
-          <circle className={`pie1 ${this.state.hidePie1 ? 'hide' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          <text onClick={() => this.hide('hidePie1')} className={`pie-label pie-label-1 ${this.state.loadLabels ? 'animate' : ''} ${this.state.hidePie1 ? 'hide' : ''}`} x="45" y="20">Journalism</text>
-          <circle className={`pie2 ${this.state.hidePie2 ? 'hide' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          <text onClick={() => this.hide('hidePie2')} className={`pie-label pie-label-2 ${this.state.loadLabels ? 'animate' : ''} ${this.state.hidePie2 ? 'hide' : ''}`} x="40" y="55">Inbound marketing</text>
-          <circle className={`pie3 ${this.state.hidePie3 ? 'hide' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          <circle className={`pie4 ${this.state.hidePie4 ? 'hide' : ''}`} cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
-          <text onClick={() => this.hide('hidePie3')} className={`pie-label pie-label-3 ${this.state.loadLabels ? 'animate' : ''} ${this.state.hidePie3 ? 'hide' : ''}`} x="5" y="62">Scrum/Agile</text>
-          <text onClick={() => this.hide('hidePie4')} className={`pie-label pie-label-4 ${this.state.loadLabels ? 'animate' : ''} ${this.state.hidePie4 ? 'hide' : ''}`} x="-20" y="30">Product & Engineering</text>
+          <circle
+            className={ `pie1 ${this.state.hidePie1 ? 'hide' : ''}` }
+            cx="31.8309886184"
+            cy="31.8309886184"
+            r="15.9154943092" />
+          <text
+            className={ `pie-label pie-label-1 ${this.state.loadLabels
+              ? 'animate'
+              : ''} ${this.state.hidePie1 ? 'hide' : ''}` }
+            x="45"
+            y="20">
+            <Link
+              onClick={ () => this.handleClick('hidePie1', journalismClicked) }
+              delay={1000}
+              activeClass="active"
+              to="journalism"
+              spy={ true }
+              smooth={ true }
+              duration={ 500 }>
+              Journalism
+            </Link>
+          </text>
+
+          <circle
+            className={ `pie2 ${this.state.hidePie2 ? 'hide' : ''}` }
+            cx="31.8309886184"
+            cy="31.8309886184"
+            r="15.9154943092" />
+          <text
+            className={ `pie-label pie-label-2 ${this.state.loadLabels
+              ? 'animate'
+              : ''} ${this.state.hidePie2 ? 'hide' : ''}` }
+            x="40"
+            y="55">
+            <Link
+              onClick={ () => this.handleClick() }
+              delay={ 1500 }
+              activeClass="active"
+              to="marketing"
+              spy={ true }
+              smooth={ true }
+              duration={ 500 }>
+              Inbound marketing
+            </Link>
+          </text>
+
+          <circle
+            className={ `pie3 ${this.state.hidePie3 ? 'hide' : ''}` }
+            cx="31.8309886184"
+            cy="31.8309886184"
+            r="15.9154943092" />
+          <circle
+            className={ `pie4 ${this.state.hidePie4 ? 'hide' : ''}` }
+            cx="31.8309886184"
+            cy="31.8309886184"
+            r="15.9154943092" />
+          <text
+            className={ `pie-label pie-label-3 ${this.state.loadLabels
+              ? 'animate'
+              : ''} ${this.state.hidePie3 ? 'hide' : ''}` }
+            x="5"
+            y="62">
+            <Link
+              onClick={ () => this.hide('hidePie3') }
+              delay={ 1500 }
+              activeClass="active"
+              to="scrum"
+              spy={ true }
+              smooth={ true }
+              duration={ 500 }>
+              Scrum/Agile
+            </Link>
+          </text>
+
+          <text
+            className={ `pie-label pie-label-4 ${this.state.loadLabels
+              ? 'animate'
+              : ''} ${this.state.hidePie4 ? 'hide' : ''}` } x="-20" y="30">
+            <Link
+              onClick={ () => this.hide('hidePie4') }
+              activeClass="active"
+              to="iep"
+              spy={ true }
+              smooth={ true }
+              delay={ 1500 }
+              duration={ 500 }>
+              Product/Engineering/UX
+            </Link>
+          </text>
         </svg>
         <div className="background-image"></div>
       </figure>

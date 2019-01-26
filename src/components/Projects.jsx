@@ -52,7 +52,7 @@ class Projects extends React.Component {
             className="button">Learn More</a>
         </div>
 
-        <div className="scrum-ebook">
+        <Element name="scrum" className="scrum-ebook">
           <div className="images">
             <div className="ebook" />
           </div>
@@ -63,7 +63,7 @@ class Projects extends React.Component {
             <br/>
             <div>The idea was to take Scott Downey's 20 years of experience and turn it into an ebook that he could use as part of his corporate trainings.<span style={{position: 'relative', left: '0.25rem'}}><FontAwesomeIcon icon="info-circle" /></span></div>
           </p>
-        </div>
+        </Element>
       </div>
     );
   }
