@@ -56,6 +56,10 @@ class Timeline extends React.Component {
     super(props);
   }
 
+  scrollToMyRef = () => {
+    this.props.iepRef.current.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth'})
+  };
+
   render () {
     return (
       <div className="timeline">
@@ -69,6 +73,7 @@ class Timeline extends React.Component {
             iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
           >
             <TimelineCard
+
               title="Learning to speak"
               summary="All I cared about in college was learning Spanish and French."
               details={ [
@@ -98,7 +103,6 @@ class Timeline extends React.Component {
               ] }
             />
           </VerticalTimelineElement>
-
           {/*Barcelona*/}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -197,12 +201,12 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Design Research"
-              summary="The cleanest code is the code you never wrote – because you asked the right questions first."
+              summary="The cleanest code is the code I never wrote – because I asked the right questions first."
               bullet={true}
               details={ [
-                'Conducted market and user research before product managing the development of a live polling feature for POPin',
-                'Interviewed special education instructors and administrators before designing and building a tool to help track students\' progress on their Individualized Education Plans',
-                'Developed interview materials and managed a team of intern interviewers to assess user needs for a fintech startup focused on microloans for undocumented workers in Utah'
+                <p><strong>POPin</strong> - Conducted market and user research before product managing the development of a live polling feature for POPin</p>,
+                <p><strong><a onClick={this.scrollToMyRef}>IEP Goal Tracker</a></strong> - Interviewed special education instructors and administrators before designing and building a tool to help track students' progress on their Individualized Education Plans</p>,
+                <p><strong>Rikra Loans</strong> - Developed interview materials and managed a team of intern interviewers to assess user needs for a fintech startup focused on microloans for undocumented workers in Utah</p>
               ] }
             />
           </VerticalTimelineElement>

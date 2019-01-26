@@ -53,6 +53,7 @@ const BarCharts = () => (
 class Home extends React.Component {
   constructor (props) {
     super(props);
+    this.iepRef = React.createRef();
   }
 
   render () {
@@ -60,9 +61,8 @@ class Home extends React.Component {
       <div className="home">
         <Header/>
         <PieChart/>
-        <Projects />
-        <Timeline />
-        <Link to={ process.env.PUBLIC_URL + '/timeline' }>Timeline</Link>
+        <Timeline iepRef={this.iepRef} />
+        <Projects iepRef={this.iepRef} />
       </div>
     );
   }
