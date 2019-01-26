@@ -37,20 +37,6 @@ const Summary = () => (
   </div>
 );
 
-const BarCharts = () => (
-  <div className="bar-charts">
-    <div className="bar journalism">
-      <span className="title">Journalism</span>
-    </div>
-    <div className="bar engineering">
-      <span className="title">Software Engineering</span>
-    </div>
-    <div className="bar product">
-      <span className="title">Product</span>
-    </div>
-  </div>
-)
-
 class Home extends React.Component {
   constructor (props) {
     super(props);
@@ -83,6 +69,13 @@ class Home extends React.Component {
     console.log("journalismClicked");
     this.setState({pulseJournalism: true});
   }
+
+  scrollToRef = (ref) => {
+    console.log("ref: ", ref);
+    console.log("this.props: ", this.props);
+    debugger;
+    this.props[ref].current.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth'})
+  };
 
   render () {
     return (
