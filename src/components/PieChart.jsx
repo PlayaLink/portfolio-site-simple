@@ -77,7 +77,7 @@ class PieChart extends React.Component {
               smooth={ true }
               offset={-50}
               duration={ 500 }>
-              Journalism
+              Language/Research/Journalism
             </Link>
           </text>
 

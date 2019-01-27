@@ -55,18 +55,18 @@ class Projects extends React.Component {
             className="button">Learn More</a>
         </div>
 
-        <Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>
-          <div className="images">
-            <div className="ebook" />
-          </div>
-          <p className={`description`} ref={this.scrumRef}>
-            <strong>Tactical, Practical Scrum</strong> is a 50-page handbook that I ghostwrote for an executive Agile coaching consultancy started by Scott Downey, whose clients include 3M, Toyota, Grindr, Napster and MySpace.
-            Ghostwrote
-            <br/>
-            <br/>
-            <div>The idea was to take Scott Downey's 20 years of experience and turn it into an ebook that he could use as part of his corporate trainings.<span style={{position: 'relative', left: '0.25rem'}}><FontAwesomeIcon icon="info-circle" /></span></div>
-          </p>
-        </Element>
+        {/*<Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>*/}
+          {/*<div className="images">*/}
+            {/*<div className="ebook" />*/}
+          {/*</div>*/}
+          {/*<p className={`description`} ref={this.scrumRef}>*/}
+            {/*<strong>Tactical, Practical Scrum</strong> is a 50-page handbook that I ghostwrote for an executive Agile coaching consultancy started by Scott Downey, whose clients include 3M, Toyota, Grindr, Napster and MySpace.*/}
+            {/*Ghostwrote*/}
+            {/*<br/>*/}
+            {/*<br/>*/}
+            {/*<div>The idea was to take Scott Downey's 20 years of experience and turn it into an ebook that he could use as part of his corporate trainings.<span style={{position: 'relative', left: '0.25rem'}}><FontAwesomeIcon icon="info-circle" /></span></div>*/}
+          {/*</p>*/}
+        {/*</Element>*/}
       </div>
     );
   }

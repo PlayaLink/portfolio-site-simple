@@ -93,7 +93,7 @@ circle {
   }
 }
 .pie2 {
-  stroke:$red;
+  stroke: $teal;
   -webkit-animation-name: pie2;
   animation-name: pie2;
   &.hide {
@@ -101,7 +101,7 @@ circle {
   }
 }
 .pie3 {
-  stroke:$teal;
+  stroke:$yellow;
   -webkit-animation-name: pie3;
   animation-name: pie3;
   &.hide {

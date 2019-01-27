@@ -68,7 +68,7 @@ class Timeline extends React.Component {
   }
 
   render () {
-    const { pulseJournalism, pulseMarketing } = this.props;
+    const { pulseJournalism, pulseMarketing, pulseScrum } = this.props;
     return (
       <div className="timeline">
         { /*<div className="section-title">Timeline</div>*/ }
@@ -82,8 +82,8 @@ class Timeline extends React.Component {
           >
             <TimelineCard
 
-              title="Learning to speak"
-              summary="All I cared about in college was learning Spanish and French."
+              title="French and Spanish"
+              summary="All I cared about in college was language."
               details={ [
                 'UC Berkeley, French and Spanish literature',
                 'Studied abroad in Spain',
@@ -100,7 +100,7 @@ class Timeline extends React.Component {
             iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
           >
             <TimelineCard
-              title="Living in Paris"
+              title="Philosophy in Paris"
               summary="Taught English. Studied philosophy. Travelled with abandon."
               bullet={ true }
               details={ [
@@ -138,7 +138,7 @@ class Timeline extends React.Component {
             iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
           >
             <TimelineCard
-              title="Research and Storytelling"
+              title="Interviewing and Storytelling"
               pulse={ pulseJournalism }
               summary="Learned about the world by writing hundreds of stories and interviewing thousands of people"
               bullet={ true }
@@ -155,10 +155,10 @@ class Timeline extends React.Component {
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="1 year"
-              iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
+              iconStyle={ { background: '#00ff9f', color: '#fff' } }
             >
               <TimelineCard
-                title="Breaking into tech"
+                title="Product marketing"
                 pulse={pulseMarketing}
                 summary="Disillusioned by the sorry state of journalism, and inspired by the tech entrepreneurs I was writing about, I parlayed my writing and communications skills into a product marketing job at a tech startup in Venice."
                 bullet={ true }
@@ -171,14 +171,33 @@ class Timeline extends React.Component {
             </VerticalTimelineElement>
           </Element>
 
+          { /*Scrum*/ }
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="1 year"
+            iconStyle={ { background: '#fbf542', color: '#fff' } }
+          >
+            <TimelineCard
+              title="Scrum/Agile"
+              pulse={pulseScrum}
+              summary="Ghostwrote a 50-page handbook for successful Scrum adoption"
+              bullet={ true }
+              details={ [
+                'Ghostwrote a 50-page ebook called Tactical, Practical Scrum: A Product Manager\'s Guide to Successful Scrum Implementation',
+                'Created inbound and outbound lead generation funnels using Hubspot/Salesforce/Mailgun ',
+                'Realized that I am more interested in making/writing/coding things than selling/marketing/consuming things'
+              ] }
+            />
+          </VerticalTimelineElement>
+
           { /*Learning to Speak Javascript*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="1 year"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
+            iconStyle={ { background: '#aaaaaa', color: '#fff' } }
           >
             <TimelineCard
-              title="Learning to speak Javascript"
+              title="Learning to code"
               summary="If I was going to stay in tech, I wanted to have a deeper understanding of how things work under the hood. And since code is just a language, I realized computer programming might be something I could wrap my head around better than most non-technical folks."
               bullet={ true }
               details={ [
@@ -193,7 +212,7 @@ class Timeline extends React.Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2 years"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
+            iconStyle={ { background: '#aaaaaa', color: '#fff' } }
           >
             <TimelineCard
               title="Product & Engineering"
@@ -211,7 +230,7 @@ class Timeline extends React.Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date=""
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
+            iconStyle={ { background: '#aaaaaa', color: '#fff' } }
           >
             <TimelineCard
               title="Design Research"

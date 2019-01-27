@@ -105,9 +105,9 @@ class Home extends React.Component {
         <Timeline
           pulseJournalism={this.state.pulseJournalism}
           pulseMarketing={this.state.pulseMarketing}
+          pulseScrum={this.state.pulseScrum}
         />
         <Projects
-          pulseScrum={this.state.pulseScrum}
           pulseIep={this.state.pulseIep}
         />
       </div>
