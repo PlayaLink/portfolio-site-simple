@@ -4,13 +4,18 @@
   align-items: center;
   justify-content: center;
   .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     .title {
       font-size: 3rem;
       font-family: Lato;
-      text-align: start;
     }
     .tagline {
       margin-top: 2rem;
+      max-width: 20rem;
     }
   }
   .summary {
