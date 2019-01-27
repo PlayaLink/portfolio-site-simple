@@ -122,6 +122,7 @@ circle {
   cursor: pointer;
   font-size: 0.3rem;
   opacity: 0;
+  text-decoration: underline;
   &.animate {
     opacity: 1;
     animation: show-pie-labels 3s;
