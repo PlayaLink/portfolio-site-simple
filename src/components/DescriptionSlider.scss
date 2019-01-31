@@ -1,0 +1,18 @@
+@import '../stylesheets/base';
+
+.description-slider {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .rc-slider {
+      //justify-self: end;
+    }
+  }
+}
