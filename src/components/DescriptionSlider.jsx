@@ -84,12 +84,19 @@ class DescriptionSlider extends Component {
     console.log("description: ", description);
     return description;
   };
+
   render() {
     return (
       <div className="description-slider">
         <div className="content" style={wrapperStyle}>
           {this.getDescription()}
+        </div>
+        <div className="slider">
           <Slider min={1} max={3} defaultValue={this.state.position} onChange={this.handleChange} handle={handle} />
+          <div className="labels">
+            <span>More</span>
+            <span>Less</span>
+          </div>
         </div>
       </div>
     );
