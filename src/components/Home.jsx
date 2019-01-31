@@ -16,7 +16,7 @@ const Header = () => (
       <a className="icon github" href="https://github.com/PlayaLink" target="_blank"></a>
     </div>
     <div className="tagline">
-      <p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>
+      {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
       {/*<p>I try to <span className="blue">understand</span> people, so I can <span className="red">design</span> things they need, and <span className="teal">build</span> things they will use.</p>*/}
       {/*<div>I try to <span className="blue">understand</span> people</div>*/}
       {/*<div>So I can <span className="red">design</span> things they need</div>*/}

@@ -4,8 +4,9 @@
   .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     .description {
+      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
