@@ -9,15 +9,20 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 const Header = () => (
   <div className="header">
     <div className="title">Jordan England-Nelson</div>
+    <div className="icon-list">
+      <a className="icon linkedin" href="https://www.linkedin.com/in/jordan-england-nelson-05283494/" target="_blank"></a>
+      <a className="icon twitter" href="https://twitter.com/jordanenelson" target="_blank"></a>
+      <a className="icon github" href="https://github.com/PlayaLink" target="_blank"></a>
+    </div>
     <div className="tagline">
       <p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>
       {/*<p>I try to <span className="blue">understand</span> people, so I can <span className="red">design</span> things they need, and <span className="teal">build</span> things they will use.</p>*/}
       {/*<div>I try to <span className="blue">understand</span> people</div>*/}
       {/*<div>So I can <span className="red">design</span> things they need</div>*/}
       {/*<div>And <span className="teal">build</span> things they will use.</div>*/}
-      <p style={{textAlign: 'left'}}>I try to understand people</p>
-      <p style={{textAlign: 'center'}}>So I can design things they need</p>
-      <p style={{textAlign: 'right'}}>And build things they will use.</p>
+      {/*<p style={{textAlign: 'left'}}>I try to understand people</p>*/}
+      {/*<p style={{textAlign: 'center'}}>So I can design things they need</p>*/}
+      {/*<p style={{textAlign: 'right'}}>And build things they will use.</p>*/}
       {/*<p style={{textAlign: 'left'}}>I try to <span className="blue">understand</span> people</p>*/}
       {/*<p style={{textAlign: 'center'}}>So I can <span className="red">design</span> things they need</p>*/}
       {/*<p style={{textAlign: 'right'}}>And <span className="teal">build</span> things they will use.</p>*/}
