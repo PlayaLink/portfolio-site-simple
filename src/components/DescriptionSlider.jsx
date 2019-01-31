@@ -24,19 +24,19 @@ const handle = (props) => {
 };
 
 const desc1 = () => (
-  <div className="description">
-    <p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>
+  <div className="">
+    {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
   </div>
 );
 const desc2 = () => (
   <div className="description">
-    <p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>
+    {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
   </div>
 );
 const desc3 = () => (
   <div className="description">
-    <p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>
+    {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
     <p>5 years ago, I left journalism to do product marketing for a logistics tech startup</p>
   </div>
@@ -44,7 +44,7 @@ const desc3 = () => (
 
 const desc4 = () => (
   <div className="description">
-    <p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>
+    {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
     <p>4 years ago, I left journalism to do product marketing for a logistics tech startup</p>
     <p>A year later, I decided to learn how to code.</p>
@@ -54,7 +54,7 @@ const desc4 = () => (
 
 const desc5 = () => (
   <div className="description">
-    <p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>
+    {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
     <p>4 years ago, I left journalism to do product marketing for a logistics tech startup</p>
     <p>A year later, I decided to learn how to code.</p>
@@ -63,7 +63,7 @@ const desc5 = () => (
   </div>
 );
 
-const wrapperStyle = { width: 400, height: 375, margin: 50 };
+const wrapperStyle = { width: 400, height: 325, marginLeft: 50, marginRight: 50, marginBottom: 40, marginTop: 35 };
 
 class DescriptionSlider extends Component {
   constructor (props) {
@@ -103,6 +103,9 @@ class DescriptionSlider extends Component {
   render() {
     return (
       <div className="description-slider">
+        <div className="description">
+          <div style={{textAlign: 'center'}}>I am a <strong>product developer</strong> with broad startup experience in tech.</div>
+        </div>
         <div className="content" style={wrapperStyle}>
           {this.getDescription()}
         </div>

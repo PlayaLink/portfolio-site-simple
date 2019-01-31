@@ -103,12 +103,12 @@ class Home extends React.Component {
       <div className="home">
         <Header/>
         <Slider/>
-        <PieChart
-          journalismClicked={this.journalismClicked}
-          marketingClicked={this.marketingClicked}
-          scrumClicked={this.scrumClicked}
-          productClicked={this.productClicked}
-        />
+        {/*<PieChart*/}
+          {/*journalismClicked={this.journalismClicked}*/}
+          {/*marketingClicked={this.marketingClicked}*/}
+          {/*scrumClicked={this.scrumClicked}*/}
+          {/*productClicked={this.productClicked}*/}
+        {/*/>*/}
         <Timeline
           pulseJournalism={this.state.pulseJournalism}
           pulseMarketing={this.state.pulseMarketing}

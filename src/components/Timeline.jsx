@@ -71,7 +71,7 @@ class Timeline extends React.Component {
     const { pulseJournalism, pulseMarketing, pulseScrum } = this.props;
     return (
       <div className="timeline">
-        { /*<div className="section-title">Timeline</div>*/ }
+        <div className="section-title timeline">A Series of Fortunate Events</div>
         <VerticalTimeline>
 
           { /*COLLEGE*/ }
