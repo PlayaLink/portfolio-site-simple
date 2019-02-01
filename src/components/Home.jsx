@@ -3,6 +3,7 @@ import './Home.scss';
 import PieChart from './PieChart';
 import Timeline from './Timeline';
 import Projects from './Projects';
+import Cards from './Cards';
 import Slider from './DescriptionSlider';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
@@ -117,6 +118,7 @@ class Home extends React.Component {
         <Projects
           pulseIep={this.state.pulseIep}
         />
+        <Cards/>
       </div>
     );
   }

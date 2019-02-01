@@ -184,8 +184,8 @@ class Timeline extends React.Component {
               bullet={ true }
               details={ [
                 'Ghostwrote a 50-page ebook called Tactical, Practical Scrum: A Product Manager\'s Guide to Successful Scrum Implementation',
-                'Created inbound and outbound lead generation funnels using Hubspot/Salesforce/Mailgun ',
-                'Realized that I am more interested in making/writing/coding things than selling/marketing/consuming things'
+                'Recorded 60 hours of interviews with executive Agile coach Scott Downey',
+                'Ebook available on request'
               ] }
             />
           </VerticalTimelineElement>
