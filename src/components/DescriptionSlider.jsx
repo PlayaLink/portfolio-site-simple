@@ -38,7 +38,7 @@ const desc3 = () => (
   <div className="description">
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
-    <p>5 years ago, I left journalism to do product marketing for a logistics tech startup</p>
+    <p>4 years ago, I left journalism to do product marketing for a logistics tech startup</p>
   </div>
 );
 
