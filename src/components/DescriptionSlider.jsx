@@ -63,8 +63,6 @@ const desc5 = () => (
   </div>
 );
 
-const wrapperStyle = { width: 400, height: 325, marginLeft: 50, marginRight: 50, marginBottom: 40, marginTop: 35 };
-
 class DescriptionSlider extends Component {
   constructor (props) {
     super(props);
@@ -106,7 +104,7 @@ class DescriptionSlider extends Component {
         <div className="description">
           <div style={{textAlign: 'center'}}>I am a <strong>product developer</strong> with broad startup experience in tech.</div>
         </div>
-        <div className="content" style={wrapperStyle}>
+        <div className="content">
           {this.getDescription()}
         </div>
         <div className="slider">

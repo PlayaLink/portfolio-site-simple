@@ -1,7 +1,12 @@
 @import '../stylesheets/base';
 
 .description-slider {
+  padding-left: 1rem;
+  padding-right: 1rem;
   .content {
+    width: 300px;
+    margin: 2rem auto;
+    height: 325px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -21,6 +26,8 @@
     }
   }
   .slider {
+    max-width: 90%;
+    margin: 0 auto;
     .labels {
       display: flex;
       justify-content: space-between;
