@@ -59,7 +59,7 @@ const desc5 = () => (
     <p>4 years ago, I left journalism to do product marketing for a logistics tech startup</p>
     <p>A year later, I decided to learn how to code.</p>
     <p>The last 3 years have been a mix of engineering, product and UX design.</p>
-    <p>I'm looking for work as a <strong>design researcher</strong>.</p>
+    <p>Currently looking for new opportunities.</p>
   </div>
 );
 
@@ -102,7 +102,7 @@ class DescriptionSlider extends Component {
     return (
       <div className="description-slider">
         <div className="description">
-          <div style={{textAlign: 'center'}}>I am a <strong>product developer</strong> with broad startup experience in tech.</div>
+          <div style={{textAlign: 'center'}}>I'm a <strong>product developer</strong> with broad startup experience in tech.</div>
         </div>
         <div className="content">
           {this.getDescription()}

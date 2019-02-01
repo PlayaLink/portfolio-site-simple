@@ -232,202 +232,205 @@ class Layout extends React.Component {
 
   render () {
     return (
-      <LayoutWrapper>
-        <GridContainer>
-          <GridRow>
-            <GridColumn sm="6" lg="4">
-              <Card onClick={ this.flipCard.bind(this) }>
-                <CardFront>
-                  <CardPhoto img={ burningman }></CardPhoto>
-                  <CardTitle>Drinking the Kool-Aid At Burning Man</CardTitle>
-                </CardFront>
-                <CardBack>
-                  <CardDescription>
-                    <p style={ { marginTop: 0 } }>Mention Burning Man and you’re bound to elicit
-                      eye-rolls and
-                      jokes about drug-addled hippies dancing in the desert.</p>
-                    But is there something more in the “burner Kool-Aid” than mere psychedelics?
-                  </CardDescription>
-                  <Button
-                    href="https://www.dailybreeze.com/2014/09/05/burning-man-2014-reporter-survives-festival-returns-a-burner/"
-                    target="_blank">
-                    Read Story
-                  </Button>
-                </CardBack>
-              </Card>
-            </GridColumn>
+      <div>
+        <div style={{marginTop: '3.5rem'}} className="section-title">Journalism Clips</div>
+        <LayoutWrapper>
+          <GridContainer>
+            <GridRow>
+              <GridColumn sm="6" lg="4">
+                <Card onClick={ this.flipCard.bind(this) }>
+                  <CardFront>
+                    <CardPhoto img={ burningman }></CardPhoto>
+                    <CardTitle>Drinking the Kool-Aid At Burning Man</CardTitle>
+                  </CardFront>
+                  <CardBack>
+                    <CardDescription>
+                      <p style={ { marginTop: 0 } }>Mention Burning Man and you’re bound to elicit
+                        eye-rolls and
+                        jokes about drug-addled hippies dancing in the desert.</p>
+                      But is there something more in the “burner Kool-Aid” than mere psychedelics?
+                    </CardDescription>
+                    <Button
+                      href="https://www.dailybreeze.com/2014/09/05/burning-man-2014-reporter-survives-festival-returns-a-burner/"
+                      target="_blank">
+                      Read Story
+                    </Button>
+                  </CardBack>
+                </Card>
+              </GridColumn>
 
-            <GridColumn sm="6" lg="4">
-              <Card onClick={ this.flipCard.bind(this) }>
-                <CardFront>
-                  <CardPhoto img={ hotwheels }></CardPhoto>
-                  <CardTitle>Mistress Creative Turns Heads</CardTitle>
-                </CardFront>
-                <CardBack>
-                  <CardDescription>If Don Draper worked in today’s world, he would have an account
-                    on Instagram… and on Vine, Whisper, Snapchat and any other social media platform
-                    that dominates the attention of young people — the world’s future
-                    consumers.</CardDescription>
-                  <Button
-                    href="http://www.insidesocal.com/technology/2015/04/02/how-ad-agency-mistress-creative-uses-social-media/"
-                    target="_blank">
-                    Read Story
-                  </Button>
-                </CardBack>
-              </Card>
-            </GridColumn>
+              <GridColumn sm="6" lg="4">
+                <Card onClick={ this.flipCard.bind(this) }>
+                  <CardFront>
+                    <CardPhoto img={ hotwheels }></CardPhoto>
+                    <CardTitle>Mistress Creative Turns Heads</CardTitle>
+                  </CardFront>
+                  <CardBack>
+                    <CardDescription>If Don Draper worked in today’s world, he would have an account
+                      on Instagram… and on Vine, Whisper, Snapchat and any other social media platform
+                      that dominates the attention of young people — the world’s future
+                      consumers.</CardDescription>
+                    <Button
+                      href="http://www.insidesocal.com/technology/2015/04/02/how-ad-agency-mistress-creative-uses-social-media/"
+                      target="_blank">
+                      Read Story
+                    </Button>
+                  </CardBack>
+                </Card>
+              </GridColumn>
 
-            <GridColumn sm="6" lg="4">
-              <Card onClick={ this.flipCard.bind(this) }>
-                <CardFront>
-                  <CardPhoto img={ satellites }></CardPhoto>
-                  <CardTitle>A Promising Future for Tiny Satellites</CardTitle>
-                </CardFront>
-                <CardBack>
-                  <CardDescription>Just as SpaceX has shaken up Southern California’s anemic
-                    aerospace industry, other space entrepreneurs are starting to use miniature
-                    satellites to provide Earth-monitoring services at a fraction of the cost of
-                    more established government contractors.</CardDescription>
-                  <Button
-                    href="https://www.dailybreeze.com/2014/05/18/cubesat-miniature-satellites-poised-to-disrupt-aerospace-industry/"
-                    target="_blank">
-                    Read Story
-                  </Button>
-                </CardBack>
-              </Card>
-            </GridColumn>
+              <GridColumn sm="6" lg="4">
+                <Card onClick={ this.flipCard.bind(this) }>
+                  <CardFront>
+                    <CardPhoto img={ satellites }></CardPhoto>
+                    <CardTitle>A Promising Future for Tiny Satellites</CardTitle>
+                  </CardFront>
+                  <CardBack>
+                    <CardDescription>Just as SpaceX has shaken up Southern California’s anemic
+                      aerospace industry, other space entrepreneurs are starting to use miniature
+                      satellites to provide Earth-monitoring services at a fraction of the cost of
+                      more established government contractors.</CardDescription>
+                    <Button
+                      href="https://www.dailybreeze.com/2014/05/18/cubesat-miniature-satellites-poised-to-disrupt-aerospace-industry/"
+                      target="_blank">
+                      Read Story
+                    </Button>
+                  </CardBack>
+                </Card>
+              </GridColumn>
 
-            <GridColumn sm="6" lg="4">
-              <Card onClick={ this.flipCard.bind(this) }>
-                <CardFront>
-                  <CardPhoto img={ tijuana }></CardPhoto>
-                  <CardTitle><div style={{paddingRight: '0.5rem', paddingLeft: '0.5rem'}}>Tijuana Nightlife Booms After Drug Wars</div></CardTitle>
-                </CardFront>
-                <CardBack>
-                  <CardDescription>Lax liquor laws and seedy entertainment have drawn
-                    Americans south of the border for generations. But drug cartel violence has
-                    spooked gringos, leaving space for a more local arts and nightlife scene.
-                  </CardDescription>
-                  <Button
-                    href="http://www.ocregister.com/articles/bar-598267-friend-dance.html"
-                    target="_blank">
-                    Read Story
-                  </Button>
-                </CardBack>
-              </Card>
-            </GridColumn>
+              <GridColumn sm="6" lg="4">
+                <Card onClick={ this.flipCard.bind(this) }>
+                  <CardFront>
+                    <CardPhoto img={ tijuana }></CardPhoto>
+                    <CardTitle><div style={{paddingRight: '0.5rem', paddingLeft: '0.5rem'}}>Tijuana Nightlife Booms After Drug Wars</div></CardTitle>
+                  </CardFront>
+                  <CardBack>
+                    <CardDescription>Lax liquor laws and seedy entertainment have drawn
+                      Americans south of the border for generations. But drug cartel violence has
+                      spooked gringos, leaving space for a more local arts and nightlife scene.
+                    </CardDescription>
+                    <Button
+                      href="http://www.ocregister.com/articles/bar-598267-friend-dance.html"
+                      target="_blank">
+                      Read Story
+                    </Button>
+                  </CardBack>
+                </Card>
+              </GridColumn>
 
-            <GridColumn sm="6" lg="4">
-              <Card onClick={ this.flipCard.bind(this) }>
-                <CardFront>
-                  <CardPhoto img={ dragonv2 }></CardPhoto>
-                  <CardTitle>Musk Unveils Dragon V2 Spaceship</CardTitle>
-                </CardFront>
-                <CardBack>
-                  <CardDescription>Providing a glimpse into what could be the future of U.S. manned
-                    space flight, Hawthorne-based SpaceX on Thursday unveiled its first space
-                    capsule capable of ferrying astronauts to and from the International Space
-                    Station.
-                  </CardDescription>
-                  <Button
-                    href="http://www.dailybreeze.com/business/20140529/spacex-unveils-first-commercial-capsule-capable-of-manned-flight"
-                    target="_blank">
-                    Read Story
-                  </Button>
-                </CardBack>
-              </Card>
-            </GridColumn>
+              <GridColumn sm="6" lg="4">
+                <Card onClick={ this.flipCard.bind(this) }>
+                  <CardFront>
+                    <CardPhoto img={ dragonv2 }></CardPhoto>
+                    <CardTitle>Musk Unveils Dragon V2 Spaceship</CardTitle>
+                  </CardFront>
+                  <CardBack>
+                    <CardDescription>Providing a glimpse into what could be the future of U.S. manned
+                      space flight, Hawthorne-based SpaceX on Thursday unveiled its first space
+                      capsule capable of ferrying astronauts to and from the International Space
+                      Station.
+                    </CardDescription>
+                    <Button
+                      href="http://www.dailybreeze.com/business/20140529/spacex-unveils-first-commercial-capsule-capable-of-manned-flight"
+                      target="_blank">
+                      Read Story
+                    </Button>
+                  </CardBack>
+                </Card>
+              </GridColumn>
 
-            <GridColumn sm="6" lg="4">
-              <Card onClick={ this.flipCard.bind(this) }>
-                <CardFront>
-                  <CardPhoto img={ fuelcell }></CardPhoto>
-                  <CardTitle>Is Fuel Cell Tech Just A Bunch of Hot Air?</CardTitle>
-                </CardFront>
-                <CardBack>
-                  <CardDescription>
-                    Hydrogen fuel cell technology, which Honda and Toyota have been testing in the
-                    South Bay for more than a decade, is poised to become the next big thing in
-                    alternative energy, as state agencies and automakers work to get 1.5 million
-                    zero-emission vehicles on the road by 2025.
-                  </CardDescription>
-                  <Button
-                    href="http://www.dailybreeze.com/environment-and-nature/20140713/automakers-begin-to-embrace-hydrogen-fuel-cell-technology"
-                    target="_blank">
-                    Read Story
-                  </Button>
-                </CardBack>
-              </Card>
-            </GridColumn>
+              <GridColumn sm="6" lg="4">
+                <Card onClick={ this.flipCard.bind(this) }>
+                  <CardFront>
+                    <CardPhoto img={ fuelcell }></CardPhoto>
+                    <CardTitle>Is Fuel Cell Tech Just A Bunch of Hot Air?</CardTitle>
+                  </CardFront>
+                  <CardBack>
+                    <CardDescription>
+                      Hydrogen fuel cell technology, which Honda and Toyota have been testing in the
+                      South Bay for more than a decade, is poised to become the next big thing in
+                      alternative energy, as state agencies and automakers work to get 1.5 million
+                      zero-emission vehicles on the road by 2025.
+                    </CardDescription>
+                    <Button
+                      href="http://www.dailybreeze.com/environment-and-nature/20140713/automakers-begin-to-embrace-hydrogen-fuel-cell-technology"
+                      target="_blank">
+                      Read Story
+                    </Button>
+                  </CardBack>
+                </Card>
+              </GridColumn>
 
-            <GridColumn sm="6" lg="4">
-              <Card onClick={ this.flipCard.bind(this) }>
-                <CardFront>
-                  <CardPhoto img={ teens }></CardPhoto>
-                  <CardTitle>The Lucrative World of Teen Incluence</CardTitle>
-                </CardFront>
-                <CardBack>
-                  <CardDescription>
-                    Melissa Clark first realized her 8th grade daughter was a celebrity the day they
-                    arrived at her new school in Santa Clarita, and a crowd of middle schoolers
-                    surrounded her car and begged her daughter to take a picture with them.
-                  </CardDescription>
-                  <Button
-                    href="http://www.insidesocal.com/technology/2015/03/30/how-teens-are-making-thousands-per-month-on-social-media/"
-                    target="_blank">
-                    Read Story
-                  </Button>
-                </CardBack>
-              </Card>
-            </GridColumn>
+              <GridColumn sm="6" lg="4">
+                <Card onClick={ this.flipCard.bind(this) }>
+                  <CardFront>
+                    <CardPhoto img={ teens }></CardPhoto>
+                    <CardTitle>The Lucrative World of Teen Incluence</CardTitle>
+                  </CardFront>
+                  <CardBack>
+                    <CardDescription>
+                      Melissa Clark first realized her 8th grade daughter was a celebrity the day they
+                      arrived at her new school in Santa Clarita, and a crowd of middle schoolers
+                      surrounded her car and begged her daughter to take a picture with them.
+                    </CardDescription>
+                    <Button
+                      href="http://www.insidesocal.com/technology/2015/03/30/how-teens-are-making-thousands-per-month-on-social-media/"
+                      target="_blank">
+                      Read Story
+                    </Button>
+                  </CardBack>
+                </Card>
+              </GridColumn>
 
-            <GridColumn sm="6" lg="4">
-              <Card onClick={ this.flipCard.bind(this) }>
-                <CardFront>
-                  <CardPhoto img={ toys }></CardPhoto>
-                  <CardTitle>SoCal At Center of U.S. Toy Industry</CardTitle>
-                </CardFront>
-                <CardBack>
-                  <CardDescription>
-                    Proximity to Hollywood and shipping routes to Asia have helped establish
-                    Southern California as the de facto center of the modern U.S. toy market.
-                  </CardDescription>
-                  <Button
-                    href="https://www.dailynews.com/2014/11/26/hollywood-helps-make-southern-california-center-of-toy-universe/"
-                    target="_blank">
-                    Read Story
-                  </Button>
-                </CardBack>
-              </Card>
-            </GridColumn>
+              <GridColumn sm="6" lg="4">
+                <Card onClick={ this.flipCard.bind(this) }>
+                  <CardFront>
+                    <CardPhoto img={ toys }></CardPhoto>
+                    <CardTitle>SoCal At Center of U.S. Toy Industry</CardTitle>
+                  </CardFront>
+                  <CardBack>
+                    <CardDescription>
+                      Proximity to Hollywood and shipping routes to Asia have helped establish
+                      Southern California as the de facto center of the modern U.S. toy market.
+                    </CardDescription>
+                    <Button
+                      href="https://www.dailynews.com/2014/11/26/hollywood-helps-make-southern-california-center-of-toy-universe/"
+                      target="_blank">
+                      Read Story
+                    </Button>
+                  </CardBack>
+                </Card>
+              </GridColumn>
 
-            <GridColumn sm="6" lg="4">
-              <Card onClick={ this.flipCard.bind(this) }>
-                <CardFront>
-                  <CardPhoto img={ watercar }></CardPhoto>
-                  <CardTitle>Amphibious WaterCar Latest Tech Bro Toy</CardTitle>
-                </CardFront>
-                <CardBack>
-                  <CardDescription>
-                    <p>David March has spent more than a decade developing the high-speed amphibious
-                      car
-                      he is about to take to market for $135,000 a piece.</p>
-                    He has taken deposits from the Prince of Dubai, tycoons in Silicon Valley and
-                    millionaires from around the
-                    world.
-                  </CardDescription>
-                  <Button
-                    href="http://www.ocregister.com/articles/march-597529-car-water.html"
-                    target="_blank">
-                    Read Story
-                  </Button>
-                </CardBack>
-              </Card>
-            </GridColumn>
+              <GridColumn sm="6" lg="4">
+                <Card onClick={ this.flipCard.bind(this) }>
+                  <CardFront>
+                    <CardPhoto img={ watercar }></CardPhoto>
+                    <CardTitle>Amphibious WaterCar Latest Tech Bro Toy</CardTitle>
+                  </CardFront>
+                  <CardBack>
+                    <CardDescription>
+                      <p>David March has spent more than a decade developing the high-speed amphibious
+                        car
+                        he is about to take to market for $135,000 a piece.</p>
+                      He has taken deposits from the Prince of Dubai, tycoons in Silicon Valley and
+                      millionaires from around the
+                      world.
+                    </CardDescription>
+                    <Button
+                      href="http://www.ocregister.com/articles/march-597529-car-water.html"
+                      target="_blank">
+                      Read Story
+                    </Button>
+                  </CardBack>
+                </Card>
+              </GridColumn>
 
-          </GridRow>
-        </GridContainer>
-      </LayoutWrapper>
+            </GridRow>
+          </GridContainer>
+        </LayoutWrapper>
+      </div>
     );
   }
 }
