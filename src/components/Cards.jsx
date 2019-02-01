@@ -1,6 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
-import {css} from 'styled-components';
+import styled, { css } from 'styled-components';
+import burningman from '../img/burningman.jpg';
+import hotwheels from '../img/hotwheels.jpg';
+import satellites from '../img/satellites.jpg';
+import tijuana from '../img/tijuana.jpg';
+import dragonv2 from '../img/dragonv2.jpg';
+import fuelcell from '../img/fuelcell.jpg';
+import teens from '../img/teens.jpg';
+import toys from '../img/toys.jpg';
+import watercar from '../img/watercar.jpg';
 // Import styled-components library - "const" version
 
 // Save container div inside const
@@ -121,16 +129,20 @@ const GridColumn = styled.div`
 // Flipping card
 const Card = styled.article`
   position: relative;
-  width: 100%;
-  min-height: ${remy(380)};
+  min-width: ${remy(200)};
+  min-height: ${remy(150)};
+  max-height: ${remy(280)};
+  height: ${remy(300)};
+  border-radius: ${remy(10)};
   cursor: pointer;
   perspective: 1000px;
   transition: all .25s ease-in-out;
-  background-color: red;
+  box-shadow: 0 0 ${remy(40)} rgba(0,0,0,.15);
+
 
   &:focus,
   &:hover {
-    box-shadow: 0 0 ${remy(40)} rgba(0,0,0,.15);
+    box-shadow: 0 0 ${remy(50)} rgba(0,0,0,.45);
   }
 
   &.flipped {
@@ -150,7 +162,6 @@ const CardSide = css`
   top: 0;
   left: 0;
   overflow: hidden;
-  padding: ${remy(24)};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,9 +187,16 @@ const CardBack = styled.div`
 `;
 
 // Card content
-const CardNumber = styled.span`
+const CardPhoto = styled.span`
   display: block;
   font-size: ${remy(24)};
+  background-image: url(${props => props.img});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
 `;
 
 const CardTitle = styled.h2`
@@ -187,6 +205,23 @@ const CardTitle = styled.h2`
 
 const CardDescription = styled.span`
   font-size: ${remy(16)};
+  padding: 1rem;
+`;
+
+const Button = styled.a`
+  width: 6rem;
+  height: 2rem;
+  background-color: #288be4;
+  border-radius: ${remy(7)};
+  margin: 0 auto;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 // Create layout component
@@ -203,15 +238,21 @@ class Layout extends React.Component {
             <GridColumn sm="6" lg="4">
               <Card onClick={ this.flipCard.bind(this) }>
                 <CardFront>
-                  <CardNumber>1.</CardNumber>
-
-                  <CardTitle>Card</CardTitle>
+                  <CardPhoto img={ burningman }></CardPhoto>
+                  <CardTitle>Drinking the Kool-Aid At Burning Man</CardTitle>
                 </CardFront>
-
                 <CardBack>
-                  <CardDescription>Rand's stated goal for writing the novel was "to show how
-                    desperately the world needs prime movers and how viciously it treats them" and
-                    to portray "what happens to the world without them".</CardDescription>
+                  <CardDescription>
+                    <p style={ { marginTop: 0 } }>Mention Burning Man and you’re bound to elicit
+                      eye-rolls and
+                      jokes about drug-addled hippies dancing in the desert.</p>
+                    But is there something more in the “burner Kool-Aid” than mere psychedelics?
+                  </CardDescription>
+                  <Button
+                    href="https://www.dailybreeze.com/2014/09/05/burning-man-2014-reporter-survives-festival-returns-a-burner/"
+                    target="_blank">
+                    Read Story
+                  </Button>
                 </CardBack>
               </Card>
             </GridColumn>
@@ -219,15 +260,19 @@ class Layout extends React.Component {
             <GridColumn sm="6" lg="4">
               <Card onClick={ this.flipCard.bind(this) }>
                 <CardFront>
-                  <CardNumber>2.</CardNumber>
-
-                  <CardTitle>Card</CardTitle>
+                  <CardPhoto img={ hotwheels }></CardPhoto>
+                  <CardTitle>Mistress Creative Turns Heads</CardTitle>
                 </CardFront>
-
                 <CardBack>
-                  <CardDescription>The core idea for the book came to her after a 1943 telephone
-                    conversation with a friend, who asserted that Rand owed it to her readers to
-                    write fiction about her philosophy.</CardDescription>
+                  <CardDescription>If Don Draper worked in today’s world, he would have an account
+                    on Instagram… and on Vine, Whisper, Snapchat and any other social media platform
+                    that dominates the attention of young people — the world’s future
+                    consumers.</CardDescription>
+                  <Button
+                    href="http://www.insidesocal.com/technology/2015/04/02/how-ad-agency-mistress-creative-uses-social-media/"
+                    target="_blank">
+                    Read Story
+                  </Button>
                 </CardBack>
               </Card>
             </GridColumn>
@@ -235,15 +280,19 @@ class Layout extends React.Component {
             <GridColumn sm="6" lg="4">
               <Card onClick={ this.flipCard.bind(this) }>
                 <CardFront>
-                  <CardNumber>3.</CardNumber>
-
-                  <CardTitle>Card</CardTitle>
+                  <CardPhoto img={ satellites }></CardPhoto>
+                  <CardTitle>A Promising Future for Tiny Satellites</CardTitle>
                 </CardFront>
-
                 <CardBack>
-                  <CardDescription>To produce Atlas Shrugged, Rand conducted research on the
-                    American railroad industry. Her previous work on a proposed (but never realized)
-                    screenplay.</CardDescription>
+                  <CardDescription>Just as SpaceX has shaken up Southern California’s anemic
+                    aerospace industry, other space entrepreneurs are starting to use miniature
+                    satellites to provide Earth-monitoring services at a fraction of the cost of
+                    more established government contractors.</CardDescription>
+                  <Button
+                    href="https://www.dailybreeze.com/2014/05/18/cubesat-miniature-satellites-poised-to-disrupt-aerospace-industry/"
+                    target="_blank">
+                    Read Story
+                  </Button>
                 </CardBack>
               </Card>
             </GridColumn>
@@ -251,18 +300,131 @@ class Layout extends React.Component {
             <GridColumn sm="6" lg="4">
               <Card onClick={ this.flipCard.bind(this) }>
                 <CardFront>
-                  <CardNumber>4.</CardNumber>
-
-                  <CardTitle>Card</CardTitle>
+                  <CardPhoto img={ tijuana }></CardPhoto>
+                  <CardTitle><div style={{paddingRight: '0.5rem', paddingLeft: '0.5rem'}}>Tijuana Nightlife Booms After Drug Wars</div></CardTitle>
                 </CardFront>
-
                 <CardBack>
-                  <CardDescription>Atlas Shrugged is set in a dystopian United States at an
-                    unspecified time, in which the country has a "National Legislature" instead of
-                    Congress and a "Head of State" instead of a President.</CardDescription>
+                  <CardDescription>Lax liquor laws and seedy entertainment have drawn
+                    Americans south of the border for generations. But drug cartel violence has
+                    spooked gringos, leaving space for a more local arts and nightlife scene.
+                  </CardDescription>
+                  <Button
+                    href="http://www.ocregister.com/articles/bar-598267-friend-dance.html"
+                    target="_blank">
+                    Read Story
+                  </Button>
                 </CardBack>
               </Card>
             </GridColumn>
+
+            <GridColumn sm="6" lg="4">
+              <Card onClick={ this.flipCard.bind(this) }>
+                <CardFront>
+                  <CardPhoto img={ dragonv2 }></CardPhoto>
+                  <CardTitle>Musk Unveils Dragon V2 Spaceship</CardTitle>
+                </CardFront>
+                <CardBack>
+                  <CardDescription>Providing a glimpse into what could be the future of U.S. manned
+                    space flight, Hawthorne-based SpaceX on Thursday unveiled its first space
+                    capsule capable of ferrying astronauts to and from the International Space
+                    Station.
+                  </CardDescription>
+                  <Button
+                    href="http://www.dailybreeze.com/business/20140529/spacex-unveils-first-commercial-capsule-capable-of-manned-flight"
+                    target="_blank">
+                    Read Story
+                  </Button>
+                </CardBack>
+              </Card>
+            </GridColumn>
+
+            <GridColumn sm="6" lg="4">
+              <Card onClick={ this.flipCard.bind(this) }>
+                <CardFront>
+                  <CardPhoto img={ fuelcell }></CardPhoto>
+                  <CardTitle>Is Fuel Cell Tech Just A Bunch of Hot Air?</CardTitle>
+                </CardFront>
+                <CardBack>
+                  <CardDescription>
+                    Hydrogen fuel cell technology, which Honda and Toyota have been testing in the
+                    South Bay for more than a decade, is poised to become the next big thing in
+                    alternative energy, as state agencies and automakers work to get 1.5 million
+                    zero-emission vehicles on the road by 2025.
+                  </CardDescription>
+                  <Button
+                    href="http://www.dailybreeze.com/environment-and-nature/20140713/automakers-begin-to-embrace-hydrogen-fuel-cell-technology"
+                    target="_blank">
+                    Read Story
+                  </Button>
+                </CardBack>
+              </Card>
+            </GridColumn>
+
+            <GridColumn sm="6" lg="4">
+              <Card onClick={ this.flipCard.bind(this) }>
+                <CardFront>
+                  <CardPhoto img={ teens }></CardPhoto>
+                  <CardTitle>The Lucrative World of Teen Incluence</CardTitle>
+                </CardFront>
+                <CardBack>
+                  <CardDescription>
+                    Melissa Clark first realized her 8th grade daughter was a celebrity the day they
+                    arrived at her new school in Santa Clarita, and a crowd of middle schoolers
+                    surrounded her car and begged her daughter to take a picture with them.
+                  </CardDescription>
+                  <Button
+                    href="http://www.insidesocal.com/technology/2015/03/30/how-teens-are-making-thousands-per-month-on-social-media/"
+                    target="_blank">
+                    Read Story
+                  </Button>
+                </CardBack>
+              </Card>
+            </GridColumn>
+
+            <GridColumn sm="6" lg="4">
+              <Card onClick={ this.flipCard.bind(this) }>
+                <CardFront>
+                  <CardPhoto img={ toys }></CardPhoto>
+                  <CardTitle>SoCal At Center of U.S. Toy Industry</CardTitle>
+                </CardFront>
+                <CardBack>
+                  <CardDescription>
+                    Proximity to Hollywood and shipping routes to Asia have helped establish
+                    Southern California as the de facto center of the modern U.S. toy market.
+                  </CardDescription>
+                  <Button
+                    href="https://www.dailynews.com/2014/11/26/hollywood-helps-make-southern-california-center-of-toy-universe/"
+                    target="_blank">
+                    Read Story
+                  </Button>
+                </CardBack>
+              </Card>
+            </GridColumn>
+
+            <GridColumn sm="6" lg="4">
+              <Card onClick={ this.flipCard.bind(this) }>
+                <CardFront>
+                  <CardPhoto img={ watercar }></CardPhoto>
+                  <CardTitle>Amphibious WaterCar Latest Tech Bro Toy</CardTitle>
+                </CardFront>
+                <CardBack>
+                  <CardDescription>
+                    <p>David March has spent more than a decade developing the high-speed amphibious
+                      car
+                      he is about to take to market for $135,000 a piece.</p>
+                    He has taken deposits from the Prince of Dubai, tycoons in Silicon Valley and
+                    millionaires from around the
+                    world.
+                  </CardDescription>
+                  <Button
+                    href="http://www.ocregister.com/articles/march-597529-car-water.html"
+                    target="_blank">
+                    Read Story
+                  </Button>
+                </CardBack>
+              </Card>
+            </GridColumn>
+
           </GridRow>
         </GridContainer>
       </LayoutWrapper>
