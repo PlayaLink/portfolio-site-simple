@@ -3,6 +3,7 @@ import './Home.scss';
 import PieChart from './PieChart';
 import Timeline from './Timeline';
 import Projects from './Projects';
+import Slider from './DescriptionSlider';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 
@@ -15,7 +16,7 @@ const Header = () => (
       <a className="icon github" href="https://github.com/PlayaLink" target="_blank"></a>
     </div>
     <div className="tagline">
-      <p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>
+      {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
       {/*<p>I try to <span className="blue">understand</span> people, so I can <span className="red">design</span> things they need, and <span className="teal">build</span> things they will use.</p>*/}
       {/*<div>I try to <span className="blue">understand</span> people</div>*/}
       {/*<div>So I can <span className="red">design</span> things they need</div>*/}
@@ -101,12 +102,13 @@ class Home extends React.Component {
     return (
       <div className="home">
         <Header/>
-        <PieChart
-          journalismClicked={this.journalismClicked}
-          marketingClicked={this.marketingClicked}
-          scrumClicked={this.scrumClicked}
-          productClicked={this.productClicked}
-        />
+        <Slider/>
+        {/*<PieChart*/}
+          {/*journalismClicked={this.journalismClicked}*/}
+          {/*marketingClicked={this.marketingClicked}*/}
+          {/*scrumClicked={this.scrumClicked}*/}
+          {/*productClicked={this.productClicked}*/}
+        {/*/>*/}
         <Timeline
           pulseJournalism={this.state.pulseJournalism}
           pulseMarketing={this.state.pulseMarketing}

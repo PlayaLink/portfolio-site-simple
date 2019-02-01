@@ -4,7 +4,12 @@
 .section-title {
   text-align: center;
   font-size: 2rem;
-  margin: 1rem auto;
+  &.timeline {
+    margin-top: 7rem;
+  }
+  &.projects {
+    margin-top: 3rem;
+  }
 }
 
 .button {

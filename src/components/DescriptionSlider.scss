@@ -1,0 +1,29 @@
+@import '../stylesheets/base';
+
+.description-slider {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-image: url("../img/portfolio_circle.png");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .description {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      padding-bottom: 1.5rem;
+    }
+  }
+  .slider {
+    .labels {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
