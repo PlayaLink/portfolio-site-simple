@@ -200,7 +200,9 @@ const CardPhoto = styled.span`
 `;
 
 const CardTitle = styled.h2`
-  font-size: ${remy(21)};
+  font-size: ${remy(14)};
+   font-weight: 500;
+   text-decoration: underline;
 `;
 
 const CardDescription = styled.span`
@@ -219,6 +221,7 @@ const Button = styled.a`
   justify-content: center;
   align-items: center;
   color: white;
+  text-decoration: underline;
   &:hover {
     cursor: pointer;
   }
@@ -233,7 +236,7 @@ class Layout extends React.Component {
   render () {
     return (
       <div>
-        <div style={{marginTop: '3.5rem'}} className="section-title">Journalism Clips</div>
+        <div style={{marginTop: '3.5rem'}} className="section-title">Journalism</div>
         <LayoutWrapper>
           <GridContainer>
             <GridRow>
