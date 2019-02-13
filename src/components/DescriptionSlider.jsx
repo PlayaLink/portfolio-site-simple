@@ -48,7 +48,6 @@ const desc4 = () => (
     <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
     <p>4 years ago, I left journalism to do product marketing for a logistics tech startup</p>
     <p>A year later, I decided to learn how to code.</p>
-    <p>The last 3 years have been a mix of engineering, product and UX design.</p>
   </div>
 );
 
@@ -59,7 +58,6 @@ const desc5 = () => (
     <p>4 years ago, I left journalism to do product marketing for a logistics tech startup</p>
     <p>A year later, I decided to learn how to code.</p>
     <p>The last 3 years have been a mix of engineering, product and UX design.</p>
-    <p>Currently looking for new opportunities.</p>
   </div>
 );
 
