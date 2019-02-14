@@ -38,7 +38,7 @@ const desc3 = () => (
   <div className="description">
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
-    <p>4 years ago, I left journalism to do product marketing for a logistics tech startup</p>
+    <p>4 years ago, I left journalism to do product marketing for a logistics tech startup.</p>
   </div>
 );
 
@@ -46,7 +46,7 @@ const desc4 = () => (
   <div className="description">
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
-    <p>4 years ago, I left journalism to do product marketing for a logistics tech startup</p>
+    <p>4 years ago, I left journalism to do product marketing for a logistics tech startup.</p>
     <p>A year later, I decided to learn how to code.</p>
   </div>
 );
@@ -55,7 +55,7 @@ const desc5 = () => (
   <div className="description">
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
-    <p>4 years ago, I left journalism to do product marketing for a logistics tech startup</p>
+    <p>4 years ago, I left journalism to do product marketing for a logistics tech startup.</p>
     <p>A year later, I decided to learn how to code.</p>
     <p>The last 3 years have been a mix of engineering, product and UX design.</p>
   </div>
