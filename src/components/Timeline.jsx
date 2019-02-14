@@ -21,7 +21,7 @@ class TimelineCard extends React.Component {
   renderBulletedList = (details) => {
     return (
       <ul className={ `full-description ${this.state.open ? 'open' : ''}` }>
-        { details.map(text => <li>{ text }</li>) }
+        { details.map((text, i) => <li key={i}>{ text }</li>) }
       </ul>
     );
   };
