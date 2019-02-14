@@ -40,8 +40,8 @@ class Projects extends React.Component {
             <div className="phone peace" />
           </div>
           <p className="description">
-            <strong>Street Art Talks</strong> is a web app that bridges the gap between (analog)
-            street art and (digital) information about that art work.
+            <strong>Street Art Talks</strong> is a web app that bridges the gap between analog
+            street art and digital information about that art work.
             <br/>
             <br/>
             <div>Stencils tagged near prominent
