@@ -101,11 +101,11 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Philosophy in Paris"
-              summary="Taught English. Studied philosophy. Travelled with abandon."
+              summary="Studied philosophy. Taught English. Travelled with abandon."
               bullet={ true }
               details={ [
-                'Taught English to employees at LG, SAP, and Amgen',
                 'Earned a Master\'s of Philosophy from the La Sorbonne (all coursework in French)',
+                'Coached executives at LG, SAP, and Amgen',
                 'Couch-surfed and hitch-hiked across most of Europe'
               ] }
             />
@@ -139,12 +139,12 @@ class Timeline extends React.Component {
             <TimelineCard
               title="Interviewing and Storytelling"
               pulse={ pulseJournalism }
-              summary="Learned how to ask questions and find information by writing hundreds of stories and interviewing thousands of people"
+              summary="Learned how to ask questions, find information, and distill complex topics by writing hundreds of news stories and interviewing thousands of people"
               bullet={ true }
               details={ [
-                'Started my journalism career writing about the U.S.-Mexico for the Union-Tribune of San Diego',
+                'Covered aerospace, technology and entrepreneurship for the Los Angeles Newspaper Group',
                 'Wrote about education and city government for the Orange County Register',
-                'Covered aerospace, technology and entrepreneurship for the Los Angeles Newspaper Group'
+                'Covered the U.S.-Mexico for the Union-Tribune of San Diego',
               ] }
             />
           </VerticalTimelineElement>
@@ -200,7 +200,7 @@ class Timeline extends React.Component {
               summary="If I was going to stay in tech, I wanted to have a deeper understanding of how things work under the hood. And since code is just a language, I realized computer programming might be something I could wrap my head around better than most non-technical folks."
               bullet={ true }
               details={ [
-                'Enrolled in a fullstack Javascript bootcamp run by a cousin of mine in Utah',
+                'Enrolled in a fullstack Javascript bootcamp in Utah',
                 'After my cohort finished, I continued on as a tutor while continuing to study and work on personal projects',
                 'Took on several freelance gigs, many of which I found through the bootcamp\'s network'
               ] }
@@ -219,7 +219,7 @@ class Timeline extends React.Component {
               bullet={ true }
               details={ [
                 'Worked on very product-focused engineering team, building out and maintaining the web version of POPin, an employee engagement survey application',
-                'Interviewed over 30 users to develop distinct user personas',
+                'Interviewed 30+ users to develop distinct user personas',
                 'Implemented and managed tracking analytics via Mixpanel, Google Analytics and Hubspot'
               ] }
             />
@@ -248,7 +248,7 @@ class Timeline extends React.Component {
                   students' progress on their Individualized Education Plans</p>,
                 <p><strong>Rikra Loans</strong> - Developed interview materials and managed a team
                   of intern interviewers to assess user needs for a fintech startup focused on
-                  microloans for undocumented workers in Utah</p>
+                  micro-loans for undocumented workers in Utah</p>
               ] }
             />
           </VerticalTimelineElement>
