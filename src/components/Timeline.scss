@@ -4,7 +4,6 @@
   border-radius: 0.5rem;
   width: 100%;
   .timeline-card {
-    padding-right: 0.25rem; 
     .full-description {
       max-height: 0;
       transition: max-height 1s ease-in-out;
@@ -12,6 +11,8 @@
       &.open {
         height: auto;
         max-height: 600px;
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
       }
       li {
         margin-top: 0.5rem;
@@ -20,7 +21,7 @@
         list-style-position: outside;
         position: relative;
         left: 1.5rem;
-        padding-right: 1rem;
+        padding-right: 1.5rem;
       }
     }
 
