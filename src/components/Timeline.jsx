@@ -124,8 +124,7 @@ class Timeline extends React.Component {
                 bullet={ true }
                 details={ [
                   'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona.',
-                  'Reported on Catalan regional elections and the social effects of the euro crisis',
-                  'Dropped acid for the first time'
+                  'Reported on Catalan regional elections and the social effects of the euro crisis'
                 ] }
               />
             </VerticalTimelineElement>
