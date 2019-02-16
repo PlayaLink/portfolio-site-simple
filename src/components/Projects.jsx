@@ -42,7 +42,7 @@ class Projects extends React.Component {
     const { pulseScrum, pulseIep } = this.props;
     return (
       <div className="projects">
-        <div className="section-title">Recent Projects</div>
+        {/*<div className="section-title">Recent Projects</div>*/}
         <Element name="iep" className={ `iep-goal-tracker ${pulseIep ? 'pulse' : ''}` }>
           <div className="images">
             <div className="phone evaluations" />
