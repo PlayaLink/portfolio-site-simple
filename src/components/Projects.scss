@@ -32,12 +32,6 @@
         }
       }
     }
-    .description {
-      max-width: 25rem;
-      text-align: center;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
     &.pulse {
       animation: pulseAnimate 1500ms 1500ms !important;
       padding: 1rem;
@@ -78,12 +72,6 @@
           background-image: url(../img/peace.png);
         }
       }
-    }
-    .description {
-      max-width: 25rem;
-      text-align: center;
-      padding-left: 1rem;
-      padding-right: 1rem;
     }
   }
   .scrum-ebook {
@@ -130,5 +118,26 @@
   }
   100% {
     box-shadow: unset;
+  }
+}
+
+
+.project-card {
+  max-width: 25rem;
+  text-align: left;
+  padding: 1rem;
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: $blue;
+  }
+  .subtitle {
+    margin-top: 0.5rem;
+    color: $gray;
+    width: fit-content;
+  }
+  .description {
+
   }
 }

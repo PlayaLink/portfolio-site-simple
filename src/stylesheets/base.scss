@@ -14,14 +14,34 @@
 
 .button {
   border: 1px solid $gray;
-  border-radius: 3px;
+  border-radius: 1px;
   padding: 5px 10px;
   cursor: pointer;
   text-decoration: none;
+  &.pink {
+    background-color: lighten($red, 20%);
+    color: $white;
+  }
 }
 
 .underline {
   text-decoration: underline;
+}
+.bold {
+  font-weight: 600;
+}
+
+.divider {
+  border-color: $blue;
+  border-top: 0;
+  color: $blue !important;
+  width: 100%;
+  margin-left:0;
+  margin-right:0;
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+;
+
 }
 
 .black {
