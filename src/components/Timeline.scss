@@ -8,11 +8,12 @@
       max-height: 0;
       transition: max-height 1s ease-in-out;
       overflow:hidden;
+      margin-right: 0.25rem;
+      margin-left: 0.25rem;
       &.open {
         height: auto;
         max-height: 600px;
-        margin-right: 0.25rem;
-        margin-left: 0.25rem;
+
       }
       li {
         margin-top: 0.5rem;
