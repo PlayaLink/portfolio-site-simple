@@ -41,62 +41,68 @@ class Projects extends React.Component {
   render () {
     const { pulseScrum, pulseIep } = this.props;
     return (
-      <div className="projects">
-        {/*<div className="section-title">Recent Projects</div>*/}
-        <Element name="iep" className={ `iep-goal-tracker ${pulseIep ? 'pulse' : ''}` }>
-          <div className="images">
-            <div className="phone evaluations" />
-            <div className="phone login" />
-            <div className="phone students" />
-          </div>
-          <ProjectCard
-            title={ [ <div>IEP Goal Tracker</div> ] }
-            subtitle="Streamlining data collection in the classroom"
-            link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
-            cta="Case Study"
-            description={ [
-              'A web app that helps teachers of students with special needs by digitizing the paper evaluation forms used for tracking progress on state-enforced Individualized Education Plans, or IEPs.' ] }
-          />
-        </Element>
+      <div>
+        <div className="section-title projects">Product</div>
+        <div className="projects">
+          <Element name="iep" className={ `iep-goal-tracker ${pulseIep ? 'pulse' : ''}` }>
+            <div className="images">
+              <div className="phone evaluations" />
+              <div className="phone login" />
+              <div className="phone students" />
+            </div>
+            <ProjectCard
+              title={ [ <div>IEP Goal Tracker</div> ] }
+              subtitle="Streamlining data collection in the classroom"
+              link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
+              cta="Case Study"
+              description={ [
+                'A web app that helps teachers of students with special needs.',
+                <p>Digitizes paper evaluation forms used for tracking progress on state-enforced Individualized Education Plans, or IEPs.</p>,
+                'Allows teachers to log evaluations in real-time with from their phone.'
+              ] }
+            />
+          </Element>
 
-        <div className="street-art-talks">
-          <ProjectCard
-            title={ [ <div>Street Art Talks</div> ] }
-            subtitle="Text-based audio tour of street art in DTLA"
-            link="http://www.streetarttalks.com"
-            cta="Visit Site"
-            description={ [
-              'Stencils tagged near prominent murals in DTLA\'s arts district instruct passersby to text a code to a Twilio phone number. ',
-              'Automated text response includes a url with information about the mural and artist.'] }
-          />
-          <div className="images">
-            <div className="murals">
-              <div className="thumbnail influence"/>
-              <div className="thumbnail elephants"/>
-              <div className="thumbnail bloom"/>
-            </div>
-            <div className="street-art-talks-phone" />
-            <div className="murals">
-              <div className="thumbnail peace"/>
-              <div className="thumbnail faces"/>
-              <div className="thumbnail abuelita"/>
+          <div className="street-art-talks">
+            <ProjectCard
+              title={ [ <div>Street Art Talks</div> ] }
+              subtitle="Text-based audio tour of street art in DTLA"
+              link="http://www.streetarttalks.com"
+              cta="Visit Site"
+              description={ [
+                'Stencils tagged near prominent murals in DTLA\'s arts district instruct passersby to text a code to a Twilio phone number. ',
+                'Automated text response includes a url with information about the mural and artist.'] }
+            />
+            <div className="images">
+              <div className="murals">
+                <div className="thumbnail influence"/>
+                <div className="thumbnail elephants"/>
+                <div className="thumbnail bloom"/>
+              </div>
+              <div className="street-art-talks-phone" />
+              <div className="murals">
+                <div className="thumbnail peace"/>
+                <div className="thumbnail faces"/>
+                <div className="thumbnail abuelita"/>
+              </div>
             </div>
           </div>
+
+          { /*<Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>*/ }
+          { /*<div className="images">*/ }
+          { /*<div className="ebook" />*/ }
+          { /*</div>*/ }
+          { /*<p className={`description`} ref={this.scrumRef}>*/ }
+          { /*<strong>Tactical, Practical Scrum</strong> is a 50-page handbook that I ghostwrote for an executive Agile coaching consultancy started by Scott Downey, whose clients include 3M, Toyota, Grindr, Napster and MySpace.*/ }
+          { /*Ghostwrote*/ }
+          { /*<br/>*/ }
+          { /*<br/>*/ }
+          { /*<div>The idea was to take Scott Downey's 20 years of experience and turn it into an ebook that he could use as part of his corporate trainings.<span style={{position: 'relative', left: '0.25rem'}}><FontAwesomeIcon icon="info-circle" /></span></div>*/ }
+          { /*</p>*/ }
+          { /*</Element>*/ }
         </div>
-
-        { /*<Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>*/ }
-        { /*<div className="images">*/ }
-        { /*<div className="ebook" />*/ }
-        { /*</div>*/ }
-        { /*<p className={`description`} ref={this.scrumRef}>*/ }
-        { /*<strong>Tactical, Practical Scrum</strong> is a 50-page handbook that I ghostwrote for an executive Agile coaching consultancy started by Scott Downey, whose clients include 3M, Toyota, Grindr, Napster and MySpace.*/ }
-        { /*Ghostwrote*/ }
-        { /*<br/>*/ }
-        { /*<br/>*/ }
-        { /*<div>The idea was to take Scott Downey's 20 years of experience and turn it into an ebook that he could use as part of his corporate trainings.<span style={{position: 'relative', left: '0.25rem'}}><FontAwesomeIcon icon="info-circle" /></span></div>*/ }
-        { /*</p>*/ }
-        { /*</Element>*/ }
       </div>
+
     );
   }
 }

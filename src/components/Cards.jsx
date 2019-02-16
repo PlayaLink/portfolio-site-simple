@@ -236,7 +236,7 @@ class Layout extends React.Component {
   render () {
     return (
       <div>
-        <div style={{marginTop: '3.5rem'}} className="section-title">Journalism</div>
+        <div className="section-title journalism">Journalism</div>
         <LayoutWrapper>
           <GridContainer>
             <GridRow>
