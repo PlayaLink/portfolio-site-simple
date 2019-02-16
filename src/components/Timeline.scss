@@ -27,6 +27,7 @@
     }
 
     .arrow-container {
+      cursor: pointer;
       animation: dropDown 1.5s infinite ease;
       .expand-arrow {
         transition: transform 0.35s 0.35s ease;
