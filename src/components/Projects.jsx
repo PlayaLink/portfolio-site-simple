@@ -1,9 +1,35 @@
 import React from 'react';
 import './Projects.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Element } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
+const ProjectCard = (props) => (
+  <div className="project-card">
+    <div className="title">
+      { props.title }
+    </div>
+    <div className="subtitle">
+      { props.subtitle }
+      <hr className="divider"></hr>
+    </div>
+    <div className="description">
+      { props.description }
+    </div>
+    <div style={ { marginTop: '1rem' } }>
+      <a
+        href={ props.link }
+        target="_blank"
+        className="button pink">
+        <span>{props.cta} </span><span
+        style={ {
+          position: 'relative',
+          marginRight: '10px',
+          marginLeft: '5px'
+        } }><FontAwesomeIcon icon="arrow-right" /></span>
+      </a>
+    </div>
+  </div>
+);
 
 class Projects extends React.Component {
   constructor (props) {
@@ -13,60 +39,63 @@ class Projects extends React.Component {
   }
 
   render () {
-    const {pulseScrum, pulseIep} = this.props;
+    const { pulseScrum, pulseIep } = this.props;
     return (
       <div className="projects">
-        <div className="section-title">Recent Projects</div>
-        <Element name="iep" className={`iep-goal-tracker ${pulseIep ? 'pulse' : ''}`}>
+        {/*<div className="section-title">Recent Projects</div>*/}
+        <Element name="iep" className={ `iep-goal-tracker ${pulseIep ? 'pulse' : ''}` }>
           <div className="images">
             <div className="phone evaluations" />
             <div className="phone login" />
             <div className="phone students" />
           </div>
-            <p className={`description`} ref={this.iepRef}>
-              <strong>IEP Goal Tracker</strong> is a web app that helps teachers of students with
-              special needs by digitizing the paper evaluation forms used for tracking progress on state-enforced Individualized Education Plans (IEPs).
-            </p>
-          <a
-            href="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
-            target="_blank"
-            className="button">Learn More</a>
+          <ProjectCard
+            title={ [ <div>IEP Goal Tracker</div> ] }
+            subtitle="Streamlining data collection in the classroom"
+            link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
+            cta="Case Study"
+            description={ [
+              'A web app that helps teachers of students with special needs by digitizing the paper evaluation forms used for tracking progress on state-enforced Individualized Education Plans, or IEPs.' ] }
+          />
         </Element>
 
         <div className="street-art-talks">
+          <ProjectCard
+            title={ [ <div>Street Art Talks</div> ] }
+            subtitle="Text-based audio tour of street art in DTLA"
+            link="http://www.streetarttalks.com"
+            cta="Visit Site"
+            description={ [
+              'Stencils tagged near prominent murals in DTLA\'s arts district instruct passersby to text a code to a Twilio phone number. ',
+              'Automated text response includes a url with information about the mural and artist.'] }
+          />
           <div className="images">
-            <div className="phone influence" />
-            <div className="phone street-art-talks" />
-            <div className="phone peace" />
+            <div className="murals">
+              <div className="thumbnail influence"/>
+              <div className="thumbnail elephants"/>
+              <div className="thumbnail bloom"/>
+            </div>
+            <div className="street-art-talks-phone" />
+            <div className="murals">
+              <div className="thumbnail peace"/>
+              <div className="thumbnail faces"/>
+              <div className="thumbnail abuelita"/>
+            </div>
           </div>
-          <p className="description">
-            <strong>Street Art Talks</strong> is a web app that bridges the gap between analog
-            street art and digital information about that art work.
-            <br/>
-            <br/>
-            <div>Stencils tagged near prominent
-              murals in DTLA's arts district instruct passersby to text a code to a Twilio phone
-              number that will respond with a url that contains information about the mural and
-              artist.</div>
-          </p>
-          <a
-            href="http://www.streetarttalks.com/"
-            target="_blank"
-            className="button">Learn More</a>
         </div>
 
-        {/*<Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>*/}
-          {/*<div className="images">*/}
-            {/*<div className="ebook" />*/}
-          {/*</div>*/}
-          {/*<p className={`description`} ref={this.scrumRef}>*/}
-            {/*<strong>Tactical, Practical Scrum</strong> is a 50-page handbook that I ghostwrote for an executive Agile coaching consultancy started by Scott Downey, whose clients include 3M, Toyota, Grindr, Napster and MySpace.*/}
-            {/*Ghostwrote*/}
-            {/*<br/>*/}
-            {/*<br/>*/}
-            {/*<div>The idea was to take Scott Downey's 20 years of experience and turn it into an ebook that he could use as part of his corporate trainings.<span style={{position: 'relative', left: '0.25rem'}}><FontAwesomeIcon icon="info-circle" /></span></div>*/}
-          {/*</p>*/}
-        {/*</Element>*/}
+        { /*<Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>*/ }
+        { /*<div className="images">*/ }
+        { /*<div className="ebook" />*/ }
+        { /*</div>*/ }
+        { /*<p className={`description`} ref={this.scrumRef}>*/ }
+        { /*<strong>Tactical, Practical Scrum</strong> is a 50-page handbook that I ghostwrote for an executive Agile coaching consultancy started by Scott Downey, whose clients include 3M, Toyota, Grindr, Napster and MySpace.*/ }
+        { /*Ghostwrote*/ }
+        { /*<br/>*/ }
+        { /*<br/>*/ }
+        { /*<div>The idea was to take Scott Downey's 20 years of experience and turn it into an ebook that he could use as part of his corporate trainings.<span style={{position: 'relative', left: '0.25rem'}}><FontAwesomeIcon icon="info-circle" /></span></div>*/ }
+        { /*</p>*/ }
+        { /*</Element>*/ }
       </div>
     );
   }
