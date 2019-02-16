@@ -20,7 +20,7 @@ const ProjectCard = (props) => (
         href={ props.link }
         target="_blank"
         className="button pink">
-        <span>Case Study </span><span
+        <span>{props.cta} </span><span
         style={ {
           position: 'relative',
           marginRight: '10px',
@@ -53,6 +53,7 @@ class Projects extends React.Component {
             title={ [ <div>IEP Goal Tracker</div> ] }
             subtitle="Streamlining data collection in the classroom"
             link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
+            cta="Case Study"
             description={ [
               'A web app that helps teachers of students with special needs by digitizing the paper evaluation forms used for tracking progress on state-enforced Individualized Education Plans, or IEPs.' ] }
           />
@@ -62,10 +63,11 @@ class Projects extends React.Component {
           <ProjectCard
             title={ [ <div>Street Art Talks</div> ] }
             subtitle="Text-based audio tour of street art in DTLA"
-            link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
+            link="http://www.streetarttalks.com"
+            cta="Visit Site"
             description={ [
-              'Stencils tagged near prominent murals in DTLA\'s arts district instruct passersby to text a code to a Twilio phone number',
-              'Automated text replies include a url with information about the mural and artist.'] }
+              'Stencils tagged near prominent murals in DTLA\'s arts district instruct passersby to text a code to a Twilio phone number. ',
+              'Automated text response includes a url with information about the mural and artist.'] }
           />
           <div className="images">
             <div className="murals">
