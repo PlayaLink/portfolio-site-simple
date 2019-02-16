@@ -64,38 +64,64 @@
     }
   }
   .street-art-talks {
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    @media (max-width: 425px) {
+      flex-direction: column;
+      justify-content: center;
+    }
     .images {
       display: flex;
       flex-direction: row;
-      .phone {
+      .street-art-talks-phone {
         width: 14rem;
         height: 25rem;
         margin: 1rem auto;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        background-image: url(../img/street_art_talks.png);
+        margin: 0 1rem;
+        @media (max-width: 425px) {
+          margin: 0 0.35rem;
+        }
+      }
+      .murals {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .thumbnail {
+          width: 8rem;
+          height: 6rem;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          &.influence {
+            background-image: url(../img/fairey_legislative_influence_for_sale.jpg);
+          }
+          &.peace {
+            background-image: url(../img/eaton_peace_by_piece.jpg);
+          }
+          &.elephants {
+            background-image: url(../img/martin_ivory.jpg);
+          }
+          &.faces {
+            background-image: url(../img/starfighter_fanakapan.jpg);
+          }
+          &.bloom {
+            background-image: url(../img/hueman_bloom.jpg);
+          }
+          &.abuelita {
+            background-image: url(../img/el_mac_la_abuelita.jpg);
+          }
+        }
         @media (max-width: 425px) {
           width: 7rem;
           height: 14rem;
           margin: 0 auto;
-        }
-        &.influence {
-          background-image: url(../img/influence.png);
-
-        }
-        &.street-art-talks {
-          background-image: url(../img/street_art_talks.png);
-          margin: 0 1rem;
-          @media (max-width: 425px) {
-            margin: 0 0.35rem;
-          }
-        }
-        &.peace {
-          background-image: url(../img/peace.png);
         }
       }
     }

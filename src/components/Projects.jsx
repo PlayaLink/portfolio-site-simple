@@ -59,11 +59,6 @@ class Projects extends React.Component {
         </Element>
 
         <div className="street-art-talks">
-          <div className="images">
-            <div className="phone influence" />
-            <div className="phone street-art-talks" />
-            <div className="phone peace" />
-          </div>
           <ProjectCard
             title={ [ <div>Street Art Talks</div> ] }
             subtitle="Text-based audio tour of street art in DTLA"
@@ -72,6 +67,19 @@ class Projects extends React.Component {
               'Stencils tagged near prominent murals in DTLA\'s arts district instruct passersby to text a code to a Twilio phone number',
               'Automated text replies include a url with information about the mural and artist.'] }
           />
+          <div className="images">
+            <div className="murals">
+              <div className="thumbnail influence"/>
+              <div className="thumbnail elephants"/>
+              <div className="thumbnail bloom"/>
+            </div>
+            <div className="street-art-talks-phone" />
+            <div className="murals">
+              <div className="thumbnail peace"/>
+              <div className="thumbnail faces"/>
+              <div className="thumbnail abuelita"/>
+            </div>
+          </div>
         </div>
 
         { /*<Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>*/ }
