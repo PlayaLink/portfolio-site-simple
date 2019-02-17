@@ -16,6 +16,23 @@
     margin-bottom: 1rem;
   }
 }
+@media (max-width: 425px) {
+  .section-title {
+
+    &.timeline {
+      margin-top: 7rem;
+      margin-bottom: -2rem;
+    }
+    &.projects {
+      margin-top: 3rem;
+      margin-bottom: -1rem;
+    }
+    &.journalism {
+      margin-top: 4rem;
+      margin-bottom: -1rem;
+    }
+  }
+}
 
 .button {
   border: 1px solid $gray;
