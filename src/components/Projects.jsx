@@ -71,6 +71,7 @@ class Projects extends React.Component {
               cta="Visit Site"
               description={ [
                 'Stencils tagged near prominent murals in DTLA\'s arts district instruct passersby to text a code to a Twilio phone number. ',
+                <br/>,
                 'Automated text response includes a url with information about the mural and artist.'] }
             />
             <div className="images">
@@ -86,6 +87,21 @@ class Projects extends React.Component {
                 <div className="thumbnail abuelita"/>
               </div>
             </div>
+          </div>
+          <div className="popin-live">
+            <div className="images">
+              <div className="projection-screen" />
+            </div>
+            <ProjectCard
+              title={ [ <div>POPin Live</div> ] }
+              subtitle="Adding live-polling to POPin's suite of employee engagement tools"
+              link="www.popinnow.com"
+              cta="Visit Site"
+              description={ [
+                'Employee engagement survey tool POPin wanted a live-polling feature to meet customer demand and match competition. ',
+                <br/>,
+                'I surveyed the competitive landscape, conducted user interviews, and managed the design and development of the live tool.'] }
+            />
           </div>
 
           { /*<Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>*/ }
