@@ -51,7 +51,7 @@ class Projects extends React.Component {
               <div className="phone students" />
             </div>
             <ProjectCard
-              title={ [ <div>IEP Goal Tracker</div> ] }
+              title="IEP Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
               link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
               cta="Case Study"
@@ -65,7 +65,7 @@ class Projects extends React.Component {
 
           <div className="street-art-talks">
             <ProjectCard
-              title={ [ <div>Street Art Talks</div> ] }
+              title="Street Art Talks"
               subtitle="Text-based audio tour of street art in DTLA"
               link="http://www.streetarttalks.com"
               cta="Visit Site"
@@ -93,14 +93,14 @@ class Projects extends React.Component {
               <div className="projection-screen" />
             </div>
             <ProjectCard
-              title={ [ <div>POPin Live</div> ] }
+              title="POPin Live"
               subtitle="Adding live-polling to POPin's suite of employee engagement tools"
               link="www.popinnow.com"
               cta="Visit Site"
               description={ [
-                'Employee engagement survey tool POPin wanted a live-polling feature to meet customer demand and match competition. ',
+                'Employee engagement survey tool POPin wanted a live-polling functionality to meet customer demand and feature match the competition. ',
                 <br/>,
-                'I surveyed the competitive landscape, conducted user interviews, and managed the design and development of the live tool.'] }
+                'I surveyed the competitive landscape, conducted user interviews, scoped the project and managed the design and development of the live tool.'] }
             />
           </div>
 
