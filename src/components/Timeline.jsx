@@ -56,7 +56,7 @@ class TimelineCard extends React.Component {
             className="arrow-container"
             style={ { position: 'relative' } }><FontAwesomeIcon
             className={ `expand-arrow ${this.state.open ? 'rotate' : ''}` }
-            icon="chevron-down" /></span></a></div>
+            icon="chevron-down" size="2x" /></span></a></div>
       </div>
     );
   }
@@ -228,7 +228,7 @@ class Timeline extends React.Component {
           { /*Design Research*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date=""
+            date="2 years"
             iconStyle={ { background: '#aaaaaa', color: '#fff' } }
           >
             <TimelineCard

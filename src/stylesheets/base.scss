@@ -1,6 +1,10 @@
 @import 'colors';
 @import 'reset';
 
+body {
+  background-color: $off-white;
+}
+
 .section-title {
   text-align: center;
   font-size: 2rem;
