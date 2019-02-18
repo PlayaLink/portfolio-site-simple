@@ -15,19 +15,21 @@ const ProjectCard = (props) => (
     <div className="description">
       { props.description }
     </div>
-    <div style={ { marginTop: '1rem' } }>
-      <a
-        href={ props.link }
-        target="_blank"
-        className="button pink">
-        <span>{props.cta} </span><span
-        style={ {
-          position: 'relative',
-          marginRight: '10px',
-          marginLeft: '5px'
-        } }><FontAwesomeIcon icon="arrow-right" /></span>
-      </a>
-    </div>
+    { (props.cta && props.link) && (
+      <div style={ { marginTop: '1rem' } }>
+        <a
+          href={ props.link }
+          target="_blank"
+          className="button pink">
+          <span>{props.cta} </span><span
+          style={ {
+            position: 'relative',
+            marginRight: '10px',
+            marginLeft: '5px'
+          } }><FontAwesomeIcon icon="arrow-right" /></span>
+        </a>
+      </div>
+    ) }
   </div>
 );
 
@@ -94,13 +96,11 @@ class Projects extends React.Component {
             </div>
             <ProjectCard
               title="POPin Live"
-              subtitle="Adding live-polling to POPin's suite of employee engagement tools"
-              link="www.popinnow.com"
-              cta="Visit Site"
+              subtitle="Adding live-polling to POPin's suite of survey tools"
               description={ [
-                'Employee engagement survey tool POPin wanted a live-polling functionality to meet customer demand and feature match the competition. ',
-                <br/>,
-                'I surveyed the competitive landscape, conducted user interviews, scoped the project and managed the design and development of the live tool.'] }
+                'POPin is an Irvine-based startup that makes employee engagement software for large enterprises.',
+                <p>The company wanted to add live-polling functionality to meet customer demand and feature match the competition.</p>,
+                'I surveyed the competitive landscape, conducted user interviews, scoped the project and managed the design and development of the new feature, called POPin Live.'] }
             />
           </div>
 
