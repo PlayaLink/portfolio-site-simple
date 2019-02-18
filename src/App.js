@@ -3,6 +3,7 @@ import './App.scss';
 import Timeline from './components/Timeline';
 import Home from './components/Home';
 import PieChart from './components/PieChart';
+import PopinLive from './components/PopinLive';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 //Font Awesome
@@ -27,8 +28,8 @@ class App extends Component {
               component={Home}/>
             <Route
               exact
-              path={process.env.PUBLIC_URL + '/timeline'}
-              component={Timeline} />
+              path={process.env.PUBLIC_URL + '/popin-live'}
+              component={PopinLive} />
             <Route
               exact
               path={process.env.PUBLIC_URL + '/pie-chart'}
