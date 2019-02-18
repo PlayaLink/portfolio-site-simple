@@ -43,7 +43,7 @@
 
 .vertical-timeline::before {
   top: 37px;
-  height:89%;
+  height:92%;
   background-color: lighten($red, 20%);
 }
 
@@ -91,6 +91,9 @@
     }
   }
 
+  .vertical-timeline::before {
+    height:89%;
+  }
 
   .vertical-timeline-element-content {
     margin-left: 48px !important;
@@ -113,6 +116,7 @@
 }
 
 @media (min-width: 1170px) {
+
   .vertical-timeline-element-content {
     width: 46.2%!important;
     &.pulse {
