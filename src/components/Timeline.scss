@@ -4,6 +4,7 @@
   border-radius: 0.5rem;
   width: 100%;
   .timeline-card {
+    margin-bottom: 1rem;
     .full-description {
       max-height: 0;
       transition: max-height 1s ease-in-out;
@@ -29,10 +30,32 @@
     .arrow-container {
       cursor: pointer;
       animation: dropDown 1.5s infinite ease;
+      color: lighten($red, 20%);
       .expand-arrow {
         transition: transform 0.35s 0.35s ease;
         &.rotate {
           transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .timeline {
+    .timeline-card {
+      margin-bottom: -1rem;
+      .full-description {
+        &.open {
+        }
+        li {
+        }
+      }
+
+      .arrow-container {
+        .expand-arrow {
+          &.rotate {
+          }
         }
       }
     }
@@ -79,10 +102,18 @@
     width: 45%!important;
   }
 }
-@media (min-width: 400px) {
+@media (min-width: 425px) {
   .vertical-timeline-element-content {
     &::before {
       border-right-color: lighten($red, 20%);
+    }
+  }
+}
+@media (max-width: 425px) {
+  .vertical-timeline-element-content {
+    .vertical-timeline-element-date  {
+      margin-top: 1rem;
+      margin-bottom: -1rem;
     }
   }
 }
@@ -90,6 +121,7 @@
   &::before {
     border-left-color: lighten($red, 20%) !important  ;
   }
+
 }
 
 .vertical-timeline-element-content:nth-of-type(even) {
