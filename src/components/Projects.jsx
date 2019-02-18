@@ -15,19 +15,21 @@ const ProjectCard = (props) => (
     <div className="description">
       { props.description }
     </div>
-    <div style={ { marginTop: '1rem' } }>
-      <a
-        href={ props.link }
-        target="_blank"
-        className="button pink">
-        <span>{props.cta} </span><span
-        style={ {
-          position: 'relative',
-          marginRight: '10px',
-          marginLeft: '5px'
-        } }><FontAwesomeIcon icon="arrow-right" /></span>
-      </a>
-    </div>
+    { (props.cta && props.link) && (
+      <div style={ { marginTop: '1rem' } }>
+        <a
+          href={ props.link }
+          target="_blank"
+          className="button pink">
+          <span>{props.cta} </span><span
+          style={ {
+            position: 'relative',
+            marginRight: '10px',
+            marginLeft: '5px'
+          } }><FontAwesomeIcon icon="arrow-right" /></span>
+        </a>
+      </div>
+    ) }
   </div>
 );
 
@@ -51,7 +53,7 @@ class Projects extends React.Component {
               <div className="phone students" />
             </div>
             <ProjectCard
-              title={ [ <div>IEP Goal Tracker</div> ] }
+              title="IEP Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
               link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
               cta="Case Study"
@@ -65,12 +67,13 @@ class Projects extends React.Component {
 
           <div className="street-art-talks">
             <ProjectCard
-              title={ [ <div>Street Art Talks</div> ] }
+              title="Street Art Talks"
               subtitle="Text-based audio tour of street art in DTLA"
               link="http://www.streetarttalks.com"
               cta="Visit Site"
               description={ [
                 'Stencils tagged near prominent murals in DTLA\'s arts district instruct passersby to text a code to a Twilio phone number. ',
+                <br/>,
                 'Automated text response includes a url with information about the mural and artist.'] }
             />
             <div className="images">
@@ -86,6 +89,19 @@ class Projects extends React.Component {
                 <div className="thumbnail abuelita"/>
               </div>
             </div>
+          </div>
+          <div className="popin-live">
+            <div className="images">
+              <div className="projection-screen" />
+            </div>
+            <ProjectCard
+              title="POPin Live"
+              subtitle="Adding live-polling to POPin's suite of survey tools"
+              description={ [
+                'POPin is an Irvine-based startup that makes employee engagement software for large enterprises.',
+                <p>The company wanted to add live-polling functionality to meet customer demand and feature match the competition.</p>,
+                'I surveyed the competitive landscape, conducted user interviews, scoped the project and managed the design and development of the new feature, called POPin Live.'] }
+            />
           </div>
 
           { /*<Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>*/ }
