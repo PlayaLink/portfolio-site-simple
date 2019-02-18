@@ -121,9 +121,6 @@
     width: 46.2%!important;
     &.pulse {
     }
-    .vertical-timeline-element-date  {
-      left: 118% !important;
-    }
   }
 
   .vertical-timeline-element:nth-of-type(even) {
@@ -131,12 +128,18 @@
       &::before {
       }
     }
+    .vertical-timeline-element-date  {
+      right: 118% !important;
+    }
   }
 
   .vertical-timeline-element:nth-of-type(odd) {
     .vertical-timeline-element-content {
       &::before {
       }
+    }
+    .vertical-timeline-element-date  {
+      left: 118% !important;
     }
   }
 }
