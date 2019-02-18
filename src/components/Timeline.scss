@@ -98,25 +98,19 @@
   &.pulse {
     animation: pulseAnimate 1500ms 1500ms !important;
   }
+  &::before {
+    border-right-color: lighten($red, 20%);
+  }
   @media (min-width: 1170px) {
     width: 45%!important;
   }
 }
 @media (min-width: 425px) {
   .vertical-timeline-element-content {
-    &::before {
-      border-right-color: lighten($red, 20%);
-    }
+
   }
 }
-@media (max-width: 425px) {
-  .vertical-timeline-element-content {
-    .vertical-timeline-element-date  {
-      margin-top: 1rem;
-      margin-bottom: -1rem;
-    }
-  }
-}
+
 .vertical-timeline-element-content {
   &::before {
     border-left-color: lighten($red, 20%) !important  ;
@@ -127,5 +121,28 @@
 .vertical-timeline-element-content:nth-of-type(even) {
   &::before {
     border-right-color: lighten($red, 20%) !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .vertical-timeline-element-content {
+    &.pulse {
+    }
+    .vertical-timeline-element-date  {
+      margin-top: 1rem;
+      margin-bottom: -1rem;
+    }
+  }
+
+  .vertical-timeline-element-content {
+    &::before {
+      border-left-color: transparent !important  ;
+    }
+
+  }
+
+  .vertical-timeline-element-content:nth-of-type(even) {
+    &::before {
+    }
   }
 }
