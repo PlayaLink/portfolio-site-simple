@@ -4,6 +4,7 @@ import Timeline from './components/Timeline';
 import Home from './components/Home';
 import PieChart from './components/PieChart';
 import PopinLive from './components/PopinLive';
+import GoalTracker from './components/GoalTracker';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 //Font Awesome
@@ -19,7 +20,7 @@ library.add(faInfoCircle);
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="">
         <BrowserRouter>
           <div>
             <Route
@@ -30,6 +31,10 @@ class App extends Component {
               exact
               path={process.env.PUBLIC_URL + '/popin-live'}
               component={PopinLive} />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + '/iep-goal-tracker'}
+              component={GoalTracker} />
             <Route
               exact
               path={process.env.PUBLIC_URL + '/pie-chart'}

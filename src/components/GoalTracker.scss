@@ -1,0 +1,62 @@
+@import '../stylesheets/base';
+
+.goal-tracker {
+  .header {
+    margin-left: 9rem;
+    margin-right: 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      max-width: 25rem;
+      text-align: left;
+      padding: 1rem;
+      .title {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2rem;
+        color: $blue;
+      }
+      .subtitle {
+        margin-top: 0.5rem;
+        color: $gray;
+        width: fit-content;
+      }
+      .description {
+
+      }
+    }
+    .images {
+      display: flex;
+      flex-direction: row;
+      .phone {
+        width: 15rem;
+        height: 25rem;
+        margin: 1rem auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        &.evaluations {
+          background-image: url(../img/evaluations_left.png);
+        }
+        &.login {
+          background-image: url(../img/login_center.png);
+        }
+        &.students {
+          background-image: url(../img/my_students_right.png);
+        }
+      }
+    }
+  }
+  .problem {
+    height: 100vh;
+    width: 100vw;
+    background-color: $red;
+  }
+}

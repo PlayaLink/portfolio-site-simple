@@ -2,25 +2,6 @@
 
 .projects {
   width: 100%;
-  .project-card {
-    max-width: 25rem;
-    text-align: left;
-    padding: 1rem;
-    .title {
-      font-size: 2rem;
-      font-weight: 600;
-      line-height: 2rem;
-      color: $blue;
-    }
-    .subtitle {
-      margin-top: 0.5rem;
-      color: $gray;
-      width: fit-content;
-    }
-    .description {
-
-    }
-  }
 
   .iep-goal-tracker {
     margin-top: 3rem;
