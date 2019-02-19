@@ -12,6 +12,14 @@
     .title {
       font-size: 3rem;
       font-family: Lato;
+      .breakpoint {
+        display: none;
+      }
+      @media (max-width: 425px) {
+        .breakpoint {
+          display: inherit;
+        }
+      }
     }
     .icon-list {
       margin-top: 2rem;
