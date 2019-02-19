@@ -34,3 +34,21 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .description-slider {
+
+    .content {
+      background-size: 90%;
+      .description {
+
+      }
+    }
+    .slider {
+      max-width: 80%;
+      .labels {
+
+      }
+    }
+  }
+}
