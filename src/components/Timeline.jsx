@@ -93,7 +93,7 @@ class Timeline extends React.Component {
               title="French and Spanish"
               summary="All I cared about in college was language."
               details={ [
-                'UC Berkeley, French and Spanish literature',
+                'Studied French and Spanish literature',
                 'Studied abroad in Spain',
                 'Had a lot of pretentious conversations and protested a lot of things I probably didn\'t fully understand'
               ] }
@@ -112,7 +112,7 @@ class Timeline extends React.Component {
               summary="Studied philosophy. Taught English. Travelled with abandon."
               bullet={ true }
               details={ [
-                'Earned a Master\'s of Philosophy from the La Sorbonne (all coursework in French)',
+                'Read about German philosophers in French at a school that is older than my country',
                 'Coached executives at LG, SAP, and Amgen',
                 'Couch-surfed and hitch-hiked across most of Europe'
               ] }
@@ -128,11 +128,12 @@ class Timeline extends React.Component {
               <TimelineCard
                 title="Journalism School in Barcelona"
                 pulse={ pulseJournalism }
-                summary="I wanted to perfect my Spanish before moving back to the Southern California to write about border and immigration issues."
+                summary="Higher education is cheap in Europe. The cities are quaint. The coffee is delicious"
                 bullet={ true }
                 details={ [
+                  "Wanted to perfect my Spanish before moving back to the Southern California to write about border and immigration issues.",
                   'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona.',
-                  'Reported on Catalan regional elections and the social effects of the euro crisis'
+                  'Rode my bike across Northern Spain, fueled by red wine and jamón serrano.'
                 ] }
               />
             </VerticalTimelineElement>
@@ -150,9 +151,9 @@ class Timeline extends React.Component {
               summary="Learned how to ask questions, find information, and distill complex topics by writing hundreds of news stories and interviewing thousands of people"
               bullet={ true }
               details={ [
-                'Covered aerospace, technology and entrepreneurship for the Los Angeles Newspaper Group',
-                'Wrote about education and city government for the Orange County Register',
-                'Covered the U.S.-Mexico for the Union-Tribune of San Diego',
+                'Wrote about aerospace and tech',
+                "Sat in Elon Musk's space ship",
+                'Translated rocket science into words a 12-year-old could understand',
               ] }
             />
           </VerticalTimelineElement>
@@ -167,11 +168,11 @@ class Timeline extends React.Component {
               <TimelineCard
                 title="Product marketing"
                 pulse={pulseMarketing}
-                summary="Disillusioned by the sorry state of journalism, and inspired by the tech entrepreneurs I was writing about, I parlayed my writing and communications skills into a product marketing job at a tech startup in Venice."
+                summary="Overworked, underpaid, and inspired by the entrepreneurs I was writing about, I jumped the sinking ship of journalism for a job in tech."
                 bullet={ true }
                 details={ [
-                  'Redesigned marketing site',
-                  'Created inbound and outbound lead generation funnels using Hubspot/Salesforce/Mailgun ',
+                  'Learned a lot about the tech industry',
+                  'Learned a lot about the logistics industry and the history of the shipping container',
                   'Realized that I am more interested in making/writing/coding things than selling/marketing/consuming things'
                 ] }
               />
@@ -190,9 +191,9 @@ class Timeline extends React.Component {
               summary="Ghostwrote a 50-page handbook for successful Scrum adoption"
               bullet={ true }
               details={ [
-                <div>The ebook title was <span className="underline">Tactical, Practical Scrum: A Product Manager's Guide to Successful Scrum Implementation</span></div>,
                 'Recorded 60 hours of interviews with executive Agile coach Scott Downey',
-                'Available on request'
+                <div>The title of the book was <span className="underline">Tactical, Practical Scrum: A Product Manager's Guide to Successful Scrum Implementation</span></div>,
+                "When people ask if I know Scrum, I say 'Scrum? I wrote the book on Scrum!'. Not exactly true, of course, but it's still fun to say."
               ] }
             />
           </VerticalTimelineElement>
@@ -205,12 +206,12 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Learning to code"
-              summary="If I was going to stay in tech, I wanted to have a deeper understanding of how things work under the hood. And since code is just a language, I realized computer programming might be something I could wrap my head around better than most non-technical folks."
+              summary="If I was going to stay in tech, I wanted to have a deeper understanding of how things work under the hood."
               bullet={ true }
               details={ [
-                'Enrolled in a fullstack Javascript bootcamp in Utah',
-                'After my cohort finished, I continued on as a tutor while continuing to study and work on personal projects',
-                'Took on several freelance gigs, many of which I found through the bootcamp\'s network'
+                'Enrolled in a fullstack Javascript bootcamp',
+                'Realized computer programming is just another language, like French or Spanish, with less women in the room.',
+                'Felt like a baddass-Jedi-tech-wizard after I built my first app.'
               ] }
             />
           </VerticalTimelineElement>
@@ -227,8 +228,8 @@ class Timeline extends React.Component {
               bullet={ true }
               details={ [
                 'Worked on very product-focused engineering team, building out and maintaining the web version of POPin, an employee engagement survey application',
-                'Interviewed 30+ users to develop distinct user personas',
-                'Implemented and managed tracking analytics via Mixpanel, Google Analytics and Hubspot'
+                'Leveraged my interview skills by talking with users and developing user personas',
+                'Continued to feel like a baddass-Jedi-tech-wizard.'
               ] }
             />
           </VerticalTimelineElement>
@@ -244,19 +245,9 @@ class Timeline extends React.Component {
               summary="The cleanest code is the code I never wrote – because I asked the right questions first."
               bullet={ true }
               details={ [
-                <p><strong>POPin</strong> - Conducted market and user research before product
-                  managing the development of a live polling feature for POPin</p>,
-                <p><strong><Link
-                  activeClass="active"
-                  to="iep"
-                  spy={ true }
-                  smooth={ true }
-                  duration={ 500 }>IEP Goal Tracker</Link></strong> - Interviewed special education
-                  instructors and administrators before designing and building a tool to help track
-                  students' progress on their Individualized Education Plans</p>,
-                <p><strong>Rikra Loans</strong> - Developed interview materials and managed a team
-                  of intern interviewers to assess user needs for a fintech startup focused on
-                  micro-loans for undocumented workers in Utah</p>
+                "Got tired of building things users didn't want/need/use",
+                "Realized technical prowess is only as valuable as the idea behind it",
+                "Discovered design researchers are the journalists of the tech industry"
               ] }
             />
           </VerticalTimelineElement>
