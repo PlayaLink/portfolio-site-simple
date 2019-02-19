@@ -51,20 +51,12 @@ class TimelineCard extends React.Component {
       this.pulseCard();
     }
     return (
-      <div onMouseEnter={ this.openCard } onMouseLeave={ this.closeCard } ref={this.ref} className={ `timeline-card ${this.state.open ? 'open' : ''} ${pulse ? 'pulse' : ''}` }>
+      <div ref={this.ref} className={ `timeline-card` }>
         <h3 className="vertical-timeline-element-title">{ title }</h3>
         <p>
           { summary }
         </p>
-        { bullet ? this.renderBulletedList(details) : this.renderParagraphs(details)
-
-        }
-        <div style={ { textAlign: 'center' } }>
-          <a onClick={ this.toggleCard }><span
-            className="arrow-container"
-            style={ { position: 'relative' } }><FontAwesomeIcon
-            className={ `expand-arrow ${this.state.open ? 'rotate' : ''}` }
-            icon="chevron-down" size="2x" /></span></a></div>
+        { bullet ? this.renderBulletedList(details) : this.renderParagraphs(details) }
       </div>
     );
   }
