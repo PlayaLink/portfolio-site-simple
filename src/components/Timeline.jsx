@@ -85,7 +85,6 @@ class Timeline extends React.Component {
           { /*COLLEGE*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="4 years"
             iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
           >
             <TimelineCard
@@ -104,7 +103,6 @@ class Timeline extends React.Component {
           { /*PARIS*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="3.5 years"
             iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
           >
             <TimelineCard
@@ -122,7 +120,6 @@ class Timeline extends React.Component {
           <Element name="journalism">
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="1 year"
               iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
             >
               <TimelineCard
@@ -142,7 +139,6 @@ class Timeline extends React.Component {
           { /*Journalism*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="4 years"
             iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
           >
             <TimelineCard
@@ -162,7 +158,6 @@ class Timeline extends React.Component {
           <Element name="marketing">
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              date="1 year"
               iconStyle={ { background: '#00ff9f', color: '#fff' } }
             >
               <TimelineCard
@@ -182,7 +177,6 @@ class Timeline extends React.Component {
           { /*Scrum*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="1 year"
             iconStyle={ { background: '#fbf542', color: '#fff' } }
           >
             <TimelineCard
@@ -201,7 +195,6 @@ class Timeline extends React.Component {
           { /*Learning to Speak Javascript*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="1 year"
             iconStyle={ { background: '#aaaaaa', color: '#fff' } }
           >
             <TimelineCard
@@ -219,7 +212,6 @@ class Timeline extends React.Component {
           { /*Product & Engineering*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2 years"
             iconStyle={ { background: '#aaaaaa', color: '#fff' } }
           >
             <TimelineCard
@@ -237,7 +229,6 @@ class Timeline extends React.Component {
           { /*Design Research*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2 years"
             iconStyle={ { background: '#aaaaaa', color: '#fff' } }
           >
             <TimelineCard

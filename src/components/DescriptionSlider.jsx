@@ -47,7 +47,7 @@ const desc4 = () => (
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
-    <p>I've fallen in love in three different languages.</p>
+    <p>I've fallen in love in 3 different languages.</p>
   </div>
 );
 
@@ -56,7 +56,7 @@ const desc5 = () => (
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
-    <p>I've fallen in love in three different languages.</p>
+    <p>I've fallen in love in 3 different languages.</p>
     <p>(I also speak JavaScript)</p>
   </div>
 );
@@ -65,7 +65,7 @@ const desc6 = () => (
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
-    <p>I've fallen in love in three different languages.</p>
+    <p>I've fallen in love in 3 different languages.</p>
     <p>(I also speak JavaScript)</p>
     <p>I'm curious and passionate.</p>
   </div>
@@ -75,7 +75,7 @@ const desc7 = () => (
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
-    <p>I've fallen in love in three different languages.</p>
+    <p>I've fallen in love in 3 different languages.</p>
     <p>(I also speak JavaScript)</p>
     <p>I'm curious and passionate.</p>
     <p>And ambitious about new experiences.</p>
@@ -86,7 +86,7 @@ const desc8 = () => (
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
-    <p>I've fallen in love in three different languages.</p>
+    <p>I've fallen in love in 3 different languages.</p>
     <p>(I also speak JavaScript)</p>
     <p>I'm curious and passionate.</p>
     <p>And ambitious about new experiences.</p>
