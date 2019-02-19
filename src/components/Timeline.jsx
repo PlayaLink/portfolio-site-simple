@@ -14,8 +14,16 @@ class TimelineCard extends React.Component {
     this.ref = React.createRef();
   }
 
-  expandCard = () => {
+  toggleCard = () => {
     this.setState({ open: !this.state.open });
+  };
+
+  openCard = () => {
+    this.setState({ open: true });
+  };
+
+  closeCard = () => {
+    this.setState({ open: false });
   };
 
   renderBulletedList = (details) => {
@@ -43,7 +51,7 @@ class TimelineCard extends React.Component {
       this.pulseCard();
     }
     return (
-      <div ref={this.ref} className={ `timeline-card ${this.state.open ? 'open' : ''} ${pulse ? 'pulse' : ''}` }>
+      <div onMouseEnter={ this.openCard } onMouseLeave={ this.closeCard } ref={this.ref} className={ `timeline-card ${this.state.open ? 'open' : ''} ${pulse ? 'pulse' : ''}` }>
         <h3 className="vertical-timeline-element-title">{ title }</h3>
         <p>
           { summary }
@@ -52,7 +60,7 @@ class TimelineCard extends React.Component {
 
         }
         <div style={ { textAlign: 'center' } }>
-          <a onClick={ this.expandCard }><span
+          <a onClick={ this.toggleCard }><span
             className="arrow-container"
             style={ { position: 'relative' } }><FontAwesomeIcon
             className={ `expand-arrow ${this.state.open ? 'rotate' : ''}` }

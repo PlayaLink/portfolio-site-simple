@@ -7,7 +7,7 @@
     margin-bottom: 1rem;
     .full-description {
       max-height: 0;
-      transition: max-height 1s ease-in-out;
+      transition: max-height 500ms ease-in-out;
       overflow:hidden;
       margin-right: 0.25rem;
       margin-left: 0.25rem;
