@@ -101,6 +101,9 @@
       margin-top: 1rem;
       margin-bottom: -1rem;
     }
+    &.bounce-in {
+      animation: none !important;
+    }
   }
 
   .vertical-timeline-element:nth-of-type(odd) {
