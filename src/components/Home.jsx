@@ -10,7 +10,7 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 
 const Header = () => (
   <div className="header">
-    <div className="title">Jordan England-Nelson</div>
+    <div className="title">Jordan <br className="breakpoint"/>England-Nelson</div>
     <div className="icon-list">
       <a className="icon linkedin" href="https://www.linkedin.com/in/jordan-england-nelson-05283494/" target="_blank"></a>
       <a className="icon twitter" href="https://twitter.com/jordanenelson" target="_blank"></a>

@@ -6,16 +6,12 @@
   .timeline-card {
     margin-bottom: 1rem;
     .full-description {
-      max-height: 0;
-      transition: max-height 1s ease-in-out;
+      height: auto;
+      max-height: 600px;
+      transition: max-height 500ms ease-in-out;
       overflow:hidden;
       margin-right: 0.25rem;
       margin-left: 0.25rem;
-      &.open {
-        height: auto;
-        max-height: 600px;
-
-      }
       li {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
@@ -28,6 +24,7 @@
     }
 
     .arrow-container {
+      display: none;
       cursor: pointer;
       animation: dropDown 1.5s infinite ease;
       color: lighten($red, 20%);
@@ -43,7 +40,7 @@
 
 .vertical-timeline::before {
   top: 37px;
-  height:92%;
+  height:90%;
   background-color: lighten($red, 20%);
 }
 
@@ -83,6 +80,7 @@
       }
 
       .arrow-container {
+        display: inherit;
         .expand-arrow {
           &.rotate {
           }
@@ -102,6 +100,9 @@
     .vertical-timeline-element-date  {
       margin-top: 1rem;
       margin-bottom: -1rem;
+    }
+    &.bounce-in {
+      animation: none !important;
     }
   }
 

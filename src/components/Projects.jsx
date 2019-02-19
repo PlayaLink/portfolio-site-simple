@@ -44,7 +44,7 @@ class Projects extends React.Component {
     const { pulseScrum, pulseIep } = this.props;
     return (
       <div style={{maxWidth: '100%'}}>
-        <div className="section-title projects">Product</div>
+        <div className="section-title projects">Portfolio</div>
         <div className="projects">
           <Element name="iep" className={ `iep-goal-tracker ${pulseIep ? 'pulse' : ''}` }>
             <div className="images">
@@ -53,14 +53,14 @@ class Projects extends React.Component {
               <div className="phone students" />
             </div>
             <ProjectCard
-              title="IEP Goal Tracker"
+              title="Special Ed Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
               link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
               cta="Case Study"
               description={ [
-                'A web app that helps teachers of students with special needs.',
-                <p>Digitizes paper evaluation forms used for tracking progress on state-enforced Individualized Education Plans, or IEPs.</p>,
-                'Allows teachers to log evaluations in real-time with from their phone.'
+                "Teachers weren't tracking goals properly because paper spreadsheets are a hassle.",
+                <p>A tech-savvy principal wanted to change that.</p>,
+                'This mobile-friendly web app makes it easy to log evaluations and track progress over time.'
               ] }
             />
           </Element>
@@ -72,9 +72,13 @@ class Projects extends React.Component {
               link="http://www.streetarttalks.com"
               cta="Visit Site"
               description={ [
-                'Stencils tagged near prominent murals in DTLA\'s arts district instruct passersby to text a code to a Twilio phone number. ',
-                <br/>,
-                'Automated text response includes a url with information about the mural and artist.'] }
+                'Street art is more approachable than art in a museum.',
+                <p />,
+                "But wouldn't it be nice to know more about the art and the person who created it?",
+                <p />,
+                'Stencils tagged near prominent murals in DTLA\'s arts district will instruct passersby to text a code to a Twilio phone number. ',
+                <p />,
+                'An automated text response includes a url with information about the mural and artist.'] }
             />
             <div className="images">
               <div className="murals">

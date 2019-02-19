@@ -31,33 +31,66 @@ const desc1 = () => (
 const desc2 = () => (
   <div className="description">
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
-    <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
+    <p>I was raised Mormon.</p>
   </div>
 );
 const desc3 = () => (
   <div className="description">
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
-    <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
-    <p>4 years ago, I left journalism to do product marketing for a logistics tech startup.</p>
+    <p>I was raised Mormon.</p>
+    <p>Now I go to Burning Man.</p>
   </div>
 );
 
 const desc4 = () => (
   <div className="description">
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
-    <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
-    <p>4 years ago, I left journalism to do product marketing for a logistics tech startup.</p>
-    <p>A year later, I decided to learn how to code.</p>
+    <p>I was raised Mormon.</p>
+    <p>Now I go to Burning Man.</p>
+    <p>I've fallen in love in 3 different languages.</p>
   </div>
 );
 
 const desc5 = () => (
   <div className="description">
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
-    <p>I used to be a tech reporter for the Los Angeles Newspaper Group.</p>
-    <p>4 years ago, I left journalism to do product marketing for a logistics tech startup.</p>
-    <p>A year later, I decided to learn how to code.</p>
-    <p>The last 3 years have been a mix of engineering, product and UX design.</p>
+    <p>I was raised Mormon.</p>
+    <p>Now I go to Burning Man.</p>
+    <p>I've fallen in love in 3 different languages.</p>
+    <p>(I also speak JavaScript)</p>
+  </div>
+);
+const desc6 = () => (
+  <div className="description">
+    {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
+    <p>I was raised Mormon.</p>
+    <p>Now I go to Burning Man.</p>
+    <p>I've fallen in love in 3 different languages.</p>
+    <p>(I also speak JavaScript)</p>
+    <p>I'm curious and passionate.</p>
+  </div>
+);
+const desc7 = () => (
+  <div className="description">
+    {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
+    <p>I was raised Mormon.</p>
+    <p>Now I go to Burning Man.</p>
+    <p>I've fallen in love in 3 different languages.</p>
+    <p>(I also speak JavaScript)</p>
+    <p>I'm curious and passionate.</p>
+    <p>And ambitious about new experiences.</p>
+  </div>
+);
+const desc8 = () => (
+  <div className="description">
+    {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
+    <p>I was raised Mormon.</p>
+    <p>Now I go to Burning Man.</p>
+    <p>I've fallen in love in 3 different languages.</p>
+    <p>(I also speak JavaScript)</p>
+    <p>I'm curious and passionate.</p>
+    <p>And ambitious about new experiences.</p>
+    <p>I will make you laugh.</p>
   </div>
 );
 
@@ -89,6 +122,15 @@ class DescriptionSlider extends Component {
       case 5:
         description = desc5();
         break;
+      case 6:
+        description = desc6();
+        break;
+      case 7:
+        description = desc7();
+        break;
+      case 8:
+        description = desc8();
+        break;
       default:
         break;
     }
@@ -100,13 +142,13 @@ class DescriptionSlider extends Component {
     return (
       <div className="description-slider">
         <div className="description">
-          <div style={{textAlign: 'center'}}>I'm a <strong>product developer</strong> with broad startup experience in tech.</div>
+          <div style={{textAlign: 'center', paddingLeft: '1rem', paddingRight: '1rem'}}>I'm a <strong>product developer</strong> and <strong>storyteller</strong> with broad startup experience in tech.</div>
         </div>
         <div className="content">
           {this.getDescription()}
         </div>
         <div className="slider">
-          <Slider min={1} max={5} defaultValue={this.state.position} onChange={this.handleChange} handle={handle} />
+          <Slider min={1} max={8} defaultValue={this.state.position} onChange={this.handleChange} handle={handle} />
           <div className="labels">
             <span>Less</span>
             <span>More</span>

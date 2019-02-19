@@ -200,9 +200,10 @@ const CardPhoto = styled.span`
 `;
 
 const CardTitle = styled.h2`
-  font-size: ${remy(14)};
+  font-size: ${remy(16)};
    font-weight: 500;
-   text-decoration: underline;
+   text-decoration: none;
+   // text-transform: uppercase;
 `;
 
 const CardDescription = styled.span`
@@ -221,7 +222,7 @@ const Button = styled.a`
   justify-content: center;
   align-items: center;
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
   &:hover {
     cursor: pointer;
   }
@@ -229,8 +230,12 @@ const Button = styled.a`
 
 // Create layout component
 class Layout extends React.Component {
-  flipCard (event) {
+  toggleCard (event) {
     event.currentTarget.classList.toggle('flipped');
+  }
+
+  resetCard (event) {
+    event.currentTarget.classList.remove('flipped')
   }
 
   render () {
@@ -241,10 +246,10 @@ class Layout extends React.Component {
           <GridContainer>
             <GridRow>
               <GridColumn sm="6" lg="4">
-                <Card onClick={ this.flipCard.bind(this) }>
+                <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ burningman }></CardPhoto>
-                    <CardTitle>Drinking the Kool-Aid At Burning Man</CardTitle>
+                    <CardTitle className="card-title">Drinking the Kool-Aid At Burning Man</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
@@ -254,6 +259,7 @@ class Layout extends React.Component {
                       But is there something more in the “burner Kool-Aid” than mere psychedelics?
                     </CardDescription>
                     <Button
+                      onClick={this.resetCard.bind(this)}
                       href="https://www.dailybreeze.com/2014/09/05/burning-man-2014-reporter-survives-festival-returns-a-burner/"
                       target="_blank">
                       Read Story
@@ -263,10 +269,10 @@ class Layout extends React.Component {
               </GridColumn>
 
               <GridColumn sm="6" lg="4">
-                <Card onClick={ this.flipCard.bind(this) }>
+                <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ hotwheels }></CardPhoto>
-                    <CardTitle>Mistress Creative Turns Heads</CardTitle>
+                    <CardTitle className="card-title">Mistress Creative Turns Heads</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>If Don Draper worked in today’s world, he would have an account
@@ -274,6 +280,7 @@ class Layout extends React.Component {
                       that dominates the attention of young people — the world’s future
                       consumers.</CardDescription>
                     <Button
+                      onClick={this.resetCard.bind(this)}
                       href="http://www.insidesocal.com/technology/2015/04/02/how-ad-agency-mistress-creative-uses-social-media/"
                       target="_blank">
                       Read Story
@@ -283,10 +290,10 @@ class Layout extends React.Component {
               </GridColumn>
 
               <GridColumn sm="6" lg="4">
-                <Card onClick={ this.flipCard.bind(this) }>
+                <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ satellites }></CardPhoto>
-                    <CardTitle>A Promising Future for Tiny Satellites</CardTitle>
+                    <CardTitle className="card-title">A Promising Future for Tiny Satellites</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>Just as SpaceX has shaken up Southern California’s anemic
@@ -294,6 +301,7 @@ class Layout extends React.Component {
                       satellites to provide Earth-monitoring services at a fraction of the cost of
                       more established government contractors.</CardDescription>
                     <Button
+                      onClick={this.resetCard.bind(this)}
                       href="https://www.dailybreeze.com/2014/05/18/cubesat-miniature-satellites-poised-to-disrupt-aerospace-industry/"
                       target="_blank">
                       Read Story
@@ -303,10 +311,10 @@ class Layout extends React.Component {
               </GridColumn>
 
               <GridColumn sm="6" lg="4">
-                <Card onClick={ this.flipCard.bind(this) }>
+                <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ tijuana }></CardPhoto>
-                    <CardTitle><div style={{paddingRight: '0.5rem', paddingLeft: '0.5rem'}}>Tijuana Nightlife Booms After Drug Wars</div></CardTitle>
+                    <CardTitle className="card-title"><div style={{paddingRight: '0.5rem', paddingLeft: '0.5rem'}}>Tijuana Nightlife Booms After Drug Wars</div></CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>Lax liquor laws and seedy entertainment have drawn
@@ -314,6 +322,7 @@ class Layout extends React.Component {
                       spooked gringos, leaving space for a more local arts and nightlife scene.
                     </CardDescription>
                     <Button
+                      onClick={this.resetCard.bind(this)}
                       href="http://www.ocregister.com/articles/bar-598267-friend-dance.html"
                       target="_blank">
                       Read Story
@@ -323,10 +332,10 @@ class Layout extends React.Component {
               </GridColumn>
 
               <GridColumn sm="6" lg="4">
-                <Card onClick={ this.flipCard.bind(this) }>
+                <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ dragonv2 }></CardPhoto>
-                    <CardTitle>Musk Unveils Dragon V2 Spaceship</CardTitle>
+                    <CardTitle className="card-title">Musk Unveils Dragon V2 Spaceship</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>Providing a glimpse into what could be the future of U.S. manned
@@ -335,6 +344,7 @@ class Layout extends React.Component {
                       Station.
                     </CardDescription>
                     <Button
+                      onClick={this.resetCard.bind(this)}
                       href="http://www.dailybreeze.com/business/20140529/spacex-unveils-first-commercial-capsule-capable-of-manned-flight"
                       target="_blank">
                       Read Story
@@ -344,10 +354,10 @@ class Layout extends React.Component {
               </GridColumn>
 
               <GridColumn sm="6" lg="4">
-                <Card onClick={ this.flipCard.bind(this) }>
+                <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ fuelcell }></CardPhoto>
-                    <CardTitle>Is Fuel Cell Tech Just A Bunch of Hot Air?</CardTitle>
+                    <CardTitle className="card-title">Is Fuel Cell Tech Just A Bunch of Hot Air?</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
@@ -357,6 +367,7 @@ class Layout extends React.Component {
                       zero-emission vehicles on the road by 2025.
                     </CardDescription>
                     <Button
+                      onClick={this.resetCard.bind(this)}
                       href="http://www.dailybreeze.com/environment-and-nature/20140713/automakers-begin-to-embrace-hydrogen-fuel-cell-technology"
                       target="_blank">
                       Read Story
@@ -366,10 +377,10 @@ class Layout extends React.Component {
               </GridColumn>
 
               <GridColumn sm="6" lg="4">
-                <Card onClick={ this.flipCard.bind(this) }>
+                <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ teens }></CardPhoto>
-                    <CardTitle>The Lucrative World of Teen Incluence</CardTitle>
+                    <CardTitle className="card-title">The Lucrative World of Teen Incluence</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
@@ -378,6 +389,7 @@ class Layout extends React.Component {
                       surrounded her car and begged her daughter to take a picture with them.
                     </CardDescription>
                     <Button
+                      onClick={this.resetCard.bind(this)}
                       href="http://www.insidesocal.com/technology/2015/03/30/how-teens-are-making-thousands-per-month-on-social-media/"
                       target="_blank">
                       Read Story
@@ -387,10 +399,10 @@ class Layout extends React.Component {
               </GridColumn>
 
               <GridColumn sm="6" lg="4">
-                <Card onClick={ this.flipCard.bind(this) }>
+                <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ toys }></CardPhoto>
-                    <CardTitle>SoCal At Center of U.S. Toy Industry</CardTitle>
+                    <CardTitle className="card-title">SoCal At Center of U.S. Toy Industry</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
@@ -398,6 +410,7 @@ class Layout extends React.Component {
                       Southern California as the de facto center of the modern U.S. toy market.
                     </CardDescription>
                     <Button
+                      onClick={this.resetCard.bind(this)}
                       href="https://www.dailynews.com/2014/11/26/hollywood-helps-make-southern-california-center-of-toy-universe/"
                       target="_blank">
                       Read Story
@@ -407,10 +420,10 @@ class Layout extends React.Component {
               </GridColumn>
 
               <GridColumn sm="6" lg="4">
-                <Card onClick={ this.flipCard.bind(this) }>
+                <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ watercar }></CardPhoto>
-                    <CardTitle>Amphibious WaterCar Latest Tech Bro Toy</CardTitle>
+                    <CardTitle className="card-title">Amphibious WaterCar Latest Tech Bro Toy</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
@@ -422,6 +435,7 @@ class Layout extends React.Component {
                       world.
                     </CardDescription>
                     <Button
+                      onClick={this.resetCard.bind(this)}
                       href="http://www.ocregister.com/articles/march-597529-car-water.html"
                       target="_blank">
                       Read Story
