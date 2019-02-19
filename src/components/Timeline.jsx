@@ -120,7 +120,7 @@ class Timeline extends React.Component {
                 summary="Higher education is cheap in Europe. French is useless in America. Spanish is the second language in California."
                 bullet={ true }
                 details={ [
-                  "Wanted to perfect my Spanish before moving back to the Southern California to write about the border and immigration issues",
+                  "Wanted to perfect my Spanish before moving back to Southern California to write about the border and immigration issues",
                   'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona',
                   'Rode my bike across Northern Spain, fueled by red wine and jamón serrano'
                 ] }
