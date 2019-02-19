@@ -28,6 +28,7 @@
     }
 
     .arrow-container {
+      display: none;
       cursor: pointer;
       animation: dropDown 1.5s infinite ease;
       color: lighten($red, 20%);
@@ -83,6 +84,7 @@
       }
 
       .arrow-container {
+        display: inherit;
         .expand-arrow {
           &.rotate {
           }
