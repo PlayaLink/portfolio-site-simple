@@ -117,12 +117,12 @@ class Timeline extends React.Component {
               <TimelineCard
                 title="Journalism School in Barcelona"
                 pulse={ pulseJournalism }
-                summary="Higher education is cheap in Europe. The cities are quaint. The coffee is delicious"
+                summary="Higher education is cheap in Europe. French is useless in America. Spanish is the second language in California."
                 bullet={ true }
                 details={ [
-                  "Wanted to perfect my Spanish before moving back to the Southern California to write about border and immigration issues.",
-                  'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona.',
-                  'Rode my bike across Northern Spain, fueled by red wine and jamón serrano.'
+                  "Wanted to perfect my Spanish before moving back to the Southern California to write about the border and immigration issues",
+                  'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona',
+                  'Rode my bike across Northern Spain, fueled by red wine and jamón serrano'
                 ] }
               />
             </VerticalTimelineElement>
@@ -160,7 +160,7 @@ class Timeline extends React.Component {
                 details={ [
                   'Learned a lot about the tech industry',
                   'Learned a lot about the logistics industry and the history of the shipping container',
-                  'Realized that I am more interested in making/writing/coding things than selling/marketing/consuming things'
+                  <div>Realized that I am more interested in <strong>making/writing/coding</strong> things than <strong>selling/marketing/consuming</strong> things</div>
                 ] }
               />
             </VerticalTimelineElement>
@@ -179,7 +179,7 @@ class Timeline extends React.Component {
               details={ [
                 'Recorded 60 hours of interviews with executive Agile coach Scott Downey',
                 <div>The title of the book was <span className="underline">Tactical, Practical Scrum: A Product Manager's Guide to Successful Scrum Implementation</span></div>,
-                "When people ask if I know Scrum, I say 'Scrum? I wrote the book on Scrum!'. Not exactly true, of course, but it's still fun to say."
+                "When people ask if I know Scrum, I say 'Scrum? I wrote the book on Scrum!'. Not exactly true, of course, but it's still fun to say"
               ] }
             />
           </VerticalTimelineElement>
@@ -195,8 +195,8 @@ class Timeline extends React.Component {
               bullet={ true }
               details={ [
                 'Enrolled in a fullstack Javascript bootcamp',
-                'Realized computer programming is just another language, like French or Spanish, with less women in the room.',
-                'Felt like a baddass-Jedi-tech-wizard after I built my first app.'
+                'Realized computer programming is just another language, like French or Spanish, with less women in the room',
+                'Felt like a baddass-Jedi-tech-wizard after I built my first app'
               ] }
             />
           </VerticalTimelineElement>
@@ -213,7 +213,7 @@ class Timeline extends React.Component {
               details={ [
                 'Worked on very product-focused engineering team, building out and maintaining the web version of POPin, an employee engagement survey application',
                 'Leveraged my interview skills by talking with users and developing user personas',
-                'Continued to feel like a baddass-Jedi-tech-wizard.'
+                'Continued to feel like a baddass-Jedi-tech-wizard'
               ] }
             />
           </VerticalTimelineElement>
