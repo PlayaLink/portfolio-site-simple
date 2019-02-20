@@ -4,16 +4,16 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 .slick-slider {
-  .slick-arrow::before {
-    color: $white !important;
-    background-color: $white !important;
-    &.slick-prev {
-      left: 31px !important;
-    }
-    &.slick-next {
-
-    }
-  }
+//  .slick-arrow::before {
+//    color: $white !important;
+//    background-color: $white !important;
+//    &.slick-prev {
+//      left: 31px !important;
+//    }
+//    &.slick-next {
+//
+//    }
+//  }
   .slick-list {
     //height: 100vh;
     .slide-content {
