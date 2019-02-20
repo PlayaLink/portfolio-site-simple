@@ -31,7 +31,9 @@ class GoalTracker extends React.Component {
             </div>
           </div>
           <div className="problem">
-            <Carousel/>
+           <div className="content">
+             <Carousel/>
+           </div>
           </div>
         </div>
 
