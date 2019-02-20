@@ -2,22 +2,23 @@ import React from 'react';
 import Slider from 'react-slick';
 import './Carousel.scss';
 import ProjectCard from './ProjectCard';
+import Slide from './Slide';
 
-const Slide = (props) => (
-  <div className={ `slide-content ${props.slideName}` }>
-    <div className="content">
-      <div className="title">
-        { props.title }
-      </div>
-      <div className="subtitle">
-        { props.subtitle }
-      </div>
-      <div className="description">
-        {props.description}
-      </div>
-    </div>
-  </div>
-);
+// const Slide = (props) => (
+//   <div className={ `slide-content ${props.slideName}` }>
+//     <div className="content">
+//       <div className="title">
+//         { props.title }
+//       </div>
+//       <div className="subtitle">
+//         { props.subtitle }
+//       </div>
+//       <div className="description">
+//         {props.description}
+//       </div>
+//     </div>
+//   </div>
+// );
 
 class Carousel extends React.Component {
   constructor (props) {
@@ -35,24 +36,26 @@ class Carousel extends React.Component {
     return (
       <Slider { ...settings }>
         <Slide
-          slideName="problem"
-          title="Context"
+          title="Requirements Gathering"
           // subtitle="Teachers were not tracking goals consistently."
           description={ [
-            "Public schools in the U.S. are required by law to provide special education services to those who need them",
-            <p>When a need is identified, the school creates an Individualized Education Plan, or IEP, which includes a list of cognitive and behavorial goals that will be used to assess a student's progress and the school's efforts.</p>,
-            "A parent can sue the school if they feel their child's needs are not being met or that progress is not occurring (or being tracked)."
+            "Interviewed 3 behavior analysts, 3 teachers and 2 parents from 3 different grade schools.",
+            <p>Reviewed real student IEPs and compared the evaluation forms that each school used to track progress goals.</p>,
+            "Researched other goal tracking software that was already available."
           ] }
         />
         <Slide
-          slideName="buyer"
-          title="The Buyer"
-          subtitle="The Administration was worried about getting sued by helicopter parents."
-        />
-        <Slide
-          slideName="user"
-          title="The User"
-          subtitle="The teachers only have so much time – they prefer to spend that time teaching, not bureaucratic record keeping."
+          // slideName="buyer"
+          title="Findings"
+          bullets={true}
+          description={ [
+            <li>Teachers see goal tracking as a bureaucratic time suck.</li>,
+            <li>Older educators aren't very tech-savvy.</li>,
+            <li>Behavioral analysts manage IEPs and are more invested in a solution</li>,
+            <li>Paper evaluations require a clipboard (or desk) and two hands.</li>,
+            <li>There are no standards for how to track goals, even in the same county</li>,
+            <li>Paper evaluations are ridid: can only break down goals into 5 or 10 tasks</li>
+          ] }
         />
       </Slider>
     );

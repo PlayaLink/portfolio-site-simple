@@ -54,13 +54,21 @@
       }
     }
   }
-  .problem {
+  .section {
     height: 100vh;
     width: 100vw;
-    background-color: $red;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .section-title {
+      color: $white;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3rem;
+      margin-top: -3rem;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
     .content {
       margin-left: 10rem;
       margin-right: 10rem;
@@ -79,6 +87,13 @@
       .description {
 
       }
+    }
+    &.context {
+      background-color: $teal;
+    }
+    &.problem {
+      background-color: $red;
+
     }
   }
 }
