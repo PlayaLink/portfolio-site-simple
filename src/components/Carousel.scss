@@ -25,29 +25,43 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 100vh;
+      height: 100%;
       width: 100vw;
       background-color: $red;
-      &.buyer-problem {
-        .content{
-          margin-left: 10rem;
-          margin-right: 10rem;
-          color: $white;
-          .title {
-            font-size: 3rem;
-            border-bottom: 2px solid $white;
-            width: fit-content;
-            padding-right: 5rem;
-            padding-bottom: 1rem;
-            margin-bottom: 1rem
-          }
-          .subtitle {
-            font-size: 2rem;
-          }
-          .description {
-
-          }
+      .content{
+        margin-left: 10rem;
+        margin-right: 10rem;
+        color: $white;
+        max-width: 50rem;
+        .title {
+          font-size: 3rem;
+          border-bottom: 2px solid $white;
+          width: fit-content;
+          padding-right: 5rem;
+          padding-bottom: 1rem;
+          margin-bottom: 2rem
         }
+        .subtitle {
+          font-size: 2rem;
+        }
+        .description {
+          font-size: 1.5rem;
+        }
+      }
+      &.buyer-problem {
+
+      }
+    }
+  }
+  .slick-dots {
+    position: relative;
+    top: 20%;
+    button::before {
+      color: $white;
+    }
+    .slick-active {
+      button::before {
+        color: $white;
       }
     }
   }
