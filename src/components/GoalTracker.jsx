@@ -3,7 +3,7 @@ import './GoalTracker.scss';
 import './Projects.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProjectCard from './ProjectCard';
-import { Element } from 'react-scroll/modules';
+import Carousel from './Carousel';
 
 
 class GoalTracker extends React.Component {
@@ -16,7 +16,6 @@ class GoalTracker extends React.Component {
         <div className="goal-tracker">
           <div className="header">
             <ProjectCard
-              isHeader="true"
               title="IEP Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
               description={ [
@@ -32,7 +31,7 @@ class GoalTracker extends React.Component {
             </div>
           </div>
           <div className="problem">
-
+            <Carousel/>
           </div>
         </div>
 

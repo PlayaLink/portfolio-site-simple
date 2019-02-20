@@ -3,7 +3,7 @@ import './ProjectCard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProjectCard = (props) => (
-  <div className={`project-card ${props.isHeader ? 'header' : ''}`}>
+  <div className={`project-card`}>
     <div className="title">
       { props.title }
     </div>
