@@ -38,10 +38,9 @@ class GoalTracker extends React.Component {
                title="Context"
                // subtitle="Teachers were not tracking goals consistently."
                description={ [
-                 "The Individuals with Disabilities Education Act requires schools to provide special services and resources to those who need them.",
+                 "The Individuals with Disabilities Education Act requires U.S. schools to provide special services and resources to those who need them.",
                  <p>When a need is identified, the school creates an Individualized Education Plan, or IEP, which includes a list of cognitive and behavorial goals that will be used to assess a student's progress and the school's efforts.</p>,
-                 "A parent can sue the school if they feel their child's needs are not being met or that progress is not occurring (or being tracked).",
-                 <p>Keeping tabs of 10+ goals per student can place a significant burden on a teacher with more than a dozen students with IEPs.</p>,
+                 "A parent can sue the school if they feel their child's needs are not being met or that progress is not occurring (or being tracked)."
                ] }
              />
            </div>
