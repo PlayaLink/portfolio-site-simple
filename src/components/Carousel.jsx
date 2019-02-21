@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import './Carousel.scss';
 import ProjectCard from './ProjectCard';
 import Slide from './Slide';
+import iep5 from '../img/iep_example_5.png';
+import iep10 from '../img/iep_example_10.png';
 
 // const Slide = (props) => (
 //   <div className={ `slide-content ${props.slideName}` }>
@@ -45,15 +47,30 @@ class Carousel extends React.Component {
             <li>Researched other goal tracking software that was already available.</li>
           ] }
         />
-        <Slide
-          title="II. Artifacts"
-          // subtitle="Teachers were not tracking goals consistently."
-          description={ [
-            "Interviewed 3 behavior analysts, 3 teachers and 2 parents from 3 different grade schools.",
-            <p>Reviewed real student IEPs and compared the evaluation forms that each school used to track progress goals.</p>,
-            "Researched other goal tracking software that was already available."
-          ] }
-        />
+        <div className="slide-content">
+          <div className="content-2">
+            <div className="title-2">
+              Artifacts
+            </div>
+            <div className="subtitle-2">
+
+            </div>
+            <div className="description-2">
+              <div className="iep-examples">
+                {/*<div className="iep-example five"></div>*/}
+                {/*<div className="iep-example ten"></div>*/}
+                <img alt="iep" className="iep-example five" src={iep5} />
+                <img alt="iep" className="iep-example ten" src={iep10} />
+              </div>
+              <div className="quote-container">
+                <p className="quote">"The problem is more than 'lack of technology'.... There is no process for tracking student progress... and very little oversight for teachers."</p>
+                <p className="attribution">
+                  <div>–Jenny R, Special Education Department Director</div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <Slide
           // slideName="buyer"
           title="III. Findings"
