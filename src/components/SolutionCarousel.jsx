@@ -92,7 +92,7 @@ class SolutionCarousel extends React.Component {
         <div className="slide-content">
           <div className="content-2">
             <div className="title-2">
-              Flexibility
+              Flexible
             </div>
             <div className="subtitle-2">
               Goals can have as few or as many subtasks as needed

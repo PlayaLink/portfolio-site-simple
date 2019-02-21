@@ -26,7 +26,8 @@ class Projects extends React.Component {
             <ProjectCard
               title="Special Ed Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
-              link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
+              // link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
+              route="/iep-goal-tracker"
               cta="Case Study"
               description={ [
                 "Teachers weren't tracking goals properly because paper spreadsheets are a hassle.",
