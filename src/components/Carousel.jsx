@@ -36,7 +36,17 @@ class Carousel extends React.Component {
     return (
       <Slider { ...settings }>
         <Slide
-          title="Requirements Gathering"
+          title="I. Requirements Gathering"
+          // subtitle="Teachers were not tracking goals consistently."
+          bullets={true}
+          description={ [
+            <li>Interviewed 1 administrator, 3 behavior analysts, 3 teachers and 2 parents.</li>,
+            <li>Reviewed IEPs and evaluation forms used at 3 Orange County schools.</li>,
+            <li>Researched other goal tracking software that was already available.</li>
+          ] }
+        />
+        <Slide
+          title="II. Artifacts"
           // subtitle="Teachers were not tracking goals consistently."
           description={ [
             "Interviewed 3 behavior analysts, 3 teachers and 2 parents from 3 different grade schools.",
@@ -46,7 +56,7 @@ class Carousel extends React.Component {
         />
         <Slide
           // slideName="buyer"
-          title="Findings"
+          title="III. Findings"
           bullets={true}
           description={ [
             <li>Teachers see goal tracking as a bureaucratic time suck.</li>,
