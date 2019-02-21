@@ -56,12 +56,6 @@ class ProblemCarousel extends React.Component {
 
             </div>
             <div className="description-2">
-              <div className="iep-examples">
-                {/*<div className="iep-example five"></div>*/}
-                {/*<div className="iep-example ten"></div>*/}
-                <img alt="iep" className="iep-example five" src={iep5} />
-                <img alt="iep" className="iep-example ten" src={iep10} />
-              </div>
               <div className="quote-container">
                 <p className="quote">"The problem is more than 'lack of technology'.... There is no process for tracking student progress... and very little oversight for teachers."</p>
                 <p className="attribution">
