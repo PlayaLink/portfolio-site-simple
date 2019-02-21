@@ -1,0 +1,102 @@
+@import '../stylesheets/base';
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.problem {
+  .slick-slider {
+    .slick-arrow::before {
+      font-size: 4rem;
+      position: relative;
+      left: -2.5rem;
+    }
+    .slick-arrow {
+      &.slick-prev::before {
+        display: none;
+      }
+    }
+    .slick-arrow {
+      &.slick-next::before {
+        left:2.5rem;
+      }
+    }
+    .slick-list {
+      //height: 100vh;
+      .slide-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100vw;
+        background-color: $red;
+        .content-2{
+          margin-left: 10rem;
+          margin-right: 10rem;
+          color: $white;
+          max-width: 50rem;
+          .title-2 {
+            font-size: 3rem;
+            border-bottom: 2px solid $white;
+            width: fit-content;
+            padding-right: 5rem;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem
+          }
+          .subtitle-2 {
+            font-size: 2rem;
+          }
+          .description-2 {
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .iep-examples {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+
+              .iep-example {
+                margin: 1rem;
+                width: 17rem;
+                height: 23rem;
+                background-size: contain;
+                background-repeat: no-repeat;
+                &.five {
+                  background-image: url('../img/iep_example_5.png');
+                }
+                &.ten {
+                  background-image: url('../img/iep_example_10.png');
+                }
+              }
+            }
+            .quote-container {
+              font-style: italic;
+              .quote {
+
+              }
+              .attribution {
+                font-size: 1rem;
+                margin-left: 3rem;
+              }
+            }
+          }
+        }
+        &.buyer-problem {
+
+        }
+      }
+    }
+    .slick-dots {
+      position: relative;
+      top: 20%;
+      button::before {
+        color: $white;
+      }
+      .slick-active {
+        button::before {
+          color: $white;
+        }
+      }
+    }
+  }
+}

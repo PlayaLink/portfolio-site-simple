@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import './Carousel.scss';
+import './SolutionCarousel.scss';
 import ProjectCard from './ProjectCard';
 import Slide from './Slide';
 import iep5 from '../img/iep_example_5.png';
@@ -22,7 +22,7 @@ import iep10 from '../img/iep_example_10.png';
 //   </div>
 // );
 
-class Carousel extends React.Component {
+class ProblemCarousel extends React.Component {
   constructor (props) {
     super(props);
   }
@@ -89,4 +89,4 @@ class Carousel extends React.Component {
   }
 }
 
-export default Carousel;
+export default ProblemCarousel;

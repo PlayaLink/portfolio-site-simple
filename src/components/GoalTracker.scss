@@ -93,7 +93,9 @@
     }
     &.problem {
       background-color: $red;
-
+    }
+    &.solution {
+      background-color: $blue;
     }
   }
 }
