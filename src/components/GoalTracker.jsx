@@ -4,6 +4,7 @@ import './Projects.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProjectCard from './ProjectCard';
 import ProblemCarousel from './ProblemCarousel';
+import SolutionCarousel from './SolutionCarousel';
 import Slide from './Slide';
 
 
@@ -48,6 +49,12 @@ class GoalTracker extends React.Component {
             {/*<div className="section-title">Need Finding</div>*/}
             <div className="content">
              <ProblemCarousel/>
+           </div>
+          </div>
+          <div className="section solution">
+            {/*<div className="section-title">Need Finding</div>*/}
+            <div className="content">
+             <SolutionCarousel/>
            </div>
           </div>
         </div>
