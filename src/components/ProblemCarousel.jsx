@@ -38,7 +38,7 @@ class ProblemCarousel extends React.Component {
     return (
       <Slider { ...settings }>
         <Slide
-          title="I. Requirements Gathering"
+          title="Requirements Gathering"
           // subtitle="Teachers were not tracking goals consistently."
           bullets={true}
           description={ [
@@ -47,27 +47,9 @@ class ProblemCarousel extends React.Component {
             <li>Researched other goal tracking software that was already available.</li>
           ] }
         />
-        <div className="slide-content">
-          <div className="content-2">
-            <div className="title-2">
-              Artifacts
-            </div>
-            <div className="subtitle-2">
-
-            </div>
-            <div className="description-2">
-              <div className="quote-container">
-                <p className="quote">"The problem is more than 'lack of technology'.... There is no process for tracking student progress... and very little oversight for teachers."</p>
-                <p className="attribution">
-                  <div>–Jenny R, Special Education Department Director</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
         <Slide
           // slideName="buyer"
-          title="III. Findings"
+          title="Findings"
           bullets={true}
           description={ [
             <li>Teachers see goal tracking as a bureaucratic time suck.</li>,
@@ -78,6 +60,42 @@ class ProblemCarousel extends React.Component {
             <li>Paper evaluations are ridid: can only break down goals into 5 or 10 tasks</li>
           ] }
         />
+        <Slide
+          // slideName="buyer"
+          title="Design Principles"
+          subtitle="The new system must be:"
+          bullets={true}
+          description={ [
+            <li>Easy to use</li>,
+            <li>Flexible - each student goal is unique</li>,
+            <li>Quick – for logging evaluations during class</li>,
+            <li>Mobile friendly</li>,
+          ] }
+        />
+        <div className="slide-content">
+          <div className="content-2">
+            <div className="title-2">
+              Quotes
+            </div>
+            <div className="subtitle-2">
+
+            </div>
+            <div className="description-2">
+              <div className="quote-container">
+                <p className="quote">"The problem is more than 'lack of technology'.... There is no process for tracking student progress... and very little oversight for teachers."</p>
+                <p className="attribution">
+                  <div>–Jenny, Special Education Department Director</div>
+                </p>
+              </div>
+              <div className="quote-container">
+                <p className="quote">"I feel like a nanny state. I have to hound the teachers to get me their evaluations"</p>
+                <p className="attribution">
+                  <div>–Ross, Applied Behavorial Analyst</div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </Slider>
     );
   }
