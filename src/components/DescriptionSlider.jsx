@@ -144,7 +144,7 @@ class DescriptionSlider extends Component {
         <div className="description">
           <div style={{textAlign: 'center', paddingLeft: '1rem', paddingRight: '1rem'}}>I'm a <strong>product developer</strong> and <strong>storyteller</strong> with broad startup experience in tech.</div>
         </div>
-        <div className="content">
+        <div className="slider-content">
           {this.getDescription()}
         </div>
         <div className="slider">
