@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCard';
 import Slide from './Slide';
 import iep5 from '../img/iep_example_5.png';
 import iep10 from '../img/iep_example_10.png';
+import goalCreation from '../img/goal_creation.png';
 
 // const Slide = (props) => (
 //   <div className={ `slide-content ${props.slideName}` }>
@@ -47,17 +48,75 @@ class SolutionCarousel extends React.Component {
         <div className="slide-content">
           <div className="content-2">
             <div className="title-2">
-              Artifacts
-            </div>
-            <div className="subtitle-2">
-
+              Simple to navigate
             </div>
             <div className="description-2">
               <div className="iep-examples">
-                {/*<div className="iep-example five"></div>*/}
-                {/*<div className="iep-example ten"></div>*/}
-                <img alt="iep" className="iep-example five" src={iep5} />
-                <img alt="iep" className="iep-example ten" src={iep10} />
+                <div>
+                  <div className="iep-example my-students small"></div>
+                  <p style={{fontSize: '1rem', textAlign: 'center'}}>Dashboard  ></p>
+                </div>
+                <div>
+                  <div className="iep-example student-detail small"></div>
+                  <p style={{fontSize: '1rem', textAlign: 'center'}}>Student detail  ></p>
+                </div>
+                <div>
+                  <div className="iep-example goal-detail small"></div>
+                  <p style={{fontSize: '1rem', textAlign: 'center'}}>Goal list  ></p>
+                </div>
+                <div>
+                  <div className="iep-example evaluation-2 small"></div>
+                  <p style={{fontSize: '1rem', textAlign: 'center'}}>Log an evaluation</p>
+                </div>
+                {/*<img alt="iep-goal-creation" className="iep-goal-creation" src={goalCreation} />*/}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide-content">
+          <div className="content-2">
+            <div className="title-2">
+              Quick
+            </div>
+            <div className="subtitle-2">
+              An evaluation can be logged in as little as 4 taps.
+            </div>
+            <div className="description-2">
+              <div className="iep-examples">
+                <div className="iep-example evaluation"></div>
+                {/*<img alt="iep-goal-creation" className="iep-goal-creation" src={goalCreation} />*/}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide-content">
+          <div className="content-2">
+            <div className="title-2">
+              Flexibility
+            </div>
+            <div className="subtitle-2">
+              Goals can have as few or as many subtasks as needed
+            </div>
+            <div className="description-2">
+              <div className="iep-examples">
+                <div className="iep-example goal-creation"></div>
+                {/*<img alt="iep-goal-creation" className="iep-goal-creation" src={goalCreation} />*/}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide-content">
+          <div className="content-2">
+            <div className="title-2">
+              Data visualization
+            </div>
+            <div className="subtitle-2">
+              Charts make it easy for a teacher to share progress with a behavior analyst.
+            </div>
+            <div className="description-2">
+              <div className="iep-examples">
+                <div className="iep-example progress-bars"></div>
+                {/*<img alt="iep-goal-creation" className="iep-goal-creation" src={goalCreation} />*/}
               </div>
             </div>
           </div>

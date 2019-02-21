@@ -66,6 +66,31 @@
               &.ten {
                 background-image: url('../img/iep_example_10.png');
               }
+              &.goal-creation {
+                background-image: url('../img/goal_creation.png');
+              }
+              &.evaluation {
+                background-image: url('../img/evaluation_screen.png');
+              }
+              &.my-students {
+                background-image: url('../img/my_students.png');
+              }
+              &.progress-bars {
+                background-image: url('../img/iep_progress_bars.png');
+              }
+              &.student-detail {
+                background-image: url('../img/student_detail.png');
+              }
+              &.goal-detail {
+                background-image: url('../img/goal_detail.png');
+              }
+              &.evaluation-2 {
+                background-image: url('../img/evaluation_screen2.png');
+              }
+              &.small {
+                width: 8rem;
+                height: 14rem;
+              }
             }
           }
           .quote-container {
