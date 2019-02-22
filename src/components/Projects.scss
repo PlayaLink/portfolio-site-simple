@@ -102,6 +102,8 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      order: -1; //places the image above description on mobile
+
       .projection-screen {
         width: 27rem;
         height: 27rem;
@@ -138,7 +140,6 @@
         justify-content: center;
       .images {
         margin-bottom: 1rem;
-        order: -1; //places the image above description on mobile
         .street-art-talks-phone {
             margin: 0 -0.65rem;
             width: 10rem;
