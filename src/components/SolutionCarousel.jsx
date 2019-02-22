@@ -48,7 +48,10 @@ class SolutionCarousel extends React.Component {
         <div className="slide-content">
           <div className="content-2">
             <div className="title-2">
-              Simple to navigate
+              Quick and simple to navigate
+            </div>
+            <div className="subtitle-2">
+              Log an evaluation in 4 taps.
             </div>
             <div className="description-2">
               <div className="iep-examples">
@@ -68,22 +71,6 @@ class SolutionCarousel extends React.Component {
                   <div className="iep-example evaluation-2 small"></div>
                   <p style={{fontSize: '1rem', textAlign: 'center'}}>Log an evaluation</p>
                 </div>
-                {/*<img alt="iep-goal-creation" className="iep-goal-creation" src={goalCreation} />*/}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="slide-content">
-          <div className="content-2">
-            <div className="title-2">
-              Quick
-            </div>
-            <div className="subtitle-2">
-              An evaluation can be logged in as little as 4 taps.
-            </div>
-            <div className="description-2">
-              <div className="iep-examples">
-                <div className="iep-example evaluation"></div>
                 {/*<img alt="iep-goal-creation" className="iep-goal-creation" src={goalCreation} />*/}
               </div>
             </div>

@@ -5,6 +5,90 @@ body {
   background-color: $off-white;
 }
 
+.case-study-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &.teal-background {
+    background-color: $teal;
+  }
+  &.red-background {
+    background-color: $red;
+  }
+  &.blue-background {
+    background-color: $blue;
+  }
+  .carousel {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.case-study-slide {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+  color: $white;
+  .title {
+    font-size: 3rem;
+    border-bottom: 2px solid $white;
+    width: fit-content;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem
+  }
+  .subtitle {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.5rem;
+
+    // START - Bullet indent fix
+    ol {
+      counter-reset: foo;
+      display: table;
+    }
+
+    ol > li {
+      counter-increment: foo;
+      display: table-row;
+    }
+
+    ol > li::before {
+      content: counter(foo) ".";
+      display: table-cell; /* aha! */
+      text-align: right;
+    }
+
+    ul {
+      counter-reset: foo;
+      display: table;
+    }
+
+    ul > li {
+      display: table-row;
+    }
+
+    ul > li::before {
+      content: "+\00a0 ";
+      display: table-cell; /* aha! */
+      text-align: right;
+    }
+    // END - Bullet indent fix
+  }
+}
+
+
+
+
+
 .section-title {
   text-align: center;
   font-size: 2rem;
