@@ -108,6 +108,7 @@ class PopinLive extends React.Component {
             </Slider>
           </div>
         </div>
+
         {/*PROCESS*/}
         <div className="case-study-section teal-background">
           <div className="carousel">
@@ -176,7 +177,7 @@ class PopinLive extends React.Component {
           </div>
         </div>
 
-        {/*PROCESS*/}
+        {/*RESULTS*/}
         <div className="case-study-section blue-background">
           <div className="carousel">
             <Slider {...sliderSettings}>
@@ -190,17 +191,14 @@ class PopinLive extends React.Component {
                     {/*OBSERVATIONS*/}
                   {/*</div>*/}
                   <div className="description">
-                    <p>Users are concerned about toggling between presentation software (i.e. PowerPoint) and the live poll when presenting in front of a large audience</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>Could be a deal breaker if too much friction</li>
-                    </ul>
-                    <p>Live comment moderation is only needed when there are hundreds of responses (and thousands of participants)</p>
-                    <p>Town hall organizers want a way to follow up with employees whose questions were not addressed during live event</p>
-                    <p>The 'first mover' bias:</p>
+                    <p><strong>User Expectations: </strong>A live poll/survey should integrate seamlessly with their presentation software (e.g. PowerPoint)</p>
+                    <p><strong>Usability:</strong> Users struggled with sharing a POPin and toggling between presentation/edit/participation modes</p>
+                    <p><strong>Pain Point:</strong> Event moderators have no way of following up with employees whose questions were not addressed during a live event</p>
+                    <p><strong>Pain Point:</strong> Duplicate responses are a problem no matter the size of participant pool</p>
+                    <p><strong>Pain Point:</strong> The 'first mover' bias</p>
                     <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
                       <li>The first responses get the first votes, which creates a snowball effect that drowns out later responses</li>
                     </ul>
-                    <p>Duplicate responses are a problem no matter the size of participant pool</p>
                   </div>
                 </div>
               </div>
@@ -214,14 +212,46 @@ class PopinLive extends React.Component {
                     {/*OBSERVATIONS*/}
                   {/*</div>*/}
                   <div className="description">
-                    <p>Live moderation would be costly to build and not used by most existing POPin users</p>
+                    <p>Live polling is a separate product category in which POPin cannot compete on price nor functionality</p>
                     <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>DB query showed that average join count for POPin surveys is less than 300</li>
+                      <li>But the project still has value: setting up real-time data pushing will improve the overall POPin experience</li>
                     </ul>
-                    <p>Live view must integrate seamlessly into existing workflow (i.e., PowerPoint)</p>
-                    <p>NEED TO DISCOVER:</p>
+                    <p>Live comment moderation only needed for events with thousands of participants</p>
                     <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>Will participation occur in a live context or will results of closed poll be consumed live?</li>
+                      <li>Database query showed that average join count for POPin surveys is less than 300</li>
+                    </ul>
+                    <p>App fatigue is a big fear for HR/internal comms teams</p>
+                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
+                      <li>They don't want to force employees to download another app or create another account just to participate in a quick poll</li>
+                    </ul>
+                    <p>Live Participation vs Live Presentation:</p>
+                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
+                      <li>Will participants submit answers during the event or will results of closed poll be consumed live?</li>
+                      <li>Phase 2 of discovery needs to focus on this question</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div className="case-study-slide-content">
+                  <div className="title">
+                    DESIGN PRINCIPLES
+                  </div>
+                  <div className="description">
+                    <p>Scope should be limited</p>
+                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
+                      <li>More observation needed to determine if users want to run polls live or display POPin results in a live setting</li>
+                      <li>POPin Live should be considered a marketing/sales enablement tool in the meantime</li>
+                    </ul>
+                    <p>Poll software must integrate seamlessly into existing presentation workflow</p>
+                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
+                      <li>If running a live poll interrupts the flow of a PowerPoint deck or WebEx meeting, presentors will shy away from it</li>
+                    </ul>
+                    <p>Ability to respond to poll without creating an account</p>
+                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
+                      <li>Join code on marketing site?</li>
+                      <li>Text message?</li>
                     </ul>
                   </div>
                 </div>
