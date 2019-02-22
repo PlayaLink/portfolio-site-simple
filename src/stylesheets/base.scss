@@ -27,6 +27,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .case-study-slide-title-container {
+      max-width: 40rem;
+      margin-left: auto;
+      margin-right: auto;
+      .case-study-slide-title {
+        font-size: 3rem;
+        color: $white;
+        border-bottom: 2px solid $white;
+        width: fit-content;
+        padding-right: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+
+      }
+    }
     .slick-slider {
       button.slick-arrow::before {
         font-size: 4rem;
@@ -43,14 +58,6 @@ body {
   }
 }
 
-//.case-study-slide-title {
-//  font-size: 3rem;
-//  border-bottom: 2px solid $white;
-//  width: fit-content;
-//  padding-right: 5rem;
-//  padding-bottom: 1rem;
-//  margin-bottom: 2rem
-//}
 
 .case-study-slide-content {
   width: 100%;

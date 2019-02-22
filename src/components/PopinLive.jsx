@@ -48,7 +48,7 @@ class PopinLive extends React.Component {
           <HeaderImage img={projection}/>
         </div>
         <div className="case-study-section red-background">
-          <div className="case-study-slide">
+          <div className="case-study-slide-content">
             <div className="title">
               Challenges
             </div>
@@ -73,7 +73,7 @@ class PopinLive extends React.Component {
           </div>
         </div>
         <div className="case-study-section teal-background">
-          <div className="case-study-slide">
+          <div className="case-study-slide-content">
             <div className="title">
               Process
             </div>
@@ -83,12 +83,12 @@ class PopinLive extends React.Component {
             <div className="description">
               <p>I spent one week lining up interviews and with POPin customers who had expressed interest in a live polling.</p>
               <p>Slido's product offering was robust</p>
-              <p>Our resources were limited</p>
+              <p>Resources were limited</p>
               <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem'}}>
                 <li><p style={{marginTop: '0rem'}}>Our product & engingeering team was less than 15 people</p></li>
                 <li>Leadership had given us 3 months to complete the feature</li>
               </ul>
-              <p>POPin had  little insight about its users</p>
+              <p>POPin had little insight about its users</p>
               <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem'}}>
                 <li><p style={{marginTop: '0rem'}}>No user personas had ever been created</p></li>
                 <li><p style={{marginTop: '0rem'}}>Only 20 user interviews had been conducted over the course of 4 years, and those interviews were only with <strong>survey creators</strong></p></li>
@@ -99,12 +99,12 @@ class PopinLive extends React.Component {
         </div>
         <div className="case-study-section blue-background">
           <div className="carousel">
+            <div className="case-study-slide-title-container">
+              <div className="case-study-slide-title">Process</div>
+            </div>
             <Slider {...sliderSettings}>
               <div>
                 <div className="case-study-slide-content">
-                  <div className="title">
-                    Process
-                  </div>
                   <div className="subtitle">
                     STEP 1
                   </div>
@@ -126,10 +126,7 @@ class PopinLive extends React.Component {
                 </div>
               </div>
               <div>
-                <div className="case-study-slide">
-                  <div className="title">
-                    Process
-                  </div>
+                <div className="case-study-slide-content">
                   <div className="subtitle">
                     STEP 1
                   </div>
@@ -140,6 +137,34 @@ class PopinLive extends React.Component {
                     <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem'}}>
                       <li><p style={{marginTop: '0rem'}}>Our product & engingeering team was less than 15 people</p></li>
                       <li>Leadership had given us 3 months to complete the feature</li>
+                    </ul>
+                    <p>POPin had  little insight about its users</p>
+                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem'}}>
+                      <li><p style={{marginTop: '0rem'}}>No user personas had ever been created</p></li>
+                      <li><p style={{marginTop: '0rem'}}>Only 20 user interviews had been conducted over the course of 4 years, and those interviews were only with <strong>survey creators</strong></p></li>
+                      <li>No one had ever interviewed <strong>survey participants</strong> about their experience using the software</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="case-study-slide-content">
+                  <div className="subtitle">
+                    STEP 1
+                  </div>
+                  <div className="description">
+                    <p>I spent one week lining up interviews and with POPin customers who had expressed interest in a live polling.</p>
+                    <p>Slido's product offering was robust</p>
+                    <p>Our resources were limited</p>
+                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem'}}>
+                      <li><p style={{marginTop: '0rem'}}>Our product & engingeering team was less than 15 people</p></li>
+                      <li>Leadership had given us 3 months to complete the feature</li>
+                    </ul>
+                    <p>POPin had  little insight about its users</p>
+                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem'}}>
+                      <li><p style={{marginTop: '0rem'}}>No user personas had ever been created</p></li>
+                      <li><p style={{marginTop: '0rem'}}>Only 20 user interviews had been conducted over the course of 4 years, and those interviews were only with <strong>survey creators</strong></p></li>
+                      <li>No one had ever interviewed <strong>survey participants</strong> about their experience using the software</li>
                     </ul>
                   </div>
                 </div>
