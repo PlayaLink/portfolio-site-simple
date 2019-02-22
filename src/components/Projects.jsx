@@ -37,21 +37,23 @@ class Projects extends React.Component {
             />
           </Element>
 
-          <div className="street-art-talks">
+          <div className="popin-live">
             <ProjectCard
-              title="Street Art Talks"
-              subtitle="Text-based audio tour of street art in DTLA"
-              link="http://www.streetarttalks.com"
-              cta="Visit Site"
+              title="POPin Live"
+              subtitle="Adding live-polling to POPin's suite of survey tools"
+              route="/popin-live"
+              cta="Case Study"
               description={ [
-                'Street art is more approachable than art in a museum.',
-                <p />,
-                "But wouldn't it be nice to know more about the art and the person who created it?",
-                <p />,
-                'Stencils tagged near prominent murals in DTLA\'s arts district will instruct passersby to text a code to a Twilio phone number. ',
-                <p />,
-                'An automated text response includes a url with information about the mural and artist.'] }
+                'POPin is an Irvine-based startup that makes employee engagement software for large enterprises.',
+                <p>The company wanted to add live-polling functionality to meet customer demand and feature match the competition.</p>,
+                'I surveyed the competitive landscape, conducted user interviews, scoped the project and managed the design and development of the new feature, called POPin Live.'] }
             />
+            <div className="images">
+              <div className="projection-screen" />
+            </div>
+          </div>
+
+          <div className="street-art-talks">
             <div className="images">
               <div className="murals">
                 <div className="thumbnail influence"/>
@@ -65,20 +67,19 @@ class Projects extends React.Component {
                 <div className="thumbnail abuelita"/>
               </div>
             </div>
-          </div>
-          <div className="popin-live">
-            <div className="images">
-              <div className="projection-screen" />
-            </div>
             <ProjectCard
-              title="POPin Live"
-              subtitle="Adding live-polling to POPin's suite of survey tools"
-              route="/popin-live"
-              cta="Case Study"
+              title="Street Art Talks"
+              subtitle="Text-based audio tour of street art in DTLA"
+              link="http://www.streetarttalks.com"
+              cta="Visit Site"
               description={ [
-                'POPin is an Irvine-based startup that makes employee engagement software for large enterprises.',
-                <p>The company wanted to add live-polling functionality to meet customer demand and feature match the competition.</p>,
-                'I surveyed the competitive landscape, conducted user interviews, scoped the project and managed the design and development of the new feature, called POPin Live.'] }
+                'Street art is more approachable than art in a museum.',
+                <p />,
+                "But wouldn't it be nice to know more about the art and the person who created it?",
+                <p />,
+                'Stencils tagged near prominent murals in DTLA\'s arts district will instruct passersby to text a code to a Twilio phone number. ',
+                <p />,
+                'An automated text response includes a url with information about the mural and artist.'] }
             />
           </div>
 
