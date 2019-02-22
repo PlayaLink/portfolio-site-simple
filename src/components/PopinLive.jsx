@@ -162,12 +162,12 @@ class PopinLive extends React.Component {
                   </div>
                   <div className="description">
                     <p>Engineering team finished alpha version of Slido clone</p>
-                    <p>Conducted usability tests with alpha release</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>Listened as a room full of Slido customers discussed pain points, use cases and parts they love about Slido</li>
-                      <li><p>Glimpsed Slido's product roadmap for upcoming quarter</p></li>
-                      <li>Interviewed three Slido super users, including the woman who runs Uber's monthly town hall, with 20,000 participants</li>
-                    </ul>
+                    <p>Conducted usability tests on alpha release</p>
+                    {/*<ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>*/}
+                      {/*<li>Listened as a room full of Slido customers discussed pain points, use cases and parts they love about Slido</li>*/}
+                      {/*<li><p>Glimpsed Slido's product roadmap for upcoming quarter</p></li>*/}
+                      {/*<li>Interviewed three Slido super users, including the woman who runs Uber's monthly town hall, with 20,000 participants</li>*/}
+                    {/*</ul>*/}
                   </div>
                 </div>
               </div>
