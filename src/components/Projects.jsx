@@ -73,6 +73,8 @@ class Projects extends React.Component {
             <ProjectCard
               title="POPin Live"
               subtitle="Adding live-polling to POPin's suite of survey tools"
+              route="/popin-live"
+              cta="Case Study"
               description={ [
                 'POPin is an Irvine-based startup that makes employee engagement software for large enterprises.',
                 <p>The company wanted to add live-polling functionality to meet customer demand and feature match the competition.</p>,

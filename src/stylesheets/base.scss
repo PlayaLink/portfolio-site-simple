@@ -12,6 +12,9 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  &.white-background {
+    background-color: $white;
+  }
   &.teal-background {
     background-color: $teal;
   }
@@ -80,21 +83,6 @@ body {
     font-size: 1.5rem;
 
     // START - Bullet indent fix
-    ol {
-      counter-reset: foo;
-      display: table;
-    }
-
-    ol > li {
-      counter-increment: foo;
-      display: table-row;
-    }
-
-    ol > li::before {
-      content: counter(foo) ".";
-      display: table-cell; /* aha! */
-      text-align: right;
-    }
 
     ul {
       counter-reset: foo;
