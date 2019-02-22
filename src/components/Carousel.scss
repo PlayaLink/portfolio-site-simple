@@ -4,11 +4,7 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 .slick-slider {
-  .slick-arrow::before {
-    font-size: 4rem;
-    position: relative;
-    left: -2.5rem;
-  }
+  .slick-arrow::before
   .slick-arrow {
     &.slick-prev::before {
       display: none;

@@ -22,15 +22,37 @@ body {
     background-color: $blue;
   }
   .carousel {
-    width: 100%;
+    width: 70vw;
     display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .slick-slider {
+      button.slick-arrow::before {
+        font-size: 4rem;
+      }
+      button.slick-arrow {
+        &.slick-prev::before {
+          display: none;
+          //left: -2.5rem;
+        }
+      }
+      button.slick-arrow {
+      }
+    }
   }
 }
 
-.case-study-slide {
+//.case-study-slide-title {
+//  font-size: 3rem;
+//  border-bottom: 2px solid $white;
+//  width: fit-content;
+//  padding-right: 5rem;
+//  padding-bottom: 1rem;
+//  margin-bottom: 2rem
+//}
+
+.case-study-slide-content {
   width: 100%;
   max-width: 40rem;
   margin: 0 auto;

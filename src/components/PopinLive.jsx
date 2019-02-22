@@ -101,7 +101,7 @@ class PopinLive extends React.Component {
           <div className="carousel">
             <Slider {...sliderSettings}>
               <div>
-                <div className="case-study-slide">
+                <div className="case-study-slide-content">
                   <div className="title">
                     Process
                   </div>
@@ -143,18 +143,6 @@ class PopinLive extends React.Component {
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div>
-                <h3>3</h3>
-              </div>
-              <div>
-                <h3>4</h3>
-              </div>
-              <div>
-                <h3>5</h3>
-              </div>
-              <div>
-                <h3>6</h3>
               </div>
             </Slider>
           </div>
