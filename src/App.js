@@ -4,7 +4,7 @@ import Timeline from './components/Timeline';
 import Home from './components/Home';
 import PieChart from './components/PieChart';
 import PopinLive from './components/PopinLive';
-import GoalTracker from './components/GoalTracker';
+import IepGoalTracker from './components/IepGoalTracker';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 //Font Awesome
@@ -35,7 +35,7 @@ class App extends Component {
             <Route
               exact
               path={process.env.PUBLIC_URL + '/iep-goal-tracker'}
-              component={GoalTracker} />
+              component={IepGoalTracker} />
             <Route
               exact
               path={process.env.PUBLIC_URL + '/pie-chart'}
