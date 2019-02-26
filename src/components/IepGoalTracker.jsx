@@ -1,6 +1,6 @@
 import React from 'react';
 import './IepGoalTracker.scss';
-import iPhoneFrame from '../img/iphone8_frame.png';
+import iPhoneFrame from '../img/iphone6_frame_black.png';
 import iepscreengrab from '../img/iepscreengrab.mp4'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import iep5 from '../img/iep_example_5.png';
@@ -97,11 +97,11 @@ class IepGoalTracker extends React.Component {
           </div>
         </div>
 
-        {/*PROCESS*/}
+        {/*THE PROBLEM*/}
         <div className="case-study-section red-background">
           <div className="carousel">
             <div className="case-study-slide-title-container">
-              <div className="case-study-slide-title">The Problem</div>
+              <div className="case-study-slide-title">THE PROBLEM</div>
             </div>
             <Slider {...sliderSettings}>
 
@@ -137,18 +137,14 @@ class IepGoalTracker extends React.Component {
               <div>
                 <div className="case-study-slide-content">
                   <div className="subtitle">
-                    ARTIFACTS
+                    DESIGN PRINCIPLES
                   </div>
-                  <div className="description-images">
-                    <div className="iep-example-forms">
-                      {/*<div className="iep-example five"></div>*/}
-                      {/*<div className="iep-example ten"></div>*/}
-                      <img alt="iep" className="iep-example five" src={iep5} />
-                      <img alt="iep" className="iep-example ten" src={iep10} />
-                    </div>
-                  </div>
-                  <div className="description-images-subtitle">
-                    <p>Paper evaluations only allow goals to be broken down into 5 or 10 tasks.</p>
+                  <div className="description">
+                    <p>Simple to use</p>
+                    <p>Goals need to be cusomizable</p>
+                    <p>Logging evaluations needs to be quick and painless</p>
+                    <p>Ability to log evaluations while walking around classroom</p>
+                    <p>Ability to enter lengthy goals and student profiles on a desktop</p>
                   </div>
                 </div>
               </div>
@@ -175,32 +171,48 @@ class IepGoalTracker extends React.Component {
                 </div>
               </div>
 
+              <div>
+                <div className="case-study-slide-content">
+                  <div className="subtitle">
+                    ARTIFACTS
+                  </div>
+                  <div className="description-images">
+                    <div className="iep-example-forms">
+                      {/*<div className="iep-example five"></div>*/}
+                      {/*<div className="iep-example ten"></div>*/}
+                      <img alt="iep" className="iep-example five" src={iep5} />
+                      <img alt="iep" className="iep-example ten" src={iep10} />
+                    </div>
+                  </div>
+                  <div className="description-images-subtitle">
+                    <p>Paper evaluations only allow goals to be broken down into 5 or 10 tasks.</p>
+                  </div>
+                </div>
+              </div>
+
             </Slider>
           </div>
         </div>
 
-        {/*RESULTS*/}
+        {/*THE SOLUTION*/}
         <div className="case-study-section blue-background">
           <div className="carousel">
+            <div className="case-study-slide-title-container">
+              <div className="case-study-slide-title" style={{marginBottom: 0}}>THE SOLUTION</div>
+            </div>
             <Slider {...sliderSettings}>
-
               <div>
                 <div className="case-study-slide-content">
-                  <div className="title">
-                    OBSERVATIONS
+                  <div className="subtitle">
+                    QUICK AND EASY
                   </div>
-                  {/*<div className="subtitle">*/}
-                    {/*OBSERVATIONS*/}
-                  {/*</div>*/}
-                  <div className="description">
-                    <p><strong>User Expectations: </strong>A live poll/survey should integrate seamlessly with their presentation software (e.g. PowerPoint)</p>
-                    <p><strong>Usability:</strong> Users struggled with sharing a POPin and toggling between presentation/edit/participation modes</p>
-                    <p><strong>Pain Point:</strong> Event moderators have no way of following up with employees whose questions were not addressed during a live event</p>
-                    <p><strong>Pain Point:</strong> Duplicate responses are a problem no matter the size of participant pool</p>
-                    <p><strong>Pain Point:</strong> The 'first mover' bias</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>The first responses get the first votes, which creates a snowball effect that drowns out later responses</li>
-                    </ul>
+                  <div className="description-images">
+                    <IphoneFrame img={iPhoneFrame}>
+                      <ScreenGrab autoPlay={true} src={iepscreengrab}></ScreenGrab>
+                    </IphoneFrame>
+                  </div>
+                  <div className="description-images-subtitle">
+                    <p>Paper evaluations only allow goals to be broken down into 5 or 10 tasks.</p>
                   </div>
                 </div>
               </div>
