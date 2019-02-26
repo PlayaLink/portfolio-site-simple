@@ -3,6 +3,8 @@ import './IepGoalTracker.scss';
 import iPhoneFrame from '../img/iphone8_frame.png';
 import iepscreengrab from '../img/iepscreengrab.mp4'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import iep5 from '../img/iep_example_5.png';
+import iep10 from '../img/iep_example_10.png';
 
 import ProjectCard from './ProjectCard';
 import styled, { css } from 'styled-components';
@@ -73,55 +75,21 @@ class IepGoalTracker extends React.Component {
           </IphoneFrame>
         </div>
         {/*CHALLENGES*/}
-        <div className="case-study-section red-background">
+        <div className="case-study-section teal-background">
           <div className="carousel">
             <div className="case-study-slide-title-container">
-              <div className="case-study-slide-title">Challenges</div>
+              <div className="case-study-slide-title" style={{marginBottom: 0}}>Context</div>
             </div>
             <Slider {...sliderSettings}>
               <div>
-                <div className="case-study-slide-content">
-                  <div className="subtitle">
-                    We were playing catch up
-                  </div>
+                <div className="case-study-slide-content" >
+                  {/*<div className="subtitle">*/}
+                    {/*We were playing catch up*/}
+                  {/*</div>*/}
                   <div className="description">
-                    {/*<p>The live polling space was crowded</p>*/}
-                    {/*<p>Slido's product offering was robust</p>*/}
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem'}}>
-                      <li><p>The live polling space was crowded</p></li>
-                      <li><p style={{marginTop: '0rem'}}>Slido's product offering was robust</p></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="case-study-slide-content">
-                  <div className="subtitle">
-                    Limited Resources
-                  </div>
-                  <div className="description">
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem'}}>
-                      <li><p>Our product & engingeering team was less than 15 people</p></li>
-                      <li><p style={{marginTop: '0rem'}}>Leadership had given us three months to design, build and ship the feature</p></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="case-study-slide-content">
-                  <div className="subtitle">
-                    Limited information about our users
-                  </div>
-                  <div className="description">
-                    {/*<p>No user personas had ever been created</p>*/}
-                    {/*<p>Only 20 user interviews had been conducted over the course of 4 years, and those interviews were only with <strong>survey creators</strong></p>*/}
-                    {/*<p>No one had ever interviewed <strong>survey participants</strong> about their experience using the software</p>*/}
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem'}}>
-                      <li><p>No user personas had ever been created for POPin users</p></li>
-                      <li><p style={{marginTop: '0rem'}}>Only 20 user interviews had been conducted over the course of four years, and those interviews were only with <strong>survey creators</strong></p></li>
-                      <li>No one had ever interviewed <strong>survey participants</strong> about their experience using the software</li>
-                    </ul>
-
+                    <p>The Orange County Dept of Education's main special needs facility was looking for a better way to track its students' progress.</p>
+                    <p>Their system relied on paper spreadsheets and manual data entry.</p>
+                    <p>The school's director wanted to find a better way.</p>
                   </div>
                 </div>
               </div>
@@ -130,26 +98,22 @@ class IepGoalTracker extends React.Component {
         </div>
 
         {/*PROCESS*/}
-        <div className="case-study-section teal-background">
+        <div className="case-study-section red-background">
           <div className="carousel">
             <div className="case-study-slide-title-container">
-              <div className="case-study-slide-title">Process</div>
+              <div className="case-study-slide-title">The Problem</div>
             </div>
             <Slider {...sliderSettings}>
 
               <div>
                 <div className="case-study-slide-content">
                   <div className="subtitle">
-                    WEEK 1
+                    REQUIREMENTS GATHERING
                   </div>
                   <div className="description">
-                    <p>Competitive analysis of top players in the live polling space</p>
-                    <p>Scheduled interviews for the following week with 12 customers who had expressed interest in live polling.</p>
-                    <p>Reviewed the notes from the 20+ interviews that had been already conducted.</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li><p style={{marginTop: '0rem'}}>Started creating personas for our existing user base</p></li>
-                    </ul>
-
+                    <p>Interviewed 1 administrator, 3 behavior analysts, 3 teachers and 2 parents.</p>
+                    <p>Reviewed IEPs and evaluation forms used at 3 Orange County schools.</p>
+                    <p>Researched other goal tracking software that was already available.</p>
                   </div>
                 </div>
               </div>
@@ -157,21 +121,15 @@ class IepGoalTracker extends React.Component {
               <div>
                 <div className="case-study-slide-content">
                   <div className="subtitle">
-                    WEEK 2
+                    OBSERVATIONS
                   </div>
                   <div className="description">
-                    <p>Conducted nine 30-minute interviews by video screenshare and three 45-minute interviews, in person, at users' desk.</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>25% of time spent talking about their day-to-day duties and goals</li>
-                      <li><p>25% of time spent discussing their processes around running meetings and town halls</p></li>
-                      <li>50% of time spent observing them use POPin tool</li>
-                    </ul>
-                    <p>Flew to San Francisco to attend a Slido educational meetup</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>Listened as a room full of Slido customers discussed pain points, use cases and parts they love about Slido</li>
-                      <li><p>Glimpsed Slido's product roadmap for upcoming quarter</p></li>
-                      <li>Interviewed three Slido super users, including the woman who runs Uber's monthly town hall, with 20,000 participants</li>
-                    </ul>
+                    <p>Teachers see goal tracking as a bureaucratic time suck.</p>
+                    <p>Paper evaluations require a clipboard (or desk) and two hands.</p>
+                    <p>Older educators aren't very tech-savvy.</p>
+                    <p>Goal descriptions are lengthy and require a lot of typing</p>
+                    <p>Behavioral analysts manage IEPs and are more invested in a tech solution.</p>
+                    <p>There are no standards for how to track goals, even in the same county.</p>
                   </div>
                 </div>
               </div>
@@ -179,16 +137,40 @@ class IepGoalTracker extends React.Component {
               <div>
                 <div className="case-study-slide-content">
                   <div className="subtitle">
-                    WEEK 3
+                    ARTIFACTS
                   </div>
-                  <div className="description">
-                    <p>Engineering team finished alpha version of Slido clone</p>
-                    <p>Conducted usability tests on alpha release</p>
-                    {/*<ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>*/}
-                      {/*<li>Listened as a room full of Slido customers discussed pain points, use cases and parts they love about Slido</li>*/}
-                      {/*<li><p>Glimpsed Slido's product roadmap for upcoming quarter</p></li>*/}
-                      {/*<li>Interviewed three Slido super users, including the woman who runs Uber's monthly town hall, with 20,000 participants</li>*/}
-                    {/*</ul>*/}
+                  <div className="description-images">
+                    <div className="iep-example-forms">
+                      {/*<div className="iep-example five"></div>*/}
+                      {/*<div className="iep-example ten"></div>*/}
+                      <img alt="iep" className="iep-example five" src={iep5} />
+                      <img alt="iep" className="iep-example ten" src={iep10} />
+                    </div>
+                  </div>
+                  <div className="description-images-subtitle">
+                    <p>Paper evaluations only allow goals to be broken down into 5 or 10 tasks.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div className="case-study-slide-content">
+                  <div className="subtitle">
+                    QUOTES
+                  </div>
+                  <div className="description-images">
+                    <div className="quote-container">
+                      <p className="quote">"The problem is more than 'lack of technology'.... There is no process for tracking student progress... and very little oversight for teachers."</p>
+                      <p className="attribution">
+                        <div>–Jenny, Special Education Department Director</div>
+                      </p>
+                    </div>
+                    <div className="quote-container">
+                      <p className="quote">"I'm like the nanny state.... I have to hound the teachers to get me their evaluations."</p>
+                      <p className="attribution">
+                        <div>–Ross, Applied Behavorial Analyst</div>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,67 @@
 @import '../stylesheets/base';
 
-.popin-live {
 
+.description-images {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .iep-example-forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .iep-example {
+      margin: 1rem;
+      width: 17rem;
+      height: 23rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      &.five {
+        background-image: url('../img/iep_example_5.png');
+      }
+      &.ten {
+        background-image: url('../img/iep_example_10.png');
+      }
+      &.goal-creation {
+        background-image: url('../img/goal_creation.png');
+      }
+      &.evaluation {
+        background-image: url('../img/evaluation_screen.png');
+      }
+      &.my-students {
+        background-image: url('../img/my_students.png');
+      }
+      &.progress-bars {
+        background-image: url('../img/iep_progress_bars.png');
+      }
+      &.student-detail {
+        background-image: url('../img/student_detail.png');
+      }
+      &.goal-detail {
+        background-image: url('../img/goal_detail.png');
+      }
+      &.evaluation-2 {
+        background-image: url('../img/evaluation_screen2.png');
+      }
+      &.small {
+        width: 8rem;
+        height: 14rem;
+      }
+    }
+  }
+  .quote-container {
+    font-style: italic;
+    .quote {
+
+    }
+    .attribution {
+      font-size: 1rem;
+      margin-left: 3rem;
+    }
+  }
+}
+.description-images {
+  font-size: 2rem;
+  text-align: center;
 }

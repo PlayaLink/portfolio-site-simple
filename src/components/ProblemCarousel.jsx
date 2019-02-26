@@ -73,7 +73,7 @@ class ProblemCarousel extends React.Component {
               Artifacts
             </div>
             <div className="description-2">
-              <div className="iep-examples">
+              <div className="iep-example-forms">
                 {/*<div className="iep-example five"></div>*/}
                 {/*<div className="iep-example ten"></div>*/}
                 <img alt="iep" className="iep-example five" src={iep5} />
