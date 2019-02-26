@@ -101,7 +101,7 @@ class IepGoalTracker extends React.Component {
         <div className="case-study-section red-background">
           <div className="carousel">
             <div className="case-study-slide-title-container">
-              <div className="case-study-slide-title">THE PROBLEM</div>
+              <div className="case-study-slide-title">THE PROCESS</div>
             </div>
             <Slider {...sliderSettings}>
 
@@ -154,7 +154,7 @@ class IepGoalTracker extends React.Component {
                   <div className="subtitle">
                     QUOTES
                   </div>
-                  <div className="description-images">
+                  <div className="media-vertical">
                     <div className="quote-container">
                       <p className="quote">"The problem is more than 'lack of technology'.... There is no process for tracking student progress... and very little oversight for teachers."</p>
                       <p className="attribution">
@@ -176,7 +176,7 @@ class IepGoalTracker extends React.Component {
                   <div className="subtitle">
                     ARTIFACTS
                   </div>
-                  <div className="description-images">
+                  <div className="media-vertical">
                     <div className="iep-example-forms">
                       {/*<div className="iep-example five"></div>*/}
                       {/*<div className="iep-example ten"></div>*/}
@@ -203,70 +203,72 @@ class IepGoalTracker extends React.Component {
             <Slider {...sliderSettings}>
               <div>
                 <div className="case-study-slide-content">
-                  <div className="subtitle">
+                  <div className="subtitle" style={{marginTop: '2rem'}}>
                     QUICK AND EASY
                   </div>
-                  <div className="description-images">
-                    <IphoneFrame img={iPhoneFrame}>
-                      <ScreenGrab autoPlay={true} src={iepscreengrab}></ScreenGrab>
-                    </IphoneFrame>
+                  <div className="description-images-subtitle" style={{textAlign: 'left'}}>
+                    <p>Only taps to log an evaluation.</p>
                   </div>
-                  <div className="description-images-subtitle">
-                    <p>Paper evaluations only allow goals to be broken down into 5 or 10 tasks.</p>
+                  <div className="media-horizontal">
+                    <div className="example-screenshots">
+                      <div>
+                        <div className="iphone-frame small">
+                          <div className="iep-example my-students"></div>
+                        </div>
+                        <p style={{fontSize: '1rem', textAlign: 'center'}}>Dashboard  ></p>
+                      </div>
+                      <div>
+                        <div className="iphone-frame small"><div className="iep-example student-detail small"></div></div>
+                        <p style={{fontSize: '1rem', textAlign: 'center'}}>Student detail  ></p>
+                      </div>
+                      <div>
+                        <div className="iphone-frame small"><div className="iep-example goal-detail small"></div></div>
+                        <p style={{fontSize: '1rem', textAlign: 'center'}}>Goal list  ></p>
+                      </div>
+                      <div>
+                        <div className="iphone-frame small"><div className="iep-example evaluation-2 small"></div></div>
+                        <p style={{fontSize: '1rem', textAlign: 'center'}}>Log an evaluation</p>
+                      </div>
+                      {/*<img alt="iep-goal-creation" className="iep-goal-creation" src={goalCreation} />*/}
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div>
+                <div className="case-study-slide-content">
+                  <div className="media-horizontal">
+                    <div className="example-screenshots">
+                        <div className="description-images-subtitle" style={{textAlign: 'left'}}>
+                          <div className="subtitle">
+                            FLEXIBLE
+                          </div>
+                          <p>Goals can have as few or as many subtasks as needed.</p>
+                        </div>
+                        <div className="iphone-frame">
+                          <div className="iep-example goal-creation"></div>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div>
                 <div className="case-study-slide-content">
-                  <div className="title">
-                    INSIGHTS
-                  </div>
-                  {/*<div className="subtitle">*/}
-                    {/*OBSERVATIONS*/}
-                  {/*</div>*/}
-                  <div className="description">
-                    <p>Live polling is a separate product category in which POPin cannot compete on price nor functionality</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>But the project still has value: setting up real-time data pushing will improve the overall POPin experience</li>
-                    </ul>
-                    <p>Live comment moderation only needed for events with thousands of participants</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>Database query showed that average join count for POPin surveys is less than 300</li>
-                    </ul>
-                    <p>App fatigue is a big fear for HR/internal comms teams</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>They don't want to force employees to download another app or create another account just to participate in a quick poll</li>
-                    </ul>
-                    <p>Live Participation vs Live Presentation:</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>Will participants submit answers during the event or will results of closed poll be consumed live?</li>
-                      <li>Phase 2 of discovery needs to focus on this question</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div className="case-study-slide-content">
-                  <div className="title">
-                    DESIGN PRINCIPLES
-                  </div>
-                  <div className="description">
-                    <p>Scope should be limited</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>More observation needed to determine if users want to run polls live or display POPin results in a live setting</li>
-                      <li>POPin Live should be considered a marketing/sales enablement tool in the meantime</li>
-                    </ul>
-                    <p>Poll software must integrate seamlessly into existing presentation workflow</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>If running a live poll interrupts the flow of a PowerPoint deck or WebEx meeting, presentors will shy away from it</li>
-                    </ul>
-                    <p>Ability to respond to poll without creating an account</p>
-                    <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
-                      <li>Join code on marketing site?</li>
-                      <li>Text message?</li>
-                    </ul>
+                  <div className="media-horizontal">
+                    <div className="example-screenshots">
+                        <div className="description-images-subtitle" style={{textAlign: 'left'}}>
+                          <div className="subtitle">
+                            DATA VISUALIZATION
+                          </div>
+                          <p>Charts make it easy to track progress over time.</p>
+                          <p>Easy to share results with a behavorial analyst.</p>
+                        </div>
+                        <div className="iphone-frame">
+                          <div className="iep-example progress-bars"></div>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
