@@ -71,7 +71,7 @@ class IepGoalTracker extends React.Component {
             ] }
           />
           <IphoneFrame img={iPhoneFrame}>
-            <ScreenGrab autoPlay={true} src={iepscreengrab}></ScreenGrab>
+            <ScreenGrab autoPlay muted src={iepscreengrab}></ScreenGrab>
           </IphoneFrame>
         </div>
         {/*CHALLENGES*/}
@@ -207,7 +207,7 @@ class IepGoalTracker extends React.Component {
                     QUICK AND EASY
                   </div>
                   <div className="description-images-subtitle" style={{textAlign: 'left'}}>
-                    <p>Only taps to log an evaluation.</p>
+                    <p>Only four taps to log an evaluation.</p>
                   </div>
                   <div className="media-horizontal">
                     <div className="example-screenshots">
