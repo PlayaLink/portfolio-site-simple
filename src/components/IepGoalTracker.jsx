@@ -263,7 +263,7 @@ class IepGoalTracker extends React.Component {
                             DATA VISUALIZATION
                           </div>
                           <p>Charts make it easy to track progress over time.</p>
-                          <p>Easy to share results with a behavorial analyst.</p>
+                          <p>Easy to share results with a behavorial analyst or parent.</p>
                         </div>
                         <div className="iphone-frame">
                           <div className="iep-example progress-bars"></div>
