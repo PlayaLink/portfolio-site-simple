@@ -102,7 +102,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      order: -1; //places the image above description on mobile
+
 
       .projection-screen {
         width: 27rem;
@@ -120,6 +120,7 @@
       flex-direction: column;
       justify-content: center;
       .images {
+        order: -1; //places the image above description on mobile
         .phone {
           width: 7rem;
           height: 13rem;
