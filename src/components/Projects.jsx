@@ -24,7 +24,7 @@ class Projects extends React.Component {
               <div className="phone students" />
             </div>
             <ProjectCard
-              title="Special Ed Goal Tracker"
+              title="IEP Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
               // link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
               route="/iep-goal-tracker"
@@ -48,7 +48,7 @@ class Projects extends React.Component {
                 <p>The company wanted to add live-polling functionality to meet customer demand and feature match the competition.</p>,
                 'I surveyed the competitive landscape, conducted user interviews, scoped the project and managed the design and development of the new feature, called POPin Live.'] }
             />
-            <div className="images">
+            <div className="images reverse-order">
               <div className="projection-screen" />
             </div>
           </div>
