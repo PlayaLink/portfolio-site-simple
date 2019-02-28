@@ -213,9 +213,10 @@ const CardDescription = styled.span`
 
 const Button = styled.a`
   width: 6rem;
+  border: 1px solid #aaaaaa;
   height: 2rem;
-  background-color: #288be4;
-  border-radius: ${remy(7)};
+  background-color: #ec979d;
+  border-radius: ${remy(1)};
   margin: 0 auto;
   text-decoration: none;
   display: flex;
