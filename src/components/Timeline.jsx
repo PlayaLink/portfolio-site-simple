@@ -179,7 +179,7 @@ class Timeline extends React.Component {
               details={ [
                 'Recorded 60 hours of interviews with executive Agile coach Scott Downey',
                 <div>The title of the book was <span className="underline">Tactical, Practical Scrum: A Product Manager's Guide to Successful Scrum Implementation</span></div>,
-                "When people ask if I know Scrum, I say 'Scrum? I wrote the book on Scrum!'. Not exactly true, of course, but it's still fun to say"
+                "In an attempt to eat my own dog food, I used Trello to build a product roadmap for the book and adopted a personal sprint to help me meet my deadline"
               ] }
             />
           </VerticalTimelineElement>
@@ -211,9 +211,9 @@ class Timeline extends React.Component {
               summary="It's one thing to have an idea. It's another thing to be able to build it."
               bullet={ true }
               details={ [
-                'Worked on very product-focused engineering team, building out and maintaining the web version of POPin, an employee engagement survey application',
+                'Worked on a very product-focused engineering team, developing a frontend web app',
                 'Leveraged my interview skills by talking with users and developing user personas',
-                'Continued to feel like a baddass-Jedi-tech-wizard'
+                'Burrowed further down the tech rabbit hole'
               ] }
             />
           </VerticalTimelineElement>
@@ -228,9 +228,9 @@ class Timeline extends React.Component {
               summary="The cleanest code is the code I never wrote – because I asked the right questions first."
               bullet={ true }
               details={ [
-                "Got tired of building things users didn't want/need/use",
+                "Got tired of building features users didn't want/need/use",
                 "Realized technical prowess is only as valuable as the idea behind it",
-                "Discovered design researchers are the journalists of the tech industry"
+                "Started advocating for more design research and usability testing and incorporating both into our development lifecycle"
               ] }
             />
           </VerticalTimelineElement>
