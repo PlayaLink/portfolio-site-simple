@@ -140,11 +140,11 @@ class PopinLive extends React.Component {
                     WEEK 2
                   </div>
                   <div className="description">
-                    <p>Conducted nine 30-minute interviews by video screenshare and three 45-minute interviews, in person, at users' desk.</p>
+                    <p>Conducted nine 30-minute interviews by video screenshare and three 45-minute interviews, in person, at users' desks.</p>
                     <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
                       <li>25% of time spent talking about their day-to-day duties and goals</li>
                       <li><p>25% of time spent discussing their processes around running meetings and town halls</p></li>
-                      <li>50% of time spent observing them use POPin tool</li>
+                      <li>50% of time spent observing them using the POPin tool</li>
                     </ul>
                     <p>Flew to San Francisco to attend a Slido educational meetup</p>
                     <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
@@ -164,6 +164,7 @@ class PopinLive extends React.Component {
                   <div className="description">
                     <p>Engineering team finished alpha version of Slido clone</p>
                     <p>Conducted usability tests on alpha release</p>
+                    <p>Brought more design insights back to our PM</p>
                     {/*<ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>*/}
                       {/*<li>Listened as a room full of Slido customers discussed pain points, use cases and parts they love about Slido</li>*/}
                       {/*<li><p>Glimpsed Slido's product roadmap for upcoming quarter</p></li>*/}
@@ -194,7 +195,7 @@ class PopinLive extends React.Component {
                     <p><strong>User Expectations: </strong>A live poll/survey should integrate seamlessly with their presentation software (e.g. PowerPoint)</p>
                     <p><strong>Usability:</strong> Users struggled with sharing a POPin and toggling between presentation/edit/participation modes</p>
                     <p><strong>Pain Point:</strong> Event moderators have no way of following up with employees whose questions were not addressed during a live event</p>
-                    <p><strong>Pain Point:</strong> Duplicate responses are a problem no matter the size of participant pool</p>
+                    <p><strong>Pain Point:</strong> Duplicate responses are a problem no matter the size of the participant pool</p>
                     <p><strong>Pain Point:</strong> The 'first mover' bias</p>
                     <ul className="white" style={{paddingLeft:'2rem', fontSize: '1rem', marginTop: '-1rem'}}>
                       <li>The first responses get the first votes, which creates a snowball effect that drowns out later responses</li>

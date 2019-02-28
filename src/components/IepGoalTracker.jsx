@@ -141,7 +141,7 @@ class IepGoalTracker extends React.Component {
                   </div>
                   <div className="description">
                     <p>Simple to use</p>
-                    <p>Goals need to be cusomizable</p>
+                    <p>Goals need to be customizable</p>
                     <p>Logging evaluations needs to be quick and painless</p>
                     <p>Ability to log evaluations while walking around classroom</p>
                     <p>Ability to enter lengthy goals and student profiles on a desktop</p>

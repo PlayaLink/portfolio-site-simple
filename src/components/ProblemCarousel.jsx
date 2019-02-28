@@ -116,7 +116,7 @@ class ProblemCarousel extends React.Component {
           bullets={true}
           description={ [
             <li>Simple to use</li>,
-            <li>Goals need to be cusomizable</li>,
+            <li>Goals need to be customizable</li>,
             <li>Logging evaluations needs to be quick and easy</li>,
             <li>Easy to log evaluations while walking around classroom</li>,
             <li>Easy to create goals and student profiles on a desktop</li>,
