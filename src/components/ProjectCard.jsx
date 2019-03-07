@@ -17,7 +17,7 @@ const ProjectCard = (props) => (
       { props.description }
     </div>
     { (props.cta && props.link) && (
-      <div style={ { marginTop: '1rem' } }>
+      <div style={ { marginTop: '2rem' } }>
         <a
           href={ props.link }
           target="_blank"
@@ -32,7 +32,7 @@ const ProjectCard = (props) => (
       </div>
     ) }
     { (props.cta && props.route) && (
-      <div style={ { marginTop: '1rem' } }>
+      <div style={ { marginTop: '2rem' } }>
         <Link to={props.route} style={{textDecoration: 'none'}}>
           <a
             href={ props.link }

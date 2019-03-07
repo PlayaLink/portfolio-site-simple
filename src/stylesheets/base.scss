@@ -104,7 +104,9 @@ body {
 }
 
 .reverse-order {
-  order: -1; //places the image above description on mobile
+  @media (max-width: 425px) {
+    order: -1; //places the image above description on mobile
+  }
 }
 
 
