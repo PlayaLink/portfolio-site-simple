@@ -3,6 +3,7 @@ import ProjectCard from './ProjectCard';
 import './Projects.scss';
 import { Element } from 'react-scroll';
 import iepCaseStudy from '../img/Case_Study_IEP_Goal_Tracker.pdf';
+import popinLiveCaseStudy from '../img/Case_Study_POPin_Live.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Projects extends React.Component {
@@ -42,7 +43,7 @@ class Projects extends React.Component {
             <ProjectCard
               title="POPin Live"
               subtitle="Adding live-polling to POPin's suite of survey tools"
-              route="/popin-live"
+              link={popinLiveCaseStudy}
               cta="Case Study"
               description={ [
                 'POPin is an Irvine-based startup that makes employee engagement software for large enterprises.',
