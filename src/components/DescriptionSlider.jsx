@@ -47,7 +47,7 @@ const desc4 = () => (
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
-    <p>I've fallen in love in 3 different languages.</p>
+    <p>I used to write stories for newspaper readers.</p>
   </div>
 );
 
@@ -56,8 +56,8 @@ const desc5 = () => (
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
-    <p>I've fallen in love in 3 different languages.</p>
-    <p>(I also speak JavaScript)</p>
+    <p>I used to write stories for newspaper readers.</p>
+    <p>Now I write applications for Internet users.</p>
   </div>
 );
 const desc6 = () => (
@@ -65,9 +65,9 @@ const desc6 = () => (
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
-    <p>I've fallen in love in 3 different languages.</p>
-    <p>(I also speak JavaScript)</p>
-    <p>I'm curious and passionate.</p>
+    <p>I used to write stories for newspaper readers.</p>
+    <p>Now I write applications for Internet users.</p>
+    <p>I'm a creative who knows how to code.</p>
   </div>
 );
 const desc7 = () => (
@@ -75,10 +75,10 @@ const desc7 = () => (
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
-    <p>I've fallen in love in 3 different languages.</p>
-    <p>(I also speak JavaScript)</p>
-    <p>I'm curious and passionate.</p>
-    <p>And ambitious about new experiences.</p>
+    <p>I used to write stories for newspaper readers.</p>
+    <p>Now I write applications for Internet users.</p>
+    <p>I'm a creative who knows how to code.</p>
+    <p>An empathetic translator.</p>
   </div>
 );
 const desc8 = () => (
@@ -86,11 +86,11 @@ const desc8 = () => (
     {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
-    <p>I've fallen in love in 3 different languages.</p>
-    <p>(I also speak JavaScript)</p>
-    <p>I'm curious and passionate.</p>
-    <p>And ambitious about new experiences.</p>
-    <p>I will make you laugh.</p>
+    <p>I used to write stories for newspaper readers.</p>
+    <p>Now I write applications for Internet users.</p>
+    <p>I'm a creative who knows how to code.</p>
+    <p>An empathetic translator.</p>
+    <p>Curious about the world and passionate about making it easier to navigate.</p>
   </div>
 );
 
@@ -142,7 +142,10 @@ class DescriptionSlider extends Component {
     return (
       <div className="description-slider">
         <div className="description">
-          <div style={{textAlign: 'center', paddingLeft: '1rem', paddingRight: '1rem'}}>I'm a <strong>product developer</strong> and <strong>storyteller</strong> with broad startup experience in tech.</div>
+          <div style={{textAlign: 'center', paddingLeft: '1rem', paddingRight: '1rem'}}>
+            <p style={{marginBottom: '0.25rem'}}>I'm a <strong>product developer</strong> and trilingual <strong>storyteller</strong></p>
+            who understands engineers and empathizes with users.
+          </div>
         </div>
         <div className="slider-content">
           {this.getDescription()}
