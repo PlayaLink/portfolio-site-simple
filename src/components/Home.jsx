@@ -113,13 +113,12 @@ class Home extends React.Component {
         <Projects
           pulseIep={this.state.pulseIep}
         />
+        <Cards/>
         <Timeline
           pulseJournalism={this.state.pulseJournalism}
           pulseMarketing={this.state.pulseMarketing}
           pulseScrum={this.state.pulseScrum}
         />
-
-        <Cards/>
       </div>
     );
   }

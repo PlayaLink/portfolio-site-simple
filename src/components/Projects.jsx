@@ -26,29 +26,29 @@ class Projects extends React.Component {
               <div className="phone students" />
             </div>
             <ProjectCard
-              title="IEP Goal Tracker"
+              title="Special Ed Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
               // link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
-              link={iepCaseStudy}
+              download={iepCaseStudy}
               cta="Case Study"
               description={ [
                 "Teachers weren't tracking goals properly because paper spreadsheets are a hassle.",
                 <p>A tech-savvy principal wanted to change that.</p>,
-                'This mobile-friendly web app makes it easy to log evaluations and track progress over time.'
+                'The result was a mobile-friendly web app that makes it easy to log evaluations and track progress over time.'
               ] }
             />
           </Element>
 
           <div className="popin-live">
             <ProjectCard
-              title="POPin Live"
-              subtitle="Adding live-polling to POPin's suite of survey tools"
-              link={popinLiveCaseStudy}
+              title="From Feature Validation to User Personas"
+              subtitle="Turning a feature request into a tool for user insights"
+              download={popinLiveCaseStudy}
               cta="Case Study"
               description={ [
-                'POPin is an Irvine-based startup that makes employee engagement software for large enterprises.',
-                <p>The company wanted to add live-polling functionality to meet customer demand and feature match the competition.</p>,
-                'I surveyed the competitive landscape, conducted user interviews, scoped the project and managed the design and development of the new feature, called POPin Live.'] }
+                'POPin is an Irvine-based startup that thought copying their competitors would increase sales.',
+                <p>Executive buy-in for a copycat feature created an opportunity for conducting broader user research.</p>,
+                'Design research for the feature yielded user personas for the core product.'] }
             />
             <div className="images reverse-order">
               <div className="projection-screen" />
@@ -75,13 +75,13 @@ class Projects extends React.Component {
               link="http://www.streetarttalks.com"
               cta="Visit Site"
               description={ [
-                'Street art is more approachable than art in a museum.',
+                'Street art is more approachable than art in a museum. But wouldn\'t it be nice to know more about the art and the person who created it?',
                 <p />,
-                "But wouldn't it be nice to know more about the art and the person who created it?",
+                "",
                 <p />,
                 'Stencils tagged near prominent murals in DTLA\'s arts district will instruct passersby to text a code to a Twilio phone number. ',
                 <p />,
-                'An automated text response includes a url with information about the mural and artist.'] }
+                'An automated text response includes a url with information about the mural and a link to the artist\'s Instagram.'] }
             />
           </div>
 

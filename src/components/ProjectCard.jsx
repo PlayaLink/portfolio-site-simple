@@ -16,10 +16,10 @@ const ProjectCard = (props) => (
     <div className="description">
       { props.description }
     </div>
-    { (props.cta && props.link) && (
+    { (props.cta && props.download) && (
       <div style={ { marginTop: '2rem' } }>
         <a
-          href={ props.link }
+          href={ props.download }
           download
           className="button pink">
           <span>{props.cta} </span><span
@@ -31,21 +31,19 @@ const ProjectCard = (props) => (
         </a>
       </div>
     ) }
-    { (props.cta && props.route) && (
+    { (props.cta && props.link) && (
       <div style={ { marginTop: '2rem' } }>
-        <Link to={props.route} style={{textDecoration: 'none'}}>
-          <a
-            href={ props.link }
-            target="_blank"
-            className="button pink">
-            <span>{props.cta} </span><span
-            style={ {
-              position: 'relative',
-              marginRight: '10px',
-              marginLeft: '5px'
-            } }><FontAwesomeIcon icon="arrow-right" /></span>
-          </a>
-        </Link>
+        <a
+          href={ props.link }
+          target="_blank"
+          className="button pink">
+          <span>{props.cta} </span><span
+          style={ {
+            position: 'relative',
+            marginRight: '10px',
+            marginLeft: '5px'
+          } }><FontAwesomeIcon icon="arrow-right" /></span>
+        </a>
       </div>
     ) }
   </div>
