@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import './Projects.scss';
 import { Element } from 'react-scroll';
+import iepCaseStudy from '../img/Case_Study_IEP_Goal_Tracker.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Projects extends React.Component {
@@ -27,7 +28,7 @@ class Projects extends React.Component {
               title="IEP Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
               // link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
-              route="/iep-goal-tracker"
+              link={iepCaseStudy}
               cta="Case Study"
               description={ [
                 "Teachers weren't tracking goals properly because paper spreadsheets are a hassle.",

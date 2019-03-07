@@ -12,9 +12,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 library.add(faArrowRight);
 library.add(faChevronDown);
 library.add(faInfoCircle);
+library.add(faDownload);
+
 
 
 class App extends Component {

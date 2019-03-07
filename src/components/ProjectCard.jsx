@@ -20,14 +20,14 @@ const ProjectCard = (props) => (
       <div style={ { marginTop: '2rem' } }>
         <a
           href={ props.link }
-          target="_blank"
+          download
           className="button pink">
           <span>{props.cta} </span><span
           style={ {
             position: 'relative',
             marginRight: '10px',
             marginLeft: '5px'
-          } }><FontAwesomeIcon icon="arrow-right" /></span>
+          } }><FontAwesomeIcon icon="download" /></span>
         </a>
       </div>
     ) }
