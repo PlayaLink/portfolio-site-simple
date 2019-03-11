@@ -27,7 +27,7 @@ class Projects extends React.Component {
               <div className="phone students" />
             </div>
             <ProjectCard
-              title="Special Ed Goal Tracker"
+              title="A Special Ed Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
               // link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
               download={iepCaseStudy}
@@ -42,14 +42,14 @@ class Projects extends React.Component {
 
           <div className="popin-live">
             <ProjectCard
-              title="From Feature Validation to User Personas"
-              subtitle="Turning a feature request into a tool for user insights"
+              title="Feature Matching & User Personas"
+              subtitle="Turning a feature request into an opportunity for gaining user insights"
               download={popinLiveCaseStudy}
               cta="Case Study"
               description={ [
                 'POPin is an Irvine-based startup that thought copying their competitors would increase sales.',
-                <p>Executive buy-in for a copycat feature created an opportunity for conducting broader user research.</p>,
-                'Design research for the feature yielded user personas for the core product.'] }
+                <p>Executive buy-in for a copycat feature created an opportunity for advocating for broader user research.</p>,
+                'Design research for the feature was leveraged to create user personas for the core product.'] }
             />
             <div className="images reverse-order">
               <div className="projection-screen" />
