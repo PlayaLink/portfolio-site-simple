@@ -4,6 +4,7 @@ import './Projects.scss';
 import { Element } from 'react-scroll';
 import iepCaseStudy from '../img/Case_Study_IEP_Goal_Tracker.pdf';
 import popinLiveCaseStudy from '../img/Case_Study_POPin_Live.pdf';
+import streetArtTalksCaseStudy from '../img/Case_Study_Street_Art_Talks.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Projects extends React.Component {
@@ -72,8 +73,8 @@ class Projects extends React.Component {
             <ProjectCard
               title="Street Art Talks"
               subtitle="Text-based audio tour of street art in DTLA"
-              link="http://www.streetarttalks.com"
-              cta="Visit Site"
+              download={streetArtTalksCaseStudy}
+              cta="Case Study"
               description={ [
                 'Street art is more approachable than art in a museum. But wouldn\'t it be nice to know more about the art and the person who created it?',
                 <p />,
