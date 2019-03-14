@@ -2,7 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import './stylesheets/base.scss'
+import './stylesheets/base.scss';
+
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+  gtmId: 'GTM-W35SLR2'
+};
+
+TagManager.initialize(tagManagerArgs);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
