@@ -39,7 +39,7 @@ const ProjectCard = (props) => (
           id={props.id}
           target="_blank"
           className="button pink download-button">
-          <span>{props.cta} </span><span
+          {props.cta}<span
           style={ {
             position: 'relative',
             marginRight: '10px',
