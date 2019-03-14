@@ -32,18 +32,18 @@ class App extends Component {
               exact
               path={process.env.PUBLIC_URL + '/'}
               component={Home}/>
-            <Route
-              exact
-              path={process.env.PUBLIC_URL + '/popin-live'}
-              component={PopinLive} />
-            <Route
-              exact
-              path={process.env.PUBLIC_URL + '/iep-goal-tracker'}
-              component={IepGoalTracker} />
-            <Route
-              exact
-              path={process.env.PUBLIC_URL + '/pie-chart'}
-              component={PieChart} />
+            {/*<Route*/}
+              {/*exact*/}
+              {/*path={process.env.PUBLIC_URL + '/popin-live'}*/}
+              {/*component={PopinLive} />*/}
+            {/*<Route*/}
+              {/*exact*/}
+              {/*path={process.env.PUBLIC_URL + '/iep-goal-tracker'}*/}
+              {/*component={IepGoalTracker} />*/}
+            {/*<Route*/}
+              {/*exact*/}
+              {/*path={process.env.PUBLIC_URL + '/pie-chart'}*/}
+              {/*component={PieChart} />*/}
           </div>
         </BrowserRouter>
       </div>
