@@ -22,7 +22,7 @@ const ProjectCard = (props) => (
           href={ props.download }
           download
           id={props.id}
-          className="button pink">
+          className="button pink download-button">
           <span>{props.cta} </span><span
           style={ {
             position: 'relative',
@@ -38,7 +38,7 @@ const ProjectCard = (props) => (
           href={ props.link }
           id={props.id}
           target="_blank"
-          className="button pink">
+          className="button pink download-button">
           <span>{props.cta} </span><span
           style={ {
             position: 'relative',
