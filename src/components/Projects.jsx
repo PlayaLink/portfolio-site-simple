@@ -10,17 +10,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class Projects extends React.Component {
   constructor (props) {
     super(props);
-    this.iepRef = React.createRef();
-    this.scrumRef = React.createRef();
   }
 
   render () {
-    const { pulseScrum, pulseIep } = this.props;
     return (
       <div style={{maxWidth: '100%'}}>
         <div className="section-title projects">Portfolio</div>
         <div className="projects">
-          <Element name="iep" className={ `iep-goal-tracker ${pulseIep ? 'pulse' : ''}` }>
+          <Element name="iep" className={ `iep-goal-tracker` }>
             <div className="images">
               <div className="phone evaluations" />
               <div className="phone login" />
@@ -86,18 +83,6 @@ class Projects extends React.Component {
             />
           </div>
 
-          { /*<Element name="scrum" className={`scrum-ebook ${pulseScrum ? 'pulse' : ''}`}>*/ }
-          { /*<div className="images">*/ }
-          { /*<div className="ebook" />*/ }
-          { /*</div>*/ }
-          { /*<p className={`description`} ref={this.scrumRef}>*/ }
-          { /*<strong>Tactical, Practical Scrum</strong> is a 50-page handbook that I ghostwrote for an executive Agile coaching consultancy started by Scott Downey, whose clients include 3M, Toyota, Grindr, Napster and MySpace.*/ }
-          { /*Ghostwrote*/ }
-          { /*<br/>*/ }
-          { /*<br/>*/ }
-          { /*<div>The idea was to take Scott Downey's 20 years of experience and turn it into an ebook that he could use as part of his corporate trainings.<span style={{position: 'relative', left: '0.25rem'}}><FontAwesomeIcon icon="info-circle" /></span></div>*/ }
-          { /*</p>*/ }
-          { /*</Element>*/ }
         </div>
       </div>
 

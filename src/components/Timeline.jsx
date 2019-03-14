@@ -2,54 +2,29 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Element, Link } from 'react-scroll/modules';
 
 class TimelineCard extends React.Component {
   constructor (props) {
     super(props);
-    this.state = {
-      open: false
-    };
-    this.ref = React.createRef();
   }
-
-  toggleCard = () => {
-    this.setState({ open: !this.state.open });
-  };
-
-  openCard = () => {
-    this.setState({ open: true });
-  };
-
-  closeCard = () => {
-    this.setState({ open: false });
-  };
 
   renderBulletedList = (details) => {
     return (
-      <ul className={ `full-description ${this.state.open ? 'open' : ''}` }>
+      <ul className={ `full-description` }>
         { details.map((text, i) => <li key={i}>{ text }</li>) }
       </ul>
     );
   };
   renderParagraphs = (details) => {
     return (
-      <div className={ `full-description ${this.state.open ? 'open' : ''}` }>
+      <div className={ `full-description` }>
         { details.map(text => <p>{ text }</p>) }
       </div>
     );
   };
 
-  pulseCard = () => {
-    this.ref.current.parentElement.classList.add('pulse')
-  }
-
   render () {
-    const { title, summary, details, bullet, pulse } = this.props;
-    if(!!pulse) {
-      this.pulseCard();
-    }
+    const { title, summary, details, bullet } = this.props;
     return (
       <div ref={this.ref} className={ `timeline-card` }>
         <h3 className="vertical-timeline-element-title">{ title }</h3>
@@ -68,7 +43,6 @@ class Timeline extends React.Component {
   }
 
   render () {
-    const { pulseJournalism, pulseMarketing, pulseScrum } = this.props;
     return (
       <div className="timeline">
         <div className="section-title timeline">A Series of Fortunate Events</div>
@@ -109,24 +83,21 @@ class Timeline extends React.Component {
             />
           </VerticalTimelineElement>
           { /*Barcelona*/ }
-          <Element name="journalism">
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
-            >
-              <TimelineCard
-                title="Journalism School in Barcelona"
-                pulse={ pulseJournalism }
-                summary="Higher education is cheap in Europe. French is useless in America. Spanish is the second language in California."
-                bullet={ true }
-                details={ [
-                  "Wanted to perfect my Spanish before moving back to Southern California to write about the border and immigration issues",
-                  'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona',
-                  'Rode my bike across Northern Spain, fueled by red wine and jamón serrano'
-                ] }
-              />
-            </VerticalTimelineElement>
-          </Element>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
+          >
+            <TimelineCard
+              title="Journalism School in Barcelona"
+              summary="Higher education is cheap in Europe. French is useless in America. Spanish is the second language in California."
+              bullet={ true }
+              details={ [
+                "Wanted to perfect my Spanish before moving back to Southern California to write about the border and immigration issues",
+                'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona',
+                'Rode my bike across Northern Spain, fueled by red wine and jamón serrano'
+              ] }
+            />
+          </VerticalTimelineElement>
 
           { /*Journalism*/ }
           <VerticalTimelineElement
@@ -135,7 +106,6 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Interviewing and Storytelling"
-              pulse={ pulseJournalism }
               summary="Learned how to ask questions, find information, and distill complex topics by writing hundreds of news stories and interviewing thousands of people"
               bullet={ true }
               details={ [
@@ -147,24 +117,21 @@ class Timeline extends React.Component {
           </VerticalTimelineElement>
 
           { /*Breaking into tech*/ }
-          <Element name="marketing">
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              iconStyle={ { background: '#00ff9f', color: '#fff' } }
-            >
-              <TimelineCard
-                title="Product marketing"
-                pulse={pulseMarketing}
-                summary="Overworked, underpaid, and inspired by the entrepreneurs I was writing about, I jumped the sinking ship of journalism for a job in tech."
-                bullet={ true }
-                details={ [
-                  'Learned a lot about the tech industry',
-                  'Learned a lot about the logistics industry and the history of the shipping container',
-                  <div>Realized that I am more interested in <strong>making/writing/coding</strong> things than <strong>selling/marketing/consuming</strong> things</div>
-                ] }
-              />
-            </VerticalTimelineElement>
-          </Element>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={ { background: '#00ff9f', color: '#fff' } }
+          >
+            <TimelineCard
+              title="Product marketing"
+              summary="Overworked, underpaid, and inspired by the entrepreneurs I was writing about, I jumped the sinking ship of journalism for a job in tech."
+              bullet={ true }
+              details={ [
+                'Learned a lot about the tech industry',
+                'Learned a lot about the logistics industry and the history of the shipping container',
+                <div>Realized that I am more interested in <strong>making/writing/coding</strong> things than <strong>selling/marketing/consuming</strong> things</div>
+              ] }
+            />
+          </VerticalTimelineElement>
 
           { /*Scrum*/ }
           <VerticalTimelineElement
@@ -173,7 +140,6 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Scrum/Agile"
-              pulse={pulseScrum}
               summary="Ghostwrote a 50-page handbook for successful Scrum adoption"
               bullet={ true }
               details={ [

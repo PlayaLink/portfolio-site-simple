@@ -55,49 +55,13 @@ const Summary = () => (
 class Home extends React.Component {
   constructor (props) {
     super(props);
-    this.scrollToTop = this.scrollToTop.bind(this);
-    this.state = {
-      pulseJournalism: false,
-      pulseMarketing: false,
-      pulseScrum: false,
-      pulseIep: false,
-    }
+
   }
 
   componentDidMount () {
-    Events.scrollEvent.register('begin', function () {
-      console.log("begin", arguments);
-    });
 
-    Events.scrollEvent.register('end', function () {
-      console.log("end", arguments);
-    });
   }
 
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
-  }
-
-  scrollToTop() {
-    scroll.scrollToTop();
-  }
-
-  journalismClicked = () => {
-    this.setState({pulseJournalism: true});
-  };
-
-  marketingClicked = () => {
-    this.setState({pulseMarketing: true});
-  };
-
-  scrumClicked = () => {
-    this.setState({pulseScrum: true});
-  };
-
-  productClicked = () => {
-    this.setState({pulseIep: true});
-  };
 
   render () {
     return (
@@ -110,15 +74,9 @@ class Home extends React.Component {
           {/*scrumClicked={this.scrumClicked}*/}
           {/*productClicked={this.productClicked}*/}
         {/*/>*/}
-        <Projects
-          pulseIep={this.state.pulseIep}
-        />
+        <Projects />
         <Cards/>
-        <Timeline
-          pulseJournalism={this.state.pulseJournalism}
-          pulseMarketing={this.state.pulseMarketing}
-          pulseScrum={this.state.pulseScrum}
-        />
+        <Timeline />
       </div>
     );
   }
