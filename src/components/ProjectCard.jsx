@@ -23,7 +23,7 @@ const ProjectCard = (props) => (
           download
           id={props.id}
           className="button pink download-button">
-          <span>{props.cta} </span><span
+          {props.cta}<span
           style={ {
             position: 'relative',
             marginRight: '10px',
