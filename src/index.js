@@ -4,7 +4,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './stylesheets/base.scss';
 
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module';
 
 const tagManagerArgs = {
   gtmId: 'GTM-W35SLR2'
