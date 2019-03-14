@@ -27,6 +27,7 @@ class Projects extends React.Component {
               title="A Special Ed Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
               // link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
+              id="IEP-Goal-Tracker"
               download={iepCaseStudy}
               cta="Case Study"
               description={ [
@@ -42,6 +43,7 @@ class Projects extends React.Component {
               title="Feature Matching & User Personas"
               subtitle="Turning a feature request into an opportunity for gaining user insights"
               download={popinLiveCaseStudy}
+              id="POPin-Live"
               cta="Case Study"
               description={ [
                 'POPin is an Irvine-based startup that thought copying their competitors would increase sales.',
@@ -71,6 +73,7 @@ class Projects extends React.Component {
               title="Street Art Talks"
               subtitle="Text-based audio tour of street art in DTLA"
               download={streetArtTalksCaseStudy}
+              id="Street-Art-Talks"
               cta="Case Study"
               description={ [
                 'Street art is more approachable than art in a museum. But wouldn\'t it be nice to know more about the art and the person who created it?',

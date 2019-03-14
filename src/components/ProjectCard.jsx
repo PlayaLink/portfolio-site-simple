@@ -21,6 +21,7 @@ const ProjectCard = (props) => (
         <a
           href={ props.download }
           download
+          id={props.id}
           className="button pink">
           <span>{props.cta} </span><span
           style={ {
@@ -35,6 +36,7 @@ const ProjectCard = (props) => (
       <div style={ { marginTop: '2rem' } }>
         <a
           href={ props.link }
+          id={props.id}
           target="_blank"
           className="button pink">
           <span>{props.cta} </span><span
