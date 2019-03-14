@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './stylesheets/base.scss';
-
 import TagManager from 'react-gtm-module';
+import LogRocket from 'logrocket';
+
+LogRocket.init('z5pe1u/portfolio-site');
+
 
 const tagManagerArgs = {
   gtmId: 'GTM-W35SLR2'
