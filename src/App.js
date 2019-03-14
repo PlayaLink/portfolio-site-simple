@@ -6,7 +6,6 @@ import PieChart from './components/PieChart';
 import PopinLive from './components/PopinLive';
 import IepGoalTracker from './components/IepGoalTracker';
 import { BrowserRouter, Route } from 'react-router-dom';
-import ReactGA from 'react-ga';
 
 //Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'

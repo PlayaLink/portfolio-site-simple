@@ -8,6 +8,7 @@ import Slider from './DescriptionSlider';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 
+
 const Header = () => (
   <div className="header">
     <div className="title">Jordan <br className="breakpoint"/>England-Nelson</div>
@@ -59,9 +60,7 @@ class Home extends React.Component {
   }
 
   componentDidMount () {
-
   }
-
 
   render () {
     return (
