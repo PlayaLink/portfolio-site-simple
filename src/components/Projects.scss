@@ -2,6 +2,11 @@
 
 .projects {
   width: 100%;
+  margin-top: 6rem;
+
+  .project-section {
+    margin-bottom: 5rem;
+  }
 
   .iep-goal-tracker {
     margin-top: 3rem;
@@ -116,7 +121,6 @@
     }
   }
   .meetly {
-    margin-top: 6rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -129,7 +133,7 @@
 
       .macbook {
         width: 36rem;
-        height: 31rem;
+        height: 20rem;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;

@@ -17,7 +17,7 @@ class Projects extends React.Component {
       <div style={{maxWidth: '100%'}}>
         <div className="section-title projects">Portfolio</div>
         <div className="projects">
-          <div className="meetly">
+          <div className="meetly project-section">
             <a className="images reverse-order" href="https://www.runmeetly.com/">
               <div className="macbook" />
             </a>
@@ -34,7 +34,7 @@ class Projects extends React.Component {
                 ] }
             />
           </div>
-          <Element name="iep" className={ `iep-goal-tracker` }>
+          <Element name="iep" className={ `iep-goal-tracker project-section` }>
             <ProjectCard
               title="Special Ed Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
@@ -72,7 +72,7 @@ class Projects extends React.Component {
             {/*</div>*/}
           {/*</div>*/}
 
-          <div className="street-art-talks">
+          <div className="street-art-talks project-section">
             <div className="images">
               <div className="murals">
                 <div className="thumbnail influence"/>
