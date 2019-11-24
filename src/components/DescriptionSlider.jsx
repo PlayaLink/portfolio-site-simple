@@ -142,7 +142,7 @@ class DescriptionSlider extends Component {
       <div className="description-slider">
         <div className="description">
           <div style={{textAlign: 'center', paddingLeft: '1rem', paddingRight: '1rem'}}>
-            <div style={{marginBottom: '0.25rem'}}>I'm a <strong>product designer</strong> with speaks French, Spanish and Javascript.</div>
+            <div style={{marginBottom: '2.5rem'}}>I'm a <strong>product designer</strong> with speaks French, Spanish and Javascript.</div>
           </div>
         </div>
         <div className="slider-content">
