@@ -57,7 +57,7 @@ const desc5 = () => (
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
     <p>I used to write stories for newspaper readers.</p>
-    <p>Now I write applications for Internet users.</p>
+    <p>Now I make applications for Internet users.</p>
   </div>
 );
 const desc6 = () => (
@@ -66,7 +66,7 @@ const desc6 = () => (
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
     <p>I used to write stories for newspaper readers.</p>
-    <p>Now I write applications for Internet users.</p>
+    <p>Now I make applications for Internet users.</p>
     <p>I'm a creative who knows how to code.</p>
   </div>
 );
@@ -76,7 +76,7 @@ const desc7 = () => (
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
     <p>I used to write stories for newspaper readers.</p>
-    <p>Now I write applications for Internet users.</p>
+    <p>Now I make applications for Internet users.</p>
     <p>I'm a creative who knows how to code.</p>
     <p>An empathetic translator.</p>
   </div>
@@ -87,7 +87,7 @@ const desc8 = () => (
     <p>I was raised Mormon.</p>
     <p>Now I go to Burning Man.</p>
     <p>I used to write stories for newspaper readers.</p>
-    <p>Now I write applications for Internet users.</p>
+    <p>Now I make applications for Internet users.</p>
     <p>I'm a creative who knows how to code.</p>
     <p>An empathetic translator.</p>
     <p>Curious about the world and passionate about making it easier to navigate.</p>
