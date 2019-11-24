@@ -17,12 +17,24 @@ class Projects extends React.Component {
       <div style={{maxWidth: '100%'}}>
         <div className="section-title projects">Portfolio</div>
         <div className="projects">
-          <Element name="iep" className={ `iep-goal-tracker` }>
-            <div className="images">
-              <div className="phone evaluations" />
-              <div className="phone login" />
-              <div className="phone students" />
+          <div className="meetly">
+            <div className="images reverse-order">
+              <div className="macbook" />
             </div>
+            <ProjectCard
+              title="Meetly"
+              subtitle="A meeting notes and collaboration tool for teams."
+              download="https://runmeetly.com"
+              id="Meetly"
+              isDownload={true}
+              cta="Visit Site"
+              description={ [
+                'Co-founded the company with 3 other engineers.',
+                <p>Designed the web experience and built out the frontend.</p>,
+                ] }
+            />
+          </div>
+          <Element name="iep" className={ `iep-goal-tracker` }>
             <ProjectCard
               title="A Special Ed Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
@@ -36,24 +48,29 @@ class Projects extends React.Component {
                 'The result was a mobile-friendly web app that makes it easy to log evaluations and track progress over time.'
               ] }
             />
+            <div className="images reverse-order">
+              <div className="phone evaluations" />
+              <div className="phone login" />
+              <div className="phone students" />
+            </div>
           </Element>
 
-          <div className="popin-live">
-            <ProjectCard
-              title="Feature Matching & User Personas"
-              subtitle="Turning a feature request into an opportunity for gaining user insights"
-              download={popinLiveCaseStudy}
-              id="POPin-Live"
-              cta="Case Study"
-              description={ [
-                'POPin is an Irvine-based startup that thought copying their competitors would increase sales.',
-                <p>Executive buy-in for a copycat feature created an opportunity for advocating for broader user research.</p>,
-                'Design research for the feature was leveraged to create user personas for the core product.'] }
-            />
-            <div className="images reverse-order">
-              <div className="projection-screen" />
-            </div>
-          </div>
+          {/*<div className="popin-live">*/}
+            {/*<ProjectCard*/}
+              {/*title="Feature Matching & User Personas"*/}
+              {/*subtitle="Turning a feature request into an opportunity for gaining user insights"*/}
+              {/*download={popinLiveCaseStudy}*/}
+              {/*id="POPin-Live"*/}
+              {/*cta="Case Study"*/}
+              {/*description={ [*/}
+                {/*'POPin is an Irvine-based startup that thought copying their competitors would increase sales.',*/}
+                {/*<p>Executive buy-in for a copycat feature created an opportunity for advocating for broader user research.</p>,*/}
+                {/*'Design research for the feature was leveraged to create user personas for the core product.'] }*/}
+            {/*/>*/}
+            {/*<div className="images reverse-order">*/}
+              {/*<div className="projection-screen" />*/}
+            {/*</div>*/}
+          {/*</div>*/}
 
           <div className="street-art-talks">
             <div className="images">
