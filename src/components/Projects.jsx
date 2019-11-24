@@ -18,9 +18,9 @@ class Projects extends React.Component {
         <div className="section-title projects">Portfolio</div>
         <div className="projects">
           <div className="meetly">
-            <div className="images reverse-order">
+            <a className="images reverse-order" href="https://www.runmeetly.com/">
               <div className="macbook" />
-            </div>
+            </a>
             <ProjectCard
               title="Meetly"
               subtitle="A meeting notes and collaboration tool for teams."
@@ -36,7 +36,7 @@ class Projects extends React.Component {
           </div>
           <Element name="iep" className={ `iep-goal-tracker` }>
             <ProjectCard
-              title="A Special Ed Goal Tracker"
+              title="Special Ed Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
               // link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
               id="IEP-Goal-Tracker"
@@ -48,11 +48,11 @@ class Projects extends React.Component {
                 'The result was a mobile-friendly web app that makes it easy to log evaluations and track progress over time.'
               ] }
             />
-            <div className="images reverse-order">
+            <a className="images reverse-order" href="http://www.iepgoaltracker.com/">
               <div className="phone evaluations" />
               <div className="phone login" />
               <div className="phone students" />
-            </div>
+            </a>
           </Element>
 
           {/*<div className="popin-live">*/}
