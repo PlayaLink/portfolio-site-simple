@@ -190,13 +190,13 @@ class Timeline extends React.Component {
             iconStyle={ { background: '#aaaaaa', color: '#fff' } }
           >
             <TimelineCard
-              title="Design Research"
-              summary="The cleanest code is the code I never wrote – because I asked the right questions first."
+              title="Product Design"
+              summary="I've moved to the design side of product development, where I'm able to apply the story-telling and information architecting skills I gained as a journalist."
               bullet={ true }
               details={ [
-                "Got tired of building features users didn't want/need/use",
-                "Realized technical prowess is only as valuable as the idea behind it",
-                "Started advocating for more design research and usability testing and incorporating both into our development lifecycle"
+                "The cleanest code is the code I never wrote – because I asked the right questions and tested designs before using dev time to build our an idea.",
+                "Applied the Jobs-to-Be-Done framework to develop Meetly",
+                "Still have one foot in the engineering world, where I enjoy turning ideas into functional tools."
               ] }
             />
           </VerticalTimelineElement>
