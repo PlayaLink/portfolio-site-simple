@@ -4,7 +4,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   .slider-content {
-    width: 398px;
+    width: 350px;
     margin: 1rem auto;
     height: 410px;
     display: flex;
@@ -44,7 +44,8 @@
     .slider-content {
       background-size: 90%;
       .description {
-
+          padding-left: 2rem;
+          padding-right: 2rem;
       }
     }
     .slider {

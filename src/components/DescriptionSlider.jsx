@@ -24,7 +24,8 @@ const handle = (props) => {
 };
 
 const desc1 = () => (
-  <div className="">
+  <div className="description">
+    {/*<p className="description-line"> </p>*/}
   </div>
 );
 const desc2 = () => (
