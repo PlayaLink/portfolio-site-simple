@@ -1,7 +1,7 @@
 @import '../stylesheets/base';
 
 .project-card {
-  min-width: 28rem;
+  //min-width: 28rem;
   max-width: 28rem;
   text-align: left;
   padding: 1rem;
@@ -21,9 +21,10 @@
 
   }
   @media (max-width: 425px) {
-    max-width: 25rem;
-    min-width: 25rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+      margin-left: 1rem;
+      padding: 0;
+      .title {
+        margin-top: 1rem;
+      }
   }
 }
