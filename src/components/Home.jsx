@@ -75,7 +75,7 @@ class Home extends React.Component {
         {/*/>*/}
         <Projects />
         <Cards/>
-        <Timeline />
+        {/*<Timeline />*/}
       </div>
     );
   }
