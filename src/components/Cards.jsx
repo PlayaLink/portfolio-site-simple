@@ -246,22 +246,25 @@ class Layout extends React.Component {
         <LayoutWrapper>
           <GridContainer>
             <GridRow>
+
               <GridColumn sm="6" lg="4">
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
-                    <CardPhoto img={ burningman }></CardPhoto>
-                    <CardTitle className="card-title">Drinking the Kool-Aid At Burning Man</CardTitle>
+                    <CardPhoto img={ watercar }></CardPhoto>
+                    <CardTitle className="card-title">Amphibious WaterCar Latest Tech Bro Toy</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
-                      <p style={ { marginTop: 0 } }>Mention Burning Man and you’re bound to elicit
-                        eye-rolls and
-                        jokes about drug-addled hippies dancing in the desert.</p>
-                      But is there something more in the “burner Kool-Aid” than mere psychedelics?
+                      <p>David March has spent more than a decade developing the high-speed amphibious
+                        car
+                        he is about to take to market for $135,000 a piece.</p>
+                      He has taken deposits from the Prince of Dubai, tycoons in Silicon Valley and
+                      millionaires from around the
+                      world.
                     </CardDescription>
                     <Button
                       onClick={this.resetCard.bind(this)}
-                      href="https://www.dailybreeze.com/2014/09/05/burning-man-2014-reporter-survives-festival-returns-a-burner/"
+                      href="http://www.ocregister.com/articles/march-597529-car-water.html"
                       target="_blank">
                       Read Story
                     </Button>
@@ -423,21 +426,19 @@ class Layout extends React.Component {
               <GridColumn sm="6" lg="4">
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
-                    <CardPhoto img={ watercar }></CardPhoto>
-                    <CardTitle className="card-title">Amphibious WaterCar Latest Tech Bro Toy</CardTitle>
+                    <CardPhoto img={ burningman }></CardPhoto>
+                    <CardTitle className="card-title">Just A Party in the Desert?</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
-                      <p>David March has spent more than a decade developing the high-speed amphibious
-                        car
-                        he is about to take to market for $135,000 a piece.</p>
-                      He has taken deposits from the Prince of Dubai, tycoons in Silicon Valley and
-                      millionaires from around the
-                      world.
+                      <p style={ { marginTop: 0 } }>Mention Burning Man and you’re bound to elicit
+                        eye-rolls and
+                        jokes about drug-addled hippies dancing in the desert.</p>
+                      But is there something more in the “burner Kool-Aid” than mere psychedelics?
                     </CardDescription>
                     <Button
                       onClick={this.resetCard.bind(this)}
-                      href="http://www.ocregister.com/articles/march-597529-car-water.html"
+                      href="https://www.dailybreeze.com/2014/09/05/burning-man-2014-reporter-survives-festival-returns-a-burner/"
                       target="_blank">
                       Read Story
                     </Button>
