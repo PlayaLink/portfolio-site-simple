@@ -15,7 +15,7 @@ class Projects extends React.Component {
   render () {
     return (
       <div style={{maxWidth: '100%'}}>
-        <div className="section-title projects">Portfolio</div>
+        <div className="section-title projects">Recent Projects</div>
         <div className="projects">
           <div className="meetly project-section">
             <a className="images reverse-order" href="https://www.runmeetly.com/">
