@@ -34,7 +34,30 @@ class Projects extends React.Component {
                 ] }
             />
           </div>
+
+          <div className="popin-live">
+            <ProjectCard
+              title="POPin Live"
+              subtitle="Design research for a live polling application"
+              download={popinLiveCaseStudy}
+              id="POPin-Live"
+              cta="Case Study"
+              description={ [
+                'POPin is an Irvine-based startup that thought copying their competitors would increase sales.',
+                <p>Executive buy-in for a copycat feature created an opportunity for advocating for broader user research.</p>,
+                'Design research for the feature was leveraged to create user personas for the core product.'] }
+            />
+            <div className="images reverse-order">
+              <div className="projection-screen" />
+            </div>
+          </div>
+
           <Element name="iep" className={ `iep-goal-tracker project-section` }>
+            <a className="images" href="http://www.iepgoaltracker.com/">
+              <div className="phone evaluations" />
+              <div className="phone login" />
+              <div className="phone students" />
+            </a>
             <ProjectCard
               title="Special Ed Goal Tracker"
               subtitle="Streamlining data collection in the classroom"
@@ -48,60 +71,38 @@ class Projects extends React.Component {
                 'The result was a mobile-friendly web app that makes it easy to log evaluations and track progress over time.'
               ] }
             />
-            <a className="images reverse-order" href="http://www.iepgoaltracker.com/">
-              <div className="phone evaluations" />
-              <div className="phone login" />
-              <div className="phone students" />
-            </a>
           </Element>
 
-          {/*<div className="popin-live">*/}
+          {/*<div className="street-art-talks project-section">*/}
+            {/*<div className="images">*/}
+              {/*<div className="murals">*/}
+                {/*<div className="thumbnail influence"/>*/}
+                {/*<div className="thumbnail elephants"/>*/}
+                {/*<div className="thumbnail bloom"/>*/}
+              {/*</div>*/}
+              {/*<div className="street-art-talks-phone" />*/}
+              {/*<div className="murals">*/}
+                {/*<div className="thumbnail peace"/>*/}
+                {/*<div className="thumbnail faces"/>*/}
+                {/*<div className="thumbnail abuelita"/>*/}
+              {/*</div>*/}
+            {/*</div>*/}
             {/*<ProjectCard*/}
-              {/*title="Feature Matching & User Personas"*/}
-              {/*subtitle="Turning a feature request into an opportunity for gaining user insights"*/}
-              {/*download={popinLiveCaseStudy}*/}
-              {/*id="POPin-Live"*/}
+              {/*title="Street Art Talks"*/}
+              {/*subtitle="Text-based audio tour of street art in DTLA"*/}
+              {/*download={streetArtTalksCaseStudy}*/}
+              {/*id="Street-Art-Talks"*/}
               {/*cta="Case Study"*/}
               {/*description={ [*/}
-                {/*'POPin is an Irvine-based startup that thought copying their competitors would increase sales.',*/}
-                {/*<p>Executive buy-in for a copycat feature created an opportunity for advocating for broader user research.</p>,*/}
-                {/*'Design research for the feature was leveraged to create user personas for the core product.'] }*/}
+                {/*'Street art is more approachable than art in a museum. But wouldn\'t it be nice to know more about the art and the person who created it?',*/}
+                {/*<p />,*/}
+                {/*"",*/}
+                {/*<p />,*/}
+                {/*'Stencils tagged near prominent murals in DTLA\'s arts district will instruct passersby to text a code to a Twilio phone number. ',*/}
+                {/*<p />,*/}
+                {/*'An automated text response includes a url with information about the mural and a link to the artist\'s Instagram.'] }*/}
             {/*/>*/}
-            {/*<div className="images reverse-order">*/}
-              {/*<div className="projection-screen" />*/}
-            {/*</div>*/}
           {/*</div>*/}
-
-          <div className="street-art-talks project-section">
-            <div className="images">
-              <div className="murals">
-                <div className="thumbnail influence"/>
-                <div className="thumbnail elephants"/>
-                <div className="thumbnail bloom"/>
-              </div>
-              <div className="street-art-talks-phone" />
-              <div className="murals">
-                <div className="thumbnail peace"/>
-                <div className="thumbnail faces"/>
-                <div className="thumbnail abuelita"/>
-              </div>
-            </div>
-            <ProjectCard
-              title="Street Art Talks"
-              subtitle="Text-based audio tour of street art in DTLA"
-              download={streetArtTalksCaseStudy}
-              id="Street-Art-Talks"
-              cta="Case Study"
-              description={ [
-                'Street art is more approachable than art in a museum. But wouldn\'t it be nice to know more about the art and the person who created it?',
-                <p />,
-                "",
-                <p />,
-                'Stencils tagged near prominent murals in DTLA\'s arts district will instruct passersby to text a code to a Twilio phone number. ',
-                <p />,
-                'An automated text response includes a url with information about the mural and a link to the artist\'s Instagram.'] }
-            />
-          </div>
 
         </div>
       </div>

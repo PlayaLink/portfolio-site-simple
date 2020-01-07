@@ -147,14 +147,14 @@ body {
 }
 
 .button {
-  border-radius: 1px;
+  border-radius: 5px;
   padding: 15px 40px;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
   &.pink {
-    background-color: $blue;
+    background-color: lighten($red, 10%);
     color: $white;
   }
 }

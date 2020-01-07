@@ -7,7 +7,7 @@ const ProjectCard = props => (
   <div className={`project-card`}>
     <div className="title">{props.title}</div>
     <div className="subtitle">
-      {props.subtitle}
+      <span style={{fontSize: "1.3rem"}}>{props.subtitle}</span>
       <hr className="divider" />
     </div>
     <div className="description">{props.description}</div>
