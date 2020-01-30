@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.scss';
+import './About.scss';
 import PieChart from './PieChart';
 import Timeline from './Timeline';
 import Projects from './Projects';
@@ -10,13 +10,12 @@ import Navbar from './Navbar';
 
 
 
-const Header = () => (
+const SocialButtons = () => (
   <div className="header">
-    <div className="title">Jordan <br className="breakpoint"/>England-Nelson</div>
     <div className="icon-list">
       <a className="icon linkedin" href="https://www.linkedin.com/in/jordan-england-nelson-05283494/" target="_blank"></a>
       <a className="icon twitter" href="https://twitter.com/jordanenelson" target="_blank"></a>
-      <a className="icon github" href="https://github.com/PlayaLink" target="_blank"></a>
+      {/*<a className="icon github" href="https://github.com/PlayaLink" target="_blank"></a>*/}
     </div>
     <div className="tagline">
       {/*<p>I'm a <strong>product developer</strong> with broad startup experience in tech.</p>*/}
@@ -65,8 +64,8 @@ class About extends React.Component {
 
   render () {
     return (
-      <div className="container" style={{overflow: "hidden"}}>
-        <Header/>
+      <div className="container about" style={{overflow: "hidden"}}>
+        <SocialButtons/>
         <Slider/>
         {/*<PieChart*/}
           {/*journalismClicked={this.journalismClicked}*/}
@@ -74,7 +73,7 @@ class About extends React.Component {
           {/*scrumClicked={this.scrumClicked}*/}
           {/*productClicked={this.productClicked}*/}
         {/*/>*/}
-        {/*<Timeline />*/}
+        <Timeline />
       </div>
     );
   }

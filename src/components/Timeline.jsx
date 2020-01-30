@@ -3,12 +3,17 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.scss';
 
+const iconStyle = { background: 'rgb(33, 150, 243)', color: '#fff' }
+
 class TimelineCard extends React.Component {
   constructor (props) {
     super(props);
   }
 
   renderBulletedList = (details) => {
+    if(!details) {
+      return null
+    }
     return (
       <ul className={ `full-description` }>
         { details.map((text, i) => <li key={i}>{ text }</li>) }
@@ -16,6 +21,9 @@ class TimelineCard extends React.Component {
     );
   };
   renderParagraphs = (details) => {
+    if(!details) {
+      return null
+    }
     return (
       <div className={ `full-description` }>
         { details.map(text => <p>{ text }</p>) }
@@ -45,73 +53,72 @@ class Timeline extends React.Component {
   render () {
     return (
       <div className="timeline">
-        <div className="section-title timeline">A Series of Fortunate Events</div>
+        <div className="section-title timeline text-uppercase">The Road to Product Design</div>
         <VerticalTimeline>
 
           { /*COLLEGE*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
+            iconStyle={ iconStyle }
           >
             <TimelineCard
 
-              title="French and Spanish"
+              title="Communication"
               summary="All I cared about in college was language."
               details={ [
-                'Studied French and Spanish literature',
-                'Studied abroad in Spain',
-                'Had a lot of pretentious conversations and protested a lot of things I probably didn\'t fully understand'
+                'I studied French and Spanish literature',
+                'Then lived in France and Spain for 5 years'
               ] }
               bullet={ true }
             />
           </VerticalTimelineElement>
 
           { /*PARIS*/ }
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
-          >
-            <TimelineCard
-              title="Philosophy in Paris"
-              summary="Studied philosophy. Taught English. Travelled with abandon."
-              bullet={ true }
-              details={ [
-                'Read about German philosophers in French at a school that is older than my country',
-                'Coached executives at LG, SAP, and Amgen',
-                'Couch-surfed and hitch-hiked across most of Europe'
-              ] }
-            />
-          </VerticalTimelineElement>
+          {/*<VerticalTimelineElement*/}
+            {/*className="vertical-timeline-element--work"*/}
+            {/*iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }*/}
+          {/*>*/}
+            {/*<TimelineCard*/}
+              {/*title="Philosophy in Paris"*/}
+              {/*summary="Studied philosophy. Taught English. Travelled with abandon."*/}
+              {/*bullet={ true }*/}
+              {/*details={ [*/}
+                {/*'Read about German philosophers in French at a school that is older than my country',*/}
+                {/*'Coached executives at LG, SAP, and Amgen',*/}
+                {/*'Couch-surfed and hitch-hiked across most of Europe'*/}
+              {/*] }*/}
+            {/*/>*/}
+          {/*</VerticalTimelineElement>*/}
           { /*Barcelona*/ }
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
-          >
-            <TimelineCard
-              title="Journalism School in Barcelona"
-              summary="Higher education is cheap in Europe. French is useless in America. Spanish is the second language in California."
-              bullet={ true }
-              details={ [
-                "Wanted to perfect my Spanish before moving back to Southern California to write about the border and immigration issues",
-                'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona',
-                'Rode my bike across Northern Spain, fueled by red wine and jamón serrano'
-              ] }
-            />
-          </VerticalTimelineElement>
+          {/*<VerticalTimelineElement*/}
+            {/*className="vertical-timeline-element--work"*/}
+            {/*iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }*/}
+          {/*>*/}
+            {/*<TimelineCard*/}
+              {/*title="Journalism School in Barcelona"*/}
+              {/*summary="Higher education is cheap in Europe. French is useless in America. Spanish is the second language in California."*/}
+              {/*bullet={ true }*/}
+              {/*details={ [*/}
+                {/*"Wanted to perfect my Spanish before moving back to Southern California to write about the border and immigration issues",*/}
+                {/*'Enrolled in Columbia University\'s Spanish-language affiliate master\'s program, administered by the University of Barcelona',*/}
+                {/*'Rode my bike across Northern Spain, fueled by red wine and jamón serrano'*/}
+              {/*] }*/}
+            {/*/>*/}
+          {/*</VerticalTimelineElement>*/}
 
           { /*Journalism*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            iconStyle={ { background: 'rgb(33, 150, 243)', color: '#fff' } }
+            iconStyle={ iconStyle }
           >
             <TimelineCard
               title="Interviewing and Storytelling"
-              summary="Learned how to ask questions, find information, and distill complex topics by writing hundreds of news stories and interviewing thousands of people"
+              summary="Journalism taught me how to ask questions, find information, and distill complex subjects down to their bare essentials"
               bullet={ true }
               details={ [
                 'Wrote about aerospace and tech',
-                "Sat in Elon Musk's space ship",
                 'Translated rocket science into words a 12-year-old could understand',
+                "Sat in Elon Musk's space ship",
               ] }
             />
           </VerticalTimelineElement>
@@ -119,85 +126,84 @@ class Timeline extends React.Component {
           { /*Breaking into tech*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            iconStyle={ { background: '#00ff9f', color: '#fff' } }
+            iconStyle={ iconStyle }
           >
             <TimelineCard
-              title="Product marketing"
-              summary="Overworked, underpaid, and inspired by the entrepreneurs I was writing about, I jumped the sinking ship of journalism for a job in tech."
+              title="Marketing"
+              summary="Overworked, underpaid, and inspired by the entrepreneurs I was writing about, I left journalism for a job in tech."
               bullet={ true }
               details={ [
-                'Learned a lot about the tech industry',
-                'Learned a lot about the logistics industry and the history of the shipping container',
-                <div>Realized that I am more interested in <strong>making/writing/coding</strong> things than <strong>selling/marketing/consuming</strong> things</div>
+                'Marketing seemed like the best application of my skillset',
+                <div>Until I discovered journalists are more like product people – we care about<span className="font-italic">&nbsp;creating things</span> more than<span className="font-italic">&nbsp;selling things</span></div>,
+                <div>Realized computer programming is just another language, like French or Spanish</div>
               ] }
             />
           </VerticalTimelineElement>
 
           { /*Scrum*/ }
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={ { background: '#fbf542', color: '#fff' } }
-          >
-            <TimelineCard
-              title="Scrum/Agile"
-              summary="Ghostwrote a 50-page handbook for successful Scrum adoption"
-              bullet={ true }
-              details={ [
-                'Recorded 60 hours of interviews with executive Agile coach Scott Downey',
-                <div>The title of the book was <span className="underline">Tactical, Practical Scrum: A Product Manager's Guide to Successful Scrum Implementation</span></div>,
-                "In an attempt to eat my own dog food, I used Trello to build a product roadmap for the book and adopted a personal sprint to help me meet my deadline"
-              ] }
-            />
-          </VerticalTimelineElement>
+          {/*<VerticalTimelineElement*/}
+            {/*className="vertical-timeline-element--work"*/}
+            {/*iconStyle={ iconStyle }*/}
+          {/*>*/}
+            {/*<TimelineCard*/}
+              {/*title="Scrum/Agile"*/}
+              {/*summary="Ghostwrote a 50-page handbook for successful Scrum adoption"*/}
+              {/*bullet={ true }*/}
+              {/*details={ [*/}
+                {/*'Recorded 60 hours of interviews with executive Agile coach Scott Downey',*/}
+                {/*<div>The title of the book was <span className="underline">Tactical, Practical Scrum: A Product Manager's Guide to Successful Scrum Implementation</span></div>,*/}
+                {/*"In an attempt to eat my own dog food, I used Trello to build a product roadmap for the book and adopted a personal sprint to help me meet my deadline"*/}
+              {/*] }*/}
+            {/*/>*/}
+          {/*</VerticalTimelineElement>*/}
 
           { /*Learning to Speak Javascript*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            iconStyle={ { background: '#aaaaaa', color: '#fff' } }
+            iconStyle={ iconStyle }
           >
             <TimelineCard
-              title="Learning to code"
+              title="Product & Engineering"
               summary="If I was going to stay in tech, I wanted to have a deeper understanding of how things work under the hood."
               bullet={ true }
               details={ [
                 'Enrolled in a fullstack Javascript bootcamp',
-                'Realized computer programming is just another language, like French or Spanish, with less women in the room',
-                'Felt like a baddass-Jedi-tech-wizard after I built my first app'
+                'Worked on a small, product-focused engineering team, that allowed me to code and participate in product discussions',
               ] }
             />
           </VerticalTimelineElement>
 
           { /*Product & Engineering*/ }
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={ { background: '#aaaaaa', color: '#fff' } }
-          >
-            <TimelineCard
-              title="Product & Engineering"
-              summary="It's one thing to have an idea. It's another thing to be able to build it."
-              bullet={ true }
-              details={ [
-                'Worked on a very product-focused engineering team, developing a frontend web app',
-                'Leveraged my interview skills by talking with users and developing user personas',
-                'Burrowed further down the tech rabbit hole'
-              ] }
-            />
-          </VerticalTimelineElement>
+          {/*<VerticalTimelineElement*/}
+            {/*className="vertical-timeline-element--work"*/}
+            {/*iconStyle={ iconStyle }*/}
+          {/*>*/}
+            {/*<TimelineCard*/}
+              {/*title="Product & Engineering"*/}
+              {/*summary="It's one thing to have an idea. It's another thing to be able to build it."*/}
+              {/*bullet={ true }*/}
+              {/*details={ [*/}
+                {/*'Worked on a very product-focused engineering team, developing a frontend web app',*/}
+                {/*'Leveraged my interview skills by talking with users and developing user personas',*/}
+                {/*'Burrowed further down the tech rabbit hole'*/}
+              {/*] }*/}
+            {/*/>*/}
+          {/*</VerticalTimelineElement>*/}
 
           { /*Design Research*/ }
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            iconStyle={ { background: '#aaaaaa', color: '#fff' } }
+            iconStyle={ iconStyle }
           >
             <TimelineCard
-              title="Product Design"
-              summary="I've moved to the design side of product development, where I'm able to apply the story-telling and information architecting skills I gained as a journalist."
+              title="UX & Product Design"
+              summary="Product design is where research and development meet, where I can lean on my experience as a listener and investigator, while satisfying my desire to create something useful and put it out in the world."
               bullet={ true }
-              details={ [
-                "The cleanest code is the code I never wrote – because I asked the right questions and tested designs before using dev time to build our an idea.",
-                "Applied the Jobs-to-Be-Done framework to develop Meetly",
-                "Still have one foot in the engineering world, where I enjoy turning ideas into functional tools."
-              ] }
+              // details={ [
+              //   "The cleanest code is the code I never wrote – because I listened before I built.",
+              //   "Applied the Jobs-to-Be-Done framework to develop Meetly",
+              //   "Still have one foot in the engineering world, where I enjoy turning ideas into functional tools."
+              // ] }
             />
           </VerticalTimelineElement>
         </VerticalTimeline>

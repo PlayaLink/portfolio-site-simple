@@ -155,7 +155,7 @@ class DescriptionSlider extends Component {
               paddingRight: "1rem"
             }}
           >
-            <div>
+            <div style={{marginBottom: "2.1rem"}}>
               I'm a <strong>product designer</strong> who speaks French, Spanish
               and Javascript.
             </div>
