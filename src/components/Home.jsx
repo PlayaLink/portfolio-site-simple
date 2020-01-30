@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Cards from './Cards';
 import Slider from './DescriptionSlider';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import Navbar from './Navbar';
 
 
 
@@ -65,6 +66,7 @@ class Home extends React.Component {
   render () {
     return (
       <div className="home container" style={{overflow: "hidden"}}>
+        <Navbar/>
         <Header/>
         <Slider/>
         {/*<PieChart*/}
