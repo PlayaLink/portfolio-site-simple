@@ -203,9 +203,10 @@ const CardTitle = styled.h2`
   font-size: ${remy(16)};
    font-weight: 500;
    text-decoration: none;
-   margin-bottom: 0;
    padding-top: 0.25rem;
    padding-bottom: 0.25rem;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
 `;
 
 const CardDescription = styled.span`
@@ -218,7 +219,7 @@ const Button = styled.a`
   border: 1px solid #aaaaaa;
   height: 2rem;
   background-color: #ec979d;
-  border-radius: ${remy(1)};
+  border-radius: ${remy(3)};
   margin: 0 auto;
   text-decoration: none;
   display: flex;
@@ -228,6 +229,7 @@ const Button = styled.a`
   &:hover {
     color: inherit;
     cursor: pointer;
+    text-underline: none;
   }
 `;
 

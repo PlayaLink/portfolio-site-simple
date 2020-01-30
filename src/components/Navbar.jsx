@@ -53,7 +53,7 @@ class Navbar extends Component {
         >
           <ul className="navbar-nav">
             <NavItem title="Case Studies" href="/" active={activeTab === TABS.CASE_STUDIES}/>
-            <NavItem title="Journalism" href="/journalism" active={activeTab === TABS.JOURNALISM}/>
+            {/*<NavItem title="Journalism" href="/journalism" active={activeTab === TABS.JOURNALISM}/>*/}
             <NavItem title="About" href="/about" active={activeTab === TABS.ABOUT} />
           </ul>
         </div>
