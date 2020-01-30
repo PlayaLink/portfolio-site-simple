@@ -6,7 +6,11 @@ import iepCaseStudy from "../img/Case_Study_IEP_Goal_Tracker.pdf";
 import popinLiveCaseStudy from "../img/Case_Study_POPin_Live.pdf";
 import streetArtTalksCaseStudy from "../img/Case_Study_Street_Art_Talks.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import meetly_marketing_site from '../img/meetly_marketing_site.png'
+import meetly_marketing_site from "../img/meetly_marketing_site.png";
+import popin_projector_screen from "../img/popin_projector_screen.png";
+import iep_tasks_to_track_left from "../img/iep_tasks_to_track_left.png";
+import iep_evaluations_graph from "../img/iep_evaluations_graph.png";
+import my_students_right from "../img/my_students_right.png";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -16,7 +20,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="">
-        <div className="row">
+        <div className="row my-5">
           <a className="col-xs-12 col-md-6" href="https://www.runmeetly.com/">
             <img className="m-auto img-fluid" src={meetly_marketing_site} />
           </a>
@@ -34,12 +38,12 @@ class Projects extends React.Component {
             ]}
           />
         </div>
-
-        <div className="popin-live">
-          <div className="images">
-            <div className="projection-screen" />
-          </div>
+        <div className="row my-5">
+          <a className="col-xs-12 col-md-6 align-items-center" href="https://www.runmeetly.com/">
+            <img className="m-auto img-fluid" src={popin_projector_screen} />
+          </a>
           <ProjectCard
+            className="col-xs-12 col-md-6"
             title="POPin Live"
             subtitle="Design research for a live polling application"
             download={popinLiveCaseStudy}
@@ -55,14 +59,22 @@ class Projects extends React.Component {
             ]}
           />
         </div>
-
-        <Element name="iep" className={`iep-goal-tracker project-section`}>
-          <a className="images" href="http://www.iepgoaltracker.com/">
-            <div className="phone evaluations" />
-            <div className="phone login" />
-            <div className="phone students" />
+        <div className="row my-5">
+          <a className="col-xs-12 col-md-6" href="https://www.runmeetly.com/">
+            <div className="d-flex">
+              <div className="col">
+                <img src={iep_tasks_to_track_left} className="img-fluid" />
+              </div>
+              <div className="col-5 mx-n2">
+                <img src={iep_evaluations_graph} className="img-fluid" />
+              </div>
+              <div className="col">
+                <img src={my_students_right} className="img-fluid" />
+              </div>
+            </div>
           </a>
           <ProjectCard
+            className="col-xs-12 col-md-6"
             title="Special Ed Goal Tracker"
             subtitle="Streamlining data collection in the classroom"
             // link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
@@ -75,7 +87,7 @@ class Projects extends React.Component {
               "The result was a mobile-friendly web app that makes it easy to log evaluations and track progress over time."
             ]}
           />
-        </Element>
+        </div>
 
         {/*<div className="street-art-talks project-section">*/}
         {/*<div className="images">*/}

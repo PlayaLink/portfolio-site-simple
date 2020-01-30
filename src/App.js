@@ -25,7 +25,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="bg-light">
+        <div className="bg-light d-flex flex-column flex-fill">
           <div className="bg-white">
             <Navbar />
           </div>
