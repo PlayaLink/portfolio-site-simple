@@ -125,21 +125,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    .images {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-
-      .macbook {
-        width: 36rem;
-        height: 20rem;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url(../img/meetly_marketing_site.png);
-        margin: 0 1rem;
-      }
+    .macbook {
+      width: 36rem;
+      height: 20rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/meetly_marketing_site.png);
+      margin: 0 1rem;
     }
   }
   @media (max-width: 425px) {

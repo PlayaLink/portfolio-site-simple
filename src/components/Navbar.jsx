@@ -32,7 +32,7 @@ class Navbar extends Component {
   render() {
     const {activeTab} = this.state;
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-white container">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white container mb-0">
         <a className="navbar-brand text-uppercase" href="#">
           <h2>Jordan England-Nelson</h2>
         </a>

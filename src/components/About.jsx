@@ -54,7 +54,7 @@ const Summary = () => (
   </div>
 );
 
-class Home extends React.Component {
+class About extends React.Component {
   constructor (props) {
     super(props);
 
@@ -80,6 +80,6 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default About;
 
 

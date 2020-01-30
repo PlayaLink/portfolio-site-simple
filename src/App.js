@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./App.scss";
-import Home from "./components/Home";
+import Projects from "./components/Projects";
 import Cards from "./components/Cards";
-import PieChart from "./components/PieChart";
+import About from "./components/About";
 import PopinLive from "./components/PopinLive";
 import IepGoalTracker from "./components/IepGoalTracker";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -14,7 +14,7 @@ import {
   faDownload,
   faInfoCircle
 } from "@fortawesome/free-solid-svg-icons";
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar";
 
 library.add(faArrowRight);
 library.add(faChevronDown);
@@ -25,24 +25,37 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Navbar/>
-          <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + "/popin-live"}
-            component={PopinLive}
-          />
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + "/iep-goal-tracker"}
-            component={IepGoalTracker}
-          />
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + "/journalism"}
-            component={Cards}
-          />
+        <div className="bg-light">
+          <div className="bg-white">
+            <Navbar />
+          </div>
+          <div className="bg-light container">
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/"}
+              component={Projects}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/popin-live"}
+              component={PopinLive}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/iep-goal-tracker"}
+              component={IepGoalTracker}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/journalism"}
+              component={Cards}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/about"}
+              component={About}
+            />
+          </div>
         </div>
       </Router>
     );
