@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import './stylesheets/base.scss';
 import TagManager from 'react-gtm-module';
 import LogRocket from 'logrocket';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 LogRocket.init('z5pe1u/portfolio-site');
 
