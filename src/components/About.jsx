@@ -7,6 +7,7 @@ import Cards from './Cards';
 import Slider from './DescriptionSlider';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import Navbar from './Navbar';
+import jordan_portrait from '../img/jordan_portrait.jpg'
 
 
 
@@ -64,15 +65,13 @@ class About extends React.Component {
 
   render () {
     return (
-      <div className="container about" style={{overflow: "hidden"}}>
-        <SocialButtons/>
-        <Slider/>
-        {/*<PieChart*/}
-          {/*journalismClicked={this.journalismClicked}*/}
-          {/*marketingClicked={this.marketingClicked}*/}
-          {/*scrumClicked={this.scrumClicked}*/}
-          {/*productClicked={this.productClicked}*/}
-        {/*/>*/}
+      <div className="about" style={{overflow: "hidden"}}>
+        <div className="row">
+          <div className="col col-md-4 p-5">
+            <img src={jordan_portrait} alt="Jordan England-Nelson" className="img-fluid rounded-lg"/>
+          </div>
+          <div className="col col-md-8 p-5">Description</div>
+        </div>
         <Timeline />
       </div>
     );
