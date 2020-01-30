@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 const ProjectCard = props => (
-  <div className={`project-card ${props.className}`}>
+  <div className={`project-card ${props.className} d-flex flex-column justify-content-center`}>
     <div className="title">{props.title}</div>
     <div className="subtitle">
       <span style={{fontSize: "1.3rem"}}>{props.subtitle}</span>

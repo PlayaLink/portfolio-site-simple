@@ -6,6 +6,7 @@ import iepCaseStudy from "../img/Case_Study_IEP_Goal_Tracker.pdf";
 import popinLiveCaseStudy from "../img/Case_Study_POPin_Live.pdf";
 import streetArtTalksCaseStudy from "../img/Case_Study_Street_Art_Talks.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import meetly_marketing_site from '../img/meetly_marketing_site.png'
 
 class Projects extends React.Component {
   constructor(props) {
@@ -14,13 +15,13 @@ class Projects extends React.Component {
 
   render() {
     return (
-      <div className="projects">
-        <div className="meetly project-section row">
-          <a className="d-flex align-items-center" href="https://www.runmeetly.com/">
-            <div className="macbook" />
+      <div className="">
+        <div className="row">
+          <a className="col-xs-12 col-md-6" href="https://www.runmeetly.com/">
+            <img className="m-auto img-fluid" src={meetly_marketing_site} />
           </a>
           <ProjectCard
-            className=""
+            className="col-xs-12 col-md-6"
             title="Meetly"
             subtitle="A meeting notes and collaboration tool for teams."
             download="https://runmeetly.com"
