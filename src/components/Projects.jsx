@@ -21,8 +21,8 @@ class Projects extends React.Component {
     return (
       <div className="">
         <div className="row my-5">
-          <a className="col-xs-12 col-md-6" href="https://www.runmeetly.com/">
-            <img className="m-auto img-fluid" src={meetly_marketing_site} />
+          <a className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center" href="https://www.runmeetly.com/">
+            <img className="img-fluid" src={meetly_marketing_site} />
           </a>
           <ProjectCard
             className="col-xs-12 col-md-6"
@@ -39,7 +39,7 @@ class Projects extends React.Component {
           />
         </div>
         <div className="row my-5">
-          <a className="col-xs-12 col-md-6 align-items-center" href="https://www.runmeetly.com/">
+          <a className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center" href="https://www.runmeetly.com/">
             <img className="m-auto img-fluid" src={popin_projector_screen} />
           </a>
           <ProjectCard
@@ -60,7 +60,7 @@ class Projects extends React.Component {
           />
         </div>
         <div className="row my-5">
-          <a className="col-xs-12 col-md-6" href="https://www.runmeetly.com/">
+          <a className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center" href="https://www.runmeetly.com/">
             <div className="d-flex">
               <div className="col">
                 <img src={iep_tasks_to_track_left} className="img-fluid" />
