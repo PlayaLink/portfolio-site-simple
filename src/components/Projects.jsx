@@ -1,11 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import "./Projects.scss";
-import { Element } from "react-scroll";
 import iepCaseStudy from "../img/Case_Study_IEP_Goal_Tracker.pdf";
 import popinLiveCaseStudy from "../img/Case_Study_POPin_Live.pdf";
-import streetArtTalksCaseStudy from "../img/Case_Study_Street_Art_Talks.pdf";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import meetly_marketing_site from "../img/meetly_marketing_site.png";
 import popin_projector_screen from "../img/popin_projector_screen.png";
 import iep_tasks_to_track_left from "../img/iep_tasks_to_track_left.png";
@@ -20,8 +17,13 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="">
+        <div className="d-none d-md-block mt-md-3" style={{height: "1rem"}}/>
+        {/*Meetly*/}
         <div className="row my-5">
-          <a className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center" href="https://www.runmeetly.com/">
+          <a
+            className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
+            href="https://www.runmeetly.com/"
+          >
             <img className="img-fluid" src={meetly_marketing_site} />
           </a>
           <ProjectCard
@@ -38,8 +40,13 @@ class Projects extends React.Component {
             ]}
           />
         </div>
+        <div style={{height: "1rem"}}/>
+        {/*POPin*/}
         <div className="row my-5">
-          <a className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center" href="https://www.runmeetly.com/">
+          <a
+            className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
+            href="https://www.runmeetly.com/"
+          >
             <img className="m-auto img-fluid" src={popin_projector_screen} />
           </a>
           <ProjectCard
@@ -59,8 +66,14 @@ class Projects extends React.Component {
             ]}
           />
         </div>
+        <div style={{height: "3rem"}}/>
+
+        {/*IEP*/}
         <div className="row my-5">
-          <a className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center" href="https://www.runmeetly.com/">
+          <a
+            className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
+            href="https://www.runmeetly.com/"
+          >
             <div className="d-flex">
               <div className="col">
                 <img src={iep_tasks_to_track_left} className="img-fluid" />
