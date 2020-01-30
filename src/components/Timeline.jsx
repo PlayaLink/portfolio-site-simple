@@ -197,13 +197,8 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="UX & Product Design"
-              summary="Product design is where research and development meet, where I can lean on my experience as a listener and investigator, while satisfying my desire to create something useful and put it out in the world."
+              summary="Product design is where research and development meet, where I can lean on my experience as a listener and investigator, while satisfying my desire to create something useful and put it out in the world"
               bullet={ true }
-              // details={ [
-              //   "The cleanest code is the code I never wrote – because I listened before I built.",
-              //   "Applied the Jobs-to-Be-Done framework to develop Meetly",
-              //   "Still have one foot in the engineering world, where I enjoy turning ideas into functional tools."
-              // ] }
             />
           </VerticalTimelineElement>
         </VerticalTimeline>
