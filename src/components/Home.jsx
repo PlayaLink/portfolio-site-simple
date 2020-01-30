@@ -65,8 +65,7 @@ class Home extends React.Component {
 
   render () {
     return (
-      <div className="home container" style={{overflow: "hidden"}}>
-        <Navbar/>
+      <div className="container" style={{overflow: "hidden"}}>
         <Header/>
         <Slider/>
         {/*<PieChart*/}
@@ -75,8 +74,6 @@ class Home extends React.Component {
           {/*scrumClicked={this.scrumClicked}*/}
           {/*productClicked={this.productClicked}*/}
         {/*/>*/}
-        <Projects />
-        <Cards/>
         {/*<Timeline />*/}
       </div>
     );

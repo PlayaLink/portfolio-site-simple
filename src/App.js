@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.scss";
 import Home from "./components/Home";
+import Cards from "./components/Cards";
 import PieChart from "./components/PieChart";
 import PopinLive from "./components/PopinLive";
 import IepGoalTracker from "./components/IepGoalTracker";
@@ -13,6 +14,7 @@ import {
   faDownload,
   faInfoCircle
 } from "@fortawesome/free-solid-svg-icons";
+import Navbar from './components/Navbar';
 
 library.add(faArrowRight);
 library.add(faChevronDown);
@@ -24,6 +26,7 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <Navbar/>
           <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
           <Route
             exact
@@ -37,8 +40,8 @@ class App extends Component {
           />
           <Route
             exact
-            path={process.env.PUBLIC_URL + "/pie-chart"}
-            component={PieChart}
+            path={process.env.PUBLIC_URL + "/journalism"}
+            component={Cards}
           />
         </div>
       </Router>
