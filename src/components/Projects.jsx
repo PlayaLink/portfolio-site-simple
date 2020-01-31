@@ -17,7 +17,7 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="">
-        <div className="d-none d-md-block mt-md-3" style={{height: "1rem"}}/>
+        <div className="d-none d-md-block mt-md-3Ø" style={{height: "1rem"}}/>
         {/*Meetly*/}
         <div className="row my-5">
           <a
@@ -36,7 +36,7 @@ class Projects extends React.Component {
             cta="Visit Site"
             description={[
               "Co-founded the company with 3 other engineers.",
-              <p>Designed the web experience and built out the frontend.</p>
+              <p>Designed the web experience and helped build out the frontend.</p>
             ]}
           />
         </div>
@@ -45,7 +45,7 @@ class Projects extends React.Component {
         <div className="row my-5">
           <a
             className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
-            href="https://www.runmeetly.com/"
+            href="https://www.popin.live/"
           >
             <img className="m-auto img-fluid" src={popin_projector_screen} />
           </a>
@@ -57,7 +57,7 @@ class Projects extends React.Component {
             id="POPin-Live"
             cta="Case Study"
             description={[
-              "POPin is an Irvine-based startup that thought copying their competitors would increase sales.",
+              <p>POPin is an Irvine-based startup that thought copying their competitors would increase sales.</p>,
               <p>
                 Executive buy-in for a copycat feature created an opportunity
                 for advocating for broader user research.
@@ -72,7 +72,7 @@ class Projects extends React.Component {
         <div className="row my-5">
           <a
             className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
-            href="https://www.runmeetly.com/"
+            href="http://www.iepgoaltracker.com/"
           >
             <div className="d-flex">
               <div className="col">
@@ -95,7 +95,7 @@ class Projects extends React.Component {
             download={iepCaseStudy}
             cta="Case Study"
             description={[
-              "Teachers weren't tracking goals properly because paper spreadsheets are a hassle.",
+              <p>Teachers weren't tracking goals properly because paper spreadsheets are a hassle.</p>,
               <p>A tech-savvy principal wanted to change that.</p>,
               "The result was a mobile-friendly web app that makes it easy to log evaluations and track progress over time."
             ]}

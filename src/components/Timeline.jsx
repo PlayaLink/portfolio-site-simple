@@ -52,8 +52,8 @@ class Timeline extends React.Component {
 
   render () {
     return (
-      <div className="timeline">
-        <div className="section-title timeline text-uppercase">The Road to Product Design</div>
+      <div className="timeline mt-5">
+        <h4 className="timeline text-uppercase text-center">The Road to Product Design...</h4>
         <VerticalTimeline>
 
           { /*COLLEGE*/ }
@@ -63,8 +63,8 @@ class Timeline extends React.Component {
           >
             <TimelineCard
 
-              title="Communication"
-              summary="All I cared about in college was language."
+              title="Language"
+              summary="All I cared about in college was language"
               details={ [
                 'I studied French and Spanish literature',
                 'Then lived in France and Spain for 5 years'
@@ -112,12 +112,12 @@ class Timeline extends React.Component {
             iconStyle={ iconStyle }
           >
             <TimelineCard
-              title="Interviewing and Storytelling"
-              summary="Journalism taught me how to ask questions, find information, and distill complex subjects down to their bare essentials"
+              title="Listening and Storytelling"
+              summary="Journalism taught me how to ask questions, find information, and synthesize a chaotic stew of information into something meaningful and coherent"
               bullet={ true }
               details={ [
                 'Wrote about aerospace and tech',
-                'Translated rocket science into words a 12-year-old could understand',
+                'Talked about rocket science in words a 12-year-old could understand',
                 "Sat in Elon Musk's space ship",
               ] }
             />
@@ -135,7 +135,7 @@ class Timeline extends React.Component {
               details={ [
                 'Marketing seemed like the best application of my skillset',
                 <div>Until I discovered journalists are more like product people – we care about<span className="font-italic">&nbsp;creating things</span> more than<span className="font-italic">&nbsp;selling things</span></div>,
-                <div>Realized computer programming is just another language, like French or Spanish</div>
+                <div>Discovered that computer programming might not be that different from my language studies</div>
               ] }
             />
           </VerticalTimelineElement>
@@ -164,10 +164,10 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Product & Engineering"
-              summary="If I was going to stay in tech, I wanted to have a deeper understanding of how things work under the hood."
+              summary="If I was going to stay in tech, I wanted to have a deeper understanding of how things work under the hood"
               bullet={ true }
               details={ [
-                'Enrolled in a fullstack Javascript bootcamp',
+                'Enrolled in a Javascript bootcamp and spent a lot of time on Udemy',
                 'Worked on a small, product-focused engineering team, that allowed me to code and participate in product discussions',
               ] }
             />
@@ -197,8 +197,12 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="UX & Product Design"
-              summary="Product design is where research and development meet, where I can lean on my experience as a listener and investigator, while satisfying my desire to create something useful and put it out in the world"
+              summary="Product design is where research and development meet – where I can lean on my experience as a listener, an investigator, and a translator, while satisfying my desire to create something useful and put it out in the world"
               bullet={ true }
+              // details={ [
+              //   "I've learned a lot by doing, wearing many hats on small teams",
+              //   "Looking to join a larger company next, where I can collaborate and grow with a team of designers"
+              // ] }
             />
           </VerticalTimelineElement>
         </VerticalTimeline>
