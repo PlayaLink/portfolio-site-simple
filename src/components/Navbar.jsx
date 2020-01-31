@@ -10,7 +10,7 @@ const TABS = {
 const NavItem = props => (
   <li className="nav-item text-uppercase mx-2">
     <Link className={`nav-link ${props.active ? "active" : ""}`} to={props.href}>
-      <h5 className="text-right">{props.title}</h5>
+      <h5 className="text-right mb-0">{props.title}</h5>
     </Link>
   </li>
 );
@@ -33,7 +33,7 @@ class Navbar extends Component {
     const {activeTab} = this.state;
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-white container mb-0">
-        <a className="navbar-brand text-uppercase" href="#">
+        <a className="navbar-brand text-uppercase font-weight-bold" href="#">
           <h2 className="d-md-inline">Jordan</h2><h2 className="d-md-inline ml-3 ml-md-0 pl-2">England-</h2><h2 className="d-md-inline ml-5 ml-md-0">Nelson</h2>
         </a>
         <button

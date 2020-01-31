@@ -1,5 +1,7 @@
 @import 'colors';
 @import 'reset';
+@import 'variables';
+
 
 body {
   background-color: $off-white;
@@ -124,7 +126,7 @@ body {
     margin-bottom: 3rem;
   }
   &.journalism {
-    margin-top: 8rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
   }
 }
