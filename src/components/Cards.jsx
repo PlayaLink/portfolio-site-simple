@@ -203,7 +203,10 @@ const CardTitle = styled.h2`
   font-size: ${remy(16)};
    font-weight: 500;
    text-decoration: none;
-   // text-transform: uppercase;
+   padding-top: 0.25rem;
+   padding-bottom: 0.25rem;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
 `;
 
 const CardDescription = styled.span`
@@ -216,16 +219,17 @@ const Button = styled.a`
   border: 1px solid #aaaaaa;
   height: 2rem;
   background-color: #ec979d;
-  border-radius: ${remy(1)};
+  border-radius: ${remy(3)};
   margin: 0 auto;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  text-decoration: none;
   &:hover {
+    color: inherit;
     cursor: pointer;
+    text-underline: none;
   }
 `;
 
@@ -251,7 +255,7 @@ class Layout extends React.Component {
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ watercar }></CardPhoto>
-                    <CardTitle className="card-title">Amphibious WaterCar Latest Tech Bro Toy</CardTitle>
+                    <CardTitle>Amphibious WaterCar Latest Tech Bro Toy</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
@@ -276,7 +280,7 @@ class Layout extends React.Component {
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ hotwheels }></CardPhoto>
-                    <CardTitle className="card-title">Mistress Creative Turns Heads</CardTitle>
+                    <CardTitle>Mistress Creative Turns Heads</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>If Don Draper worked in today’s world, he would have an account
@@ -297,7 +301,7 @@ class Layout extends React.Component {
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ satellites }></CardPhoto>
-                    <CardTitle className="card-title">A Promising Future for Tiny Satellites</CardTitle>
+                    <CardTitle>A Promising Future for Tiny Satellites</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>Just as SpaceX has shaken up Southern California’s anemic
@@ -318,7 +322,7 @@ class Layout extends React.Component {
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ tijuana }></CardPhoto>
-                    <CardTitle className="card-title"><div style={{paddingRight: '0.5rem', paddingLeft: '0.5rem'}}>Tijuana Nightlife Booms After Drug Wars</div></CardTitle>
+                    <CardTitle><div style={{paddingRight: '0.5rem', paddingLeft: '0.5rem'}}>Tijuana Nightlife Booms After Drug Wars</div></CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>Lax liquor laws and seedy entertainment have drawn
@@ -339,7 +343,7 @@ class Layout extends React.Component {
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ dragonv2 }></CardPhoto>
-                    <CardTitle className="card-title">Musk Unveils Dragon V2 Spaceship</CardTitle>
+                    <CardTitle>Musk Unveils Dragon V2 Spaceship</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>Providing a glimpse into what could be the future of U.S. manned
@@ -361,7 +365,7 @@ class Layout extends React.Component {
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ fuelcell }></CardPhoto>
-                    <CardTitle className="card-title">Is Fuel Cell Tech Just A Bunch of Hot Air?</CardTitle>
+                    <CardTitle>Is Fuel Cell Tech Just A Bunch of Hot Air?</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
@@ -384,7 +388,7 @@ class Layout extends React.Component {
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ teens }></CardPhoto>
-                    <CardTitle className="card-title">The Lucrative World of Teen Incluence</CardTitle>
+                    <CardTitle>The Lucrative World of Teen Incluence</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
@@ -406,7 +410,7 @@ class Layout extends React.Component {
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ toys }></CardPhoto>
-                    <CardTitle className="card-title">SoCal At Center of U.S. Toy Industry</CardTitle>
+                    <CardTitle>SoCal At Center of U.S. Toy Industry</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>
@@ -427,7 +431,7 @@ class Layout extends React.Component {
                 <Card onMouseEnter={this.toggleCard.bind(this)} onMouseLeave={this.resetCard.bind(this)} onClick={ this.toggleCard.bind(this) }>
                   <CardFront>
                     <CardPhoto img={ burningman }></CardPhoto>
-                    <CardTitle className="card-title">Just A Party in the Desert?</CardTitle>
+                    <CardTitle>Just A Party in the Desert?</CardTitle>
                   </CardFront>
                   <CardBack>
                     <CardDescription>

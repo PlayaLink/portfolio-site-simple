@@ -1,47 +1,63 @@
-import React, { Component } from 'react';
-import './App.scss';
-import Timeline from './components/Timeline';
-import Home from './components/Home';
-import PieChart from './components/PieChart';
-import PopinLive from './components/PopinLive';
-import IepGoalTracker from './components/IepGoalTracker';
-import { BrowserRouter, Route } from 'react-router-dom';
-
+import React, { Component } from "react";
+import "./App.scss";
+import Projects from "./components/Projects";
+import Cards from "./components/Cards";
+import About from "./components/About";
+import PopinLive from "./components/PopinLive";
+import IepGoalTracker from "./components/IepGoalTracker";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 //Font Awesome
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faArrowRight,
+  faChevronDown,
+  faDownload,
+  faInfoCircle
+} from "@fortawesome/free-solid-svg-icons";
+import Navbar from "./components/Navbar";
+
 library.add(faArrowRight);
 library.add(faChevronDown);
 library.add(faInfoCircle);
 library.add(faDownload);
 
-
-
 class App extends Component {
-
   render() {
     return (
-      <BrowserRouter>
-        <Route
-          exact
-          path={process.env.PUBLIC_URL + '/'}
-          component={Home}/>
-        {/*<Route*/}
-        {/*exact*/}
-        {/*path={process.env.PUBLIC_URL + '/popin-live'}*/}
-        {/*component={PopinLive} />*/}
-        {/*<Route*/}
-        {/*exact*/}
-        {/*path={process.env.PUBLIC_URL + '/iep-goal-tracker'}*/}
-        {/*component={IepGoalTracker} />*/}
-        {/*<Route*/}
-        {/*exact*/}
-        {/*path={process.env.PUBLIC_URL + '/pie-chart'}*/}
-        {/*component={PieChart} />*/}
-      </BrowserRouter>
+      <Router>
+        <div className="bg-light d-flex flex-column flex-fill">
+          <div className="bg-white">
+            <Navbar />
+          </div>
+          <div className="bg-light container">
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/"}
+              component={Projects}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/popin-live"}
+              component={PopinLive}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/iep-goal-tracker"}
+              component={IepGoalTracker}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/journalism"}
+              component={Cards}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/about"}
+              component={About}
+            />
+          </div>
+        </div>
+      </Router>
     );
   }
 }
