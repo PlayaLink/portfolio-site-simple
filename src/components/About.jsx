@@ -117,15 +117,19 @@ class About extends React.Component {
               {/*dirty word, but it seems to fit. We*/}
               {/*have to listen, to observe, to imagine and to build.*/}
               {/*</p>*/}
+              {/*<p>*/}
+              {/*I've Whether it’s distilling a complex topic into a short newspaper*/}
+              {/*story or explaining a user's problem to a development team, a*/}
+              {/*good translator groks the essence of the idea and transforms it*/}
+              {/*into something the other side understands.*/}
+              {/*</p>*/}
               <p>
-                Whether it’s distilling a complex topic into a short newspaper
-                story or explaining a user's problem to a development team, a
-                good translator groks the essence of the idea and transforms it
-                into something the other side understands.
+                My experience in product blurs the lines between research,
+                development and design. I'm a generalist, yes, but also a translator – of user needs into
+                product ideas, of ideas into designs, and of designs into code.
               </p>
-              {/*<p>I blur the lines between research, design and development.</p>*/}
               <div>
-                <SocialButtons/>
+                <SocialButtons />
               </div>
             </div>
           </div>
