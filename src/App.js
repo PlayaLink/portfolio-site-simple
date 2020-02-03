@@ -3,6 +3,7 @@ import "./App.scss";
 import Projects from "./components/Projects";
 import Cards from "./components/Cards";
 import About from "./components/About";
+import Meetly from "./components/case_studies/Meetly";
 import PopinLive from "./components/PopinLive";
 import IepGoalTracker from "./components/IepGoalTracker";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -34,6 +35,11 @@ class App extends Component {
               exact
               path={process.env.PUBLIC_URL + "/"}
               component={Projects}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/case-study/meetly"}
+              component={Meetly}
             />
             <Route
               exact
