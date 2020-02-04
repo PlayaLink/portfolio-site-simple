@@ -6,10 +6,9 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { Tooltip } from "react-tippy";
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ShowMore from '../widgets/ShowMore';
-
+import ShowMore from "../widgets/ShowMore";
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -69,7 +68,8 @@ const MeetlyBackground = () => (
   <div className="bg-white mt-5">
     <div className="d-flex justify-content-center">
       <div className="col-12 col-md-6">
-        <h2 className="text-uppercase mt-5">How Meetly got started</h2>
+        <h5 className="text-uppercase text-muted mt-5 mb-3">Context</h5>
+        <h2 className="text-uppercase">How Meetly got started</h2>
         <p className="font-weight-light">
           The idea for Meetly came as operations were winding down at POPin, an
           Irvine, CA-based startup that made employee engagement software.
@@ -138,7 +138,7 @@ const MeetlyProcess = () => (
   <div className="bg-light">
     <div className="d-flex justify-content-center mt-5">
       <div className="col-12 col-md-6">
-        <h5 className="text-uppercase text-muted">Research</h5>
+        <h5 className="text-uppercase text-muted mb-4">Research</h5>
         <h2 className="text-uppercase">Observations</h2>
         <p className="font-weight-light" />
         <p className="font-weight-light">
@@ -177,6 +177,32 @@ const MeetlyProcess = () => (
             </li>
           </ul>
         </p>
+      </div>
+    </div>
+    <div className="d-flex justify-content-center mt-5">
+      <div className="col-12 col-md-6">
+        <h2 className="text-uppercase">Hypotheses</h2>
+      </div>
+    </div>
+    <div className="d-flex justify-content-center">
+      <div className="col-12 col-md-9 col-lg-6">
+        <div className="d-flex flex-wrap flex-lg-nowrap my-4">
+          <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
+            <div className="font-weight-light p-5">
+              There is need for something simpler than project
+              management software, but more structured than text docs and todo lists.
+              <div className="text-center text-white text-uppercase mt-2 mb-n3">Self-serve</div>
+            </div>
+          </div>
+          <div className="m-2" />
+          <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
+            <div className="font-weight-light p-5">
+              Managers would purchase and force adoption of a tool that
+              encouraged and tracked meeting efficiency.
+              <div className="text-center text-white text-uppercase mt-2 mb-n3">Enterprise</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
