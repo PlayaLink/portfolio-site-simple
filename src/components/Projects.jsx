@@ -16,7 +16,7 @@ class Projects extends React.Component {
 
   render() {
     return (
-      <div className="">
+      <div className="container">
         <div className="d-none d-md-block mt-md-3Ø" style={{height: "1rem"}}/>
         {/*Meetly*/}
         <div className="row my-5">
@@ -29,13 +29,12 @@ class Projects extends React.Component {
           <ProjectCard
             className="col-xs-12 col-md-6"
             title="Meetly"
-            subtitle="A meeting notes and collaboration tool for teams."
-            download="https://runmeetly.com"
+            subtitle="A meeting minutes management tool"
             id="Meetly"
-            isDownload={true}
-            cta="Visit Site"
+            cta="Learn More"
+            link="/case-study/meetly"
             description={[
-              "Co-founded the company with 3 other engineers.",
+              <p>Co-founded the company with 3 other engineers.</p>,
               <p>Designed the web experience and helped build out the frontend.</p>
             ]}
           />

@@ -36,23 +36,19 @@ const ProjectCard = props => (
     )}
     {props.cta && props.link && (
       <div style={{ marginTop: "2rem" }}>
-        <a
-          href={props.link}
+        <Link
+          to={props.link}
           id={props.id}
-          target="_blank"
           className="button pink download-button"
         >
-          {props.cta}
+
           <span
-            style={{
-              position: "relative",
-              marginRight: "10px",
-              marginLeft: "5px"
-            }}
+            className="mr-3"
           >
-            <FontAwesomeIcon icon="arrow-right" />
+            {props.cta}
           </span>
-        </a>
+          <FontAwesomeIcon icon="arrow-right" />
+        </Link>
       </div>
     )}
   </div>
