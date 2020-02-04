@@ -13,7 +13,8 @@ import {
   faArrowRight,
   faChevronDown,
   faDownload,
-  faInfoCircle
+  faInfoCircle,
+  faPlusCircle
 } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/Navbar";
 
@@ -21,6 +22,7 @@ library.add(faArrowRight);
 library.add(faChevronDown);
 library.add(faInfoCircle);
 library.add(faDownload);
+library.add(faPlusCircle);
 
 class App extends Component {
   render() {

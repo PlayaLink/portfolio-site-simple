@@ -5,8 +5,22 @@ import {
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { Tooltip } from "react-tippy";
+import styled, { css } from 'styled-components';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ShowMore from '../widgets/ShowMore';
+
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
+
+const Dot = styled.span`
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 1rem;
+  padding: 0.25rem;
+  position: relative;
+  top: -0.25rem;
+`;
 
 const TimelineItem = props => (
   <li className="mb-3">
@@ -24,7 +38,8 @@ const MeetlyIntro = () => (
     <div className="d-flex justify-content-center row">
       <div className="col-12 col-md-6 col-lg-5">
         <h1 className="display-4">
-          <span className="text-muted">Building&nbsp;</span>A Meeting Management Tool&nbsp;<span className="text-muted">From Scratch</span>
+          <span className="text-muted">Building&nbsp;</span>A Meeting Management
+          Tool&nbsp;<span className="text-muted">From Scratch</span>
         </h1>
         <h5 className="font-weight-light mt-3">
           Meetly is a meeting minutes management tool that allows you to create
@@ -125,16 +140,41 @@ const MeetlyProcess = () => (
       <div className="col-12 col-md-6">
         <h5 className="text-uppercase text-muted">Research</h5>
         <h2 className="text-uppercase">Observations</h2>
-        <p className="font-weight-light">
-
-        </p>
+        <p className="font-weight-light" />
         <p className="font-weight-light">
           <ul className="ml-4">
-            <li className="my-3">Difficult to enforce proper meeting hygiene</li>
-            <li className="my-3">Lack of accountability around tasks assigned / decisions made
+            <li className="my-3">
+              Difficult to enforce proper meeting hygiene.
             </li>
-            <li className="my-3">Existing solutions are too complex or too cumbersome/brittle</li>
-            <li className="my-3">People and teams want to be more organized, but not if it creates more work for them</li>
+            <li className="my-3">
+              Lack of accountability around tasks assigned / decisions made
+            </li>
+            <li className="my-3">
+              Existing solutions are{" "}
+              <Tooltip
+                // options
+                title="Asana, Monday, Confluence, etc"
+                position="top"
+                trigger="mouseenter"
+                className="text-primary"
+              >
+                too complex
+              </Tooltip>{" "}
+              or too{" "}
+              <Tooltip
+                // options
+                title="Google Docs, Trello"
+                position="top"
+                trigger="mouseenter"
+                className="text-primary"
+              >
+                open-ended
+              </Tooltip>
+            </li>
+            <li className="my-3">
+              People and teams want to be more organized, but not if it creates
+              more work for them
+            </li>
           </ul>
         </p>
       </div>
