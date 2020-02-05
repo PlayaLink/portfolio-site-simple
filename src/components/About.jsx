@@ -5,6 +5,8 @@ import { DirectLink } from "react-scroll";
 import jordan_portrait from "../img/jordan_portrait.jpg";
 import tall_t from "../img/tall_t.svg";
 import short_t from "../img/short_t.svg";
+import { Link } from 'react-router-dom';
+
 
 const SocialButtons = () => (
   <div className="header">
