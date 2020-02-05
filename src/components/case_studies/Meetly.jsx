@@ -9,6 +9,7 @@ import { Tooltip } from "react-tippy";
 import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ShowMore from "../widgets/ShowMore";
+import { Link } from "react-router-dom";
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -134,7 +135,7 @@ const MeetlyBackground = () => (
   </div>
 );
 
-const MeetlyProcess = () => (
+const MeetlyResearch = () => (
   <div className="bg-light">
     <div className="d-flex justify-content-center mt-5">
       <div className="col-12 col-md-6">
@@ -189,9 +190,11 @@ const MeetlyProcess = () => (
         <div className="d-flex flex-wrap flex-lg-nowrap my-4">
           <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
             <div className="font-weight-light p-5">
-              There is need for something simpler than project
-              management software, but more structured than text docs and todo lists.
-              <div className="text-center text-white text-uppercase mt-2 mb-n3">Self-serve</div>
+              There is a need for something simpler than project management
+              software, but more structured than text docs and todo lists.
+              <div className="text-center text-white text-uppercase mt-2 mb-n3">
+                Self-serve
+              </div>
             </div>
           </div>
           <div className="m-2" />
@@ -199,7 +202,52 @@ const MeetlyProcess = () => (
             <div className="font-weight-light p-5">
               Managers would purchase and force adoption of a tool that
               encouraged and tracked meeting efficiency.
-              <div className="text-center text-white text-uppercase mt-2 mb-n3">Enterprise</div>
+              <div className="text-center text-white text-uppercase mt-2 mb-n3">
+                Enterprise
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const MeetlyDesignPrinciples = () => (
+  <div className="bg-light">
+    <div className="d-flex justify-content-center mt-5">
+      <div className="col-12 col-md-6">
+        <h5 className="text-uppercase text-muted mb-4">Research</h5>
+        <h2 className="text-uppercase">Observations</h2>
+        <p className="font-weight-light" />
+        <p className="font-weight-light">Here is some stuff.</p>
+      </div>
+    </div>
+    <div className="d-flex justify-content-center mt-5">
+      <div className="col-12 col-md-6">
+        <h2 className="text-uppercase">Hypotheses</h2>
+      </div>
+    </div>
+    <div className="d-flex justify-content-center">
+      <div className="col-12 col-md-9 col-lg-6">
+        <div className="d-flex flex-wrap flex-lg-nowrap my-4">
+          <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
+            <div className="font-weight-light p-5">
+              There is a need for something simpler than project management
+              software, but more structured than text docs and todo lists.
+              <div className="text-center text-white text-uppercase mt-2 mb-n3">
+                Self-serve
+              </div>
+            </div>
+          </div>
+          <div className="m-2" />
+          <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
+            <div className="font-weight-light p-5">
+              Managers would purchase and force adoption of a tool that
+              encouraged and tracked meeting efficiency.
+              <div className="text-center text-white text-uppercase mt-2 mb-n3">
+                Enterprise
+              </div>
             </div>
           </div>
         </div>
@@ -214,7 +262,17 @@ class Meetly extends Component {
       <div className="">
         <MeetlyIntro />
         <MeetlyBackground />
-        <MeetlyProcess />
+        <MeetlyResearch />
+        <h5 className="text-muted my-4 text-center">
+          This page is still being developed... In the meantime, feel free to
+          take a visit the Meetly directly!
+        </h5>
+        <div className="d-flex justify-content-center">
+          <a href="https://runmeetly.com" className="button pink mb-5">
+            <span className="mr-3">Visit the App</span>
+            <FontAwesomeIcon icon="arrow-right" />
+          </a>
+        </div>
       </div>
     );
   }
