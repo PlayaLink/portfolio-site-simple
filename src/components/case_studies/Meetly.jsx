@@ -145,7 +145,7 @@ const MeetlyResearch = () => (
         <p className="font-weight-light">
           <ul className="ml-4">
             <li className="my-3">
-              Difficult to enforce proper meeting hygiene.
+              Difficult to enforce proper meeting hygiene
             </li>
             <li className="my-3">
               Lack of accountability around tasks assigned / decisions made
@@ -201,7 +201,7 @@ const MeetlyResearch = () => (
           <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
             <div className="font-weight-light p-5">
               Managers would purchase and force adoption of a tool that
-              encouraged and tracked meeting efficiency.
+              encouraged, tracked, and improved meeting efficiency.
               <div className="text-center text-white text-uppercase mt-2 mb-n3">
                 Enterprise
               </div>
