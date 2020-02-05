@@ -6,6 +6,7 @@ import './stylesheets/base.scss';
 import TagManager from 'react-gtm-module';
 import LogRocket from 'logrocket';
 import 'bootstrap/dist/js/bootstrap.bundle'
+import 'react-tippy/dist/tippy.css'
 
 LogRocket.init('z5pe1u/portfolio-site');
 

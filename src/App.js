@@ -3,6 +3,7 @@ import "./App.scss";
 import Projects from "./components/Projects";
 import Cards from "./components/Cards";
 import About from "./components/About";
+import Meetly from "./components/case_studies/Meetly";
 import PopinLive from "./components/PopinLive";
 import IepGoalTracker from "./components/IepGoalTracker";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -12,7 +13,8 @@ import {
   faArrowRight,
   faChevronDown,
   faDownload,
-  faInfoCircle
+  faInfoCircle,
+  faPlusCircle
 } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/Navbar";
 
@@ -20,6 +22,7 @@ library.add(faArrowRight);
 library.add(faChevronDown);
 library.add(faInfoCircle);
 library.add(faDownload);
+library.add(faPlusCircle);
 
 class App extends Component {
   render() {
@@ -29,11 +32,16 @@ class App extends Component {
           <div className="bg-white">
             <Navbar />
           </div>
-          <div className="bg-light container">
+          <div className="bg-light px-3">
             <Route
               exact
               path={process.env.PUBLIC_URL + "/"}
               component={Projects}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/case-study/meetly"}
+              component={Meetly}
             />
             <Route
               exact

@@ -33,9 +33,9 @@ class Navbar extends Component {
     const {activeTab} = this.state;
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-white container mb-0">
-        <a className="navbar-brand text-uppercase font-weight-bold" href="#">
+        <Link to="/" className="navbar-brand text-uppercase font-weight-bold">
           <h2 className="d-md-inline">Jordan</h2><h2 className="d-md-inline ml-3 ml-md-0 pl-2">England-</h2><h2 className="d-md-inline ml-5 ml-md-0">Nelson</h2>
-        </a>
+        </Link>
         <button
           className="navbar-toggler align-self-end mb-3"
           type="button"
