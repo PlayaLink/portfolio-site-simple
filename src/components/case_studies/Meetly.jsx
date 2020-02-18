@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import add_item_and_share from "../../img/add_item_and_share.mp4";
+import inject_link_calendar from "../../img/inject_link_calendar.mp4";
 import {
   VerticalTimeline,
   VerticalTimelineElement
@@ -116,8 +117,8 @@ const MeetlyBackground = () => (
         <ul className="ml-4 mt-4">
           <TimelineItem
             date="Spring 2019"
-            description="Product manager and I came up with Meetly idea while
-        conducting ethnographic research around how POPin users ran
+            description="Product manager and I came up with the idea for Meetly while
+        conducting research around how POPin users ran
         meetings."
           />
           <TimelineItem
@@ -200,7 +201,7 @@ const MeetlyResearch = () => (
           <div className="m-2" />
           <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
             <div className="font-weight-light p-5">
-              Managers would purchase and force adoption of a tool that
+              Companies would purchase and force adoption of a tool that
               encouraged, tracked, and improved meeting efficiency.
               <div className="text-center text-white text-uppercase mt-2 mb-n3">
                 Enterprise
@@ -213,44 +214,37 @@ const MeetlyResearch = () => (
   </div>
 );
 
-const MeetlyDesignPrinciples = () => (
-  <div className="bg-light">
-    <div className="d-flex justify-content-center mt-5">
-      <div className="col-12 col-md-6">
-        <h5 className="text-uppercase text-muted mb-4">Research</h5>
-        <h2 className="text-uppercase">Observations</h2>
-        <p className="font-weight-light" />
-        <p className="font-weight-light">Here is some stuff.</p>
-      </div>
-    </div>
-    <div className="d-flex justify-content-center mt-5">
-      <div className="col-12 col-md-6">
-        <h2 className="text-uppercase">Hypotheses</h2>
-      </div>
-    </div>
+const NoExtraWork = () => (
+  <div className="bg-white mt-5">
     <div className="d-flex justify-content-center">
-      <div className="col-12 col-md-9 col-lg-6">
-        <div className="d-flex flex-wrap flex-lg-nowrap my-4">
-          <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
-            <div className="font-weight-light p-5">
-              There is a need for something simpler than project management
-              software, but more structured than text docs and todo lists.
-              <div className="text-center text-white text-uppercase mt-2 mb-n3">
-                Self-serve
-              </div>
-            </div>
-          </div>
-          <div className="m-2" />
-          <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
-            <div className="font-weight-light p-5">
-              Managers would purchase and force adoption of a tool that
-              encouraged and tracked meeting efficiency.
-              <div className="text-center text-white text-uppercase mt-2 mb-n3">
-                Enterprise
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="col-12 col-md-6">
+        <h5 className="text-uppercase text-muted mt-5 mb-3">
+          Design Principle #1
+        </h5>
+        <h2 className="text-uppercase">More organization, less work</h2>
+        <p className="font-weight-light">
+          We did not want to become <em>yet another tool</em> that people
+          have to manage. Another blackhole for notes. Since everyone's meetings are determined by their calendar, that would be our single source of truth.
+        </p>
+        <p className="font-weight-light">
+          <ul className="ml-4">
+            <li className="my-3">Creating and deleting notes would be controlled by creating or deleting meetings inside a user's calendar.</li>
+            <li className="my-3">If a meeting name, time or guest
+              list changed, those changes would be reflected in our tool.</li>
+            <li className="my-3">Each meeting's minutes should be directly accessible via the calendar event, by anyone who is invited to that meeting</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div className="row d-flex justify-content-center mt-3">
+      <div className="col-12 col-md-8">
+        <video
+          className="img-fluid my-3"
+          src={inject_link_calendar}
+          autoPlay="true"
+          loop="true"
+          controls
+        />
       </div>
     </div>
   </div>
@@ -263,13 +257,14 @@ class Meetly extends Component {
         <MeetlyIntro />
         <MeetlyBackground />
         <MeetlyResearch />
+        <NoExtraWork />
         <h5 className="text-muted my-4 text-center">
           This page is still being developed... In the meantime, feel free to
-          take a visit the Meetly directly!
+          visit Meetly directly!
         </h5>
         <div className="d-flex justify-content-center">
           <a href="https://runmeetly.com" className="button pink mb-5">
-            <span className="mr-3">Visit the App</span>
+            <span className="mr-3">View the App</span>
             <FontAwesomeIcon icon="arrow-right" />
           </a>
         </div>
