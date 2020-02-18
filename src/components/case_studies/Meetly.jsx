@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import add_item_and_share from "../../img/add_item_and_share.mp4";
 import inject_link_calendar from "../../img/inject_link_calendar.mp4";
+import add_remove_cards from "../../img/add_remove_cards.mp4";
 import {
   VerticalTimeline,
   VerticalTimelineElement
@@ -223,24 +224,73 @@ const NoExtraWork = () => (
         </h5>
         <h2 className="text-uppercase">More organization, less work</h2>
         <p className="font-weight-light">
-          We did not want to become <em>yet another tool</em> that people
-          have to manage. Another blackhole for notes. Since everyone's meetings are determined by their calendar, that would be our single source of truth.
+          We did not want to become <em>yet another tool</em> that people have
+          to manage. Another blackhole for notes. Since everyone's meetings are
+          determined by their calendar, that would be our single source of
+          truth.
         </p>
         <p className="font-weight-light">
           <ul className="ml-4">
-            <li className="my-3">Creating and deleting notes would be controlled by creating or deleting meetings inside a user's calendar.</li>
-            <li className="my-3">If a meeting name, time or guest
-              list changed, those changes would be reflected in our tool.</li>
-            <li className="my-3">Each meeting's minutes should be directly accessible via the calendar event, by anyone who is invited to that meeting</li>
+            <li className="my-3">
+              Creating and deleting notes would be controlled by creating or
+              deleting meetings inside a user's calendar.
+            </li>
+            <li className="my-3">
+              If a meeting name, time or guest list changed, those changes would
+              be reflected in our tool.
+            </li>
+            <li className="my-3">
+              Each meeting's minutes should be directly accessible via the
+              calendar event, by anyone who is invited to that meeting
+            </li>
           </ul>
         </p>
       </div>
     </div>
-    <div className="row d-flex justify-content-center mt-3">
+    <div className="row d-flex justify-content-center mt-4">
       <div className="col-12 col-md-8">
+        <h6 className="text-uppercase mb-2">
+          Inject Meetly "workspace" link into calendar event
+        </h6>
         <video
           className="img-fluid my-3"
           src={inject_link_calendar}
+          autoPlay="true"
+          loop="true"
+          controls
+        />
+      </div>
+    </div>
+  </div>
+);
+
+const PrescriptiveButFlexible = () => (
+  <div className="bg-light mt-5">
+    <div className="d-flex justify-content-center">
+      <div className="col-12 col-md-6">
+        <h5 className="text-uppercase text-muted mt-5 mb-3">
+          Design Principle #2
+        </h5>
+        <h2 className="text-uppercase">Prescriptive, but flexible</h2>
+        <p className="font-weight-light">
+          We wanted people to be able to click on a meeting and be ready to go.
+          No set up. No thinking.
+        </p>
+        <p className="font-weight-light">
+          By default, we create an agenda, action items, notes and decisions
+          card for each meeting in a user's calendar. This arrangement
+          encourages best practices, while still allowing users to customize.
+        </p>
+      </div>
+    </div>
+    <div className="row d-flex justify-content-center mt-4">
+      <div className="col-12 col-md-8">
+        <h6 className="text-uppercase mb-2">
+          Customize a workspace
+        </h6>
+        <video
+          className="img-fluid my-3"
+          src={add_remove_cards}
           autoPlay="true"
           loop="true"
           controls
@@ -258,6 +308,7 @@ class Meetly extends Component {
         <MeetlyBackground />
         <MeetlyResearch />
         <NoExtraWork />
+        <PrescriptiveButFlexible />
         <h5 className="text-muted my-4 text-center">
           This page is still being developed... In the meantime, feel free to
           visit Meetly directly!
