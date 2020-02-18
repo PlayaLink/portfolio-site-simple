@@ -40,17 +40,16 @@ const MeetlyIntro = () => (
     <div className="d-flex justify-content-center row">
       <div className="col-12 col-md-6 col-lg-5">
         <h1 className="display-4">
-          <span className="text-muted">Building&nbsp;</span>A Meeting Management
+          <span className="text-muted">Building A&nbsp;</span>Meeting Notes Management
           Tool&nbsp;<span className="text-muted">From Scratch</span>
         </h1>
         <h5 className="font-weight-light mt-3">
-          Meetly is a meeting minutes management tool that allows you to create
+          Meetly allows you to create
           collaborative agendas, assign action items, and document decisions.
         </h5>
         <h5 className="font-weight-light mt-3">
-          Users sign up using their Google or Microsoft account and Meetly
-          automatically creates structured notes for each of their meetings and
-          keeps everything in sync with their calendar.
+          Users connect their Google or Microsoft calendar and Meetly
+          automatically creates structured notes – called "workspaces" – for each of their meetings.
         </h5>
       </div>
     </div>
