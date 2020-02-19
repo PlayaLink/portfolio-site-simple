@@ -46,12 +46,11 @@ const MeetlyIntro = () => (
         </h1>
         <h5 className="font-weight-light mt-3">
           Meetly allows you to create collaborative agendas, assign action
-          items, and document decisions.
+          items, and document and share meeting results.
         </h5>
         <h5 className="font-weight-light mt-3">
           Users connect their Google or Microsoft calendar and Meetly
-          automatically creates structured notes – called "workspaces" – for
-          each of their meetings.
+          automatically creates structured notes for each of their meetings.
         </h5>
       </div>
     </div>
@@ -243,22 +242,25 @@ const NoExtraWork = () => (
         <h2 className="text-uppercase">More organization, less work</h2>
         <p className="font-weight-light">
           We did not want to become <em>yet another tool</em> that people have
-          to manage. Another blackhole for notes. Since everyone's meetings are
-          determined by their calendar, that would be our single source of
-          truth.
+          to manage, another black hole for notes. Since users already work to
+          keep their calendars organized, that indispensable tool would provide the structure
+          for our notes.
         </p>
         <p className="font-weight-light">
           <ul className="ml-4">
             <li className="my-3">
-              Connecting your calendar autogenerates "workspaces" for each
-              meeting
+              Connecting your calendar auto-generates a set of structured notes, called "workspaces", for each of your meetings
             </li>
             <li className="my-3">
-              Notes&nbsp;<em className="font-weight-bold">stay in sync</em> with
-              the calendar - if you change the meeting name, time or guest list,
-              those changes are reflected in Meetly.
+              Workspaces&nbsp;<em className="font-weight-bold">stay in sync</em>{" "}
+              with their corresponding calendar event - if you change the
+              meeting name, time or guest list, those changes are reflected in
+              Meetly
             </li>
-            <li className="my-3">Access Meetly directly from your calendar</li>
+            <li className="my-3">
+              Individual workspaces are accessible directly from a user's
+              calendar
+            </li>
           </ul>
         </p>
       </div>
@@ -267,7 +269,8 @@ const NoExtraWork = () => (
       title="Calendar integration"
       body={
         <span>
-          Injecting a link into each calendar event allows the user to access any meeting's notes with one click.
+          Injecting a link into each calendar event allows the user to access
+          the notes for that meeting with one click.
         </span>
       }
       video={inject_link_calendar}
@@ -278,7 +281,11 @@ const NoExtraWork = () => (
 const VideoExample = props => {
   const { title, body, video, reverse } = props;
   return (
-    <div className={`d-md-flex justify-content-center mt-5 ${reverse ? "flex-row-reverse" : ""}`}>
+    <div
+      className={`d-md-flex justify-content-center mt-5 ${
+        reverse ? "flex-row-reverse" : ""
+      }`}
+    >
       <div className="col-12 col-md-3">
         <h6 className="text-uppercase mb-2 mt-md-5">{title}</h6>
         <p className="font-weight-light d-none d-md-block">{body}</p>

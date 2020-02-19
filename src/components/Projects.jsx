@@ -29,13 +29,13 @@ class Projects extends React.Component {
           <ProjectCard
             className="col-xs-12 col-md-6"
             title="Meetly"
-            subtitle="A meeting minutes management tool"
+            subtitle="A meeting notes management platform"
             id="Meetly"
             cta="Learn More"
             link="/case-study/meetly"
             description={[
               <p>Co-founded the company with 3 other engineers.</p>,
-              <p>Designed the web experience and helped build out the frontend.</p>
+              <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Product Design</div>
             ]}
           />
         </div>
@@ -51,17 +51,13 @@ class Projects extends React.Component {
           <ProjectCard
             className="col-xs-12 col-md-6"
             title="POPin Live"
-            subtitle="Design research for a live polling application"
+            subtitle="A live audience polling tool"
             download={popinLiveCaseStudy}
             id="POPin-Live"
             cta="Case Study"
             description={[
-              <p>POPin is an Irvine-based startup that thought copying their competitors would increase sales.</p>,
-              <p>
-                Executive buy-in for a copycat feature created an opportunity
-                for advocating for broader user research.
-              </p>,
-              "Design research for the feature was leveraged to create user personas for the core product."
+              <p>First self-serve product developed at POPin, an enterprise-sales-driven startup focused on employee engagement software.</p>,
+              <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Design Research</div>
             ]}
           />
         </div>
@@ -94,9 +90,8 @@ class Projects extends React.Component {
             download={iepCaseStudy}
             cta="Case Study"
             description={[
-              <p>Teachers weren't tracking goals properly because paper spreadsheets are a hassle.</p>,
-              <p>A tech-savvy principal wanted to change that.</p>,
-              "The result was a mobile-friendly web app that makes it easy to log evaluations and track progress over time."
+              <p>A mobile-friendly web app that makes it easy to log evaluations and track student progress over time.</p>,
+              <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Research, Design and Development</div>,
             ]}
           />
         </div>
