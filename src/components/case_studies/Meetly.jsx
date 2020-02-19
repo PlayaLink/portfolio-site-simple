@@ -40,16 +40,17 @@ const MeetlyIntro = () => (
     <div className="d-flex justify-content-center row">
       <div className="col-12 col-md-6 col-lg-5">
         <h1 className="display-4">
-          <span className="text-muted">Building A&nbsp;</span>Meeting Notes Management
-          Tool&nbsp;<span className="text-muted">From Scratch</span>
+          <span className="text-muted">Building A&nbsp;</span>Meeting Notes
+          Management Tool&nbsp;<span className="text-muted">From Scratch</span>
         </h1>
         <h5 className="font-weight-light mt-3">
-          Meetly allows you to create
-          collaborative agendas, assign action items, and document decisions.
+          Meetly allows you to create collaborative agendas, assign action
+          items, and document decisions.
         </h5>
         <h5 className="font-weight-light mt-3">
           Users connect their Google or Microsoft calendar and Meetly
-          automatically creates structured notes – called "workspaces" – for each of their meetings.
+          automatically creates structured notes – called "workspaces" – for
+          each of their meetings.
         </h5>
       </div>
     </div>
@@ -141,8 +142,25 @@ const MeetlyResearch = () => (
     <div className="d-flex justify-content-center mt-5">
       <div className="col-12 col-md-6">
         <h5 className="text-uppercase text-muted mb-4">Research</h5>
-        <h2 className="text-uppercase">Observations</h2>
-        <p className="font-weight-light" />
+        <h2 className="text-uppercase">Process</h2>
+        <p className="font-weight-light">
+          I lead 13 interviews with executive assistants, project managers and
+          department leaders (from HR, IT and sales) to learn about:
+          <ol className="ml-4">
+            <li className="my-3">
+              how they schedule, conduct and document their meetings and
+            </li>
+            <li className="my-3">
+              the tools they used to do their jobs, specifically tools that
+              touched their meetings workflow.
+            </li>
+          </ol>
+        </p>
+        <p className="font-weight-light">
+          Tested out a host of productivity SaaS products focused on project
+          management, note-taking, and knowledge-base creation.
+        </p>
+        <h2 className="text-uppercase mt-5">Observations</h2>
         <p className="font-weight-light">
           <ul className="ml-4">
             <li className="my-3">
@@ -191,21 +209,21 @@ const MeetlyResearch = () => (
         <div className="d-flex flex-wrap flex-lg-nowrap my-4">
           <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
             <div className="font-weight-light p-5">
-              There is a need for something simpler than project management
-              software, but more structured than text docs and todo lists.
-              <div className="text-center text-white text-uppercase mt-2 mb-n3">
+              <div className="text-center text-white text-uppercase mt-n2 mb-2 font-weight-normal">
                 Self-serve
               </div>
+              There is a need for something simpler than project management
+              software, but more structured than text docs and todo lists.
             </div>
           </div>
           <div className="m-2" />
           <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
             <div className="font-weight-light p-5">
-              Companies would purchase and force adoption of a tool that
-              encouraged, tracked, and improved meeting efficiency.
-              <div className="text-center text-white text-uppercase mt-2 mb-n3">
+              <div className="text-center text-white text-uppercase mt-n2 mb-2">
                 Enterprise
               </div>
+              Companies would purchase and force adoption of a tool that
+              encouraged, tracked, and improved meeting efficiency.
             </div>
           </div>
         </div>
@@ -231,16 +249,14 @@ const NoExtraWork = () => (
         <p className="font-weight-light">
           <ul className="ml-4">
             <li className="my-3">
-              Creating and deleting notes would be controlled by creating or
-              deleting meetings inside a user's calendar.
+              Connecting your calendar autogenerates "workspaces" for each meeting
             </li>
             <li className="my-3">
-              If a meeting name, time or guest list changed, those changes would
-              be reflected in our tool.
+              Notes&nbsp;<em className="font-weight-bold">stay in sync</em> with the calendar - if you change the meeting name, time or guest list, those changes
+              are reflected in Meetly.
             </li>
             <li className="my-3">
-              Each meeting's minutes should be directly accessible via the
-              calendar event, by anyone who is invited to that meeting
+              Access Meetly directly from your calendar
             </li>
           </ul>
         </p>
@@ -249,7 +265,7 @@ const NoExtraWork = () => (
     <div className="row d-flex justify-content-center mt-4">
       <div className="col-12 col-md-8">
         <h6 className="text-uppercase mb-2">
-          Inject Meetly "workspace" link into calendar event
+          Inject Meetly "workspace" link into user's calendar
         </h6>
         <video
           className="img-fluid my-3"
@@ -272,21 +288,21 @@ const PrescriptiveButFlexible = () => (
         </h5>
         <h2 className="text-uppercase">Prescriptive, but flexible</h2>
         <p className="font-weight-light">
-          We wanted people to be able to click on a meeting and be ready to go.
-          No set up. No thinking.
+          We wanted people to be able to click on a meeting and know exactly what to do.
         </p>
         <p className="font-weight-light">
-          By default, we create an agenda, action items, notes and decisions
-          card for each meeting in a user's calendar. This arrangement
-          encourages best practices, while still allowing users to customize.
+          We include cards for agenda, action items, notes and decisions
+          by default. This arrangement&nbsp;
+          <em className="font-weight-bold">encourages meeting best practices</em>.
+        </p>
+        <p className="font-weight-light">
+          However, a user can always remove, add or rename cards as needed.
         </p>
       </div>
     </div>
     <div className="row d-flex justify-content-center mt-4">
       <div className="col-12 col-md-8">
-        <h6 className="text-uppercase mb-2">
-          Customize a workspace
-        </h6>
+        <h6 className="text-uppercase mb-2">Customize a workspace</h6>
         <video
           className="img-fluid my-3"
           src={add_remove_cards}
