@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import add_item_and_share from "../../img/add_item_and_share.mp4";
 import inject_link_calendar from "../../img/inject_link_calendar.mp4";
 import add_remove_cards from "../../img/add_remove_cards.mp4";
+import choose_template from "../../img/choose_template.mp4";
 import {
   VerticalTimeline,
   VerticalTimelineElement
@@ -54,7 +55,7 @@ const MeetlyIntro = () => (
         </h5>
       </div>
     </div>
-    <div className="row d-flex justify-content-center mt-3">
+    <div className="row d-flex justify-content-center mt-5">
       <div className="col-12 col-md-8">
         <video
           className="img-fluid my-3"
@@ -249,35 +250,51 @@ const NoExtraWork = () => (
         <p className="font-weight-light">
           <ul className="ml-4">
             <li className="my-3">
-              Connecting your calendar autogenerates "workspaces" for each meeting
+              Connecting your calendar autogenerates "workspaces" for each
+              meeting
             </li>
             <li className="my-3">
-              Notes&nbsp;<em className="font-weight-bold">stay in sync</em> with the calendar - if you change the meeting name, time or guest list, those changes
-              are reflected in Meetly.
+              Notes&nbsp;<em className="font-weight-bold">stay in sync</em> with
+              the calendar - if you change the meeting name, time or guest list,
+              those changes are reflected in Meetly.
             </li>
-            <li className="my-3">
-              Access Meetly directly from your calendar
-            </li>
+            <li className="my-3">Access Meetly directly from your calendar</li>
           </ul>
         </p>
       </div>
     </div>
-    <div className="row d-flex justify-content-center mt-4">
+    <VideoExample
+      title="Calendar integration"
+      body={
+        <span>
+          Injecting a link into each calendar event allows the user to access any meeting's notes with one click.
+        </span>
+      }
+      video={inject_link_calendar}
+    />
+  </div>
+);
+
+const VideoExample = props => {
+  const { title, body, video, reverse } = props;
+  return (
+    <div className={`d-md-flex justify-content-center mt-5 ${reverse ? "flex-row-reverse" : ""}`}>
+      <div className="col-12 col-md-3">
+        <h6 className="text-uppercase mb-2 mt-md-5">{title}</h6>
+        <p className="font-weight-light d-none d-md-block">{body}</p>
+      </div>
       <div className="col-12 col-md-8">
-        <h6 className="text-uppercase mb-2">
-          Inject Meetly "workspace" link into user's calendar
-        </h6>
         <video
-          className="img-fluid my-3"
-          src={inject_link_calendar}
+          className="img-fluid my-1 my-md-3"
+          src={video}
           autoPlay="true"
           loop="true"
           controls
         />
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const PrescriptiveButFlexible = () => (
   <div className="bg-light mt-5">
@@ -288,30 +305,39 @@ const PrescriptiveButFlexible = () => (
         </h5>
         <h2 className="text-uppercase">Prescriptive, but flexible</h2>
         <p className="font-weight-light">
-          We wanted people to be able to click on a meeting and know exactly what to do.
+          We wanted Meetly to be intuitive as a tool, but also "educational"
+          when it comes to good meeting hygiene.
         </p>
         <p className="font-weight-light">
-          We include cards for agenda, action items, notes and decisions
-          by default. This arrangement&nbsp;
-          <em className="font-weight-bold">encourages meeting best practices</em>.
-        </p>
-        <p className="font-weight-light">
-          However, a user can always remove, add or rename cards as needed.
+          When a user clicks on a meeting, it should be immediately obvious what
+          they need to do – both as a user of the tool and as a responsible
+          meeting organizer or participant.
         </p>
       </div>
     </div>
-    <div className="row d-flex justify-content-center mt-4">
-      <div className="col-12 col-md-8">
-        <h6 className="text-uppercase mb-2">Customize a workspace</h6>
-        <video
-          className="img-fluid my-3"
-          src={add_remove_cards}
-          autoPlay="true"
-          loop="true"
-          controls
-        />
-      </div>
-    </div>
+    <VideoExample
+      title="Structured notes"
+      body={
+        <span>
+          We include cards for agenda, action items, notes and decisions by
+          default. This arrangement&nbsp;
+          <em className="font-weight-bold">
+            encourages meeting best practices
+          </em>{" "}
+          while allowing a user to remove, add or rename cards as needed.
+        </span>
+      }
+      video={add_remove_cards}
+    />
+    <VideoExample
+      title="Meeting templates"
+      body={
+        <span>
+          Users can create custom card arrangements for different meeting types.
+        </span>
+      }
+      video={choose_template}
+    />
   </div>
 );
 
