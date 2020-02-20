@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="29px" viewBox="0 0 33 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>email_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="email_icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mdi-email" transform="translate(0.000000, -2.000000)" fill-rule="nonzero">
+            <g id="Icon" transform="translate(2.000000, 5.000000)" fill="#000000">
+                <path d="M25.5,6 L14.5,12.875 L3.5,6 L3.5,3.25 L14.5,10.125 L25.5,3.25 M25.5,0.5 L3.5,0.5 C1.97375,0.5 0.75,1.72375 0.75,3.25 L0.75,19.75 C0.75,21.2687831 1.98121694,22.5 3.5,22.5 L25.5,22.5 C27.0187831,22.5 28.25,21.2687831 28.25,19.75 L28.25,3.25 C28.25,1.73121694 27.0187831,0.5 25.5,0.5 Z" id="Icon-Shape"></path>
+            </g>
+            <rect id="ViewBox" x="0" y="0" width="33" height="33"></rect>
+        </g>
+    </g>
+</svg>
