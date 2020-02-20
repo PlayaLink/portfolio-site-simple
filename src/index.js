@@ -8,7 +8,10 @@ import LogRocket from 'logrocket';
 import 'bootstrap/dist/js/bootstrap.bundle'
 import 'react-tippy/dist/tippy.css'
 
-LogRocket.init('z5pe1u/portfolio-site');
+
+if(window.location.hostname !== "localhost") {
+  LogRocket.init('z5pe1u/portfolio-site');
+}
 
 
 const tagManagerArgs = {
