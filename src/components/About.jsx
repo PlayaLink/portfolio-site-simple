@@ -72,17 +72,15 @@ class About extends React.Component {
   render() {
     return (
       <div className="about">
-        <div className="row">
-          <div className="col-8 col-sm-4 p-sm-3 p-md-5">
-            <div className="">
-              <img
-                src={jordan_portrait}
-                alt="Jordan England-Nelson"
-                className="img-fluid rounded-lg"
-              />
-            </div>
+        <div className="row d-flex justify-content-center mt-md-5">
+          <div className="col-6 mb-5 mb-md-0 col-md-3 col-lg-2">
+            <img
+              src={jordan_portrait}
+              alt="Jordan England-Nelson"
+              className="img-fluid rounded-lg d-none d-md-block"
+            />
           </div>
-          <div className="col-12 col-sm-6 p-5">
+          <div className="col-12 col-md-6 col-lg-5">
             {/*<p>*/}
             {/*I've worked up and down the product stack, from design research to writing code.*/}
             {/*</p>*/}
@@ -100,39 +98,44 @@ class About extends React.Component {
             {/*A short T is nothing to be ashamed of. There are plenty of attractive,*/}
             {/*young companies out there who gladly hire generalists.*/}
             {/*</p>*/}
-            <div className="w-md-70">
-              <p>
+            <img
+              src={jordan_portrait}
+              alt="Jordan England-Nelson"
+              className="rounded-lg float-left mr-3 d-md-none"
+              style={{width: "45%"}}
+            />
+            <p>
+
                 <span className="" style={{ fontSize: "1.5rem" }}>
                   I never identified as a technical person.
                 </span>{" "}
-                Until I realized JavaScript is just a language – a way to
-                transmit ideas from one system to another.
-              </p>
-              <p>
-                Design, too, is a language. We listen and observe people. We try
-                to interpret their needs, goals and behaviors. We translate what
-                they say and do into what we think they mean and want, so that
-                our response – our product – is relevant and helpful.
-              </p>
-              {/*<p>*/}
-              {/*I know<span className="font-italic">&nbsp;generalist</span> is a*/}
-              {/*dirty word, but it seems to fit. We*/}
-              {/*have to listen, to observe, to imagine and to build.*/}
-              {/*</p>*/}
-              {/*<p>*/}
-              {/*I've Whether it’s distilling a complex topic into a short newspaper*/}
-              {/*story or explaining a user's problem to a development team, a*/}
-              {/*good translator groks the essence of the idea and transforms it*/}
-              {/*into something the other side understands.*/}
-              {/*</p>*/}
-              <p>
-                My experience in product blurs the lines between research,
-                development and design. I'm a generalist, yes, but also a translator – of user needs into
-                product ideas, of ideas into designs, and of designs into code.
-              </p>
-              <div>
-                <SocialButtons />
-              </div>
+              Until I realized JavaScript is just a language – a way to
+              transmit ideas from one system to another.
+            </p>
+            <p>
+              Design, too, is a language. We listen and observe people. We try
+              to interpret their needs, goals and behaviors. We translate what
+              they say and do into what we think they mean and want, so that
+              our response – our product – is relevant and helpful.
+            </p>
+            {/*<p>*/}
+            {/*I know<span className="font-italic">&nbsp;generalist</span> is a*/}
+            {/*dirty word, but it seems to fit. We*/}
+            {/*have to listen, to observe, to imagine and to build.*/}
+            {/*</p>*/}
+            {/*<p>*/}
+            {/*I've Whether it’s distilling a complex topic into a short newspaper*/}
+            {/*story or explaining a user's problem to a development team, a*/}
+            {/*good translator groks the essence of the idea and transforms it*/}
+            {/*into something the other side understands.*/}
+            {/*</p>*/}
+            <p>
+              My experience in product blurs the lines between research,
+              development and design. I'm a generalist, yes, but also a translator – of user needs into
+              product ideas, of ideas into designs, and of designs into code.
+            </p>
+            <div>
+              <SocialButtons />
             </div>
           </div>
         </div>
