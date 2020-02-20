@@ -73,14 +73,14 @@ class About extends React.Component {
     return (
       <div className="about">
         <div className="row d-flex justify-content-center mt-md-5">
-          <div className="col-6 mb-5 mb-md-0 col-md-3 col-lg-2">
+          <div className="col-6 mb-5 mb-md-0 col-md-3 col-lg-2 mr-lg-4">
             <img
               src={jordan_portrait}
               alt="Jordan England-Nelson"
               className="img-fluid rounded-lg d-none d-md-block"
             />
           </div>
-          <div className="col-12 col-md-6 col-lg-5">
+          <div className="col-12 col-md-6 col-lg-4">
             {/*<p>*/}
             {/*I've worked up and down the product stack, from design research to writing code.*/}
             {/*</p>*/}
