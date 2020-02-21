@@ -3,6 +3,8 @@ import add_item_and_share from "../../img/add_item_and_share.mp4";
 import inject_link_calendar from "../../img/inject_link_calendar.mp4";
 import add_remove_cards from "../../img/add_remove_cards.mp4";
 import choose_template from "../../img/choose_template.mp4";
+import { Waypoint } from "react-waypoint";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement
@@ -59,7 +61,7 @@ const MeetlyIntro = () => (
         <video
           className="img-fluid my-3"
           src={add_item_and_share}
-          autoPlay="true"
+          autoPlay={true}
           controls
         />
       </div>
@@ -243,13 +245,14 @@ const NoExtraWork = () => (
         <p className="font-weight-light">
           We did not want to become <em>yet another tool</em> that people have
           to manage, another black hole for notes. Since users already work to
-          keep their calendars organized, that indispensable tool would provide the structure
-          for our notes.
+          keep their calendars organized, that indispensable tool would provide
+          the structure for our notes.
         </p>
         <p className="font-weight-light">
           <ul className="ml-4">
             <li className="my-3">
-              Connecting your calendar auto-generates a set of structured notes, called "workspaces", for each of your meetings
+              Connecting your calendar auto-generates a set of structured notes,
+              called "workspaces", for each of your meetings
             </li>
             <li className="my-3">
               Workspaces&nbsp;<em className="font-weight-bold">stay in sync</em>{" "}
@@ -267,6 +270,7 @@ const NoExtraWork = () => (
     </div>
     <VideoExample
       title="Calendar integration"
+      id="calendar-integration"
       body={
         <span>
           Injecting a link into each calendar event allows the user to access
@@ -278,30 +282,53 @@ const NoExtraWork = () => (
   </div>
 );
 
-const VideoExample = props => {
-  const { title, body, video, reverse } = props;
-  return (
-    <div
-      className={`d-md-flex justify-content-center mt-5 ${
-        reverse ? "flex-row-reverse" : ""
-      }`}
-    >
-      <div className="col-12 col-md-3">
-        <h6 className="text-uppercase mb-2 mt-md-5">{title}</h6>
-        <p className="font-weight-light d-none d-md-block">{body}</p>
+class VideoExample extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      autoPlay: false
+    };
+  }
+  startVideo = () => {
+    const { id } = this.props;
+    console.log("id: ", id);
+    const video = document.getElementById(id);
+    video.currentTime = 0;
+    video.play();
+  };
+  pauseVideo = () => {
+    const { id } = this.props;
+    document.getElementById(id).pause();
+  };
+  render() {
+    const { title, body, video, reverse, id } = this.props;
+    const { autoPlay } = this.state;
+    return (
+      <div
+        className={`d-md-flex justify-content-center mt-5 ${
+          reverse ? "flex-row-reverse" : ""
+        }`}
+      >
+        <div className="col-12 col-md-3">
+          <h6 className="text-uppercase mb-2 mt-md-5">{title}</h6>
+          <p className="font-weight-light d-none d-md-block">{body}</p>
+        </div>
+        <div className="col-12 col-md-8">
+          <Waypoint onEnter={this.startVideo} onLeave={this.pauseVideo}>
+            <video
+              className="img-fluid my-1 my-md-3"
+              src={video}
+              loop={true}
+              controls
+              id={id}
+              muted
+            />
+          </Waypoint>
+        </div>
       </div>
-      <div className="col-12 col-md-8">
-        <video
-          className="img-fluid my-1 my-md-3"
-          src={video}
-          autoPlay="true"
-          loop="true"
-          controls
-        />
-      </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 const PrescriptiveButFlexible = () => (
   <div className="bg-light mt-5">
@@ -324,6 +351,7 @@ const PrescriptiveButFlexible = () => (
     </div>
     <VideoExample
       title="Structured notes"
+      id="structured-notes"
       body={
         <span>
           We include cards for agenda, action items, notes and decisions by
@@ -338,6 +366,7 @@ const PrescriptiveButFlexible = () => (
     />
     <VideoExample
       title="Meeting templates"
+      id="meeting-templates"
       body={
         <span>
           Users can create custom card arrangements for different meeting types.
