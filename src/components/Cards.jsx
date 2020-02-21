@@ -11,9 +11,6 @@ import toys from '../img/toys.jpg';
 import watercar from '../img/watercar.jpg';
 // Import styled-components library - "const" version
 
-// Save container div inside const
-const container = document.querySelector('.container');
-
 // Helper function to convert pixels to rems (remy)
 const remy = px => `${px / 16}rem`;
 

@@ -10,10 +10,6 @@ import iep_evaluations_graph from "../img/iep_evaluations_graph.png";
 import my_students_right from "../img/my_students_right.png";
 
 class Projects extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="container">

@@ -88,14 +88,12 @@ const MeetlyBackground = () => (
         <div className="row">
           <div className="col-12 col-md-6">
             <h4 className="text-uppercase">The team</h4>
-            <p className="font-weight-light">
-              <ul className="ml-4">
-                <li className="my-3">1 technical product manager</li>
-                <li className="my-3">1 back-end engineer</li>
-                <li className="my-3">1 front-end engineer</li>
-                <li className="my-3">1 technical product designer (me)</li>
-              </ul>
-            </p>
+            <ul className="ml-4 font-weight-light">
+              <li className="my-3">1 technical product manager</li>
+              <li className="my-3">1 back-end engineer</li>
+              <li className="my-3">1 front-end engineer</li>
+              <li className="my-3">1 technical product designer (me)</li>
+            </ul>
           </div>
           <div className="col-12 col-md-6">
             <h4 className="text-uppercase">My role</h4>
@@ -143,7 +141,7 @@ const MeetlyResearch = () => (
       <div className="col-12 col-md-6">
         <h5 className="text-uppercase text-muted mb-4">Research</h5>
         <h2 className="text-uppercase">Process</h2>
-        <p className="font-weight-light">
+        <div className="font-weight-light">
           I lead 13 interviews with executive assistants, project managers and
           department leaders (from HR, IT and sales) to learn about:
           <ol className="ml-4">
@@ -155,48 +153,46 @@ const MeetlyResearch = () => (
               touched their meetings workflow.
             </li>
           </ol>
-        </p>
+        </div>
         <p className="font-weight-light">
           Tested out a host of productivity SaaS products focused on project
           management, note-taking, and knowledge-base creation.
         </p>
         <h2 className="text-uppercase mt-5">Observations</h2>
-        <p className="font-weight-light">
-          <ul className="ml-4">
-            <li className="my-3">
-              Difficult to enforce proper meeting hygiene
-            </li>
-            <li className="my-3">
-              Lack of accountability around tasks assigned / decisions made
-            </li>
-            <li className="my-3">
-              Existing solutions are{" "}
-              <Tooltip
-                // options
-                title="Asana, Monday, Confluence, etc"
-                position="top"
-                trigger="mouseenter"
-                className="text-primary"
-              >
-                too complex
-              </Tooltip>{" "}
-              or too{" "}
-              <Tooltip
-                // options
-                title="Google Docs, Trello"
-                position="top"
-                trigger="mouseenter"
-                className="text-primary"
-              >
-                open-ended
-              </Tooltip>
-            </li>
-            <li className="my-3">
-              People and teams want to be more organized, but not if it creates
-              more work for them
-            </li>
-          </ul>
-        </p>
+        <ul className="ml-4 font-weight-light">
+          <li className="my-3">
+            Difficult to enforce proper meeting hygiene
+          </li>
+          <li className="my-3">
+            Lack of accountability around tasks assigned / decisions made
+          </li>
+          <li className="my-3">
+            Existing solutions are{" "}
+            <Tooltip
+              // options
+              title="Asana, Monday, Confluence, etc"
+              position="top"
+              trigger="mouseenter"
+              className="text-primary"
+            >
+              too complex
+            </Tooltip>{" "}
+            or too{" "}
+            <Tooltip
+              // options
+              title="Google Docs, Trello"
+              position="top"
+              trigger="mouseenter"
+              className="text-primary"
+            >
+              open-ended
+            </Tooltip>
+          </li>
+          <li className="my-3">
+            People and teams want to be more organized, but not if it creates
+            more work for them
+          </li>
+        </ul>
       </div>
     </div>
     <div className="d-flex justify-content-center mt-5">
@@ -246,24 +242,22 @@ const NoExtraWork = () => (
           keep their calendars organized, that indispensable tool would provide
           the structure for our notes.
         </p>
-        <p className="font-weight-light">
-          <ul className="ml-4">
-            <li className="my-3">
-              Connecting your calendar auto-generates a set of structured notes,
-              called "workspaces", for each of your meetings
-            </li>
-            <li className="my-3">
-              Workspaces&nbsp;<em className="font-weight-bold">stay in sync</em>{" "}
-              with their corresponding calendar event - if you change the
-              meeting name, time or guest list, those changes are reflected in
-              Meetly
-            </li>
-            <li className="my-3">
-              Individual workspaces are accessible directly from a user's
-              calendar
-            </li>
-          </ul>
-        </p>
+        <ul className="ml-4 font-weight-light">
+          <li className="my-3">
+            Connecting your calendar auto-generates a set of structured notes,
+            called "workspaces", for each of your meetings
+          </li>
+          <li className="my-3">
+            Workspaces&nbsp;<em className="font-weight-bold">stay in sync</em>{" "}
+            with their corresponding calendar event - if you change the
+            meeting name, time or guest list, those changes are reflected in
+            Meetly
+          </li>
+          <li className="my-3">
+            Individual workspaces are accessible directly from a user's
+            calendar
+          </li>
+        </ul>
       </div>
     </div>
     <VideoExample
