@@ -58,11 +58,9 @@ const MeetlyIntro = () => (
     </div>
     <div className="row d-flex justify-content-center mt-5">
       <div className="col-12 col-md-8">
-        <video
-          className="img-fluid my-3"
-          src={add_item_and_share}
-          autoPlay={true}
-          controls
+        <PlayOnScroll
+          id="meetly-overview"
+          video={add_item_and_share}
         />
       </div>
     </div>
@@ -342,16 +340,7 @@ class VideoExample extends React.Component {
           <p className="font-weight-light d-none d-md-block">{body}</p>
         </div>
         <div className="col-12 col-md-8">
-          <Waypoint onEnter={this.startVideo} onLeave={this.pauseVideo}>
-            <video
-              className="img-fluid my-1 my-md-3"
-              src={video}
-              loop={true}
-              controls
-              id={id}
-              muted
-            />
-          </Waypoint>
+          <PlayOnScroll video={video} id={id}/>
         </div>
       </div>
     );
