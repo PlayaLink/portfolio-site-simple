@@ -282,6 +282,34 @@ const NoExtraWork = () => (
   </div>
 );
 
+class PlayOnScroll extends React.Component {
+  startVideo = () => {
+    const { id } = this.props;
+    const video = document.getElementById(id);
+    video.currentTime = 0;
+    video.play();
+  };
+  pauseVideo = () => {
+    const { id } = this.props;
+    document.getElementById(id).pause();
+  };
+  render() {
+    const { video, id } = this.props;
+    return (
+      <Waypoint onEnter={this.startVideo} onLeave={this.pauseVideo}>
+        <video
+          className="img-fluid my-1 my-md-3"
+          src={video}
+          loop={true}
+          controls
+          id={id}
+          muted
+        />
+      </Waypoint>
+    )
+  }
+}
+
 class VideoExample extends React.Component {
   constructor(props) {
     super(props);
