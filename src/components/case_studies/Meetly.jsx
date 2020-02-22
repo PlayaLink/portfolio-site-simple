@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import add_item_and_share from "../../img/add_item_and_share.mp4";
-import inject_link_calendar from "../../img/inject_link_calendar.mp4";
+import calendar_integration from "../../img/calendar_integration.mp4";
 import add_remove_cards from "../../img/add_remove_cards.mp4";
 import choose_template from "../../img/choose_template.mp4";
 import { Waypoint } from "react-waypoint";
@@ -127,7 +127,7 @@ const MeetlyBackground = () => (
           <TimelineItem date="August 2019" description="Deployed an MVP." />
           <TimelineItem
             date="Sept 2019 – present"
-            description="Continued to build, test, and learn."
+            description="Continuing to build, test, and learn."
           />
         </ul>
       </div>
@@ -261,7 +261,7 @@ const NoExtraWork = () => (
       </div>
     </div>
     <VideoExample
-      title="Calendar integration"
+      title="Two-way calendar integration"
       id="calendar-integration"
       body={
         <span>
@@ -269,7 +269,7 @@ const NoExtraWork = () => (
           the notes for that meeting with one click.
         </span>
       }
-      video={inject_link_calendar}
+      video={calendar_integration}
     />
   </div>
 );
