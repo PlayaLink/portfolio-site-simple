@@ -58,10 +58,7 @@ const MeetlyIntro = () => (
     </div>
     <div className="row d-flex justify-content-center mt-5">
       <div className="col-12 col-md-8">
-        <PlayOnScroll
-          id="meetly-overview"
-          video={add_item_and_share}
-        />
+        <PlayOnScroll id="meetly-overview" video={add_item_and_share} />
       </div>
     </div>
   </div>
@@ -160,9 +157,7 @@ const MeetlyResearch = () => (
         </p>
         <h2 className="text-uppercase mt-5">Observations</h2>
         <ul className="ml-4 font-weight-light">
-          <li className="my-3">
-            Difficult to enforce proper meeting hygiene
-          </li>
+          <li className="my-3">Difficult to enforce proper meeting hygiene</li>
           <li className="my-3">
             Lack of accountability around tasks assigned / decisions made
           </li>
@@ -238,9 +233,9 @@ const NoExtraWork = () => (
         <h2 className="text-uppercase">More organization, less work</h2>
         <p className="font-weight-light">
           We did not want to become <em>yet another tool</em> that people have
-          to manage, another black hole for notes. Since users already work to
-          keep their calendars organized, that indispensable tool would provide
-          the structure for our notes.
+          to manage, another black hole for notes. Since users already expend
+          energy keeping their calendars organized, we would leverage that work
+          by using the calendar as the single source of truth.
         </p>
         <ul className="ml-4 font-weight-light">
           <li className="my-3">
@@ -249,13 +244,11 @@ const NoExtraWork = () => (
           </li>
           <li className="my-3">
             Workspaces&nbsp;<em className="font-weight-bold">stay in sync</em>{" "}
-            with their corresponding calendar event - if you change the
-            meeting name, time or guest list, those changes are reflected in
-            Meetly
+            with their corresponding calendar event - if you change the meeting
+            name, time or guest list, those changes are reflected in Meetly
           </li>
           <li className="my-3">
-            Individual workspaces are accessible directly from a user's
-            calendar
+            Individual workspaces are accessible directly from a user's calendar
           </li>
         </ul>
       </div>
@@ -298,7 +291,7 @@ class PlayOnScroll extends React.Component {
           muted
         />
       </Waypoint>
-    )
+    );
   }
 }
 
@@ -334,7 +327,7 @@ class VideoExample extends React.Component {
           <p className="font-weight-light d-none d-md-block">{body}</p>
         </div>
         <div className="col-12 col-md-8">
-          <PlayOnScroll video={video} id={id}/>
+          <PlayOnScroll video={video} id={id} />
         </div>
       </div>
     );
@@ -342,7 +335,7 @@ class VideoExample extends React.Component {
 }
 
 const PrescriptiveButFlexible = () => (
-  <div className="bg-light mt-5">
+  <div className="bg-white mt-5">
     <div className="d-flex justify-content-center">
       <div className="col-12 col-md-6">
         <h5 className="text-uppercase text-muted mt-5 mb-3">
@@ -395,9 +388,13 @@ const EasyToReference = () => (
         <h5 className="text-uppercase text-muted mt-5 mb-3">
           Design Principle #3
         </h5>
-        <h2 className="text-uppercase">Easy to store and reference past notes</h2>
+        <h2 className="text-uppercase">
+          Easy to store and reference past notes
+        </h2>
         <p className="font-weight-light">
-          A common complaint we heard was that meeting minutes get shared as email attachments, which makes it difficult to reference later and contributes to email clutter.
+          A common complaint we heard was that meeting minutes get shared as
+          email attachments, which makes it difficult to reference later and
+          contributes to email clutter.
         </p>
         <ul className="ml-4 font-weight-light">
           <li className="my-3">
@@ -406,13 +403,11 @@ const EasyToReference = () => (
           </li>
           <li className="my-3">
             Workspaces&nbsp;<em className="font-weight-bold">stay in sync</em>{" "}
-            with their corresponding calendar event - if you change the
-            meeting name, time or guest list, those changes are reflected in
-            Meetly
+            with their corresponding calendar event - if you change the meeting
+            name, time or guest list, those changes are reflected in Meetly
           </li>
           <li className="my-3">
-            Individual workspaces are accessible directly from a user's
-            calendar
+            Individual workspaces are accessible directly from a user's calendar
           </li>
         </ul>
       </div>
@@ -440,7 +435,7 @@ class Meetly extends Component {
         <MeetlyResearch />
         <NoExtraWork />
         <PrescriptiveButFlexible />
-        <EasyToReference/>
+        <EasyToReference />
         <h5 className="text-muted my-4 text-center">
           This page is still being developed... In the meantime, feel free to
           visit Meetly directly!
