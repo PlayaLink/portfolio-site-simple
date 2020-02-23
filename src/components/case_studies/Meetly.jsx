@@ -40,7 +40,7 @@ const TimelineItem = props => (
 
 const MeetlyIntro = () => (
   <div className="mt-5">
-    <div className="d-flex justify-content-center row">
+    <div className="d-flex justify-content-center">
       <div className="col-12 col-md-6 col-lg-5">
         <h1 className="display-4">
           <span className="text-muted">Building A&nbsp;</span>Meeting Notes
@@ -388,6 +388,49 @@ const PrescriptiveButFlexible = () => (
   </div>
 );
 
+const EasyToReference = () => (
+  <div className="bg-white mt-5">
+    <div className="d-flex justify-content-center">
+      <div className="col-12 col-md-6">
+        <h5 className="text-uppercase text-muted mt-5 mb-3">
+          Design Principle #3
+        </h5>
+        <h2 className="text-uppercase">Easy to store and reference past notes</h2>
+        <p className="font-weight-light">
+          A common complaint we heard was that meeting minutes get shared as email attachments, which makes it difficult to reference later and contributes to email clutter.
+        </p>
+        <ul className="ml-4 font-weight-light">
+          <li className="my-3">
+            Connecting your calendar auto-generates a set of structured notes,
+            called "workspaces", for each of your meetings
+          </li>
+          <li className="my-3">
+            Workspaces&nbsp;<em className="font-weight-bold">stay in sync</em>{" "}
+            with their corresponding calendar event - if you change the
+            meeting name, time or guest list, those changes are reflected in
+            Meetly
+          </li>
+          <li className="my-3">
+            Individual workspaces are accessible directly from a user's
+            calendar
+          </li>
+        </ul>
+      </div>
+    </div>
+    <VideoExample
+      title="Two-way calendar integration"
+      id="calendar-integration"
+      body={
+        <span>
+          Injecting a link into each calendar event allows the user to access
+          the notes for that meeting with one click.
+        </span>
+      }
+      video={calendar_integration}
+    />
+  </div>
+);
+
 class Meetly extends Component {
   render() {
     return (
@@ -397,6 +440,7 @@ class Meetly extends Component {
         <MeetlyResearch />
         <NoExtraWork />
         <PrescriptiveButFlexible />
+        <EasyToReference/>
         <h5 className="text-muted my-4 text-center">
           This page is still being developed... In the meantime, feel free to
           visit Meetly directly!
