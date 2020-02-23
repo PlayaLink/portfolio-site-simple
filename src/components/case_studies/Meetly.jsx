@@ -389,36 +389,33 @@ const EasyToReference = () => (
           Design Principle #3
         </h5>
         <h2 className="text-uppercase">
-          Easy to store and reference past notes
+          Easy to reference past notes
         </h2>
         <p className="font-weight-light">
-          A common complaint we heard was that meeting minutes get shared as
-          email attachments, which makes it difficult to reference later and
-          contributes to email clutter.
+          A common complaint we heard was that meeting minutes get shared via
+          email, often as attachments, which makes it difficult to reference
+          later and contributes to email clutter.
         </p>
-        <ul className="ml-4 font-weight-light">
-          <li className="my-3">
-            Connecting your calendar auto-generates a set of structured notes,
-            called "workspaces", for each of your meetings
-          </li>
-          <li className="my-3">
-            Workspaces&nbsp;<em className="font-weight-bold">stay in sync</em>{" "}
-            with their corresponding calendar event - if you change the meeting
-            name, time or guest list, those changes are reflected in Meetly
-          </li>
-          <li className="my-3">
-            Individual workspaces are accessible directly from a user's calendar
-          </li>
-        </ul>
       </div>
     </div>
     <VideoExample
-      title="Two-way calendar integration"
-      id="calendar-integration"
+      title="Robust search"
+      id="robust-search"
       body={
         <span>
-          Injecting a link into each calendar event allows the user to access
-          the notes for that meeting with one click.
+          The ability to search across all notes and meetings makes it easy to
+          reference past topics.
+        </span>
+      }
+      video={calendar_integration}
+    />
+    <VideoExample
+      title="Meeting Groups"
+      id="meeting-groups"
+      body={
+        <span>
+          The ability to link meetings together around a topic, team or project
+          makes it easy to jump from
         </span>
       }
       video={calendar_integration}
