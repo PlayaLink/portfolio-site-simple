@@ -4,6 +4,7 @@ import calendar_integration from "../../img/calendar_integration.mp4";
 import add_remove_cards from "../../img/add_remove_cards.mp4";
 import choose_template from "../../img/choose_template.mp4";
 import meeting_groups from "../../img/meeting_groups.mp4";
+import search from "../../img/search.mp4";
 import { Waypoint } from "react-waypoint";
 
 import {
@@ -43,6 +44,9 @@ const MeetlyIntro = () => (
   <div className="mt-5">
     <div className="d-flex justify-content-center">
       <div className="col-12 col-md-6 col-lg-5">
+        <h5 className="text-uppercase text-muted mt-5 mb-3">
+          Case Study
+        </h5>
         <h1 className="display-4">
           <span className="text-muted">Building A&nbsp;</span>Meeting Notes
           Management Tool&nbsp;<span className="text-muted">From Scratch</span>
@@ -342,10 +346,7 @@ const PrescriptiveButFlexible = () => (
   <div className="bg-white mt-5">
     <div className="d-flex justify-content-center">
       <div className="col-12 col-md-6">
-        <h5 className="text-uppercase text-muted mt-5 mb-3">
-          Design Principle #2
-        </h5>
-        <h2 className="text-uppercase">Prescriptive, but flexible</h2>
+        <SectionTitle heading="Design Principle #2" title="Prescriptive, but flexible"/>
         <p className="font-weight-light">
           We wanted Meetly to be intuitive as a tool, but also "educational"
           when it comes to good meeting hygiene.
@@ -389,12 +390,7 @@ const EasyToReference = () => (
   <div className="bg-white mt-5">
     <div className="d-flex justify-content-center">
       <div className="col-12 col-md-6">
-        <h5 className="text-uppercase text-muted mt-5 mb-3">
-          Design Principle #3
-        </h5>
-        <h2 className="text-uppercase">
-          Easy to reference past notes
-        </h2>
+        <SectionTitle heading="Design Principle #3" title="Easy to reference past notes"/>
         <p className="font-weight-light">
           A common complaint we heard was that meeting minutes get shared via
           email, often as attachments, which makes it difficult to reference
@@ -411,21 +407,35 @@ const EasyToReference = () => (
           reference past topics.
         </span>
       }
-      video={meeting_groups}
+      video={search}
     />
     <VideoExample
       title="Meeting Groups"
       id="meeting-groups"
       body={
         <span>
-          The ability to link meetings together around a topic, team or project
-          makes it easy to jump from
+          Grouping meetings together around a topic, team or project
+          is another way users could organize and quickly reference content
         </span>
       }
       video={meeting_groups}
     />
   </div>
 );
+
+const SectionTitle = (props) => {
+  const {heading, title} = props;
+  return (
+    <React.Fragment>
+      <h5 className="text-uppercase text-muted mt-5 mb-3">
+        {heading}
+      </h5>
+      <h2 className="text-uppercase">
+        {title}
+      </h2>
+    </React.Fragment>
+  )
+}
 
 class Meetly extends Component {
   render() {
