@@ -3,6 +3,7 @@ import add_item_and_share from "../../img/add_item_and_share.mp4";
 import calendar_integration from "../../img/calendar_integration.mp4";
 import add_remove_cards from "../../img/add_remove_cards.mp4";
 import choose_template from "../../img/choose_template.mp4";
+import meeting_groups from "../../img/meeting_groups.mp4";
 import { Waypoint } from "react-waypoint";
 
 import {
@@ -235,20 +236,20 @@ const NoExtraWork = () => (
           We did not want to become <em>yet another tool</em> that people have
           to manage, another black hole for notes. Since users already expend
           energy keeping their calendars organized, we would leverage that work
-          by using the calendar as the single source of truth.
+          by using their calendar as the single source of truth for Meetly content.
         </p>
         <ul className="ml-4 font-weight-light">
           <li className="my-3">
             Connecting your calendar auto-generates a set of structured notes,
-            called "workspaces", for each of your meetings
+            called "workspaces", for each of your meetings.
           </li>
           <li className="my-3">
-            Workspaces&nbsp;<em className="font-weight-bold">stay in sync</em>{" "}
-            with their corresponding calendar event - if you change the meeting
-            name, time or guest list, those changes are reflected in Meetly
+            A workspaces&nbsp;<em className="font-weight-bold">stays in sync</em>{" "}
+            with its corresponding calendar event - if you change the meeting
+            name, time or guest list, those changes are reflected in Meetly. This was technically difficult and <em className="font-weight-bold">no other notes tools does this.</em>
           </li>
           <li className="my-3">
-            Individual workspaces are accessible directly from a user's calendar
+            Individual workspaces are accessible directly from a user's calendar, and vice versa.
           </li>
         </ul>
       </div>
@@ -323,7 +324,10 @@ class VideoExample extends React.Component {
         }`}
       >
         <div className="col-12 col-md-3">
-          <h6 className="text-uppercase mb-2 mt-md-5">{title}</h6>
+          <h5 className="text-uppercase mt-5 mb-3">
+            {title}
+          </h5>
+          {/*<h6 className="text-uppercase mb-2 mt-md-5"></h6>*/}
           <p className="font-weight-light d-none d-md-block">{body}</p>
         </div>
         <div className="col-12 col-md-8">
@@ -407,7 +411,7 @@ const EasyToReference = () => (
           reference past topics.
         </span>
       }
-      video={calendar_integration}
+      video={meeting_groups}
     />
     <VideoExample
       title="Meeting Groups"
@@ -418,7 +422,7 @@ const EasyToReference = () => (
           makes it easy to jump from
         </span>
       }
-      video={calendar_integration}
+      video={meeting_groups}
     />
   </div>
 );
