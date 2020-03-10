@@ -281,7 +281,7 @@ class PlayOnScroll extends React.Component {
   };
   pauseVideo = () => {
     const { id } = this.props;
-    document.getElementById(id).pause();
+    document.getElementById(id).load();
   };
   render() {
     const { video, id } = this.props;
