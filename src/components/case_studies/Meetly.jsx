@@ -45,19 +45,19 @@ const MeetlyIntro = () => (
     <div className="d-flex justify-content-center">
       <div className="col-12 col-md-6 col-lg-5">
         <h5 className="text-uppercase text-muted mt-5 mb-3">
-          Case Study
+          Product Development
         </h5>
         <h1 className="display-4">
-          <span className="text-muted">Building A&nbsp;</span>Meeting Notes
-          Management Tool&nbsp;<span className="text-muted">From Scratch</span>
+          Meetly
         </h1>
-        <h5 className="font-weight-light mt-3">
-          Meetly allows you to create collaborative agendas, assign action
-          items, and document and share meeting results.
+        <h2 className="display-4 text-muted">
+          Turning an idea into a fully fledged product
+        </h2>
+        <h5 className="font-weight-light mt-4">
+          Meetly is a <span className="font-weight-bold">calendar automation tool</span> that grew out of user research I conducted at POPin, my former employer.
         </h5>
-        <h5 className="font-weight-light mt-3">
-          Users connect their Google or Microsoft calendar and Meetly
-          automatically creates structured notes for each of their meetings.
+        <h5 className="font-weight-light mt-4">
+          Three colleagues and I left POPin to turn the idea into a stand along product.
         </h5>
       </div>
     </div>
