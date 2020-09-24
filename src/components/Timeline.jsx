@@ -53,7 +53,7 @@ class Timeline extends React.Component {
   render () {
     return (
       <div className="timeline mt-5">
-        <h4 className="timeline text-uppercase text-center">The Road to Product Design...</h4>
+        <h4 className="timeline text-uppercase text-center">The road to product design...</h4>
         <VerticalTimeline>
 
           { /*COLLEGE*/ }

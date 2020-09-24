@@ -42,7 +42,7 @@ const MeetlyIntro = () => (
           Product Development
         </h5>
         <h1 className="display-4">
-          Meetly
+          Building a meeting notes tool from scratch
         </h1>
         <h3 className="text-muted font-weight-light">
           How design research lead to the creation of a new company
@@ -69,7 +69,7 @@ const MeetlyBackground = () => (
       <div className="col-12 col-md-6  mt-5">
         <h2 className="text-uppercase">How Meetly started</h2>
         <p className="font-weight-light">
-          Meetly is a <span className="font-weight-bold">calendar automation tool</span> that grew
+          The idea for Meetly – originally conceived of as a <span className="font-weight-bold">meeting notes automation tool</span>  grew
           out of user research I conducted at POPin, my former employer.
         </p>
         <p className="font-weight-light">
@@ -206,8 +206,8 @@ const MeetlyResearch = () => (
         <div className="d-flex flex-wrap flex-lg-nowrap my-4">
           <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
             <div className="font-weight-light p-5">
-              <div className="text-center text-white text-uppercase mt-n2 mb-2 font-weight-normal">
-                Self-serve
+              <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal">
+                Consumer
               </div>
               There is a need for something simpler than project management
               software, but more structured than text docs and todo lists.
@@ -216,7 +216,7 @@ const MeetlyResearch = () => (
           <div className="m-2" />
           <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
             <div className="font-weight-light p-5">
-              <div className="text-center text-white text-uppercase mt-n2 mb-2">
+              <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2">
                 Enterprise
               </div>
               Companies would purchase and force adoption of a tool that
