@@ -23,9 +23,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white container mb-0 d-flex flex-fill w-100">
       <NavLink to="/" className="navbar-brand text-uppercase font-weight-bold">
-        <h2 className="d-md-inline">Jordan</h2>
-        <h2 className="d-md-inline ml-3 ml-md-0 pl-2">England-</h2>
-        <h2 className="d-md-inline ml-5 ml-md-0">Nelson</h2>
+        <h2 className="d-none d-md-flex">Jordan England-Nelson</h2>
+        <h2 className="d-flex d-md-none">J. England-Nelson</h2>
       </NavLink>
       <button
         className="navbar-toggler align-self-end mb-3"

@@ -13,9 +13,8 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="d-none d-md-block mt-md-3Ø" style={{height: "1rem"}}/>
         {/*Meetly*/}
-        <div className="row my-5">
+        <div className="row py-5">
           <a
             className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
             href="https://www.runmeetly.com/"
