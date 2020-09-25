@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import add_item_and_share from '../../img/add_item_and_share.mp4';
 import calendar_integration from '../../img/calendar_integration.mp4';
+import workspace_view from '../../img/workspace_view.jpg';
 import add_remove_cards from '../../img/add_remove_cards.mp4';
 import choose_template from '../../img/choose_template.mp4';
 import meeting_groups from '../../img/meeting_groups.mp4';
@@ -56,8 +57,9 @@ const MeetlyIntro = () => (
       </div>
     </div>
     <div className="row d-flex justify-content-center mt-5">
-      <div className="col-12 col-md-8">
-        <PlayOnScroll id="meetly-overview" video={ add_item_and_share } />
+      <div className="col-12 col-md-8 mb-5">
+        <img alt="Meetly" className="img-fluid boxshadow rounded" src={workspace_view} />
+        {/*<PlayOnScroll id="meetly-overview" video={ add_item_and_share } />*/}
       </div>
     </div>
   </div>
@@ -291,7 +293,7 @@ class PlayOnScroll extends React.Component {
     return (
       <Waypoint onEnter={ this.startVideo } onLeave={ this.pauseVideo }>
         <video
-          className="img-fluid my-1 mb-md-5 mt-md-3"
+          className="img-fluid my-1 mb-md-5 mt-md-3 boxshadow rounded"
           src={ video }
           loop={ true }
           controls

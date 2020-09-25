@@ -7,6 +7,10 @@ body {
   background-color: $off-white;
 }
 
+.boxshadow {
+  box-shadow: 0px 1px 10px map-get($theme-colors, "gray");
+}
+
 .case-study-section {
   height: 100vh;
   width: 100vw;
