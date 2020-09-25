@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <Router>
         <div className="bg-light d-flex flex-column flex-fill">
-          <div className="bg-white">
+          <div className="bg-white fixed-top">
             <Navbar />
           </div>
           <div className="bg-light px-3">

@@ -21,7 +21,7 @@ const NavItem = props => (
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white container mb-0">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white container mb-0 d-flex flex-fill w-100">
       <NavLink to="/" className="navbar-brand text-uppercase font-weight-bold">
         <h2 className="d-md-inline">Jordan</h2>
         <h2 className="d-md-inline ml-3 ml-md-0 pl-2">England-</h2>
