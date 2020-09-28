@@ -102,7 +102,8 @@ class Bio extends React.Component {
           className="no-gutters bg-black vh-100 hero-image"
           style={{
             backgroundImage: `url(${glowing_shadow_portrait})`,
-            backgroundPosition: "center center"
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat"
           }}
         >
           <div className="d-flex flex-column justify-content-around flex-fill h-100">
