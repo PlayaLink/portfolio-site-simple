@@ -68,6 +68,17 @@
   }
 }
 
+
+//Add this in to remove the arrows
+.vertical-timeline-element-content {
+  &::before {
+    border-left-color: lighten($red, 20%) !important;
+  }
+  .vertical-timeline-element-content-arrow {
+    border: lighten($red, 20%);
+  }
+}
+
 @media (max-width: 425px) {
   .timeline {
     .timeline-card {
