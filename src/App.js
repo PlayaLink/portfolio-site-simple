@@ -33,7 +33,7 @@ class App extends Component {
           <div className="bg-white fixed-top">
             <Navbar />
           </div>
-          <div className="bg-light px-3" style={{marginTop : "5rem"}}>
+          <div className="bg-light" style={{marginTop : "5rem"}}>
             <Route
               exact
               path={process.env.PUBLIC_URL + "/"}

@@ -4,6 +4,7 @@ import Timeline from "./Timeline";
 import { DirectLink } from "react-scroll";
 import jordan_portrait from "../img/jordan_portrait.jpg";
 import glowing_shadow_portrait from "../img/glowing_shadow_portrait.png";
+import spotlight_transparent from "../img/spotlight_transparent.png";
 import email_icon from "../img/email_icon.svg";
 import my_email from "../img/my_email.svg";
 import short_t from "../img/short_t.svg";
@@ -97,14 +98,22 @@ class Bio extends React.Component {
   render() {
     return (
       <div className="about">
-        <div className="row d-flex justify-content-center align-items-center bg-black vh-100 hero-image">
-          <div className="col-12 col-md-8 mb-5">
-            <img
-              alt="Jordan England-Nelson"
-              className="img-fluid"
-              src={glowing_shadow_portrait}
-            />
-            {/*<PlayOnScroll id="meetly-overview" video={ add_item_and_share } />*/}
+        <div
+          className="no-gutters bg-black vh-100 hero-image"
+          style={{
+            backgroundImage: `url(${glowing_shadow_portrait})`,
+            backgroundPosition: "center center"
+          }}
+        >
+          <div className="d-flex flex-column justify-content-around flex-fill h-100">
+            <div className="d-flex justify-content-around">
+              <h3 className="text-white fade-in">Research</h3>
+              <h3 className="text-white">Translate</h3>
+            </div>
+            <div className="d-flex justify-content-around">
+              <h3 className="text-white">Design</h3>
+              <h3 className="text-white">Build</h3>
+            </div>
           </div>
         </div>
         <div className="row d-flex justify-content-center mt-md-5">
@@ -119,8 +128,9 @@ class Bio extends React.Component {
             <p className="mt-md-4 mb-md-3">
               My experience in product blurs the lines between research,
               development and design. I'm a generalist, yes, but also a&nbsp;
-              <span className="font-weight-bold">translator</span> – of user needs into
-              product ideas, of ideas into designs, and of designs into code.
+              <span className="font-weight-bold">translator</span> – of user
+              needs into product ideas, of ideas into designs, and of designs
+              into code.
             </p>
             <div>
               <SocialButtons />
