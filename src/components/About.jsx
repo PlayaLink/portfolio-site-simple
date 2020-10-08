@@ -89,7 +89,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="about">
-        <div className="row d-flex justify-content-center pt-md-5">
+        <div className="row d-flex justify-content-center pt-md-5 px-3">
           <div className="col-6 mb-5 mb-md-0 col-md-3 col-lg-2 mr-lg-4">
             <img
               src={jordan_portrait}
@@ -122,7 +122,7 @@ class About extends React.Component {
               style={{ width: "45%" }}
             />
             <p>
-              <span className="" style={{ fontSize: "1.5rem" }}>
+              <span className="" style={{ fontSize: "1.5rem", lineHeight: "1.2rem" }}>
                 I never identified as a technical person.
               </span>{" "}
               Until I realized JavaScript is just a language – a way to

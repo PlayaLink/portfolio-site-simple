@@ -43,10 +43,10 @@ const MeetlyIntro = () => (
           Product Development
         </h5>
         <h1 className="display-4">
-          Building a meeting notes tool from scratch
+          Building a product idea into a company
         </h1>
         <h3 className="text-muted font-weight-light">
-          How design research lead to the creation of a new company
+          How design research lead to the creation of Meetly, a meeting notes automation tool
         </h3>
         { /*<h5 className="font-weight-light mt-4">*/ }
         { /*Meetly is a <span className="font-weight-bold">calendar automation tool</span> that grew out of user research I conducted at POPin, my former employer.*/ }
@@ -71,11 +71,10 @@ const MeetlyBackground = () => (
       <div className="col-12 col-md-6  mt-5">
         <h2 className="text-uppercase">How Meetly started</h2>
         <p className="font-weight-light">
-          The idea for Meetly – originally conceived of as a <span className="font-weight-bold">meeting notes automation tool</span>  grew
-          out of user research I conducted at POPin, my former employer.
+          The idea for Meetly grew out of user research I conducted at POPin, a former employer.
         </p>
         <p className="font-weight-light">
-          Three colleagues and I left POPin to turn the idea into a stand along product.
+          After getting seed money from POPin's lead investor, three colleagues and I left POPin to turn the idea into a stand along product.
         </p>
       </div>
     </div>
@@ -94,7 +93,7 @@ const MeetlyBackground = () => (
           <div className="col-12 col-md-6">
             <h4 className="text-uppercase">My role</h4>
             <p className="font-weight-light">
-              I owned the design and user research efforts.
+              I owned the user research efforts and was responsible for the entire user experience, from product design to video tutorials and support articles.
             </p>
             <p className="font-weight-light">
               I also helped out on the frontend, adding polish and iterating on
@@ -138,8 +137,7 @@ const MeetlyResearch = () => (
         <h2 className="text-uppercase">Design Research</h2>
         <div className="font-weight-light">
           <p>While interviewing and observing users of POPin, an employee engagement tool, we
-            discovered that people were using our tool to <span className="font-weight-bold">solve a problem</span> we
-            had not focused on:
+            discovered that people were using our tool to <span className="font-weight-bold">solve a problem</span> that was not on our radar:
             time wasted in unnecessary
             or <span className="font-weight-bold">unproductive meetings</span>.</p>
           <p>Recognizing an opportunity,
