@@ -97,48 +97,37 @@ class Bio extends React.Component {
 
   render() {
     return (
-      <div className="about">
-        <div
-          className="no-gutters bg-black vh-100 hero-image"
-          style={{
-            backgroundImage: `url(${glowing_shadow_portrait})`,
-            backgroundPosition: "center center",
-            backgroundRepeat: "no-repeat"
-          }}
-        >
-          <div className="d-none d-md-flex flex-column justify-content-around flex-fill h-100">
-            <div className="d-flex justify-content-around">
-              <h3 className="text-white fade-in">Research</h3>
-              <h3 className="text-white">Translate</h3>
+      <div className="about bg-black position-fixed">
+        <div className="">
+          <div className="row vh-100 d-flex align-items-center justify-content-around">
+            <div className="col-md-7">
+              <div className="d-flex justify-content-center">
+                <img src={glowing_shadow_portrait} className="img-fluid" />
+              </div>
             </div>
-            <div className="d-flex justify-content-around">
-              <h3 className="text-white">Design</h3>
-              <h3 className="text-white">Build</h3>
-            </div>
-          </div>
-        </div>
-        <div className="row d-flex justify-content-center my-5 mx-2">
-          <div className="col-12 col-md-6 col-lg-4 my-5">
-            <p>
-              <span className="" style={BIG_TEXT}>
-                I am curious
-              </span>{" "}
-              about people and their problems – whether it's a user with a job to be a done or an engineer with a feature to be built.
-            </p>
-            <p className="mt-md-4 mb-md-3">
-              My product experience blurs the lines between research,
-              development and design, having spent the last 3 years at small, early stage startups.
-            </p>
-            <p className="mt-md-4 mb-md-3">
-              <span className="" style={BIG_TEXT}>
-                I am a translator
-              </span>{" "} of user
-              needs into product ideas, of ideas into designs, and of designs
-              into code.
-            </p>
-            <p></p>
-            <div>
-              <SocialButtons />
+            <div className="col-md-5">
+              <div className="my-auto text-light px-5 mr-md-5">
+                <h5 className="mt-4 mb-3">
+                  <span className="" style={BIG_TEXT}>
+                   I am a person
+                  </span>{" "} who is interested in others, loves to read, roller skate and speak French and Spanish.
+                </h5>
+                <h5 className="mt-4 mb-3">
+                  <span className="" style={BIG_TEXT}>
+                   My product experience
+                  </span>{" "} blurs the lines between research,
+                  design and development, having spent the last 4 years at
+                  small, early stage startups.
+                </h5>
+                <h5 className="mt-4 mb-3">
+                  <span className="" style={BIG_TEXT}>
+                    I am a translator
+                  </span>{" "}
+                  of user needs into product ideas, of ideas into designs, and
+                  of designs into code.
+                </h5>
+                <p />
+              </div>
             </div>
           </div>
         </div>

@@ -88,7 +88,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="container about">
+      <div className="about">
         <div className="row d-flex justify-content-center pt-md-5">
           <div className="col-6 mb-5 mb-md-0 col-md-3 col-lg-2 mr-lg-4">
             <img
