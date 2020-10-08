@@ -27,7 +27,7 @@
       display: none;
       cursor: pointer;
       animation: dropDown 1.5s infinite ease;
-      color: lighten($red, 20%);
+      color: map-get($theme-colors, "light-gray") !important;
       .expand-arrow {
         transition: transform 0.35s 0.35s ease;
         &.rotate {
@@ -41,11 +41,11 @@
 .vertical-timeline::before {
   top: 37px;
   height:84%;
-  background-color: lighten($red, 20%);
+  background-color: map-get($theme-colors, "light-gray") !important;
 }
 
 .vertical-timeline-element-content {
-  border: 3px solid lighten($red, 20%);
+  border: 3px solid map-get($theme-colors, "light-gray") !important;
   box-shadow: none;
   &.pulse {
     animation: pulseAnimate 1500ms 1500ms !important;
@@ -55,7 +55,7 @@
 .vertical-timeline-element:nth-of-type(even) {
   .vertical-timeline-element-content {
     &::before {
-      border-right-color: lighten($red, 20%) !important;
+      border-right-color: map-get($theme-colors, "light-gray") !important !important;
     }
   }
 }
@@ -63,7 +63,7 @@
 .vertical-timeline-element:nth-of-type(odd) {
   .vertical-timeline-element-content {
     &::before {
-      border-left-color: lighten($red, 20%) !important;
+      border-left-color: map-get($theme-colors, "light-gray") !important !important;
     }
   }
 }
@@ -72,10 +72,10 @@
 //Add this in to remove the arrows
 .vertical-timeline-element-content {
   &::before {
-    border-left-color: lighten($red, 20%) !important;
+    border-left-color: map-get($theme-colors, "light-gray") !important !important;
   }
   .vertical-timeline-element-content-arrow {
-    border: lighten($red, 20%);
+    border: map-get($theme-colors, "light-gray") !important;
   }
 }
 
@@ -121,7 +121,7 @@
     .vertical-timeline-element-content {
       &::before {
         border-left-color: transparent !important;
-        border-right-color: lighten($red, 20%) !important;
+        border-right-color: map-get($theme-colors, "light-gray") !important;
       }
     }
   }
@@ -162,7 +162,7 @@
     box-shadow: unset;
   }
   50% {
-    box-shadow: 0 0 20px 20px lighten($red, 20%);
+    box-shadow: 0 0 20px 20px map-get($theme-colors, "light-gray") !important;
   }
   100% {
     box-shadow: unset;
