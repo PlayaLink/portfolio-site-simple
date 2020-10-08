@@ -42,7 +42,7 @@ const Navbar = () => {
         id="navbarNav"
       >
         <ul className="navbar-nav">
-          <NavItem title="Case Studies" href="/case-studies" />
+          <NavItem title="Recent Work" href="/case-study/meetly" />
           {/*<NavItem title="Journalism" href="/journalism" active={activeTab === TABS.JOURNALISM}/>*/}
           <NavItem title="About" href="/about" />
         </ul>
