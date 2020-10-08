@@ -106,7 +106,7 @@ class Bio extends React.Component {
             backgroundRepeat: "no-repeat"
           }}
         >
-          <div className="d-flex flex-column justify-content-around flex-fill h-100">
+          <div className="d-none d-md-flex flex-column justify-content-around flex-fill h-100">
             <div className="d-flex justify-content-around">
               <h3 className="text-white fade-in">Research</h3>
               <h3 className="text-white">Translate</h3>
@@ -117,22 +117,26 @@ class Bio extends React.Component {
             </div>
           </div>
         </div>
-        <div className="row d-flex justify-content-center mt-md-5">
-          <div className="col-12 col-md-6 col-lg-4 mt-md-5">
+        <div className="row d-flex justify-content-center my-5 mx-2">
+          <div className="col-12 col-md-6 col-lg-4 my-5">
             <p>
               <span className="" style={BIG_TEXT}>
-                I am curious about people.
+                I am curious
               </span>{" "}
-              About their problems. About their motivations. About what's going
-              through their head when they're trying to do their job.
+              about people and their problems – whether it's a user with a job to be a done or an engineer with a feature to be built.
             </p>
             <p className="mt-md-4 mb-md-3">
-              My experience in product blurs the lines between research,
-              development and design. I'm a generalist, yes, but also a&nbsp;
-              <span className="font-weight-bold">translator</span> – of user
+              My product experience blurs the lines between research,
+              development and design, having spent the last 3 years at small, early stage startups.
+            </p>
+            <p className="mt-md-4 mb-md-3">
+              <span className="" style={BIG_TEXT}>
+                I am a translator
+              </span>{" "} of user
               needs into product ideas, of ideas into designs, and of designs
               into code.
             </p>
+            <p></p>
             <div>
               <SocialButtons />
             </div>
