@@ -11,6 +11,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { Tooltip } from 'react-tippy';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Redirect } from "react-router-dom";
 
 const iconStyle = { background: 'rgb(33, 150, 243)', color: '#fff' };
 
@@ -46,7 +47,7 @@ const MeetlyIntro = () => (
           Turning an idea into a venture-backed startup
         </h1>
         <h3 className="text-muted font-weight-light">
-          How design research lead to the creation of Meetly, a meeting notes automation tool
+          How design research lead to the creation of <a href="https://www.runmeetly.com" target="_blank">Meetly</a>, a meeting notes automation tool
         </h3>
         { /*<h5 className="font-weight-light mt-4">*/ }
         { /*Meetly is a <span className="font-weight-bold">calendar automation tool</span> that grew out of user research I conducted at POPin, my former employer.*/ }
@@ -75,9 +76,6 @@ const MeetlyBackground = () => (
         </p>
         <p className="font-weight-light">
           After getting seed money from POPin's lead investor, three colleagues and I left POPin to turn the idea into a stand-alone product.
-        </p>
-        <p className="font-weight-light">
-          We raised a second seed round in June 2020.
         </p>
       </div>
     </div>
@@ -119,13 +117,13 @@ const MeetlyBackground = () => (
         meetings."
           />
           <TimelineItem
-            date="June 2019"
-            description="Our team of 4 left POPin to develop Meetly fulltime."
+            date="May 2019"
+            description="Raised 1st seed round."
           />
           <TimelineItem date="August 2019" description="Deployed an MVP." />
           <TimelineItem
-            date="Sept 2019 – present"
-            description="Continuing to build, test, and learn."
+            date="May 2021"
+            description="Raised 2nd seed round."
           />
         </ul>
       </div>
