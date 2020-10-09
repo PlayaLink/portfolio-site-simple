@@ -284,15 +284,11 @@ class PlayOnScroll extends React.Component {
     video.currentTime = 0;
     video.play();
   };
-  pauseVideo = () => {
-    const { id } = this.props;
-    document.getElementById(id).load();
-  };
 
   render () {
     const { video, id } = this.props;
     return (
-      <Waypoint onEnter={ this.startVideo } onLeave={ this.pauseVideo }>
+      <Waypoint onEnter={ this.startVideo }>
         <video
           className="img-fluid my-1 mb-md-5 mt-md-3 boxshadow rounded"
           src={ video }
@@ -307,28 +303,8 @@ class PlayOnScroll extends React.Component {
 }
 
 class VideoExample extends React.Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      autoPlay: false
-    };
-  }
-
-  startVideo = () => {
-    const { id } = this.props;
-    console.log('id: ', id);
-    const video = document.getElementById(id);
-    video.currentTime = 0;
-    video.play();
-  };
-  pauseVideo = () => {
-    const { id } = this.props;
-    document.getElementById(id).pause();
-  };
-
   render () {
     const { title, body, video, reverse, id } = this.props;
-    const { autoPlay } = this.state;
     return (
       <div
         className={ `d-md-flex justify-content-center mt-5 ${
