@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.scss';
 
-const iconStyle = { background: 'rgb(33, 150, 243)', color: '#fff' }
+const iconStyle = { background: 'rgb(33, 150, 243)', color: '#d8d8d8' }
 
 class TimelineCard extends React.Component {
   constructor (props) {
@@ -53,7 +53,7 @@ class Timeline extends React.Component {
   render () {
     return (
       <div className="timeline mt-5">
-        <h4 className="timeline text-uppercase text-center">The Road to Product Design...</h4>
+        <h4 className="timeline text-uppercase text-center">The road to product design...</h4>
         <VerticalTimeline>
 
           { /*COLLEGE*/ }
@@ -112,7 +112,7 @@ class Timeline extends React.Component {
             iconStyle={ iconStyle }
           >
             <TimelineCard
-              title="Listening and Storytelling"
+              title="Journalism"
               summary="Journalism taught me how to ask questions, find information, and synthesize a chaotic stew of information into something meaningful and coherent"
               bullet={ true }
               details={ [

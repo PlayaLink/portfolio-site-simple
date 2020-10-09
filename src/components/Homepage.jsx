@@ -3,10 +3,15 @@ import "./About.scss";
 import Timeline from "./Timeline";
 import { DirectLink } from "react-scroll";
 import jordan_portrait from "../img/jordan_portrait.jpg";
+import glowing_shadow_portrait from "../img/glowing_shadow_portrait.png";
+import spotlight_transparent from "../img/spotlight_transparent.png";
 import email_icon from "../img/email_icon.svg";
 import my_email from "../img/my_email.svg";
 import short_t from "../img/short_t.svg";
 import { Link } from "react-router-dom";
+import workspace_view from "../img/workspace_view.jpg";
+
+const BIG_TEXT = { fontSize: "2rem", lineHeight: "1rem" };
 
 class SocialButtons extends React.Component {
   constructor(props) {
@@ -16,8 +21,8 @@ class SocialButtons extends React.Component {
     };
   }
   toggleEmail = () => {
-    this.setState({ showEmail: !this.state.showEmail})
-  }
+    this.setState({ showEmail: !this.state.showEmail });
+  };
   render() {
     const { showEmail } = this.state;
     return (
@@ -34,7 +39,11 @@ class SocialButtons extends React.Component {
             target="_blank"
           />
           <div>
-            <img onMouseEnter={this.toggleEmail} onMouseLeave={this.toggleEmail} src={showEmail ? my_email : email_icon} />
+            <img
+              onMouseEnter={this.toggleEmail}
+              onMouseLeave={this.toggleEmail}
+              src={showEmail ? my_email : email_icon}
+            />
           </div>
           {/*<a className="icon github" href="https://github.com/PlayaLink" target="_blank"></a>*/}
         </div>
@@ -79,7 +88,7 @@ const Summary = () => (
   </div>
 );
 
-class About extends React.Component {
+class Bio extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -88,69 +97,43 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="about">
-        <div className="row d-flex justify-content-center pt-md-5 px-3">
-          <div className="col-6 mb-5 mb-md-0 col-md-3 col-lg-2 mr-lg-4">
-            <img
-              src={jordan_portrait}
-              alt="Jordan England-Nelson"
-              className="img-fluid rounded-lg d-none d-md-block"
-            />
-          </div>
-          <div className="col-12 col-md-6 col-lg-4">
-            {/*<p>*/}
-            {/*I've worked up and down the product stack, from design research to writing code.*/}
-            {/*</p>*/}
-            {/*<p>*/}
-            {/*I'm a T-shaped product designer. Except my T looks more like this{" "}*/}
-            {/*<span>*/}
-            {/*<img src={short_t} className="img-fluid" />*/}
-            {/*</span>{" "}*/}
-            {/*than this{" "}*/}
-            {/*<span>*/}
-            {/*<img src={tall_t} className="img-fluid" />*/}
-            {/*</span>*/}
-            {/*</p>*/}
-            {/*<p>*/}
-            {/*A short T is nothing to be ashamed of. There are plenty of attractive,*/}
-            {/*young companies out there who gladly hire generalists.*/}
-            {/*</p>*/}
-            <img
-              src={jordan_portrait}
-              alt="Jordan England-Nelson"
-              className="rounded-lg float-left mr-3 d-md-none"
-              style={{ width: "45%" }}
-            />
-            <p>
-              <span className="" style={{ fontSize: "1.5rem", lineHeight: "1.2rem" }}>
-                I never identified as a technical person.
-              </span>{" "}
-              Until I realized JavaScript is just a language – a way to
-              transmit ideas from one system to another.
-            </p>
-            <p>
-              Design, too, is a language. We listen and observe people. We
-              try to interpret their needs, goals and behaviors. We
-              translate what they say and do into what we think they mean
-              and want, so that our response – our product – is relevant and
-              helpful.
-            </p>
-            <p>
-              Whether it’s distilling a complex topic into a short
-              newspaper story or explaining a user's problem to a
-              development team, a good translator groks the essence of the
-              idea and transforms it into something the other side
-              understands.
-            </p>
-            <div>
-              <SocialButtons />
+      <div className="about bg-black position-fixed">
+        <div className="">
+          <div className="row vh-100 d-flex align-items-center justify-content-around">
+            <div className="col-md-7">
+              <div className="d-flex justify-content-center">
+                <img src={glowing_shadow_portrait} className="img-fluid" />
+              </div>
+            </div>
+            <div className="col-md-5">
+              <div className="my-auto text-light px-5 mr-md-5">
+                <h5 className="mt-4 mb-3">
+                  <span className="" style={BIG_TEXT}>
+                   I am a person
+                  </span>{" "} who is interested in others, loves to read, roller skate and speak French and Spanish.
+                </h5>
+                <h5 className="mt-4 mb-3">
+                  <span className="" style={BIG_TEXT}>
+                   My product experience
+                  </span>{" "} blurs the lines between research,
+                  design and development, having spent the last 4 years at
+                  small, early stage startups.
+                </h5>
+                <h5 className="mt-4 mb-3">
+                  <span className="" style={BIG_TEXT}>
+                    I am a translator
+                  </span>{" "}
+                  of user needs into product ideas, of ideas into designs, and
+                  of designs into code.
+                </h5>
+                <p />
+              </div>
             </div>
           </div>
         </div>
-        <Timeline />
       </div>
     );
   }
 }
 
-export default About;
+export default Bio;
