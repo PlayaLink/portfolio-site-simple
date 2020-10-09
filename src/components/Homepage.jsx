@@ -108,19 +108,19 @@ class Bio extends React.Component {
             <div className="col-md-5">
               <div className="my-auto text-light px-5 mr-md-5">
                 <h5 className="mt-4 mb-3">
-                  <span className="" style={BIG_TEXT}>
+                  <span className="text-gray" style={BIG_TEXT}>
                    I am a person
                   </span>{" "} who is interested in others, loves to read, roller skate and speak French and Spanish.
                 </h5>
                 <h5 className="mt-4 mb-3">
-                  <span className="" style={BIG_TEXT}>
+                  <span className="text-gray" style={BIG_TEXT}>
                    My product experience
                   </span>{" "} blurs the lines between research,
-                  design and development, having spent the last 4 years at
+                  design and frontend development, having spent the last 4 years at
                   small, early stage startups.
                 </h5>
                 <h5 className="mt-4 mb-3">
-                  <span className="" style={BIG_TEXT}>
+                  <span className="text-gray" style={BIG_TEXT}>
                     I am a translator
                   </span>{" "}
                   of user needs into product ideas, of ideas into designs, and
