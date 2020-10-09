@@ -43,7 +43,7 @@ const MeetlyIntro = () => (
           Product Development
         </h5>
         <h1 className="display-4">
-          Building a product idea into a company
+          Turning an idea into a venture-backed startup
         </h1>
         <h3 className="text-muted font-weight-light">
           How design research lead to the creation of Meetly, a meeting notes automation tool
@@ -74,7 +74,10 @@ const MeetlyBackground = () => (
           The idea for Meetly grew out of user research I conducted at POPin, a former employer.
         </p>
         <p className="font-weight-light">
-          After getting seed money from POPin's lead investor, three colleagues and I left POPin to turn the idea into a stand along product.
+          After getting seed money from POPin's lead investor, three colleagues and I left POPin to turn the idea into a stand-alone product.
+        </p>
+        <p className="font-weight-light">
+          We raised a second seed round in June 2020.
         </p>
       </div>
     </div>
