@@ -122,7 +122,7 @@ const MeetlyBackground = () => (
           />
           <TimelineItem date="August 2019" description="Deployed an MVP." />
           <TimelineItem
-            date="May 2021"
+            date="May 2020"
             description="Raised 2nd seed round."
           />
         </ul>
