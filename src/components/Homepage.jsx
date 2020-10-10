@@ -16,12 +16,10 @@ class Bio extends React.Component {
       <div className={`about bg-black ${isMobile() ? "" : "position-fixed"}`}>
         <div className={`row d-flex align-items-center justify-content-around vh-100`}>
           <div className="col-md-7">
-            <div className="d-flex justify-content-center">
-              <img src={glowing_shadow_portrait} style={{maxWidth: "100%"}} />
-            </div>
+            <img src={glowing_shadow_portrait} style={{maxWidth: "100%"}} />
           </div>
           <div className="col-md-5">
-            <div className="my-auto text-light px-5 mr-md-5">
+            <div className="my-auto text-light px-5 mr-md-5 bg-black">
               <h5 className="mt-4 mb-3">
                 <span className="text-gray" style={BIG_TEXT}>
                   I am a person
