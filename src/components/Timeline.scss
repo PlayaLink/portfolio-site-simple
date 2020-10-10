@@ -15,8 +15,7 @@
       li {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-        list-style-type: circle;
-        list-style-position: outside;
+        list-style: circle outside;
         position: relative;
         left: 1.5rem;
         padding-right: 1.5rem;
@@ -55,7 +54,7 @@
 .vertical-timeline-element:nth-of-type(even) {
   .vertical-timeline-element-content {
     &::before {
-      border-right-color: map-get($theme-colors, "light-gray") !important !important;
+      border-right-color: map-get($theme-colors, "light-gray") !important;
     }
   }
 }
@@ -63,7 +62,7 @@
 .vertical-timeline-element:nth-of-type(odd) {
   .vertical-timeline-element-content {
     &::before {
-      border-left-color: map-get($theme-colors, "light-gray") !important !important;
+      border-left-color: map-get($theme-colors, "light-gray") !important;
     }
   }
 }
@@ -72,7 +71,7 @@
 //Add this in to remove the arrows
 .vertical-timeline-element-content {
   &::before {
-    border-left-color: map-get($theme-colors, "light-gray") !important !important;
+    border-left-color: map-get($theme-colors, "light-gray") !important;
   }
   .vertical-timeline-element-content-arrow {
     border: map-get($theme-colors, "light-gray") !important;

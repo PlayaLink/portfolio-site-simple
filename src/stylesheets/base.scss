@@ -5,6 +5,7 @@
 
 body {
   background-color: $off-white;
+  overscroll-behavior: none;
 }
 
 .fade-enter {
@@ -33,61 +34,61 @@ body {
   box-shadow: 0px 1px 10px map-get($theme-colors, "gray");
 }
 
-.case-study-section {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  &.white-background {
-    background-color: $white;
-  }
-  &.teal-background {
-    background-color: $teal;
-  }
-  &.red-background {
-    background-color: $red;
-  }
-  &.blue-background {
-    background-color: $blue;
-  }
-  .carousel {
-    width: 70vw;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .case-study-slide-title-container {
-      max-width: 40rem;
-      margin-left: auto;
-      margin-right: auto;
-      .case-study-slide-title {
-        font-size: 3rem;
-        color: $white;
-        border-bottom: 2px solid $white;
-        width: fit-content;
-        padding-right: 5rem;
-        padding-bottom: 1rem;
-        margin-bottom: 2rem;
-
-      }
-    }
-    .slick-slider {
-      button.slick-arrow::before {
-        font-size: 4rem;
-      }
-      button.slick-arrow {
-        &.slick-prev::before {
-          display: none;
-          //left: -2.5rem;
-        }
-      }
-      button.slick-arrow {
-      }
-    }
-  }
-}
+//.case-study-section {
+//  height: 100vh;
+//  width: 100vw;
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: center;
+//  align-items: center;
+//  &.white-background {
+//    background-color: $white;
+//  }
+//  &.teal-background {
+//    background-color: $teal;
+//  }
+//  &.red-background {
+//    background-color: $red;
+//  }
+//  &.blue-background {
+//    background-color: $blue;
+//  }
+//  .carousel {
+//    width: 70vw;
+//    display: block;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: center;
+//    .case-study-slide-title-container {
+//      max-width: 40rem;
+//      margin-left: auto;
+//      margin-right: auto;
+//      .case-study-slide-title {
+//        font-size: 3rem;
+//        color: $white;
+//        border-bottom: 2px solid $white;
+//        width: fit-content;
+//        padding-right: 5rem;
+//        padding-bottom: 1rem;
+//        margin-bottom: 2rem;
+//
+//      }
+//    }
+//    .slick-slider {
+//      button.slick-arrow::before {
+//        font-size: 4rem;
+//      }
+//      button.slick-arrow {
+//        &.slick-prev::before {
+//          display: none;
+//          //left: -2.5rem;
+//        }
+//      }
+//      button.slick-arrow {
+//      }
+//    }
+//  }
+//}
 
 
 .case-study-slide-content {
