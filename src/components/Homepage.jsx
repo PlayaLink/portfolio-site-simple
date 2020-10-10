@@ -17,7 +17,7 @@ class Bio extends React.Component {
         <div className={`row d-flex align-items-center justify-content-around vh-100`}>
           <div className="col-md-7">
             <div className="d-flex justify-content-center">
-              <img src={glowing_shadow_portrait} className="img-fluid" />
+              <img src={glowing_shadow_portrait} style={{maxWidth: "100%"}} />
             </div>
           </div>
           <div className="col-md-5">
