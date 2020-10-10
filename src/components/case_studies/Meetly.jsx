@@ -58,8 +58,8 @@ const MeetlyIntro = () => (
       </div>
     </div>
     <div className="row d-flex justify-content-center mt-5">
-      <div className="col-12 col-md-8 mb-5">
-        <img alt="Meetly" className="img-fluid boxshadow rounded" src={workspace_view} />
+      <div className="col-md-8 mb-5 no-gutters">
+        <div className="p-3"><img alt="Meetly" className="img-fluid boxshadow rounded" src={workspace_view} /></div>
         {/*<PlayOnScroll id="meetly-overview" video={ add_item_and_share } />*/}
       </div>
     </div>
