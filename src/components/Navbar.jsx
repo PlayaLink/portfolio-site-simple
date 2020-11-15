@@ -14,7 +14,7 @@ const NavItem = props => (
       className={`nav-link`}
       exact
       to={props.href}
-      activeClassName="font-weight-bold text-primary"
+      activeClassName="font-weight-bold text-teal"
     >
       <h5 className="text-right mb-0">{props.title}</h5>
     </NavLink>
