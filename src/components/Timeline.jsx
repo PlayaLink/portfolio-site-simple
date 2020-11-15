@@ -60,6 +60,7 @@ class Timeline extends React.Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             iconStyle={ iconStyle }
+            date="2005 – 2011"
           >
             <TimelineCard
 
@@ -110,6 +111,7 @@ class Timeline extends React.Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             iconStyle={ iconStyle }
+            date="2011 - 2015"
           >
             <TimelineCard
               title="Journalism"
@@ -127,6 +129,7 @@ class Timeline extends React.Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             iconStyle={ iconStyle }
+            date="2015 – 2016"
           >
             <TimelineCard
               title="Marketing"
@@ -161,6 +164,7 @@ class Timeline extends React.Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             iconStyle={ iconStyle }
+            date="2016 – Present"
           >
             <TimelineCard
               title="Product & Engineering"
@@ -194,6 +198,7 @@ class Timeline extends React.Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             iconStyle={ iconStyle }
+            date="2018 – Present"
           >
             <TimelineCard
               title="UX & Product Design"
@@ -203,6 +208,10 @@ class Timeline extends React.Component {
               //   "I've learned a lot by doing, wearing many hats on small teams",
               //   "Looking to join a larger company next, where I can collaborate and grow with a team of designers"
               // ] }
+              details={ [
+                'Co-founded a meeting notes automation company',
+                'Lead design efforts that helped raise two rounds of funding',
+              ] }
             />
           </VerticalTimelineElement>
         </VerticalTimeline>
