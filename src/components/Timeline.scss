@@ -69,14 +69,14 @@
 
 
 //Add this in to remove the arrows
-.vertical-timeline-element-content {
-  &::before {
-    border-left-color: map-get($theme-colors, "light-gray") !important;
-  }
-  .vertical-timeline-element-content-arrow {
-    border: map-get($theme-colors, "light-gray") !important;
-  }
-}
+//.vertical-timeline-element-content {
+//  &::before {
+//    border-left-color: map-get($theme-colors, "light-gray") !important;
+//  }
+//  .vertical-timeline-element-content-arrow {
+//    border: map-get($theme-colors, "light-gray") !important;
+//  }
+//}
 
 @media (max-width: 425px) {
   .timeline {
