@@ -37,8 +37,8 @@ class Navbar extends React.Component {
           to="/"
           className="navbar-brand text-uppercase font-weight-bold"
         >
-          <h2 className="d-none d-md-flex">T-shaped Product Designer</h2>
-          <h2 className="d-flex d-md-none">T-shaped Designer</h2>
+          <h2 className="d-none d-md-flex">Jordan England-Nelson</h2>
+          <h2 className="d-flex d-md-none">J. England-Nelson</h2>
         </NavLink>
         <button
           className="navbar-toggler align-self-end mb-3"
