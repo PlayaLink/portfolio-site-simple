@@ -26,11 +26,11 @@ class Projects extends React.Component {
             title="Meetly"
             subtitle="A meeting notes management platform"
             id="Meetly"
-            cta="Case Study"
+            cta="See more"
             link="/case-study/meetly"
             description={[
               <p>Co-founded the company with 3 other engineers.</p>,
-              <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Product Design</div>
+              <div className="mt-4"><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Product Design</div>
             ]}
           />
         </div>
@@ -87,7 +87,6 @@ class Projects extends React.Component {
             // link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
             id="IEP-Goal-Tracker"
             download={iepCaseStudy}
-            cta="Case Study"
             description={[
               <p>A mobile-friendly web app that makes it easy to log evaluations and track student progress over time.</p>,
               <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Research, Design and Development</div>,

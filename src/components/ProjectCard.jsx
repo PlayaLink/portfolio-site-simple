@@ -6,18 +6,17 @@ import { Link } from "react-router-dom";
 const ProjectCard = props => (
   <div className={`project-card ${props.className} d-flex flex-column justify-content-center`}>
     <div className="title">{props.title}</div>
-    <div className="subtitle">
-      <span style={{fontSize: "1.3rem"}}>{props.subtitle}</span>
-      <hr className="divider" />
+    <div className="subtitle mb-2">
+      <span style={{fontSize: "1.6rem"}}>{props.subtitle}</span>
     </div>
     <div className="description">{props.description}</div>
     {props.cta && props.download && (
-      <div style={{ marginTop: "2rem" }}>
+      <div className="mt-2">
         <a
           href={props.download}
           download
           id={props.id}
-          className="button pink download-button"
+          className="button download-button"
         >
           {props.cta}
           {!props.isDownload && (
@@ -35,19 +34,19 @@ const ProjectCard = props => (
       </div>
     )}
     {props.cta && props.link && (
-      <div style={{ marginTop: "2rem" }}>
+      <div className="mt-5">
         <Link
           to={props.link}
           id={props.id}
-          className="button pink download-button"
+          className="button download-button bg-primary"
         >
 
           <span
-            className="mr-3"
+            className="mr-3 text-white"
           >
             {props.cta}
           </span>
-          <FontAwesomeIcon icon="arrow-right" />
+          <FontAwesomeIcon className='text-white' icon="arrow-right" />
         </Link>
       </div>
     )}

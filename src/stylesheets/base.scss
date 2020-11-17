@@ -6,6 +6,7 @@
 body {
   background-color: $off-white;
   overscroll-behavior: none;
+  font-size: 1.2rem;
 }
 
 .fade-enter {
@@ -180,13 +181,8 @@ body {
   padding: 15px 40px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  //font-size: 1.2rem;
   text-transform: uppercase;
-  &.pink {
-    background-color: lighten($red, 10%);
-    color: $white;
-    text-decoration: none;
-  }
 }
 
 .underline {
