@@ -47,7 +47,7 @@ const MeetlyIntro = () => (
           Turning an idea into a venture-backed startup
         </h1>
         <h3 className="text-muted font-weight-light">
-          How design research lead to the creation of <a href="https://www.runmeetly.com" className="text-teal font-weight-bolder" target="_blank">Meetly</a>, a meeting notes automation tool
+          How design research lead to the creation of <a href="https://www.runmeetly.com" className="text-primary font-weight-bolder" target="_blank">Meetly</a>, a meeting notes automation tool
         </h3>
         { /*<h5 className="font-weight-light mt-4">*/ }
         { /*Meetly is a <span className="font-weight-bold">calendar automation tool</span> that grew out of user research I conducted at POPin, my former employer.*/ }
