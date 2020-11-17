@@ -49,10 +49,14 @@ class Projects extends React.Component {
             subtitle="A live audience polling tool"
             download={popinLiveCaseStudy}
             id="POPin-Live"
-            cta="Case Study"
             description={[
-              <p>First self-serve product developed at POPin, an enterprise-sales-driven startup focused on employee engagement software.</p>,
-              <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Design Research</div>
+              <p>Helped an enterprise-sales-driven startup create their first self-serve product.</p>,
+              <ul className="ml-4 mb-3">
+                <li>Conducted user interviews and created personas</li>
+                <li>Surveyed existing solutions and interviewed competitors' customers</li>
+                <li>Synthesized and presented findings to inform product direction</li>
+              </ul>,
+              <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Design Researcher</div>
             ]}
           />
         </div>
