@@ -26,7 +26,7 @@ class Projects extends React.Component {
             title="Meetly"
             subtitle="A meeting notes management platform"
             id="Meetly"
-            cta="See more"
+            cta="Case Study"
             link="/case-study/meetly"
             description={[
               <p>Co-founded the company with 3 other engineers.</p>,

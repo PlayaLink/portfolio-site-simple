@@ -42,11 +42,10 @@ const ProjectCard = props => (
         >
 
           <span
-            className="mr-3 text-white"
+            className="text-white"
           >
             {props.cta}
           </span>
-          <FontAwesomeIcon className='text-white' icon="arrow-right" />
         </Link>
       </div>
     )}
