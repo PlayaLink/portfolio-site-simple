@@ -52,9 +52,9 @@ class Projects extends React.Component {
             description={[
               <p>Helped an enterprise-sales-driven startup create their first self-serve product.</p>,
               <ul className="ml-4 mb-3">
-                <li>Conducted user interviews and created personas</li>
-                <li>Surveyed existing solutions and interviewed competitors' customers</li>
-                <li>Synthesized and presented findings to inform product direction</li>
+                <li className="mb-2">Conducted user interviews and created personas</li>
+                <li className="mb-2">Surveyed existing solutions and interviewed competitors' customers</li>
+                <li className="mb-2">Synthesized and presented findings to inform product direction</li>
               </ul>,
               <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Design Researcher</div>
             ]}
@@ -90,8 +90,9 @@ class Projects extends React.Component {
             description={[
               <p>A full-stack Javascript application I designed and built for a local special needs school. This was an <strong>un-paid</strong>, personal project.</p>,
               <ul className="ml-4 mb-3">
-                <li>Cumbersome paper evaluations were leading to incomplete monitoring of student progress, putting the school at risk of litigation from parents.</li>
-                <li>My solution was a mobile-friendly web app that makes it easy to log evaluations and track student progress over time.</li>
+                <li className="mb-2">Replaced cumbersome paper evaluations</li>
+                <li className="mb-2">Easier to log evaluations during class</li>
+                <li className="mb-2">Analytics shows progress over time</li>
               </ul>,
               <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Research, Design and Development</div>,
             ]}
