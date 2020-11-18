@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import add_item_and_share from '../../img/add_item_and_share.mp4';
 import calendar_integration from '../../img/calendar_integration.mp4';
+import monday_schedule_view from '../../img/monday_schedule_view.png';
+import chrome_extension_meetly from '../../img/chrome_extension_meetly.png';
 import workspace_view from '../../img/workspace_view.jpg';
 import add_remove_cards from '../../img/add_remove_cards.mp4';
 import choose_template from '../../img/choose_template.mp4';
@@ -40,11 +42,8 @@ const MeetlyIntro = () => (
   <div className="mt-5">
     <div className="d-flex justify-content-center">
       <div className="col-12 col-md-6 col-lg-5">
-        <h5 className="text-uppercase text-muted mt-5 mb-3">
-          Product Development
-        </h5>
         <h1 className="display-4">
-          Turning an idea into a venture-backed startup
+          Developing an idea into a venture-backed startup
         </h1>
         <h3 className="text-muted font-weight-light">
           How design research lead to the creation of <a href="https://www.runmeetly.com" className="text-primary font-weight-bolder" target="_blank">Meetly</a>, a meeting notes automation tool
@@ -58,9 +57,24 @@ const MeetlyIntro = () => (
       </div>
     </div>
     <div className="row d-flex justify-content-center mt-5">
+      <h3 className="text-muted font-weight-light">Web app</h3>
       <div className="col-md-8 mb-5 no-gutters">
         <div className="p-3"><img alt="Meetly" className="img-fluid boxshadow rounded" src={workspace_view} /></div>
         {/*<PlayOnScroll id="meetly-overview" video={ add_item_and_share } />*/}
+      </div>
+    </div>
+    <div className="row d-flex justify-content-center mt-5">
+      <div className="d-flex flex-column"><h3 className="text-muted font-weight-light">Monday.com</h3>
+      <h3 className="text-muted font-weight-light">Integration</h3></div>
+      <div className="col-md-8 mb-5 no-gutters">
+        <div className="p-3"><img alt="Monday integration" className="img-fluid boxshadow rounded" src={monday_schedule_view} /></div>
+      </div>
+    </div>
+    <div className="row d-flex justify-content-center mt-5">
+      <div className="d-flex flex-column"><h3 className="text-muted font-weight-light">Chrome</h3>
+      <h3 className="text-muted font-weight-light">Extension</h3></div>
+      <div className="col-md-8 mb-5 no-gutters">
+        <div className="p-3"><img alt="Monday integration" className="img-fluid boxshadow rounded" src={chrome_extension_meetly} /></div>
       </div>
     </div>
   </div>
