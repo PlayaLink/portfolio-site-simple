@@ -8,6 +8,11 @@ import popin_projector_screen from "../img/popin_projector_screen.png";
 import iep_tasks_to_track_left from "../img/iep_tasks_to_track_left.png";
 import iep_evaluations_graph from "../img/iep_evaluations_graph.png";
 import my_students_right from "../img/my_students_right.png";
+import iep_UX_design from "../img/iep_UX_design.jpg";
+import iep_1 from "../img/iep_1.png";
+import iep_2 from "../img/iep_2.png";
+import iep_3 from "../img/iep_3.png";
+import iep_4 from "../img/iep_4.png";
 
 class Projects extends React.Component {
   render() {
@@ -97,6 +102,15 @@ class Projects extends React.Component {
               <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Research, Design and Development</div>,
             ]}
           />
+          <div className="mt-5 mx-5">
+            <img src={iep_UX_design} className="img-fluid" />
+          </div>
+          <div className="d-flex justify-content-around mt-5 mx-4">
+            <img src={iep_1} className="img-fluid col-3" />
+            <img src={iep_2} className="img-fluid col-3" />
+            <img src={iep_3} className="img-fluid col-3" />
+            <img src={iep_4} className="img-fluid col-3" />
+          </div>
         </div>
 
         {/*<div className="street-art-talks project-section">*/}
