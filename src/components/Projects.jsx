@@ -30,7 +30,7 @@ class Projects extends React.Component {
             link="/case-study/meetly"
             description={[
               <p>Co-founded the company with 3 other engineers.</p>,
-              <div className="mt-4"><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Product Design</div>
+              <div className="mt-4"><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Product Designer</div>
             ]}
           />
         </div>
@@ -88,7 +88,11 @@ class Projects extends React.Component {
             id="IEP-Goal-Tracker"
             download={iepCaseStudy}
             description={[
-              <p>A mobile-friendly web app that makes it easy to log evaluations and track student progress over time.</p>,
+              <p>A full-stack Javascript application I designed and built for a local special needs school. This was an <strong>un-paid</strong>, personal project.</p>,
+              <ul className="ml-4 mb-3">
+                <li>Cumbersome paper evaluations were leading to incomplete monitoring of student progress, putting the school at risk of litigation from parents.</li>
+                <li>My solution was a mobile-friendly web app that makes it easy to log evaluations and track student progress over time.</li>
+              </ul>,
               <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Research, Design and Development</div>,
             ]}
           />
