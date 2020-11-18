@@ -39,7 +39,7 @@ class Projects extends React.Component {
             ]}
           />
         </div>
-        <div style={{height: "1rem"}}/>
+        <div className="border-top mt-3" style={{height: "1rem"}}/>
         {/*POPin*/}
         <div className="row my-5">
           <a
@@ -65,7 +65,7 @@ class Projects extends React.Component {
             ]}
           />
         </div>
-        <div style={{height: "3rem"}}/>
+        <div className="border-top mt-4"  style={{height: "2rem"}}/>
 
         {/*IEP*/}
         <div className="row my-5">
