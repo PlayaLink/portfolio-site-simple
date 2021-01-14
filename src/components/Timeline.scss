@@ -4,7 +4,6 @@
   border-radius: 0.5rem;
   width: 100%;
   .timeline-card {
-    margin-bottom: 1rem;
     .full-description {
       height: auto;
       max-height: 600px;
@@ -19,6 +18,7 @@
         position: relative;
         left: 1.5rem;
         padding-right: 1.5rem;
+        font-size: 1rem;
       }
     }
 
