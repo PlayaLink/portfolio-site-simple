@@ -4,10 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 const ProjectCard = props => (
-  <div className={`project-card ${props.className} d-flex flex-column justify-content-center`}>
+  <div
+    className={`project-card ${
+      props.className
+    } d-flex flex-column justify-content-center`}
+  >
     <div className="title">{props.title}</div>
     <div className="subtitle mb-2">
-      <span style={{fontSize: "1.6rem"}}>{props.subtitle}</span>
+      <span style={{ fontSize: "1.6rem" }}>{props.subtitle}</span>
     </div>
     <div className="description">{props.description}</div>
     {props.cta && props.download && (
@@ -38,14 +42,9 @@ const ProjectCard = props => (
         <Link
           to={props.link}
           id={props.id}
-          className="button download-button bg-primary"
+          className="button download-button btn-secondary"
         >
-
-          <span
-            className="text-white"
-          >
-            {props.cta}
-          </span>
+          <span>{props.cta}</span>
         </Link>
       </div>
     )}
