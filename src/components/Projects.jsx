@@ -35,11 +35,16 @@ class Projects extends React.Component {
             link="/case-study/meetly"
             description={[
               <p>Co-founded the company with 3 other engineers.</p>,
-              <div className="mt-4"><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Product Designer</div>
+              <div className="mt-4">
+                <span className="font-weight-bold text-uppercase">
+                  Role:&nbsp;
+                </span>{" "}
+                Product Designer
+              </div>
             ]}
           />
         </div>
-        <div className="border-top mt-3" style={{height: "1rem"}}/>
+        <div className="border-top mt-3" style={{ height: "1rem" }} />
         {/*POPin*/}
         <div className="row my-5">
           <a
@@ -55,17 +60,32 @@ class Projects extends React.Component {
             download={popinLiveCaseStudy}
             id="POPin-Live"
             description={[
-              <p>Helped an enterprise-sales-driven startup create their first self-serve product.</p>,
+              <p>
+                Helped an enterprise-sales-driven startup create their first
+                self-serve product.
+              </p>,
               <ul className="ml-4 mb-3">
-                <li className="mb-2">Conducted user interviews and created personas</li>
-                <li className="mb-2">Surveyed existing solutions and interviewed competitors' customers</li>
-                <li className="mb-2">Synthesized and presented findings to inform product direction</li>
+                <li className="mb-2">
+                  Conducted user interviews and created personas
+                </li>
+                <li className="mb-2">
+                  Surveyed existing solutions and interviewed competitors'
+                  customers
+                </li>
+                <li className="mb-2">
+                  Synthesized and presented findings to inform product direction
+                </li>
               </ul>,
-              <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Design Researcher</div>
+              <div>
+                <span className="font-weight-bold text-uppercase">
+                  Role:&nbsp;
+                </span>{" "}
+                Design Researcher
+              </div>
             ]}
           />
         </div>
-        <div className="border-top mt-4"  style={{height: "2rem"}}/>
+        <div className="border-top mt-5" style={{ height: "2rem" }} />
 
         {/*IEP*/}
         <div className="row my-5">
@@ -93,23 +113,35 @@ class Projects extends React.Component {
             id="IEP-Goal-Tracker"
             download={iepCaseStudy}
             description={[
-              <p>A full-stack Javascript application I designed and built for a local special needs school. This was an <strong>un-paid</strong>, personal project.</p>,
+              <p>
+                A full-stack Javascript application I designed and built for a
+                local special needs school. This was an <strong>un-paid</strong>
+                , personal project.
+              </p>,
               <ul className="ml-4 mb-3">
                 <li className="mb-2">Replaced cumbersome paper evaluations</li>
                 <li className="mb-2">Easier to log evaluations during class</li>
                 <li className="mb-2">Analytics shows progress over time</li>
               </ul>,
-              <div><span className="font-weight-bold text-uppercase">Role:&nbsp;</span> Research, Design and Development</div>,
+              <div>
+                <span className="font-weight-bold text-uppercase">
+                  Role:&nbsp;
+                </span>{" "}
+                Research, Design and Development
+              </div>
             ]}
           />
-          <div className="mt-5 mx-5">
-            <img src={iep_UX_design} className="img-fluid" />
-          </div>
-          <div className="d-flex justify-content-around mt-5 mx-4">
-            <img src={iep_1} className="img-fluid col-3" />
-            <img src={iep_2} className="img-fluid col-3" />
-            <img src={iep_3} className="img-fluid col-3" />
-            <img src={iep_4} className="img-fluid col-3" />
+          <div className="mx-5">
+            {" "}
+            <div className="mt-5 mx-5">
+              <img src={iep_UX_design} className="img-fluid" />
+            </div>
+            <div className="d-flex justify-content-around mt-5 mx-4">
+              <img src={iep_1} className="img-fluid col-3" />
+              <img src={iep_2} className="img-fluid col-3" />
+              <img src={iep_3} className="img-fluid col-3" />
+              <img src={iep_4} className="img-fluid col-3" />
+            </div>
           </div>
         </div>
 
