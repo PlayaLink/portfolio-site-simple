@@ -171,6 +171,7 @@ class Timeline extends React.Component {
               bullet={ true }
               details={ [
                 'Enrolled in a Javascript bootcamp',
+                'Designed and built a web app used by more than 2,000 school teachers',
                 'Worked as a frontend dev on a small, product-focused engineering team'
               ] }
             />
