@@ -64,11 +64,11 @@ class Timeline extends React.Component {
           >
             <TimelineCard
 
-              title="Language"
-              summary="All I cared about in college was language"
+              title="Language & translation"
+              summary="Most of twenties were dedicated to French and Spanish"
               details={ [
-                'I studied French and Spanish literature',
-                'Then lived in France and Spain for 5 years'
+                'Lived in France and Spain for 5 years',
+                'Earned graduated degrees in both languages'
               ] }
               bullet={ true }
             />
@@ -115,11 +115,10 @@ class Timeline extends React.Component {
           >
             <TimelineCard
               title="Journalism"
-              summary="Journalism taught me how to ask questions, find information, and synthesize a chaotic stew of information into something meaningful and coherent"
+              summary="Journalism is about translating complex ideas into compelling stories with concise language. It taught me how to empathize with readers and – later on – with users."
               bullet={ true }
               details={ [
                 'Wrote about aerospace and tech',
-                'Talked about rocket science in words a 12-year-old could understand',
                 "Sat in Elon Musk's space ship",
               ] }
             />
@@ -137,8 +136,8 @@ class Timeline extends React.Component {
               bullet={ true }
               details={ [
                 'Marketing seemed like the best application of my skillset',
-                <div>Until I discovered journalists are more like product people – we care about<span className="font-italic">&nbsp;creating things</span> more than<span className="font-italic">&nbsp;selling things</span></div>,
-                <div>Discovered that computer programming might not be that different from my language studies</div>
+                <div>Until I realized journalists are more like product people – we care about<span className="font-italic">&nbsp;creating things</span> more than<span className="font-italic">&nbsp;selling things</span></div>,
+                <div>Realized computer programming might not be that different from my language studies</div>
               ] }
             />
           </VerticalTimelineElement>
@@ -171,8 +170,8 @@ class Timeline extends React.Component {
               summary="If I was going to stay in tech, I wanted to have a deeper understanding of how things work under the hood"
               bullet={ true }
               details={ [
-                'Enrolled in a Javascript bootcamp and spent a lot of time on Udemy',
-                'Worked on a small, product-focused engineering team, that allowed me to code and participate in product discussions',
+                'Enrolled in a Javascript bootcamp',
+                'Worked as a frontend dev on a small, product-focused engineering team'
               ] }
             />
           </VerticalTimelineElement>
