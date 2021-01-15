@@ -21,6 +21,45 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="">
+        {/*Meetly - Iterative Design*/}
+        <div className="container">
+          <div className="" style={{ height: "3rem" }} />
+          <div className="row py-5">
+            <a
+              className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
+              href="https://www.runmeetly.com/"
+            >
+              <img className="img-fluid" src={meetly_marketing_site} />
+            </a>
+            <div className="col-xs-12 col-md-6 mt-3 mt-sm-0">
+              <h3 className="text-primary mb-3">Applying Design Research</h3>
+              <p>
+                How greenfield research I conducted lead to the founding of a new startup.
+              </p>
+              <p>
+                And how I integrated design principles from that research into the resulting product.
+              </p>
+              <p className="mt-3">
+                <span className="font-weight-bold text-uppercase">
+                  Role:&nbsp;
+                </span>{" "}
+                Product Designer
+              </p>
+              <div className="mt-5">
+                <Link
+                  to="/case-studies/meetly"
+                  id="Meetly"
+                  className="button download-button btn-secondary"
+                >
+                  <span>Case Study</span>
+                </Link>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div className="" style={{ height: "3rem" }} />
+        <div className="border-top border-thick" style={{ height: "3rem" }} />
         {/*Meetly - Design Research*/}
         <div className="container">
           <div className="" style={{ height: "3rem" }} />
@@ -37,7 +76,7 @@ class Projects extends React.Component {
                 How greenfield research I conducted lead to the founding of a new startup.
               </p>
               <p>
-                And how I integrated design principles from that research into the new product.
+                And how I integrated design principles from that research into the resulting product.
               </p>
               <p className="mt-3">
                 <span className="font-weight-bold text-uppercase">
@@ -47,7 +86,7 @@ class Projects extends React.Component {
               </p>
               <div className="mt-5">
                 <Link
-                  to="/case-studies/meetly"
+                  to="/case-study/meetly"
                   id="Meetly"
                   className="button download-button btn-secondary"
                 >
