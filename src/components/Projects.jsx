@@ -14,12 +14,14 @@ import iep_1 from "../img/iep_1.png";
 import iep_2 from "../img/iep_2.png";
 import iep_3 from "../img/iep_3.png";
 import iep_4 from "../img/iep_4.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 class Projects extends React.Component {
   render() {
     return (
       <div className="">
-        {/*Meetly*/}
+        {/*Meetly - Design Research*/}
         <div className="container">
           <div className="" style={{ height: "3rem" }} />
           <div className="row py-5">
@@ -29,23 +31,31 @@ class Projects extends React.Component {
             >
               <img className="img-fluid" src={meetly_marketing_site} />
             </a>
-            <ProjectCard
-              className="col-xs-12 col-md-6 mt-3 mt-sm-0"
-              title="Meetly"
-              subtitle="A meeting notes management platform"
-              id="Meetly"
-              cta="Case Study"
-              link="/case-study/meetly"
-              description={[
-                <p>Co-founded the company with 3 other engineers.</p>,
-                <div className="mt-4">
-                  <span className="font-weight-bold text-uppercase">
-                    Role:&nbsp;
-                  </span>{" "}
-                  Product Designer
-                </div>
-              ]}
-            />
+            <div className="col-xs-12 col-md-6 mt-3 mt-sm-0">
+              <h3 className="text-primary mb-3">Applying Design Research</h3>
+              <p>
+                How greenfield research I conducted lead to the founding of a new startup.
+              </p>
+              <p>
+                And how I integrated design principles from that research into the new product.
+              </p>
+              <p className="mt-3">
+                <span className="font-weight-bold text-uppercase">
+                  Role:&nbsp;
+                </span>{" "}
+                Product Designer
+              </p>
+              <div className="mt-5">
+                <Link
+                  to="/case-studies/meetly"
+                  id="Meetly"
+                  className="button download-button btn-secondary"
+                >
+                  <span>Case Study</span>
+                </Link>
+              </div>
+
+            </div>
           </div>
         </div>
         <div className="" style={{ height: "3rem" }} />
