@@ -39,35 +39,33 @@ const TimelineItem = props => (
 
 const MeetlyIntro = () => (
   <div className="mt-5">
-    <div className="d-flex">
-      <div className="container">
-        <div className="col-12 col-md-8 pl-0">
-          <h1 className="display-4">
-            Developing an idea into a venture-backed startup
-          </h1>
-          <h3 className="font-weight-light">
-            How design research lead to the creation of{" "}
-            <a
-              href="https://www.runmeetly.com"
-              className="text-primary font-weight-bolder"
-              target="_blank"
-            >
-              Meetly
-            </a>
-            , a meeting notes automation tool
-          </h3>
-          {/*<h5 className="font-weight-light mt-4">*/}
-          {/*Meetly is a <span className="font-weight-bold">calendar automation tool</span> that grew out of user research I conducted at POPin, my former employer.*/}
-          {/*</h5>*/}
-          {/*<h5 className="font-weight-light mt-4">*/}
-          {/*Three colleagues and I left POPin to turn the idea into a stand along product.*/}
-          {/*</h5>*/}
-        </div>
-      </div>
-    </div>
     <div className="container">
-      <div className="d-flex flex-column mt-5">
-        <h3 className="text-muted font-weight-light">Web app</h3>
+      <div className="col-12 col-md-8 pl-0">
+        <h1 className="display-4">
+          Developing an idea into a venture-backed startup
+        </h1>
+        <h3 className="font-weight-light">
+          How design research lead to the creation of{" "}
+          <a
+            href="https://www.runmeetly.com"
+            className="text-primary font-weight-bolder"
+            target="_blank"
+          >
+            Meetly
+          </a>
+          , a meeting notes automation tool
+        </h3>
+        {/*<h5 className="font-weight-light mt-4">*/}
+        {/*Meetly is a <span className="font-weight-bold">calendar automation tool</span> that grew out of user research I conducted at POPin, my former employer.*/}
+        {/*</h5>*/}
+        {/*<h5 className="font-weight-light mt-4">*/}
+        {/*Three colleagues and I left POPin to turn the idea into a stand along product.*/}
+        {/*</h5>*/}
+      </div>
+      <div className="mt-md-5" style={{ height: "3rem" }} />
+
+      <div className="d-flex flex-column">
+        <h3 className="font-weight-light mb-3">The Web App</h3>
         <div className="mb-5">
           <img
             alt="Meetly"
@@ -77,37 +75,31 @@ const MeetlyIntro = () => (
           {/*<PlayOnScroll id="meetly-overview" video={ add_item_and_share } />*/}
         </div>
       </div>
-    </div>
-    <div className="row d-flex justify-content-center mt-5">
-      <div className="d-flex flex-column">
-        <h3 className="text-muted font-weight-light">Monday.com</h3>
-        <h3 className="text-muted font-weight-light">Integration</h3>
-      </div>
-      <div className="col-md-8 mb-5 no-gutters">
-        <div className="p-3">
-          <img
-            alt="Monday integration"
-            className="img-fluid boxshadow rounded"
-            src={monday_schedule_view}
-          />
-        </div>
-      </div>
-    </div>
-    <div className="row d-flex justify-content-center mt-5">
-      <div className="d-flex flex-column">
-        <h3 className="text-muted font-weight-light">Chrome</h3>
-        <h3 className="text-muted font-weight-light">Extension</h3>
-      </div>
-      <div className="col-md-8 mb-5 no-gutters">
-        <div className="p-3">
+      <div className="d-flex flex-column mt-5">
+        <h3 className="font-weight-light">The Chrome Extension</h3>
+        <div className="mb-5">
           <img
             alt="Monday integration"
             className="img-fluid boxshadow rounded"
             src={chrome_extension_meetly}
           />
+          {/*<PlayOnScroll id="meetly-overview" video={ add_item_and_share } />*/}
+        </div>
+      </div>
+      <div className="d-flex flex-column mt-5">
+        <h3 className="font-weight-light">The monday.com Integration</h3>
+        <div className="mb-5">
+          <img
+            alt="Monday integration"
+            className="img-fluid boxshadow rounded"
+            src={monday_schedule_view}
+          />
+
+          {/*<PlayOnScroll id="meetly-overview" video={ add_item_and_share } />*/}
         </div>
       </div>
     </div>
+
   </div>
 );
 
@@ -178,7 +170,7 @@ const MeetlyResearch = () => (
   <div className="bg-light">
     <div className="d-flex justify-content-center mt-5">
       <div className="col-12 col-md-6">
-        <h2 className="text-uppercase">Design Research</h2>
+        <h2 className="text-uppercase">Research Objectives</h2>
         <div className="font-weight-light">
           <p>
             While interviewing and observing users of POPin, an employee
