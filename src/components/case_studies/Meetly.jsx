@@ -99,68 +99,74 @@ const MeetlyIntro = () => (
         </div>
       </div>
     </div>
-
   </div>
 );
 
 const MeetlyBackground = () => (
   <div className="bg-white">
-    <div className="d-flex justify-content-center">
-      <div className="col-12 col-md-6  mt-5">
+    <div className="container pt-5">
+      <div className="col-12 col-md-8 pl-0">
         <h2 className="text-uppercase">How Meetly started</h2>
-        <p className="font-weight-light">
+        <p className="">
           The idea for Meetly grew out of user research I conducted at POPin, a
           former employer.
         </p>
-        <p className="font-weight-light">
+        <p className="">
           After getting seed money from POPin's lead investor, three colleagues
           and I left POPin to turn the idea into a stand-alone product.
         </p>
       </div>
-    </div>
-    <div className="d-flex justify-content-center mt-5">
-      <div className="col-12 col-md-6">
-        <div className="row">
-          <div className="col-12 col-md-6">
-            <h4 className="text-uppercase">The team</h4>
-            <ul className="ml-4 font-weight-light">
-              <li className="my-3">1 technical product manager</li>
-              <li className="my-3">1 back-end engineer</li>
-              <li className="my-3">1 front-end engineer</li>
-              <li className="my-3">1 technical product designer (me)</li>
-            </ul>
-          </div>
-          <div className="col-12 col-md-6">
-            <h4 className="text-uppercase">My role</h4>
-            <p className="font-weight-light">
-              I owned the user research efforts and was responsible for the
-              entire user experience, from product design to video tutorials and
-              support articles.
-            </p>
-            <p className="font-weight-light">
-              I also helped out on the frontend, adding polish and iterating on
-              the design directly in the codebase.
-            </p>
+
+      <div className="d-flex mt-5">
+        <div className="col-12 col-md-8">
+          <div className="row">
+            <div className="col-12 col-md-6">
+              <h4 className="text-uppercase">The team</h4>
+              <ul className="ml-4 font-weight-light">
+                <li className="my-3">1 technical product manager</li>
+                <li className="my-3">1 back-end engineer</li>
+                <li className="my-3">1 front-end engineer</li>
+                <li className="my-3">1 technical product designer (me)</li>
+              </ul>
+            </div>
+            <div className="col-12 col-md-6">
+              <h4 className="text-uppercase">My role</h4>
+              <p className="">
+                I owned the user research efforts and was responsible for the
+                entire user experience, from product design to video tutorials
+                and support articles.
+              </p>
+              <p className="">
+                I also helped out on the frontend, adding polish and iterating
+                on the design directly in the codebase.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div className="d-flex justify-content-center mt-5 pb-5">
-      <div className="col-12 col-md-6">
-        <h4 className="text-uppercase">Timeline</h4>
-        {/*<h5 className="font-weight-light">Most of the greenfield design research occured in spring of 2019.</h5>*/}
-        {/*<h5 className="font-weight-light">In June 2019, our team of four left POPin to develop Meetly.</h5>*/}
-        <ul className="ml-4 mt-4">
-          <TimelineItem
-            date="Spring 2019"
-            description="Product manager and I came up with the idea for Meetly while
+      <div className="d-flex mt-5 pb-5">
+        <div className="col-12 col-md-8">
+          <h4 className="text-uppercase">Timeline</h4>
+          {/*<h5 className="font-weight-light">Most of the greenfield design research occured in spring of 2019.</h5>*/}
+          {/*<h5 className="font-weight-light">In June 2019, our team of four left POPin to develop Meetly.</h5>*/}
+          <ul className="ml-4 mt-4">
+            <TimelineItem
+              date="Spring 2019"
+              description="Product manager and I came up with the idea for Meetly while
         conducting research around how POPin users ran
         meetings."
-          />
-          <TimelineItem date="May 2019" description="Raised 1st seed round." />
-          <TimelineItem date="August 2019" description="Deployed an MVP." />
-          <TimelineItem date="May 2020" description="Raised 2nd seed round." />
-        </ul>
+            />
+            <TimelineItem
+              date="May 2019"
+              description="Raised 1st seed round."
+            />
+            <TimelineItem date="August 2019" description="Deployed an MVP." />
+            <TimelineItem
+              date="May 2020"
+              description="Raised 2nd seed round."
+            />
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -168,10 +174,10 @@ const MeetlyBackground = () => (
 
 const MeetlyResearch = () => (
   <div className="bg-light">
-    <div className="d-flex justify-content-center mt-5">
-      <div className="col-12 col-md-6">
-        <h2 className="text-uppercase">Research Objectives</h2>
-        <div className="font-weight-light">
+    <div className="container">
+      <div className="col-12 col-md-8 pl-0">
+        <h2 className="text-uppercase mt-5 mb-4">Research Objectives</h2>
+        <div className="">
           <p>
             While interviewing and observing users of POPin, an employee
             engagement tool, we discovered that people were using our tool to{" "}
@@ -184,7 +190,7 @@ const MeetlyResearch = () => (
             <span className="font-weight-bold">research objectives</span>{" "}
             changed to:
           </p>
-          <ul className="ml-4">
+          <ul className="ml-4 mt-4">
             <li className="my-3">what is a successful meeting</li>
             <li className="my-3">
               what are the impediments to a successful meeting
@@ -193,8 +199,8 @@ const MeetlyResearch = () => (
             <li className="my-3">what tools are they using</li>
           </ul>
         </div>
-        <h2 className="text-uppercase mt-5">Observations</h2>
-        <ul className="ml-4 font-weight-light">
+        <h2 className="text-uppercase mt-5 mb-4">Observations</h2>
+        <ul className="ml-4">
           <li className="my-3">
             <div className="d-flex flex-column">
               <span>Difficult to enforce proper meeting hygiene</span>
@@ -234,32 +240,32 @@ const MeetlyResearch = () => (
           </li>
         </ul>
       </div>
-    </div>
-    <div className="d-flex justify-content-center mt-5">
-      <div className="col-12 col-md-6">
-        <h2 className="text-uppercase">Hypotheses</h2>
+      <div className="d-flex mt-5">
+        <div className="col-12 col-md-6">
+          <h2 className="text-uppercase">Hypotheses</h2>
+        </div>
       </div>
-    </div>
-    <div className="d-flex justify-content-center">
-      <div className="col-12 col-md-9 col-lg-6">
-        <div className="d-flex flex-wrap flex-lg-nowrap my-4">
-          <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
-            <div className="font-weight-light p-5">
-              <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal">
-                Consumer
+      <div className="d-flex">
+        <div className="col-12 col-md-9">
+          <div className="d-flex flex-wrap flex-lg-nowrap my-4">
+            <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
+              <div className="p-5">
+                <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal">
+                  Self-serve
+                </div>
+                There is a need for something simpler than project management
+                software, but more structured than text docs and todo lists.
               </div>
-              There is a need for something simpler than project management
-              software, but more structured than text docs and todo lists.
             </div>
-          </div>
-          <div className="m-2" />
-          <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
-            <div className="font-weight-light p-5">
-              <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2">
-                Enterprise
+            <div className="m-2" />
+            <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
+              <div className="p-5">
+                <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2">
+                  Enterprise
+                </div>
+                Companies would purchase and force adoption of a tool that
+                encouraged, tracked, and improved meeting efficiency.
               </div>
-              Companies would purchase and force adoption of a tool that
-              encouraged, tracked, and improved meeting efficiency.
             </div>
           </div>
         </div>
