@@ -18,6 +18,7 @@ import {
   faPlusCircle
 } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/Navbar";
+import ScrollToTop from './util/ScrollToTop';
 
 library.add(faArrowRight);
 library.add(faChevronDown);
@@ -30,6 +31,7 @@ class App extends Component {
     return (
       <Router>
         <div className="bg-light">
+          <ScrollToTop/>
           <div className="bg-white fixed-top">
             <Navbar />
           </div>
