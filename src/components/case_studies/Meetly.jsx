@@ -32,7 +32,7 @@ const TimelineItem = props => (
       <div className="col-3 text-uppercase pr-0 pl-1 font-weight-normal">
         {props.date}
       </div>{" "}
-      <div className="col pl-2 font-weight-light">{props.description}</div>
+      <div className="col pl-2">{props.description}</div>
     </div>
   </li>
 );
@@ -62,7 +62,7 @@ const MeetlyIntro = () => (
         {/*Three colleagues and I left POPin to turn the idea into a stand along product.*/}
         {/*</h5>*/}
       </div>
-      <div className="mt-md-5" style={{ height: "3rem" }} />
+      <div className="mt-md-3" style={{ height: "3rem" }} />
 
       <div className="d-flex flex-column">
         <h3 className="font-weight-light mb-3">The Web App</h3>
@@ -106,31 +106,32 @@ const MeetlyBackground = () => (
   <div className="bg-white">
     <div className="container pt-5">
       <div className="col-12 col-md-8 pl-0">
-        <h2 className="text-uppercase">How Meetly started</h2>
+        <h1 className="display-4 mb-5 text-uppercase">Context</h1>
+        <h3 className="text-uppercase">How Meetly started</h3>
         <p className="">
-          The idea for Meetly grew out of user research I conducted at POPin, a
-          former employer.
+          The idea for Meetly grew out of user research I conducted at POPin, an
+          employee survey startup that was running out of runway.
         </p>
         <p className="">
-          After getting seed money from POPin's lead investor, three colleagues
-          and I left POPin to turn the idea into a stand-alone product.
+          After getting seed money from POPin's lead investor, 4 colleagues and
+          I left POPin to turn the idea into a stand-alone product.
         </p>
       </div>
 
       <div className="d-flex mt-5">
-        <div className="col-12 col-md-8">
+        <div className="col-12 col-md-8 pl-0">
           <div className="row">
             <div className="col-12 col-md-6">
-              <h4 className="text-uppercase">The team</h4>
-              <ul className="ml-4 font-weight-light">
+              <h3 className="text-uppercase">The team</h3>
+              <ul className="ml-4">
                 <li className="my-3">1 technical product manager</li>
-                <li className="my-3">1 back-end engineer</li>
+                <li className="my-3">2 back-end engineers</li>
                 <li className="my-3">1 front-end engineer</li>
                 <li className="my-3">1 technical product designer (me)</li>
               </ul>
             </div>
-            <div className="col-12 col-md-6">
-              <h4 className="text-uppercase">My role</h4>
+            <div className="col-12 col-md-6 mt-5 mt-md-0">
+              <h3 className="text-uppercase">My role</h3>
               <p className="">
                 I owned the user research efforts and was responsible for the
                 entire user experience, from product design to video tutorials
@@ -145,8 +146,8 @@ const MeetlyBackground = () => (
         </div>
       </div>
       <div className="d-flex mt-5 pb-5">
-        <div className="col-12 col-md-8">
-          <h4 className="text-uppercase">Timeline</h4>
+        <div className="col-12 col-md-8 pl-0">
+          <h3 className="text-uppercase">Timeline</h3>
           {/*<h5 className="font-weight-light">Most of the greenfield design research occured in spring of 2019.</h5>*/}
           {/*<h5 className="font-weight-light">In June 2019, our team of four left POPin to develop Meetly.</h5>*/}
           <ul className="ml-4 mt-4">
@@ -161,10 +162,6 @@ const MeetlyBackground = () => (
               description="Raised 1st seed round."
             />
             <TimelineItem date="August 2019" description="Deployed an MVP." />
-            <TimelineItem
-              date="May 2020"
-              description="Raised 2nd seed round."
-            />
           </ul>
         </div>
       </div>
@@ -176,30 +173,33 @@ const MeetlyResearch = () => (
   <div className="bg-light">
     <div className="container">
       <div className="col-12 col-md-8 pl-0">
-        <h2 className="text-uppercase mt-5 mb-4">Research Objectives</h2>
+        <h1 className="display-4 mb-3 text-uppercase">Research</h1>
+        <p>
+          While conducting greenfield research with POPin users to identify new
+          product opportunities, we discovered people were using our survey tool
+          to <span className="font-weight-bold">solve a problem</span> that was
+          not on our radar:{" "}
+          <span className="font-weight-bold">
+            time wasted in unnecessary or unproductive meetings
+          </span>
+          .
+        </p>
+        <p>
+          Recognizing an opportunity, we stopped asking people about POPin and
+          refocused our research efforts:
+        </p>
+        <h3 className="text-uppercase mt-5 mb-4">Questions</h3>
         <div className="">
-          <p>
-            While interviewing and observing users of POPin, an employee
-            engagement tool, we discovered that people were using our tool to{" "}
-            <span className="font-weight-bold">solve a problem</span> that was
-            not on our radar: time wasted in unnecessary or{" "}
-            <span className="font-weight-bold">unproductive meetings</span>.
-          </p>
-          <p>
-            Recognizing an opportunity, our{" "}
-            <span className="font-weight-bold">research objectives</span>{" "}
-            changed to:
-          </p>
           <ul className="ml-4 mt-4">
-            <li className="my-3">what is a successful meeting</li>
+            <li className="my-3">what makes for a successful meeting?</li>
             <li className="my-3">
-              what are the impediments to a successful meeting
+              what are the impediments to a successful meeting?
             </li>
-            <li className="my-3">how are people solving these challenges</li>
-            <li className="my-3">what tools are they using</li>
+            <li className="my-3">how are people solving these challenges?</li>
+            <li className="my-3">what tools are they using?</li>
           </ul>
         </div>
-        <h2 className="text-uppercase mt-5 mb-4">Observations</h2>
+        <h3 className="text-uppercase mt-5 mb-4">Key Observations</h3>
         <ul className="ml-4">
           <li className="my-3">
             <div className="d-flex flex-column">
@@ -242,7 +242,7 @@ const MeetlyResearch = () => (
       </div>
       <div className="d-flex mt-5">
         <div className="col-12 col-md-6">
-          <h2 className="text-uppercase">Hypotheses</h2>
+          <h3 className="text-uppercase">Hypotheses</h3>
         </div>
       </div>
       <div className="d-flex">
@@ -251,17 +251,18 @@ const MeetlyResearch = () => (
             <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
               <div className="p-5">
                 <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal">
-                  Self-serve
+                  Self-serve Product
                 </div>
-                There is a need for something simpler than project management
-                software, but more structured than text docs and todo lists.
+                There is a consumer need for something simpler than project
+                management software, but more structured than text docs and todo
+                lists.
               </div>
             </div>
             <div className="m-2" />
             <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
               <div className="p-5">
                 <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2">
-                  Enterprise
+                  Enterprise product
                 </div>
                 Companies would purchase and force adoption of a tool that
                 encouraged, tracked, and improved meeting efficiency.
@@ -276,52 +277,49 @@ const MeetlyResearch = () => (
 
 const NoExtraWork = () => (
   <div className="bg-white mt-5">
-    <div className="d-flex justify-content-center">
-      <div className="col-12 col-md-6">
-        <h5 className="text-uppercase text-muted mt-5 mb-3">
-          Design Principle #1
-        </h5>
-        <h2 className="text-uppercase">More organization, less work</h2>
-        <p className="font-weight-light">
-          We did not want to become <em>yet another tool</em> that people have
-          to manage, another black hole for notes. Since users already expend
-          energy keeping their calendars organized, we would leverage that work
-          by using their calendar as the single source of truth for Meetly
-          content.
-        </p>
-        <ul className="ml-4 font-weight-light">
-          <li className="my-3">
-            Connecting your calendar auto-generates a set of structured notes,
-            called "workspaces", for each of your meetings.
-          </li>
-          <li className="my-3">
-            A workspaces&nbsp;
-            <em className="font-weight-bold">stays in sync</em> with its
-            corresponding calendar event - if you change the meeting name, time
-            or guest list, those changes are reflected in Meetly. This was
-            technically difficult and{" "}
-            <em className="font-weight-bold">
-              no other notes tools does this.
-            </em>
-          </li>
-          <li className="my-3">
-            Individual workspaces are accessible directly from a user's
-            calendar, and vice versa.
-          </li>
-        </ul>
+    <div className="container mb-0">
+      <div className="col-12 col-md-9 pl-0">
+        <h1 className="display-4 pt-5 text-uppercase">Design principles</h1>
+        <SubtitleTitleBody
+          subtitle="Problem"
+          title="App fatigue"
+          body={
+            <p>
+              More tools means more logins to manage, more trainings for teams
+              to schedule and more information silos.
+            </p>
+          }
+        />
+        <SubtitleTitleBody
+          className={`ml-md-5`}
+          subtitle="Design Principle"
+          title="More organization, less work"
+          body={[
+            <p>
+              We wanted to leverage energy that users were already putting into
+              their calendars and other productivity tools.
+            </p>,
+            <p>
+              The goal was to integration into a users existing meeting
+              workflow, so that we bring value without more tools to manage.
+            </p>
+          ]}
+        />
       </div>
+      <VideoExample
+        className="ml-md-5 pl-md-5"
+        title="Leverage calendar to create notes automatically"
+        id="calendar-integration"
+        body={
+          <p>
+            Meeting notes live on top of a user's calendar events. Meeting
+            information stays in sync. Cross-linking allows you to find your
+            notes via your calendar.
+          </p>
+        }
+        video={calendar_integration}
+      />
     </div>
-    <VideoExample
-      title="Two-way calendar integration"
-      id="calendar-integration"
-      body={
-        <span>
-          Injecting a link into each calendar event allows the user to access
-          the notes for that meeting with one click.
-        </span>
-      }
-      video={calendar_integration}
-    />
   </div>
 );
 
@@ -352,19 +350,13 @@ class PlayOnScroll extends React.Component {
 
 class VideoExample extends React.Component {
   render() {
-    const { title, body, video, reverse, id } = this.props;
+    const { title, body, video, id, className } = this.props;
     return (
-      <div
-        className={`d-md-flex justify-content-center mt-5 ${
-          reverse ? "flex-row-reverse" : ""
-        }`}
-      >
-        <div className="col-12 col-md-3">
-          <h5 className="text-uppercase mt-5 mb-3">{title}</h5>
-          {/*<h6 className="text-uppercase mb-2 mt-md-5"></h6>*/}
-          <p className="font-weight-light d-none d-md-block">{body}</p>
+      <div className={`${className}`}>
+        <div className="col-12 col-md-8 pl-0">
+          <SubtitleTitleBody subtitle="Solution" title={title} body={body} />
         </div>
-        <div className="col-12 col-md-8">
+        <div className="">
           <PlayOnScroll video={video} id={id} />
         </div>
       </div>
@@ -373,89 +365,123 @@ class VideoExample extends React.Component {
 }
 
 const PrescriptiveButFlexible = () => (
-  <div className="bg-white mt-5">
-    <div className="d-flex justify-content-center">
-      <div className="col-12 col-md-6">
-        <SectionTitle
-          heading="Design Principle #2"
-          title="Prescriptive, but flexible"
+  <div className="bg-light mt-5">
+    <div className="container mb-0">
+      <div className="col-12 col-md-9 pl-0">
+        <SubtitleTitleBody
+          subtitle="Problem"
+          title="Difficult to enforce good meeting structure"
+          body={[
+            <p>
+              Most people know meetings without agendas are less focused. And that meetings without clear
+              action items are a big no-no.{" "}
+            </p>,
+            <p>
+              But it's not easy to get a team to adopt better meeting habits.
+            </p>
+          ]}
         />
-        <p className="font-weight-light">
-          We wanted Meetly to be intuitive as a tool, but also "educational"
-          when it comes to good meeting hygiene.
-        </p>
-        <p className="font-weight-light">
-          When a user clicks on a meeting, it should be immediately obvious what
-          they need to do – both as a user of the tool and as a responsible
-          meeting organizer or participant.
-        </p>
+        <SubtitleTitleBody
+          className="ml-md-5"
+          subtitle="Design Principle"
+          title="Be prescriptive, but flexible"
+          body={[
+            <p>
+              We wanted Meetly to be intuitive as a tool, but also "educational"
+              when it comes to good meeting hygiene.
+            </p>,
+            <p>
+              When a user clicks on a meeting, it should be immediately obvious
+              what they need to do – both as a user of the tool and as a
+              responsible meeting organizer or participant.
+            </p>
+          ]}
+        />
       </div>
+      <VideoExample
+        className="ml-md-5 pl-md-5"
+        title="Default notes structure"
+        id="structured-notes"
+        body={
+          <span>
+            We include cards for agenda, action items, notes and decisions by
+            default. This arrangement&nbsp;
+            <em className="font-weight-bold">
+              encourages meeting best practices
+            </em>{" "}
+            while allowing a user to remove, add or rename cards as needed.
+          </span>
+        }
+        video={add_remove_cards}
+      />
+      <VideoExample
+        className="ml-md-5 pl-md-5"
+        title="Customizable templates"
+        id="meeting-templates"
+        body={
+          <span>
+            Users can create custom card arrangements for different meeting
+            types.
+          </span>
+        }
+        video={choose_template}
+      />
     </div>
-    <VideoExample
-      title="Structured notes"
-      id="structured-notes"
-      body={
-        <span>
-          We include cards for agenda, action items, notes and decisions by
-          default. This arrangement&nbsp;
-          <em className="font-weight-bold">
-            encourages meeting best practices
-          </em>{" "}
-          while allowing a user to remove, add or rename cards as needed.
-        </span>
-      }
-      video={add_remove_cards}
-    />
-    <VideoExample
-      title="Meeting templates"
-      id="meeting-templates"
-      body={
-        <span>
-          Users can create custom card arrangements for different meeting types.
-        </span>
-      }
-      video={choose_template}
-    />
   </div>
 );
 
 const EasyToReference = () => (
-  <div className="bg-white mt-5">
-    <div className="d-flex justify-content-center">
-      <div className="col-12 col-md-6">
-        <SectionTitle
-          heading="Design Principle #3"
-          title="Easy to reference past notes"
+  <div className="bg-white pt-5">
+    <div className="container mb-0">
+      <div className="col-12 col-md-9 pl-0">
+        <SubtitleTitleBody
+          subtitle="Problem"
+          title="Siloed information"
+          body={[
+            <p>
+              Another productivity tool means another system to manage, another
+              place for information to be lost, another walled garden that people need to log in to to access.{" "}
+            </p>
+          ]}
         />
-        <p className="font-weight-light">
-          A common complaint we heard was that meeting minutes get shared via
-          email, often as attachments, which makes it difficult to reference
-          later and contributes to email clutter.
-        </p>
+        <SubtitleTitleBody
+          className="mt-5 ml-md-5"
+          subtitle="Design Principle"
+          title="Make it easy to find and share notes"
+          body={[
+            <p>
+              A common complaint we heard was that meeting minutes get shared via
+              email, often as attachments or links to services that require login, making it difficult to reference
+              later and contributes to email clutter.
+            </p>
+          ]}
+        />
       </div>
+      <VideoExample
+        className="mt-5 ml-md-5 pl-md-5"
+        title="Robust search"
+        id="robust-search"
+        body={
+          <span>
+            The ability to search across all notes and meetings makes it easy to
+            reference past topics.
+          </span>
+        }
+        video={search}
+      />
+      <VideoExample
+        className="ml-md-5 pl-md-5"
+        title="Meeting Groups"
+        id="meeting-groups"
+        body={
+          <span>
+            Grouping meetings together around a topic, team or project is
+            another way users could organize and quickly reference content
+          </span>
+        }
+        video={meeting_groups}
+      />
     </div>
-    <VideoExample
-      title="Robust search"
-      id="robust-search"
-      body={
-        <span>
-          The ability to search across all notes and meetings makes it easy to
-          reference past topics.
-        </span>
-      }
-      video={search}
-    />
-    <VideoExample
-      title="Meeting Groups"
-      id="meeting-groups"
-      body={
-        <span>
-          Grouping meetings together around a topic, team or project is another
-          way users could organize and quickly reference content
-        </span>
-      }
-      video={meeting_groups}
-    />
   </div>
 );
 
@@ -469,6 +495,17 @@ const SectionTitle = props => {
   );
 };
 
+const SubtitleTitleBody = props => {
+  const { subtitle, title, body, className } = props;
+  return (
+    <div className={`mt-5 ${className}`}>
+      <h5 className="text-uppercase text-muted">{subtitle}</h5>
+      <h2 className="text-uppercase">{title}</h2>
+      {body}
+    </div>
+  );
+};
+
 class Meetly extends Component {
   render() {
     return (
@@ -479,16 +516,6 @@ class Meetly extends Component {
         <NoExtraWork />
         <PrescriptiveButFlexible />
         <EasyToReference />
-        <h5 className="text-muted my-4 text-center">
-          This page is still being developed... In the meantime, feel free to
-          visit Meetly directly!
-        </h5>
-        <div className="d-flex justify-content-center">
-          <a href="https://runmeetly.com" className="button pink mb-5">
-            <span className="mr-3">View the App</span>
-            <FontAwesomeIcon icon="arrow-right" />
-          </a>
-        </div>
       </div>
     );
   }
