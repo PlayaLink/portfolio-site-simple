@@ -9,10 +9,7 @@ const ProjectCard = props => (
       props.className
     } d-flex flex-column justify-content-center`}
   >
-    <div className="title">{props.title}</div>
-    <div className="subtitle mb-2">
-      <span style={{ fontSize: "1.6rem" }}>{props.subtitle}</span>
-    </div>
+    <div className="title text-uppercase mb-3">{props.title}</div>
     <div className="description">{props.description}</div>
     {props.cta && props.download && (
       <div className="mt-2">

@@ -71,7 +71,7 @@ class Projects extends React.Component {
               <img className="img-fluid" src={meetly_marketing_site} />
             </a>
             <div className="col-xs-12 col-md-6 mt-3 mt-sm-0">
-              <h3 className="text-primary mb-3">Turning an idea into a product</h3>
+              <h3 className="text-primary mb-3 text-uppercase">Early-stage product development</h3>
               <p>
                 How greenfield design research I conducted lead to the founding of a new startup.
               </p>
@@ -113,14 +113,13 @@ class Projects extends React.Component {
             </a>
             <ProjectCard
               className="col-xs-12 col-md-6 mt-2 mt-sm-0"
-              title="POPin Live"
-              subtitle="A live audience polling tool"
+              title="Design Research"
               download={popinLiveCaseStudy}
-              id="POPin-Live"
+              id="Design Research"
               description={[
                 <p>
-                  Helped an enterprise-sales-driven startup create their first
-                  self-serve product.
+                  Helped POPin, an enterprise-sales-driven startup, create their first
+                  self-serve product – a live polling tool for meetings.
                 </p>,
                 <ul className="ml-4 mb-3">
                   <li className="mb-2">
@@ -180,9 +179,9 @@ class Projects extends React.Component {
               download={iepCaseStudy}
               description={[
                 <p>
-                  A full-stack Javascript application I designed and built for a
-                  local special needs school. This was an{" "}
-                  <strong>un-paid</strong>, personal project.
+                  A full-stack Javascript application I designed and built to help a
+                  local special needs school track student progress. This was an{" "}
+                  <strong>un-paid</strong>, passion project.
                 </p>,
                 <ul className="ml-4 mb-3">
                   <li className="mb-2">

@@ -199,6 +199,11 @@ const MeetlyResearch = () => (
             <li className="my-3">what tools are they using?</li>
           </ul>
         </div>
+        <div className="row">
+          <div>
+            <img src="" alt="" />
+          </div>
+        </div>
         <h3 className="text-uppercase mt-5 mb-4">Key Observations</h3>
         <ul className="ml-4">
           <li className="my-3">
