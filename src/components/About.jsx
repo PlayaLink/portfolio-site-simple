@@ -90,7 +90,7 @@ class About extends React.Component {
     return (
       <div className="about">
         <div className="row d-flex justify-content-center pt-md-5 px-3">
-          <div className="col-6 mb-5 mb-md-0 col-md-3 col-lg-2 mr-lg-4">
+          <div className="col-6 mb-5 mb-md-0 col-md-6 col-lg-3 mr-lg-4">
             <img
               src={jordan_portrait}
               alt="Jordan England-Nelson"
