@@ -3,7 +3,11 @@ import add_item_and_share from "../../img/add_item_and_share.mp4";
 import calendar_integration from "../../img/calendar_integration.mp4";
 import monday_schedule_view from "../../img/monday_schedule_view.png";
 import chrome_extension_meetly from "../../img/chrome_extension_meetly.png";
+import screened_respondents from "../../img/screened_respondents.png";
+import users_interview_screening from "../../img/users_interview_screening.png";
 import workspace_view from "../../img/workspace_view.jpg";
+import automations from "../../img/automations.jpg";
+import user_interviews from "../../img/user_interviews.jpg";
 import add_remove_cards from "../../img/add_remove_cards.mp4";
 import choose_template from "../../img/choose_template.mp4";
 import meeting_groups from "../../img/meeting_groups.mp4";
@@ -44,7 +48,7 @@ const MeetlyIntro = () => (
         <h1 className="display-4">
           Developing an idea into a venture-backed startup
         </h1>
-        <h3 className="font-weight-light">
+        <h3 className="font-weight-normal">
           How design research lead to the creation of{" "}
           <a
             href="https://www.runmeetly.com"
@@ -199,10 +203,26 @@ const MeetlyResearch = () => (
             <li className="my-3">what tools are they using?</li>
           </ul>
         </div>
-        <div className="row">
-          <div>
-            <img src="" alt="" />
-          </div>
+        <h3 className="text-uppercase mt-5 mb-4">
+          Targeting specific personas
+        </h3>
+        <div className="col-md-12 pl-0 mb-3">
+          <img
+            className="img-fluid"
+            src={users_interview_screening}
+            alt="User survey"
+          />
+        </div>
+        <div className="col-md-12 ml-0">
+          <img
+            className="img-fluid"
+            src={screened_respondents}
+            alt="Screened respondents"
+          />
+        </div>
+        <h3 className="text-uppercase mt-5 mb-4">User Interviews</h3>
+        <div className="col-md-12 pl-0 mb-3">
+          <img className="img-fluid" src={user_interviews} alt="Users inteviews" />
         </div>
         <h3 className="text-uppercase mt-5 mb-4">Key Observations</h3>
         <ul className="ml-4">
@@ -281,10 +301,9 @@ const MeetlyResearch = () => (
 );
 
 const NoExtraWork = () => (
-  <div className="bg-white mt-5">
+  <div className="bg-light mt-5">
     <div className="container mb-0">
       <div className="col-12 col-md-9 pl-0">
-        <h1 className="display-4 pt-5 text-uppercase">Design principles</h1>
         <SubtitleTitleBody
           subtitle="Problem"
           title="App fatigue"
@@ -311,9 +330,22 @@ const NoExtraWork = () => (
           ]}
         />
       </div>
-      <VideoExample
+      <MediaExample
+        subtitle="Solution I"
         className="ml-md-5 pl-md-5"
-        title="Leverage calendar to create notes automatically"
+        title="Automate meeting management workflow"
+        id="calendar-integration"
+        body={
+          <p>
+            Automations provide organizational value without requiring the meeting organizer to expend any energy.
+          </p>
+        }
+        image={automations}
+      />
+      <MediaExample
+        subtitle="Solution II"
+        className="ml-md-5 pl-md-5"
+        title="Leverage calendar to organize meeeting notes"
         id="calendar-integration"
         body={
           <p>
@@ -353,25 +385,33 @@ class PlayOnScroll extends React.Component {
   }
 }
 
-class VideoExample extends React.Component {
+class MediaExample extends React.Component {
   render() {
-    const { title, body, video, id, className } = this.props;
+    const { title, body, video, id, className, subtitle, image } = this.props;
     return (
       <div className={`${className}`}>
         <div className="col-12 col-md-8 pl-0">
-          <SubtitleTitleBody subtitle="Solution" title={title} body={body} />
+          <SubtitleTitleBody subtitle={subtitle} title={title} body={body} />
         </div>
-        <div className="">
-          <PlayOnScroll video={video} id={id} />
-        </div>
+        { !!video && (
+          <div className="">
+            <PlayOnScroll video={video} id={id} />
+          </div>
+        )}
+        { !! image && (
+          <div>
+            <img className="img-fluid" src={image} alt="image" />
+          </div>
+        )}
       </div>
     );
   }
 }
 
 const PrescriptiveButFlexible = () => (
-  <div className="bg-light mt-5">
+  <div className="bg-white mt-5">
     <div className="container mb-0">
+      <h1 className="display-4 pt-5 text-uppercase">Design principles</h1>
       <div className="col-12 col-md-9 pl-0">
         <SubtitleTitleBody
           subtitle="Problem"
@@ -403,7 +443,8 @@ const PrescriptiveButFlexible = () => (
           ]}
         />
       </div>
-      <VideoExample
+      <MediaExample
+        subtitle="Solution I"
         className="ml-md-5 pl-md-5"
         title="Default notes structure"
         id="structured-notes"
@@ -419,7 +460,8 @@ const PrescriptiveButFlexible = () => (
         }
         video={add_remove_cards}
       />
-      <VideoExample
+      <MediaExample
+        subtitle="Solution II"
         className="ml-md-5 pl-md-5"
         title="Customizable templates"
         id="meeting-templates"
@@ -436,7 +478,7 @@ const PrescriptiveButFlexible = () => (
 );
 
 const EasyToReference = () => (
-  <div className="bg-white pt-5">
+  <div className="bg-light pt-5">
     <div className="container mb-0">
       <div className="col-12 col-md-9 pl-0">
         <SubtitleTitleBody
@@ -462,7 +504,8 @@ const EasyToReference = () => (
           ]}
         />
       </div>
-      <VideoExample
+      <MediaExample
+        subtitle="Solution I"
         className="mt-5 ml-md-5 pl-md-5"
         title="Robust search"
         id="robust-search"
@@ -474,7 +517,8 @@ const EasyToReference = () => (
         }
         video={search}
       />
-      <VideoExample
+      <MediaExample
+        subtitle="Solution II"
         className="ml-md-5 pl-md-5"
         title="Meeting Groups"
         id="meeting-groups"
@@ -518,8 +562,8 @@ class Meetly extends Component {
         <MeetlyIntro />
         <MeetlyBackground />
         <MeetlyResearch />
-        <NoExtraWork />
         <PrescriptiveButFlexible />
+        <NoExtraWork />
         <EasyToReference />
       </div>
     );
