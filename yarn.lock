@@ -7486,6 +7486,11 @@ react@^16.7.0:
     prop-types "^15.6.2"
     scheduler "^0.12.0"
 
+reactjs-heap@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/reactjs-heap/-/reactjs-heap-1.0.3.tgz#8a493b758ee7deeecd6fbf88121fc0de8650cfa8"
+  integrity sha512-E7lqaxa4EoRROxXOUgYa9qw351b1o6GiRDMi6FjTgxKyDgAHH3m9p1XqIlCPOZEj1bS2OLdxpmhLNiYT1qvGuQ==
+
 read-pkg-up@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-1.0.1.tgz#9d63c13276c065918d57f002a57f40a1b643fb02"

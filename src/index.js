@@ -7,10 +7,14 @@ import TagManager from 'react-gtm-module';
 import LogRocket from 'logrocket';
 import 'bootstrap/dist/js/bootstrap.bundle'
 import 'react-tippy/dist/tippy.css'
+import ReactHeap from "reactjs-heap";
 
 
 if(window.location.hostname !== "localhost") {
   LogRocket.init('z5pe1u/portfolio-site');
+  ReactHeap.initialize("3584085666")
+} else {
+  ReactHeap.initialize("320729987")
 }
 
 
