@@ -6,6 +6,7 @@ import popinLiveCaseStudy from "../img/Case_Study_POPin_Live.pdf";
 import meetly_marketing_site from "../img/meetly_marketing_site.png";
 import popin_projector_screen from "../img/popin_projector_screen.png";
 import popin_personas from "../img/popin_personas.png";
+import activate_the_tool from "../img/activate_the_tool.png";
 import iep_tasks_to_track_left from "../img/iep_tasks_to_track_left.png";
 import iep_evaluations_graph from "../img/iep_evaluations_graph.png";
 import my_students_right from "../img/my_students_right.png";
@@ -14,8 +15,8 @@ import iep_1 from "../img/iep_1.png";
 import iep_2 from "../img/iep_2.png";
 import iep_3 from "../img/iep_3.png";
 import iep_4 from "../img/iep_4.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 class Projects extends React.Component {
   render() {
@@ -23,43 +24,86 @@ class Projects extends React.Component {
       <div className="">
         {/*Meetly - Iterative Design*/}
         {/*<div className="container">*/}
-          {/*<div className="" style={{ height: "3rem" }} />*/}
-          {/*<div className="row py-5">*/}
-            {/*<a*/}
-              {/*className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"*/}
-              {/*href="https://www.runmeetly.com/"*/}
-            {/*>*/}
-              {/*<img className="img-fluid" src={meetly_marketing_site} />*/}
-            {/*</a>*/}
-            {/*<div className="col-xs-12 col-md-6 mt-3 mt-sm-0">*/}
-              {/*<h3 className="text-primary mb-3">Applying Design Research</h3>*/}
-              {/*<p>*/}
-                {/*How greenfield research I conducted lead to the founding of a new startup.*/}
-              {/*</p>*/}
-              {/*<p>*/}
-                {/*And how I integrated design principles from that research into the resulting product.*/}
-              {/*</p>*/}
-              {/*<p className="mt-3">*/}
-                {/*<span className="font-weight-bold text-uppercase">*/}
-                  {/*Role:&nbsp;*/}
-                {/*</span>{" "}*/}
-                {/*Product Designer*/}
-              {/*</p>*/}
-              {/*<div className="mt-5">*/}
-                {/*<Link*/}
-                  {/*to="/case-studies/meetly"*/}
-                  {/*id="Meetly"*/}
-                  {/*className="button download-button btn-secondary"*/}
-                {/*>*/}
-                  {/*<span>Case Study</span>*/}
-                {/*</Link>*/}
-              {/*</div>*/}
+        {/*<div className="" style={{ height: "3rem" }} />*/}
+        {/*<div className="row py-5">*/}
+        {/*<a*/}
+        {/*className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"*/}
+        {/*href="https://www.runmeetly.com/"*/}
+        {/*>*/}
+        {/*<img className="img-fluid" src={meetly_marketing_site} />*/}
+        {/*</a>*/}
+        {/*<div className="col-xs-12 col-md-6 mt-3 mt-sm-0">*/}
+        {/*<h3 className="text-primary mb-3">Applying Design Research</h3>*/}
+        {/*<p>*/}
+        {/*How greenfield research I conducted lead to the founding of a new startup.*/}
+        {/*</p>*/}
+        {/*<p>*/}
+        {/*And how I integrated design principles from that research into the resulting product.*/}
+        {/*</p>*/}
+        {/*<p className="mt-3">*/}
+        {/*<span className="font-weight-bold text-uppercase">*/}
+        {/*Role:&nbsp;*/}
+        {/*</span>{" "}*/}
+        {/*Product Designer*/}
+        {/*</p>*/}
+        {/*<div className="mt-5">*/}
+        {/*<Link*/}
+        {/*to="/case-studies/meetly"*/}
+        {/*id="Meetly"*/}
+        {/*className="button download-button btn-secondary"*/}
+        {/*>*/}
+        {/*<span>Case Study</span>*/}
+        {/*</Link>*/}
+        {/*</div>*/}
 
-            {/*</div>*/}
-          {/*</div>*/}
+        {/*</div>*/}
+        {/*</div>*/}
         {/*</div>*/}
         {/*<div className="" style={{ height: "3rem" }} />*/}
         {/*<div className="border-top border-thick" style={{ height: "3rem" }} />*/}
+
+        {/*Bluehost - Design Research*/}
+        <div className="container">
+          <div className="" style={{ height: "3rem" }} />
+          <div className="row py-5">
+            <a
+              className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
+              href="https://www.runmeetly.com/"
+            >
+              <div className="row">
+                <div className="col-8 mx-auto">
+                  <img className="img-fluid" src={activate_the_tool} />
+                </div>
+              </div>
+            </a>
+            <div className="col-xs-12 col-md-6 mt-3 mt-sm-0">
+              <h3 className="text-primary mb-3 text-uppercase">
+                Data-driven design decisions
+              </h3>
+              <p>
+                How asking “why” protected my team from an expensive ask and
+                uncovered a much larger trap in the product – that we were able
+                to fix
+              </p>
+              <p className="mt-3">
+                <span className="font-weight-bold text-uppercase">
+                  Role:&nbsp;
+                </span>{" "}
+                Product Designer, Data Analyst
+              </p>
+              <div className="mt-5">
+                <Link
+                  to="/case-study/meetly"
+                  id="Meetly"
+                  className="button download-button btn-secondary"
+                >
+                  <span>Case Study</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="" style={{ height: "3rem" }} />
         {/*Meetly - Design Research*/}
         <div className="container">
           <div className="" style={{ height: "3rem" }} />
@@ -71,12 +115,16 @@ class Projects extends React.Component {
               <img className="img-fluid" src={meetly_marketing_site} />
             </a>
             <div className="col-xs-12 col-md-6 mt-3 mt-sm-0">
-              <h3 className="text-primary mb-3 text-uppercase">Early-stage product development</h3>
+              <h3 className="text-primary mb-3 text-uppercase">
+                Early-stage product development
+              </h3>
               <p>
-                How greenfield design research I conducted lead to the founding of a new startup.
+                How greenfield design research I conducted lead to the founding
+                of a new startup.
               </p>
               <p>
-                And how I integrated design principles from that research into the resulting product.
+                And how I integrated design principles from that research into
+                the resulting product.
               </p>
               <p className="mt-3">
                 <span className="font-weight-bold text-uppercase">
@@ -93,7 +141,6 @@ class Projects extends React.Component {
                   <span>Case Study</span>
                 </Link>
               </div>
-
             </div>
           </div>
         </div>
@@ -118,8 +165,8 @@ class Projects extends React.Component {
               id="Design Research"
               description={[
                 <p>
-                  Helped POPin, an enterprise-sales-driven startup, create their first
-                  self-serve product – a live polling tool for meetings.
+                  Helped POPin, an enterprise-sales-driven startup, create their
+                  first self-serve product – a live polling tool for meetings.
                 </p>,
                 <ul className="ml-4 mb-3">
                   <li className="mb-2">
@@ -179,9 +226,9 @@ class Projects extends React.Component {
               download={iepCaseStudy}
               description={[
                 <p>
-                  A full-stack Javascript application I designed and built to help a
-                  local special needs school track student progress. This was an{" "}
-                  <strong>un-paid</strong>, passion project.
+                  A full-stack Javascript application I designed and built to
+                  help a local special needs school track student progress. This
+                  was an <strong>un-paid</strong>, passion project.
                 </p>,
                 <ul className="ml-4 mb-3">
                   <li className="mb-2">
