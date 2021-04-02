@@ -5,6 +5,7 @@ import Cards from "./components/Cards";
 import About from "./components/About";
 import Homepage from "./components/Homepage";
 import Meetly from "./components/case_studies/Meetly";
+import DataDrivenDesign from "./components/case_studies/DataDrivenDesign";
 import PopinLive from "./components/PopinLive";
 import IepGoalTracker from "./components/IepGoalTracker";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -50,6 +51,11 @@ class App extends Component {
               exact
               path={process.env.PUBLIC_URL + "/case-study/meetly"}
               component={Meetly}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/case-study/data-driven-design"}
+              component={DataDrivenDesign}
             />
             <Route
               exact

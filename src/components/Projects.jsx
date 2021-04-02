@@ -77,9 +77,9 @@ class Projects extends React.Component {
               </div>
             </a>
             <div className="col-xs-12 col-md-6 mt-3 mt-sm-0">
-              <h3 className="text-primary mb-3 text-uppercase">
-                Data-driven design decisions
-              </h3>
+              <h2 className="text-primary mb-3 page-header">
+                Data-driven design
+              </h2>
               <p>
                 How asking “why” protected my team from an expensive ask and
                 uncovered a much larger trap in the product – that we were able
@@ -93,8 +93,8 @@ class Projects extends React.Component {
               </p>
               <div className="mt-5">
                 <Link
-                  to="/case-study/meetly"
-                  id="Meetly"
+                  to="/case-study/data-driven-design"
+                  id="data-driven-design"
                   className="button download-button btn-secondary"
                 >
                   <span>Case Study</span>
@@ -103,7 +103,6 @@ class Projects extends React.Component {
             </div>
           </div>
         </div>
-        <div className="" style={{ height: "3rem" }} />
         {/*Meetly - Design Research*/}
         <div className="container">
           <div className="" style={{ height: "3rem" }} />
@@ -115,9 +114,9 @@ class Projects extends React.Component {
               <img className="img-fluid" src={meetly_marketing_site} />
             </a>
             <div className="col-xs-12 col-md-6 mt-3 mt-sm-0">
-              <h3 className="text-primary mb-3 text-uppercase">
+              <h2 className="text-primary mb-3 page-header">
                 Early-stage product development
-              </h3>
+              </h2>
               <p>
                 How greenfield design research I conducted lead to the founding
                 of a new startup.

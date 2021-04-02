@@ -9,7 +9,7 @@ const ProjectCard = props => (
       props.className
     } d-flex flex-column justify-content-center`}
   >
-    <div className="title text-uppercase mb-3">{props.title}</div>
+    <div className="title page-header mb-3">{props.title}</div>
     <div className="description">{props.description}</div>
     {props.cta && props.download && (
       <div className="mt-2">
