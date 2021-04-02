@@ -105,7 +105,6 @@ class Projects extends React.Component {
         </div>
         {/*Meetly - Design Research*/}
         <div className="container">
-          <div className="" style={{ height: "3rem" }} />
           <div className="row py-5">
             <a
               className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
@@ -144,122 +143,122 @@ class Projects extends React.Component {
           </div>
         </div>
         <div className="" style={{ height: "3rem" }} />
-        <div className="border-top border-thick" style={{ height: "3rem" }} />
+        {/*<div className="border-top border-thick" style={{ height: "3rem" }} />*/}
         {/*POPin*/}
-        <div className="container">
-          <div className="row mt-5 mb-2">
-            <a
-              className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
-              href="https://www.popin.live/"
-            >
-              <img
-                className="img-fluid w-100 mr-4"
-                src={popin_projector_screen}
-              />
-            </a>
-            <ProjectCard
-              className="col-xs-12 col-md-6 mt-2 mt-sm-0"
-              title="Design Research"
-              download={popinLiveCaseStudy}
-              id="Design Research"
-              description={[
-                <p>
-                  Helped POPin, an enterprise-sales-driven startup, create their
-                  first self-serve product – a live polling tool for meetings.
-                </p>,
-                <ul className="ml-4 mb-3">
-                  <li className="mb-2">
-                    Conducted user interviews and created personas
-                  </li>
-                  <li className="mb-2">
-                    Surveyed existing solutions and interviewed competitors'
-                    customers
-                  </li>
-                  <li className="mb-2">
-                    Synthesized and presented findings to inform product
-                    direction
-                  </li>
-                </ul>,
-                <div>
-                  <span className="font-weight-bold text-uppercase">
-                    Role:&nbsp;
-                  </span>{" "}
-                  Design Researcher
-                </div>
-              ]}
-            />
-          </div>
-          <div className="mx-5 d-none d-sm-block">
-            <img className="img-fluid" src={popin_personas} />
-          </div>
-        </div>
+        {/*<div className="container">*/}
+          {/*<div className="row mt-5 mb-2">*/}
+            {/*<a*/}
+              {/*className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"*/}
+              {/*href="https://www.popin.live/"*/}
+            {/*>*/}
+              {/*<img*/}
+                {/*className="img-fluid w-100 mr-4"*/}
+                {/*src={popin_projector_screen}*/}
+              {/*/>*/}
+            {/*</a>*/}
+            {/*<ProjectCard*/}
+              {/*className="col-xs-12 col-md-6 mt-2 mt-sm-0"*/}
+              {/*title="Design Research"*/}
+              {/*download={popinLiveCaseStudy}*/}
+              {/*id="Design Research"*/}
+              {/*description={[*/}
+                {/*<p>*/}
+                  {/*Helped POPin, an enterprise-sales-driven startup, create their*/}
+                  {/*first self-serve product – a live polling tool for meetings.*/}
+                {/*</p>,*/}
+                {/*<ul className="ml-4 mb-3">*/}
+                  {/*<li className="mb-2">*/}
+                    {/*Conducted user interviews and created personas*/}
+                  {/*</li>*/}
+                  {/*<li className="mb-2">*/}
+                    {/*Surveyed existing solutions and interviewed competitors'*/}
+                    {/*customers*/}
+                  {/*</li>*/}
+                  {/*<li className="mb-2">*/}
+                    {/*Synthesized and presented findings to inform product*/}
+                    {/*direction*/}
+                  {/*</li>*/}
+                {/*</ul>,*/}
+                {/*<div>*/}
+                  {/*<span className="font-weight-bold text-uppercase">*/}
+                    {/*Role:&nbsp;*/}
+                  {/*</span>{" "}*/}
+                  {/*Design Researcher*/}
+                {/*</div>*/}
+              {/*]}*/}
+            {/*/>*/}
+          {/*</div>*/}
+          {/*<div className="mx-5 d-none d-sm-block">*/}
+            {/*<img className="img-fluid" src={popin_personas} />*/}
+          {/*</div>*/}
+        {/*</div>*/}
 
-        <div className="" style={{ height: "5rem" }} />
-        <div className="border-top border-thick" style={{ height: "3rem" }} />
+        {/*<div className="" style={{ height: "5rem" }} />*/}
+        {/*<div className="border-top border-thick" style={{ height: "3rem" }} />*/}
 
         {/*IEP*/}
-        <div className="container">
-          <div className="row my-5">
-            <a
-              className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"
-              href="http://www.iepgoaltracker.com/"
-            >
-              <div className="d-flex">
-                <div className="col">
-                  <img src={iep_tasks_to_track_left} className="img-fluid" />
-                </div>
-                <div className="col-5 mx-n2">
-                  <img src={iep_evaluations_graph} className="img-fluid" />
-                </div>
-                <div className="col">
-                  <img src={my_students_right} className="img-fluid" />
-                </div>
-              </div>
-            </a>
-            <ProjectCard
-              className="col-xs-12 col-md-6 mt-3 mt-sm-0"
-              title="Special Ed Goal Tracker"
-              subtitle="Streamlining data collection in the classroom"
-              // link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"
-              id="IEP-Goal-Tracker"
-              download={iepCaseStudy}
-              description={[
-                <p>
-                  A full-stack Javascript application I designed and built to
-                  help a local special needs school track student progress. This
-                  was an <strong>un-paid</strong>, passion project.
-                </p>,
-                <ul className="ml-4 mb-3">
-                  <li className="mb-2">
-                    Replaced cumbersome paper evaluations
-                  </li>
-                  <li className="mb-2">
-                    Easier to log evaluations during class
-                  </li>
-                  <li className="mb-2">Analytics shows progress over time</li>
-                </ul>,
-                <div>
-                  <span className="font-weight-bold text-uppercase">
-                    Role:&nbsp;
-                  </span>{" "}
-                  Research, Design and Development
-                </div>
-              ]}
-            />
-            <div className="mx-5 px-5 d-none d-sm-block">
-              {" "}
-              <div className="mt-5 mx-5">
-                <img src={iep_UX_design} className="img-fluid" />
-              </div>
-              <div className="d-flex justify-content-around mt-5 mx-4">
-                <img src={iep_1} className="img-fluid col-3" />
-                <img src={iep_2} className="img-fluid col-3" />
-                <img src={iep_3} className="img-fluid col-3" />
-                <img src={iep_4} className="img-fluid col-3" />
-              </div>
-            </div>
-          </div>
-        </div>
+        {/*<div className="container">*/}
+          {/*<div className="row my-5">*/}
+            {/*<a*/}
+              {/*className="col-xs-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0"*/}
+              {/*href="http://www.iepgoaltracker.com/"*/}
+            {/*>*/}
+              {/*<div className="d-flex">*/}
+                {/*<div className="col">*/}
+                  {/*<img src={iep_tasks_to_track_left} className="img-fluid" />*/}
+                {/*</div>*/}
+                {/*<div className="col-5 mx-n2">*/}
+                  {/*<img src={iep_evaluations_graph} className="img-fluid" />*/}
+                {/*</div>*/}
+                {/*<div className="col">*/}
+                  {/*<img src={my_students_right} className="img-fluid" />*/}
+                {/*</div>*/}
+              {/*</div>*/}
+            {/*</a>*/}
+            {/*<ProjectCard*/}
+              {/*className="col-xs-12 col-md-6 mt-3 mt-sm-0"*/}
+              {/*title="Special Ed Goal Tracker"*/}
+              {/*subtitle="Streamlining data collection in the classroom"*/}
+              {/*// link="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53"*/}
+              {/*id="IEP-Goal-Tracker"*/}
+              {/*download={iepCaseStudy}*/}
+              {/*description={[*/}
+                {/*<p>*/}
+                  {/*A full-stack Javascript application I designed and built to*/}
+                  {/*help a local special needs school track student progress. This*/}
+                  {/*was an <strong>un-paid</strong>, passion project.*/}
+                {/*</p>,*/}
+                {/*<ul className="ml-4 mb-3">*/}
+                  {/*<li className="mb-2">*/}
+                    {/*Replaced cumbersome paper evaluations*/}
+                  {/*</li>*/}
+                  {/*<li className="mb-2">*/}
+                    {/*Easier to log evaluations during class*/}
+                  {/*</li>*/}
+                  {/*<li className="mb-2">Analytics shows progress over time</li>*/}
+                {/*</ul>,*/}
+                {/*<div>*/}
+                  {/*<span className="font-weight-bold text-uppercase">*/}
+                    {/*Role:&nbsp;*/}
+                  {/*</span>{" "}*/}
+                  {/*Research, Design and Development*/}
+                {/*</div>*/}
+              {/*]}*/}
+            {/*/>*/}
+            {/*<div className="mx-5 px-5 d-none d-sm-block">*/}
+              {/*{" "}*/}
+              {/*<div className="mt-5 mx-5">*/}
+                {/*<img src={iep_UX_design} className="img-fluid" />*/}
+              {/*</div>*/}
+              {/*<div className="d-flex justify-content-around mt-5 mx-4">*/}
+                {/*<img src={iep_1} className="img-fluid col-3" />*/}
+                {/*<img src={iep_2} className="img-fluid col-3" />*/}
+                {/*<img src={iep_3} className="img-fluid col-3" />*/}
+                {/*<img src={iep_4} className="img-fluid col-3" />*/}
+              {/*</div>*/}
+            {/*</div>*/}
+          {/*</div>*/}
+        {/*</div>*/}
 
         {/*<div className="street-art-talks project-section">*/}
         {/*<div className="images">*/}
