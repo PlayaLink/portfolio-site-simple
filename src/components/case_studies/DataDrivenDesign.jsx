@@ -4,6 +4,7 @@ import add_more_backups from "../../img/add_more_backups.png";
 import peace_of_mind from "../../img/peace_of_mind.png";
 import purchase_location from "../../img/purchase_location.png";
 import website_count from "../../img/website_count.png";
+import qualitative_interviews from "../../img/qualitative_interviews.jpg";
 import activate_the_tool from "../../img/activate_the_tool.png";
 import used_the_tool from "../../img/used_the_tool.png";
 import codeguard_pricing from "../../img/codeguard_pricing.png";
@@ -25,11 +26,11 @@ const Dot = styled.span`
 `;
 
 const Title = () => (
-  <div className="my-5">
+  <div className="my-5 pb-5">
     <div className="horizontal-container">
       <div className="col-12 col-md-8 pl-0">
         <h1 className="display-4 page-header">Data-driven design</h1>
-        <h3 className="font-weight-bold">
+        <h3 className="font-weight-regular">
           How asking “why” protected my team from an expensive ask and uncovered
           a critical trap in the product
         </h3>
@@ -69,7 +70,7 @@ class DataDrivenDesign extends Component {
           </div>
           <img
             alt="Add-more-backups"
-            className="img-fluid rounded mt-3"
+            className="img-fluid rounded mt-3 px-2"
             src={add_more_backups}
           />
         </Section>
@@ -89,7 +90,7 @@ class DataDrivenDesign extends Component {
         <Section
           title="Well... business needs"
           img={
-            <img className="ml-3" style={{ width: "45px" }} src={hand_shake} />
+            <img className="ml-3 img-fluid" style={{ width: "45px" }} src={hand_shake} />
           }
         >
           <div className="d-flex flex-column w-50">
@@ -119,18 +120,20 @@ class DataDrivenDesign extends Component {
           False Assumption #1
         </h4>
         <Section title="More options in-product will increase sales">
-          <div className="d-flex flex-column w-50">
-            <p className="mb-5">
-              A simple database query shows that most purchases occur during
-              signup, before the user has interacted with product.
-            </p>
-            <div className="d-flex mb-3">
-              <img src={db_report} alt="database report" />
+          <div className="row">
+            <div className="col-md-6">
+              <p className="mb-5">
+                A simple database query shows that most purchases occur during
+                signup, before the user has interacted with product.
+              </p>
+              <div className="mb-3 mx-4">
+                <img className="img-fluid" src={db_report} alt="database report" />
+              </div>
+              <p>
+                Therefore, tweaking the UI in-product was going to have{" "}
+                <span className="font-weight-bold">marginal impact</span>.
+              </p>
             </div>
-            <p>
-              Therefore, tweaking the UI in-product was going to have{" "}
-              <span className="font-weight-bold">marginal impact</span>.
-            </p>
           </div>
         </Section>
         <h4 className="text-uppercase text-danger horizontal-container mb-2">
@@ -159,12 +162,15 @@ class DataDrivenDesign extends Component {
             </p>
           </div>
         </Section>
+        <h4 className="text-uppercase text-success horizontal-container mb-2">
+          Result
+        </h4>
         <Section title="Protecting the team">
           <div className="d-flex flex-column w-50">
             <p>
               Once I showed these conversion numbers to the stakeholder who owns
               the relationship with the vendor, they understood our concern and
-              <span className="font-weight-bold">they stopped asking</span> for
+              <span className="font-weight-bold"> they stopped asking</span> for
               more upsells in the product.
             </p>
             <p>
@@ -183,14 +189,26 @@ class DataDrivenDesign extends Component {
             </p>
           </div>
         </Section>
-        <Section title="[SURVEY]">
+        <Section title="Qualitative discovery [INTERVIEWS]">
+          <div className="row">
+            <div className="col-md-10">
+              <p className="mb-5">
+                I spoke with some CodeGuard customers to learn more about why they bought and how they were using the tool.
+              </p>
+              <div className="mb-3 mx-4">
+                <img className="img-fluid" src={qualitative_interviews} alt="Qualitative interviews" />
+              </div>
+              <p>
+                Therefore, tweaking the UI in-product was going to have{" "}
+                <span className="font-weight-bold">marginal impact</span>.
+              </p>
+            </div>
+          </div>
+        </Section>
+        <Section title="Quantitative validation [SURVEY]">
           <div className="d-flex flex-column w-50">
             <p>
-              I teamed up with one of our user researchers to put together a
-              survey to <span className="font-weight-bold">how</span> people
-              were using CodeGuard and{" "}
-              <span className="font-weight-bold">why</span> they decided to
-              purchase website backups support.
+              I teamed up with one of our user researchers to find out how common the opinions of our interviewees were.
             </p>
             <p>
               With <span className="font-weight-bold">328 responses</span>, we
@@ -198,7 +216,7 @@ class DataDrivenDesign extends Component {
             </p>
           </div>
           <div className="d-flex flex-column w-75 mt-3 mb-5 pb-md-5">
-            <img className="mb-5" src={survey_question} alt="Survey question" />
+            {/*<img className="mb-5" src={survey_question} alt="Survey question" />*/}
             <img src={backups_survey} alt="Survey results" />
           </div>
         </Section>
@@ -266,6 +284,16 @@ class DataDrivenDesign extends Component {
           </div>
           <div className="d-flex flex-column w-75 mt-3">
             <img src={codeguard_pricing} alt="Survey results" />
+          </div>
+        </Section>
+        <h4 className="text-uppercase text-success horizontal-container mb-2">
+          Result
+        </h4>
+        <Section title="Fixed trap affecting 23% of customers">
+          <div className="d-flex flex-column w-50">
+            <p>
+              Not only did we start auto-installing all available CodeGuard licenses, we retroactively auto-installed licenses on the 23% of users who had been affected in the past.
+            </p>
           </div>
         </Section>
       </div>
