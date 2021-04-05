@@ -289,7 +289,7 @@ class DataDrivenDesign extends Component {
         <h4 className="text-uppercase text-success horizontal-container mb-2">
           Result
         </h4>
-        <Section title="Fixed trap affecting 23% of customers">
+        <Section title="Fixed trap affecting 23% of backups customers">
           <div className="d-flex flex-column w-50">
             <p>
               Not only did we start auto-installing all available CodeGuard licenses, we retroactively auto-installed licenses on the 23% of users who had been affected in the past.
