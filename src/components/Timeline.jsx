@@ -35,10 +35,10 @@ class TimelineCard extends React.Component {
     const { title, summary, details, bullet } = this.props;
     return (
       <div ref={this.ref} className={ `timeline-card` }>
-        <h3 className="vertical-timeline-element-title">{ title }</h3>
-        <p>
+        <h1 className="mb-1" >{ title }</h1>
+        <div className="py-md-1">
           { summary }
-        </p>
+        </div>
         { bullet ? this.renderBulletedList(details) : this.renderParagraphs(details) }
       </div>
     );
