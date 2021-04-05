@@ -45,7 +45,7 @@ const MeetlyIntro = () => (
   <div className="mt-5">
     <div className="container">
       <div className="col-12 col-md-8 pl-0">
-        <h1 className="display-4">
+        <h1 className="display-4 page-header">
           Developing an idea into a venture-backed startup
         </h1>
         <h3 className="font-weight-normal">
@@ -110,7 +110,7 @@ const MeetlyBackground = () => (
   <div className="bg-white">
     <div className="container pt-5">
       <div className="col-12 col-md-8 pl-0">
-        <h1 className="display-4 mb-5 text-uppercase">Context</h1>
+        <h1 className="display-4 mb-5 page-header">Context</h1>
         <h3 className="text-uppercase">How Meetly started</h3>
         <p className="">
           The idea for Meetly grew out of user research I conducted at POPin, an
@@ -177,7 +177,7 @@ const MeetlyResearch = () => (
   <div className="bg-light">
     <div className="container">
       <div className="col-12 col-md-8 pl-0">
-        <h1 className="display-4 mb-3 text-uppercase">Research</h1>
+        <h1 className="display-4 mb-3 page-header">Research</h1>
         <p>
           While conducting greenfield research with POPin users to identify new
           product opportunities, we discovered people were using our survey tool
@@ -411,7 +411,7 @@ class MediaExample extends React.Component {
 const PrescriptiveButFlexible = () => (
   <div className="bg-white mt-5">
     <div className="container mb-0">
-      <h1 className="display-4 pt-5 text-uppercase">Design principles</h1>
+      <h1 className="display-4 pt-5 page-header">Design principles</h1>
       <div className="col-12 col-md-9 pl-0">
         <SubtitleTitleBody
           subtitle="Problem"
