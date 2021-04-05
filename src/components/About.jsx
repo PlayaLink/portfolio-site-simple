@@ -16,8 +16,8 @@ class SocialButtons extends React.Component {
     };
   }
   toggleEmail = () => {
-    this.setState({ showEmail: !this.state.showEmail})
-  }
+    this.setState({ showEmail: !this.state.showEmail });
+  };
   render() {
     const { showEmail } = this.state;
     return (
@@ -34,7 +34,11 @@ class SocialButtons extends React.Component {
             target="_blank"
           />
           <div>
-            <img onMouseEnter={this.toggleEmail} onMouseLeave={this.toggleEmail} src={showEmail ? my_email : email_icon} />
+            <img
+              onMouseEnter={this.toggleEmail}
+              onMouseLeave={this.toggleEmail}
+              src={showEmail ? my_email : email_icon}
+            />
           </div>
           {/*<a className="icon github" href="https://github.com/PlayaLink" target="_blank"></a>*/}
         </div>
@@ -89,15 +93,15 @@ class About extends React.Component {
   render() {
     return (
       <div className="about">
-        <div className="row d-flex justify-content-center pt-md-5 px-3">
-          <div className="col-6 mb-5 mb-md-0 col-md-6 col-lg-3 mr-lg-4">
+        <div className="row d-flex justify-content-center pt-md-5 px-3 pb-5">
+          <div className="d-none d-md-block col-6 mb-5 mb-md-0 col-md-6 col-lg-3 mr-lg-4">
             <img
               src={jordan_portrait}
               alt="Jordan England-Nelson"
               className="img-fluid rounded-lg d-none d-md-block"
             />
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+          <div className="col-12 col-md-6 col-lg-4 d-flex align-items-center">
             {/*<p>*/}
             {/*I've worked up and down the product stack, from design research to writing code.*/}
             {/*</p>*/}
@@ -115,35 +119,42 @@ class About extends React.Component {
             {/*A short T is nothing to be ashamed of. There are plenty of attractive,*/}
             {/*young companies out there who gladly hire generalists.*/}
             {/*</p>*/}
-            <img
-              src={jordan_portrait}
-              alt="Jordan England-Nelson"
-              className="rounded-lg float-left mr-3 d-md-none"
-              style={{ width: "45%" }}
-            />
-            <p>
-              <span className="" style={{ fontSize: "1.5rem", lineHeight: "1.2rem" }}>
-                I never identified as a technical person.
-              </span>{" "}
-              Until I realized JavaScript is just a language – a way to
-              transmit ideas from one system to another.
-            </p>
-            <p>
-              Design, too, is a language. We listen and observe people. We
-              try to interpret their needs, goals and behaviors. We
-              translate what they say and do into what we think they mean
-              and want, so that our response – our product – is relevant and
-              helpful.
-            </p>
-            <p>
-              Whether it’s distilling a complex topic into a short
-              newspaper story or explaining a user's problem to a
-              development team, a good translator groks the essence of the
-              idea and transforms it into something the other side
-              understands.
-            </p>
-            <div>
-              <SocialButtons />
+
+            <div className="d-flex flex-column">
+              <p className="pt-5 p-md-0 mt-1">
+                <img
+                  src={jordan_portrait}
+                  alt="Jordan England-Nelson"
+                  className="rounded-lg float-left mr-3 d-md-none pt-2 p-md-0"
+                  style={{ width: "45%" }}
+                />
+                <span
+                  className="d-none d-md-block pb-2 mb-1"
+                  style={{ fontSize: "1.7rem", lineHeight: "1.2rem" }}
+                >
+                  I never identified as a technical person.
+                </span>{" "}
+                <span className="d-block d-md-none">
+                  I never identified as a technical person.
+                </span>{" "}
+                Until I realized JavaScript is just a language – a way to
+                transmit ideas from one system to another.
+              </p>
+              <p>
+                Design, too, is a language. We listen and observe people. We try
+                to interpret their needs, goals and behaviors. We translate what
+                they say and do into what we think they mean and want, so that
+                our response – our product – is relevant and helpful.
+              </p>
+              <p>
+                Whether it’s distilling a complex topic into a short newspaper
+                story or explaining a user's problem to a development team, a
+                good translator groks the essence of the idea and transforms it
+                into something the other side understands.
+              </p>
+              <div>
+                <SocialButtons />
+              </div>
             </div>
           </div>
         </div>

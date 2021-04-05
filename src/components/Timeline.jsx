@@ -35,7 +35,7 @@ class TimelineCard extends React.Component {
     const { title, summary, details, bullet } = this.props;
     return (
       <div ref={this.ref} className={ `timeline-card` }>
-        <h1 className="mb-1" >{ title }</h1>
+        <div className="mb-1 font-weight-bold" style={{fontSize: "2rem"}}>{ title }</div>
         <div className="py-md-1">
           { summary }
         </div>
@@ -53,7 +53,7 @@ class Timeline extends React.Component {
   render () {
     return (
       <div className="timeline mt-5">
-        <h4 className="timeline text-uppercase text-center">The road to product design...</h4>
+        <h1 className="timeline text-center page-header pt-md-5 px-3" style={{ fontSize: "2rem"}}>My path to product design...</h1>
         <VerticalTimeline>
 
           { /*COLLEGE*/ }
