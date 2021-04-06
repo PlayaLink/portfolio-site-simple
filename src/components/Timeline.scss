@@ -99,7 +99,7 @@
   }
 
   .vertical-timeline::before {
-    height:86%;
+    height:77%;
   }
 
   .vertical-timeline-element-content {
@@ -125,7 +125,32 @@
   }
 }
 
+@media (min-width: 417px) {
+
+  .vertical-timeline::before {
+    height: 79%;
+  }
+}
+
+@media (min-width: 455px) {
+
+  .vertical-timeline::before {
+    height: 78%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .vertical-timeline::before {
+    height: 79%;
+  }
+}
+
 @media (min-width: 1170px) {
+
+  .vertical-timeline::before {
+    height:82%;
+  }
 
   .vertical-timeline-element-content {
     width: 46.2%!important;
