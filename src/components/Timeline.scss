@@ -25,7 +25,7 @@
       display: none;
       cursor: pointer;
       animation: dropDown 1.5s infinite ease;
-      color: map-get($theme-colors, "light-gray") !important;
+      color: map-get($theme-colors, "white") !important;
       .expand-arrow {
         transition: transform 0.35s 0.35s ease;
         &.rotate {
@@ -36,24 +36,32 @@
   }
 }
 
+.vertical-timeline {
+  margin-bottom: 0rem !important;
+  padding-bottom: 0rem;
+}
+
 .vertical-timeline::before {
   top: 37px;
   height:83%;
-  background-color: map-get($theme-colors, "light-gray") !important;
+  background-color: map-get($theme-colors, "white") !important;
 }
 
 .vertical-timeline-element-content {
-  border: 3px solid map-get($theme-colors, "light-gray") !important;
+  border: 3px solid map-get($theme-colors, "white") !important;
   box-shadow: none;
   &.pulse {
     animation: pulseAnimate 1500ms 1500ms !important;
+  }
+  .vertical-timeline-element-date {
+    color: map-get($theme-colors, "white") !important;
   }
 }
 
 .vertical-timeline-element:nth-of-type(even) {
   .vertical-timeline-element-content {
     &::before {
-      border-right-color: map-get($theme-colors, "light-gray") !important;
+      border-right-color: map-get($theme-colors, "white") !important;
     }
   }
 }
@@ -61,7 +69,7 @@
 .vertical-timeline-element:nth-of-type(odd) {
   .vertical-timeline-element-content {
     &::before {
-      border-left-color: map-get($theme-colors, "light-gray") !important;
+      border-left-color: map-get($theme-colors, "white") !important;
     }
   }
 }
@@ -70,10 +78,10 @@
 //Add this in to remove the arrows
 //.vertical-timeline-element-content {
 //  &::before {
-//    border-left-color: map-get($theme-colors, "light-gray") !important;
+//    border-left-color: map-get($theme-colors, "white") !important;
 //  }
 //  .vertical-timeline-element-content-arrow {
-//    border: map-get($theme-colors, "light-gray") !important;
+//    border: map-get($theme-colors, "white") !important;
 //  }
 //}
 
@@ -99,7 +107,7 @@
   }
 
   .vertical-timeline::before {
-    height:77%;
+    height:79%;
   }
 
   .vertical-timeline-element-content {
@@ -119,7 +127,7 @@
     .vertical-timeline-element-content {
       &::before {
         border-left-color: transparent !important;
-        border-right-color: map-get($theme-colors, "light-gray") !important;
+        border-right-color: map-get($theme-colors, "white") !important;
       }
     }
   }
@@ -135,16 +143,10 @@
 @media (min-width: 455px) {
 
   .vertical-timeline::before {
-    height: 78%;
+    height: 80%;
   }
 }
 
-@media (min-width: 768px) {
-
-  .vertical-timeline::before {
-    height: 79%;
-  }
-}
 
 @media (min-width: 1170px) {
 
@@ -185,7 +187,7 @@
     box-shadow: unset;
   }
   50% {
-    box-shadow: 0 0 20px 20px map-get($theme-colors, "light-gray") !important;
+    box-shadow: 0 0 20px 20px map-get($theme-colors, "white") !important;
   }
   100% {
     box-shadow: unset;

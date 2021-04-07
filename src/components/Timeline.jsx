@@ -52,7 +52,7 @@ class Timeline extends React.Component {
 
   render () {
     return (
-      <div className="timeline mt-5">
+      <div className="timeline mt-5 pr-2">
         <h1 className="timeline text-primary text-center page-header pt-md-5 px-3" style={{ fontSize: "2rem"}}>My path to product design...</h1>
         <VerticalTimeline>
 

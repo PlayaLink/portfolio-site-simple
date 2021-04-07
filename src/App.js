@@ -31,12 +31,12 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="bg-light">
+        <div className="">
           <ScrollToTop/>
-          <div className="bg-white fixed-top">
+          <div className="bg-white fixed-top flex-fill w-100">
             <Navbar />
           </div>
-          <div className="bg-light" style={{paddingTop : "5rem"}}>
+          <div className="flex-fill w-100" style={{paddingTop : "5rem"}}>
             <Route
               exact
               path={process.env.PUBLIC_URL + "/"}

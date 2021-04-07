@@ -92,8 +92,8 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="about bg-black">
-        <div className="row d-flex justify-content-center pt-md-5 px-3 pb-5">
+      <div className="about bg-black pb-5 flex-fill w-100">
+        <div className="row d-flex justify-content-center pt-md-5 px-3 pb-5 flex-fill w-100">
           <div className="d-none d-md-block col-6 mb-5 mb-md-0 col-md-6 col-lg-3 mr-lg-4">
             <img
               src={jordan_portrait}
@@ -130,7 +130,7 @@ class About extends React.Component {
                 />
                 <span
                   className="d-none d-md-block pb-2 mb-1"
-                  style={{ fontSize: "1.7rem", lineHeight: "1.2rem" }}
+                  style={{ fontSize: "1.7rem", lineHeight: "1.7rem" }}
                 >
                   I never identified as a technical person.
                 </span>{" "}
