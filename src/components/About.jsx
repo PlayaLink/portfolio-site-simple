@@ -93,7 +93,8 @@ class About extends React.Component {
   render() {
     return (
       <div className="about bg-black pb-5 flex-fill w-100">
-        <div className="row d-flex justify-content-center pt-md-5 px-3 pb-5 flex-fill w-100">
+        <div style={{height: "1rem"}} />
+        <div className="row d-flex justify-content-center pt-md-5 px-3 pb-5 pb-md-2flex-fill w-100">
           <div className="d-none d-md-block col-6 mb-5 mb-md-0 col-md-6 col-lg-3 mr-lg-4">
             <img
               src={jordan_portrait}
