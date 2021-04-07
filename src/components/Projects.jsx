@@ -77,7 +77,7 @@ class Projects extends React.Component {
               </div>
             </a>
             <div className="col-xs-12 col-md-6 mt-3 mt-sm-0">
-              <h2 className="text-primary mb-3 page-header">
+              <h2 className="mb-3 page-header">
                 Data-driven design
               </h2>
               <p>
@@ -95,7 +95,7 @@ class Projects extends React.Component {
                 <Link
                   to="/case-study/data-driven-design"
                   id="data-driven-design"
-                  className="button download-button btn-secondary"
+                  className="button download-button btn-primary"
                 >
                   <span>Case Study</span>
                 </Link>
@@ -113,7 +113,7 @@ class Projects extends React.Component {
               <img className="img-fluid" src={meetly_marketing_site} />
             </a>
             <div className="col-xs-12 col-md-6 mt-3 mt-sm-0">
-              <h2 className="text-primary mb-3 page-header">
+              <h2 className="mb-3 page-header">
                 Early-stage product development
               </h2>
               <p>
@@ -134,7 +134,7 @@ class Projects extends React.Component {
                 <Link
                   to="/case-study/meetly"
                   id="Meetly"
-                  className="button download-button btn-secondary"
+                  className="button download-button btn-primary"
                 >
                   <span>Case Study</span>
                 </Link>

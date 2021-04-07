@@ -19,10 +19,13 @@ class Bio extends React.Component {
           </div>
           <div className="col-md-5">
             <div className="my-auto text-light px-5 mr-md-5 bg-black">
-              <h2 className="text-gray text-uppercase mb-md-3">
-                  <span className="d-none d-md-inline">t-shaped</span> product designer
-                </h2>{" "}
-              <h5 >fluent in French, Spanish and Javascript.</h5>
+              <h1 className="text-primary text-uppercase mb-md-1">
+                  Product designer <span className="text-gray">{" "}+</span>
+                </h1>{" "}
+              <h1 className="text-primary text-uppercase mb-md-3">
+                  Journalism Survivor
+                </h1>{" "}
+              <h3 >Information architecture, systems design, research and Javascript</h3>
               {/*<h5 className="mt-4 mb-3">*/}
                 {/*<span className="text-gray" style={BIG_TEXT}>*/}
                   {/*My product experience*/}

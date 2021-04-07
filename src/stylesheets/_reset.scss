@@ -1,14 +1,18 @@
+@import "variables";
+
+
 html,
 body,
 ul,
 ol {
   margin:  0;
   padding: 0;
-  color: $black;
-  font-family: -apple-system, BlinkMacSystemFont, "Lato", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: "Open Sans",
   sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+
+a.text-primary:focus {
+  color: map_get($theme-colors, "primary") !important;
+}
+
 
