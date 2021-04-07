@@ -29,11 +29,11 @@ class SocialButtons extends React.Component {
             target="_blank"
           />
           <a
-            className="icon twitter"
+            className="icon twitter mx-2"
             href="https://twitter.com/jordanenelson"
             target="_blank"
           />
-          <div>
+          <div className="icon my-email">
             <img
               onMouseEnter={this.toggleEmail}
               onMouseLeave={this.toggleEmail}
@@ -92,7 +92,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className="about">
+      <div className="about bg-black">
         <div className="row d-flex justify-content-center pt-md-5 px-3 pb-5">
           <div className="d-none d-md-block col-6 mb-5 mb-md-0 col-md-6 col-lg-3 mr-lg-4">
             <img
@@ -120,7 +120,7 @@ class About extends React.Component {
             {/*young companies out there who gladly hire generalists.*/}
             {/*</p>*/}
 
-            <div className="d-flex flex-column">
+            <div className="d-flex flex-column text-white">
               <p className="pt-5 p-md-0 mt-1">
                 <img
                   src={jordan_portrait}
@@ -137,7 +137,11 @@ class About extends React.Component {
                 <span className="d-block d-md-none">
                   I never identified as a technical person.
                 </span>{" "}
-                Until I realized JavaScript is just a language – a way to
+                I was a humanities guy, obsessed with French and
+                Spanish.
+              </p>
+              <p>
+                And then I realized JavaScript is just a language – a way to
                 transmit ideas from one system to another.
               </p>
               <p>

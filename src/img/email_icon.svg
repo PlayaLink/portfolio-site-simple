@@ -1,14 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="33px" height="29px" viewBox="0 0 33 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
-    <title>email_icon</title>
-    <desc>Created with Sketch.</desc>
-    <g id="email_icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="mdi-email" transform="translate(0.000000, -2.000000)" fill-rule="nonzero">
-            <g id="Icon" transform="translate(2.000000, 5.000000)" fill="#000000">
-                <path d="M25.5,6 L14.5,12.875 L3.5,6 L3.5,3.25 L14.5,10.125 L25.5,3.25 M25.5,0.5 L3.5,0.5 C1.97375,0.5 0.75,1.72375 0.75,3.25 L0.75,19.75 C0.75,21.2687831 1.98121694,22.5 3.5,22.5 L25.5,22.5 C27.0187831,22.5 28.25,21.2687831 28.25,19.75 L28.25,3.25 C28.25,1.73121694 27.0187831,0.5 25.5,0.5 Z" id="Icon-Shape"></path>
-            </g>
-            <rect id="ViewBox" x="0" y="0" width="33" height="33"></rect>
-        </g>
-    </g>
+<svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M29.5 0.75H2.5C1.90326 0.75 1.33097 0.987053 0.90901 1.40901C0.487053 1.83097 0.25 2.40326 0.25 3V21C0.25 21.5967 0.487053 22.169 0.90901 22.591C1.33097 23.0129 1.90326 23.25 2.5 23.25H29.5C30.0967 23.25 30.669 23.0129 31.091 22.591C31.5129 22.169 31.75 21.5967 31.75 21V3C31.75 2.40326 31.5129 1.83097 31.091 1.40901C30.669 0.987053 30.0967 0.75 29.5 0.75V0.75ZM27.025 3L16 10.6275L4.975 3H27.025ZM2.5 21V4.02375L15.3588 12.9225C15.5471 13.0531 15.7708 13.1232 16 13.1232C16.2292 13.1232 16.4529 13.0531 16.6412 12.9225L29.5 4.02375V21H2.5Z" fill="white"/>
 </svg>
