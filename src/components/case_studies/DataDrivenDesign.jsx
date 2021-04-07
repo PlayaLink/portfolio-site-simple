@@ -59,7 +59,7 @@ class DataDrivenDesign extends Component {
     return (
       <div className="mt-md-5">
         <Title />
-        <SegmentTitle title="Part I - Pushing back" />
+        <SegmentTitle title="Part I - Asking why" />
         <Section title="The ask">
           <div className="d-flex w-50">
             <p>
@@ -77,23 +77,10 @@ class DataDrivenDesign extends Component {
         <Section title="Wait, but why?">
           <div className="d-flex flex-column w-50">
             <p>
-              No one could give me a satisfying answer for why users needed
-              another backups option.
-            </p>
-            <p>
               There was no information about how users were using the current
               backups tool (called CodeGuard) or if they were satisfied with it
               or not.
             </p>
-          </div>
-        </Section>
-        <Section
-          title="Well... business needs"
-          img={
-            <img className="ml-3 img-fluid" style={{ width: "45px" }} src={hand_shake} />
-          }
-        >
-          <div className="d-flex flex-column w-50">
             <p>
               Turns out, we needed to add several add-on products inside our app
               in order to{" "}
@@ -123,8 +110,8 @@ class DataDrivenDesign extends Component {
           <div className="row">
             <div className="col-md-6">
               <p className="mb-5">
-                A simple database query shows that most purchases occur during
-                signup, before the user has interacted with product.
+                A simple database query showed that most purchases occur during
+                signup, before the user had interacted with product.
               </p>
               <div className="mb-3 mx-4">
                 <img className="img-fluid" src={db_report} alt="database report" />
@@ -149,8 +136,8 @@ class DataDrivenDesign extends Component {
               therefore you would need the ability to manage purchased licenses.
             </p>
             <p>
-              But only 3% of all users have more than 5 sites. And only 4% of
-              this 3% have more published websites than available backups
+              But only 3% of all users had more than 5 sites. And only 4% of
+              this 3% had more published websites than available backups
               licenses.
             </p>
             <p>

@@ -204,7 +204,7 @@ const MeetlyResearch = () => (
           </ul>
         </div>
         <h3 className="text-uppercase mt-5 mb-4">
-          Targeting specific personas
+          Focusing on specific jobs-to-be-done
         </h3>
         <div className="col-md-12 pl-0 mb-3">
           <img
