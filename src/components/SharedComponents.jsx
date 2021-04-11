@@ -20,7 +20,7 @@ export function GroupHeader(props) {
 export function GroupTitle(props) {
   const { title, img } = props;
   return (
-    <h3 className="d-flex mb-3 font-weight-normal page-header">
+    <h3 className="d-flex mb-3 font-weight-bold page-header">
       {title} {img}
     </h3>
   );

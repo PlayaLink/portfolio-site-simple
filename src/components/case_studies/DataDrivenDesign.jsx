@@ -10,7 +10,7 @@ import used_the_tool from "../../img/used_the_tool.png";
 import codeguard_pricing from "../../img/codeguard_pricing.png";
 import wix from "../../img/wix.png";
 import squarespace from "../../img/squarespace.png";
-import backups_survey from "../../img/backups_survey.png";
+import checkout from "../../img/checkout.png";
 import db_report from "../../img/db_report.png";
 import "react-vertical-timeline-component/style.min.css";
 import styled from "styled-components";
@@ -21,6 +21,7 @@ import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 import { faTools } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faRefresh } from "@fortawesome/free-solid-svg-icons";
+import backups_user_journey from '../../img/backups_user_journey.png';
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -53,7 +54,7 @@ const Title = () => (
         <div className="col-md-2">
           <GroupTitle title="Solution"/>
         </div>
-        <div className="col-md-6">
+        <div className="col-10 col-md-6">
           <p className="font-weight-regular">
             Research and database reports that exposed the security flaw and generated buy-in for redesigning our backups product installation flow
           </p>
@@ -63,7 +64,7 @@ const Title = () => (
         <div className="col-md-2">
           <GroupTitle title="Outcome"/>
         </div>
-        <div className="col-md-6">
+        <div className="col-10 col-md-6">
           <p className="font-weight-regular">
             My team patched a security flaw that retro-actively backed up websites for all affected users, i.e. 25% of all backups customers
           </p>
@@ -73,9 +74,9 @@ const Title = () => (
         <div className="col-md-2">
           <GroupTitle title="My role"/>
         </div>
-        <div className="col-md-6">
+        <div className="col-10 col-md-6">
           <p className="font-weight-regular">
-            UX designer, data analyst
+            UX designer | User researcher | Data analyst
           </p>
         </div>
       </div>
@@ -213,19 +214,6 @@ class DataDrivenDesign extends Component {
             </div>
           </div>
         </GroupHeader>
-        {/*<GroupHeader title="Protecting the team" eyebrow="Result">*/}
-        {/*<p>*/}
-        {/*Once I showed these conversion numbers to the stakeholder who owns*/}
-        {/*the relationship with the vendor, they understood our concern and*/}
-        {/*<span className="font-weight-bold"> they stopped asking</span> for*/}
-        {/*more upsells in the product.*/}
-        {/*</p>*/}
-        {/*<p>*/}
-        {/*Instead, they went to the marketing dept to see if they could get*/}
-        {/*better real estate for the vendor's products during new user sign up*/}
-        {/*flow – where 95% of purchases were occurring.{" "}*/}
-        {/*</p>*/}
-        {/*</GroupHeader>*/}
         <SectionTitle step="research" className="pb-md-2 pt-md-5">
           <div className="row">
             <div className="col-md-6">
@@ -295,21 +283,26 @@ class DataDrivenDesign extends Component {
                 <span className="text-uppercase">never interacted</span> with
                 the backups UI.
               </p>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html:
-                    '<iframe width="520" height="330" src="https://datastudio.google.com/embed/reporting/4f6fe5e0-f5e9-431e-85e6-23725b5549cb/page/MVFCC" frameborder="0" style="border:0" allowfullscreen>'
-                }}
-              />
+              <div className="embed-responsive embed-responsive-16by9">
+                <div className="embed-responsive-item"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      '<iframe width="520" height="330" src="https://datastudio.google.com/embed/reporting/4f6fe5e0-f5e9-431e-85e6-23725b5549cb/page/MVFCC" frameborder="0" style="border:0" allowfullscreen>'
+                  }}
+                />
+              </div>
+              
             </div>
             <div className="col-md-6">
               <p className="mt-3">Most purchased backups for "peace of mind"</p>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html:
-                    '<iframe width="520" height="330" src="https://datastudio.google.com/embed/reporting/9ce6c0b8-2bb4-485d-84b2-c2e0bfb3b07a/page/MVFCC" frameborder="0" style="border:0" allowfullscreen></iframe>'
-                }}
-              />
+              <div className="embed-responsive embed-responsive-16by9">
+                <div className="embed-responsive-item"
+                     dangerouslySetInnerHTML={{
+                       __html:
+                         '<iframe width="520" height="330" src="https://datastudio.google.com/embed/reporting/9ce6c0b8-2bb4-485d-84b2-c2e0bfb3b07a/page/MVFCC" frameborder="0" style="border:0" allowfullscreen></iframe>'
+                     }}
+                />
+              </div>
             </div>
           </div>
 
@@ -351,15 +344,36 @@ class DataDrivenDesign extends Component {
               <p className="mt-3">
                 The <span className="text-uppercase">trap</span> in the product
               </p>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html:
-                    '<iframe width="520" height="330" src="https://datastudio.google.com/embed/reporting/f4ee941b-ebf7-435d-969e-ad7146877bdf/page/MVFCC" frameborder="0" style="border:0" allowfullscreen></iframe>'
-                }}
-              />
+              <div className="col-md-6">
+                <p className="mt-3">Most purchased backups for "peace of mind"</p>
+                <div className="embed-responsive embed-responsive-16by9">
+                  <div className="embed-responsive-item"
+                       dangerouslySetInnerHTML={{
+                         __html:
+                           '<iframe width="520" height="330" src="https://datastudio.google.com/embed/reporting/f4ee941b-ebf7-435d-969e-ad7146877bdf/page/MVFCC" frameborder="0" style="border:0" allowfullscreen></iframe>'
+                       }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </GroupHeader>
+        <GroupHeader title="User journey mapping">
+          <div className="row">
+            <div className="col-md-6">
+              <p>
+                After exposing this flaw in our installation flow, which was affecting so many of our backups tool users, I wanted to make sure we were accounting for all possible paths for backups purchases.
+              </p>
+              <p>
+                I found multiple ways that a user could fall into a state where they had purchased backups support and yet remained unprotected due to inactivated licenses.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <img src={backups_user_journey} alt="User journey" className="img-fluid" />
+            </div>
+          </div>
+        </GroupHeader>
+        <SectionTitle step="design" />
         <GroupHeader title="Competitive analysis">
           <div className="row">
             <div className="col-md-6">
@@ -390,21 +404,39 @@ class DataDrivenDesign extends Component {
                   <img
                     src={squarespace}
                     alt="Wix and Squarespace"
-                    className="ml-md-5 img-fluid p-5 p-md-4"
+                    className="m-md-5 img-fluid p-5 p-md-4"
                   />
                 </div>
               </div>
             </div>
           </div>
         </GroupHeader>
-        <SectionTitle step="design" />
-        <GroupHeader title="Meeting user expectations">
-          <p>
-            Since 95% of purchases are made via the marketing site sign up flow, the wording used there sets the expectation of how the tool works.
-          </p>
-          <p>
-            The feature "Automated Backups" implies that the tool works "automatically". Our survey data proved that more users are not aware that further action is needed.
-          </p>
+        <GroupHeader title="Aligning the product with our marketing">
+          <div className="row">
+            <div className="col-md-6 d-flex flex-column justify-content-between">
+              <p>
+                Since 95% of purchases are made via the marketing site sign up flow, the wording used there sets the expectation of how the tool works.
+              </p>
+              <p>
+                The feature "Automated Backups" implies that the tool works "automatically". Our survey data proved that more users are not aware that further action is needed.
+              </p>
+            </div>
+            <div className="col-md-3">
+              <img src={checkout} alt="Checkout screen" className="img-fluid" />
+            </div>
+          </div>
+        </GroupHeader>
+        <GroupHeader title="Auto-install available licenses" eyebrow="The solution">
+          <div className="row">
+            <div className="col-md-6 d-flex flex-column justify-content-between">
+              <p>
+                I proposed our V1 solution should focus on CodeGuard users who have less than 6 sites, since that makes >99% of our users.
+              </p>
+              <p>
+                The feature "Automated Backups" implies that the tool works "automatically". Our survey data proved that more users are not aware that further action is needed.
+              </p>
+            </div>
+          </div>
         </GroupHeader>
 
         <SectionTitle step="learn" />
