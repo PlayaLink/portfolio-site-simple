@@ -45,7 +45,7 @@ const Title = () => (
         </div>
         <div className="col-md-6">
           <p className="font-weight-regular">
-            An expensive ask from our business development team that ignored a large gap security gap in our product
+            An expensive, low-impact ask from our business development team that ignored a large gap security gap in our product
           </p>
         </div>
       </div>
@@ -55,7 +55,7 @@ const Title = () => (
         </div>
         <div className="col-md-6">
           <p className="font-weight-regular">
-            Research and database reports that exposed the security flaw and allowed my team to focus on more impactful dev work
+            Research and database reports that exposed the security flaw and generated buy-in for redesigning our backups product installation flow
           </p>
         </div>
       </div>
