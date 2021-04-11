@@ -15,6 +15,7 @@ import db_report from "../../img/db_report.png";
 import "react-vertical-timeline-component/style.min.css";
 import styled from "styled-components";
 import { GroupHeader } from "../SharedComponents.jsx";
+import { GroupTitle } from "../SharedComponents.jsx";
 import { SectionTitle } from "../SharedComponents.jsx";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 import { faTools } from "@fortawesome/free-solid-svg-icons";
@@ -35,12 +36,48 @@ const Dot = styled.span`
 const Title = () => (
   <div className="my-5 py-5">
     <div className="horizontal-container">
-      <div className="col-12 col-md-8 pl-0">
+      <div className="col-12 col-md-8 pl-0 mb-5">
         <h1 className="display-4 page-header">Data-driven design</h1>
-        <h3 className="font-weight-regular">
-          How asking “why” protected my team from an expensive ask and uncovered
-          a critical trap in the product
-        </h3>
+      </div>
+      <div className="row">
+        <div className="col-md-2">
+          <GroupTitle title="Problem"/>
+        </div>
+        <div className="col-md-6">
+          <p className="font-weight-regular">
+            An expensive ask from our business development team that ignored a large gap security gap in our product
+          </p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-2">
+          <GroupTitle title="Solution"/>
+        </div>
+        <div className="col-md-6">
+          <p className="font-weight-regular">
+            Research and database reports that exposed the security flaw and allowed my team to focus on more impactful dev work
+          </p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-2">
+          <GroupTitle title="Outcome"/>
+        </div>
+        <div className="col-md-6">
+          <p className="font-weight-regular">
+            My team patched a security flaw that retro-actively backed up websites for all affected users, i.e. 25% of all backups customers
+          </p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-2">
+          <GroupTitle title="My role"/>
+        </div>
+        <div className="col-md-6">
+          <p className="font-weight-regular">
+            UX designer, data analyst
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -51,7 +88,7 @@ class DataDrivenDesign extends Component {
     return (
       <div className="mt-md-5">
         <Title />
-        <SectionTitle title="Discovery" icon={faLightbulb} />
+        <SectionTitle step="discovery" />
 
         <GroupHeader title="The ask">
           <div className="row">
@@ -86,43 +123,6 @@ class DataDrivenDesign extends Component {
                 using the current backups tool (called CodeGuard) or if they
                 were satisfied with it or not.
               </p>
-            </div>
-          </div>
-        </GroupHeader>
-        <GroupHeader title="Competitive analysis">
-          <div className="row">
-            <div className="col-md-6">
-              <p>
-                Wix and Squarespace – our two largest competitors – do not even
-                offer “website backups” as an add-on product.
-              </p>
-              <p>
-                Instead, these companies{" "}
-                <span className="text-uppercase">automatically back up </span> a
-                user’s content as part of their core offering.
-              </p>
-              <p>
-                The user does not have to take any additional action for their
-                website to be protected from crashes or attacks.
-              </p>
-            </div>
-            <div className="col-md-6">
-              <div className="row">
-                <div className="col-md-7 d-flex align-items-center justify-content-center">
-                  <img
-                    src={wix}
-                    alt="Wix and Squarespace"
-                    className="ml-md-5 img-fluid p-5 p-md-4"
-                  />
-                </div>
-                <div className="col-md-5 d-flex align-items-center justify-content-center">
-                  <img
-                    src={squarespace}
-                    alt="Wix and Squarespace"
-                    className="ml-md-5 img-fluid p-5 p-md-4"
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </GroupHeader>
@@ -226,7 +226,7 @@ class DataDrivenDesign extends Component {
         {/*flow – where 95% of purchases were occurring.{" "}*/}
         {/*</p>*/}
         {/*</GroupHeader>*/}
-        <SectionTitle title="Research" icon={faSearch}>
+        <SectionTitle step="research" className="pb-md-2 pt-md-5">
           <div className="row">
             <div className="col-md-6">
               <p className="mt-3">
@@ -360,40 +360,54 @@ class DataDrivenDesign extends Component {
             </div>
           </div>
         </GroupHeader>
-        <GroupHeader title="Umm... why do we require manual activation?">
-          <p>
-            Because, <span className="font-weight-bold">in theory</span>, a user
-            could have more websites than paid licenses, and we would have no
-            way of knowing which websites they wanted protected.
-          </p>
-        </GroupHeader>
-        <GroupHeader title="But the data tell a different story">
+        <GroupHeader title="Competitive analysis">
           <div className="row">
             <div className="col-md-6">
-              {" "}
               <p>
-                Another database query showed that 97% of our users had 5
-                published websites or less.
+                Wix and Squarespace – our two largest competitors – do not even
+                offer “website backups” as an add-on product.
               </p>
-              <img
-                src={website_count}
-                alt="Survey results"
-                className="img-fluid"
-              />
               <p>
-                This means that at least 97% of our users would be fully covered
-                by CodeGuard's lowest-tier plan:
+                Instead, these companies{" "}
+                <span className="text-uppercase">automatically back up </span> a
+                user’s content as part of their core offering.
+              </p>
+              <p>
+                The user does not have to take any additional action for their
+                website to be protected from crashes or attacks.
               </p>
             </div>
-          </div>
-          <div className="col-md-6">
-            <img
-              src={codeguard_pricing}
-              alt="Survey results"
-              className="img-fluid"
-            />
+            <div className="col-md-6">
+              <div className="row">
+                <div className="col-md-7 d-flex align-items-center justify-content-center">
+                  <img
+                    src={wix}
+                    alt="Wix and Squarespace"
+                    className="ml-md-5 img-fluid p-5 p-md-4"
+                  />
+                </div>
+                <div className="col-md-5 d-flex align-items-center justify-content-center">
+                  <img
+                    src={squarespace}
+                    alt="Wix and Squarespace"
+                    className="ml-md-5 img-fluid p-5 p-md-4"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </GroupHeader>
+        <SectionTitle step="design" />
+        <GroupHeader title="Meeting user expectations">
+          <p>
+            Since 95% of purchases are made via the marketing site sign up flow, the wording used there sets the expectation of how the tool works.
+          </p>
+          <p>
+            The feature "Automated Backups" implies that the tool works "automatically". Our survey data proved that more users are not aware that further action is needed.
+          </p>
+        </GroupHeader>
+
+        <SectionTitle step="learn" />
 
         <GroupHeader
           title="Fixed trap affecting 23% of backups customers"
