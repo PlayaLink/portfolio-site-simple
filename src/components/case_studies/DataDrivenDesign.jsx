@@ -22,6 +22,7 @@ import { faTools } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faRefresh } from "@fortawesome/free-solid-svg-icons";
 import backups_user_journey from '../../img/backups_user_journey.png';
+import { PageTitle } from '../SharedComponents';
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -35,11 +36,9 @@ const Dot = styled.span`
 `;
 
 const Title = () => (
-  <div className="my-5 py-5">
+  <div className="mb-5 mt-md-5 py-5">
     <div className="horizontal-container">
-      <div className="col-12 col-md-8 pl-0 mb-5">
-        <h1 className="display-4 page-header">Data-driven design</h1>
-      </div>
+      <PageTitle title="Data-driven design"/>
       <div className="row">
         <div className="col-md-2">
           <GroupTitle title="Problem"/>
@@ -66,7 +65,7 @@ const Title = () => (
         </div>
         <div className="col-10 col-md-6">
           <p className="font-weight-regular">
-            My team patched a security flaw that retro-actively backed up websites for all affected users, i.e. 25% of all backups customers
+            My team patched a major security flaw and retro-actively backed up websites for all affected users, i.e. 23% of all backups customers
           </p>
         </div>
       </div>
@@ -341,19 +340,16 @@ class DataDrivenDesign extends Component {
               </p>
             </div>
             <div className="col-md-6">
-              <p className="mt-3">
-                The <span className="text-uppercase">trap</span> in the product
+              <p className="">
+                A UX fail...
               </p>
-              <div className="col-md-6">
-                <p className="mt-3">Most purchased backups for "peace of mind"</p>
-                <div className="embed-responsive embed-responsive-16by9">
-                  <div className="embed-responsive-item"
-                       dangerouslySetInnerHTML={{
-                         __html:
-                           '<iframe width="520" height="330" src="https://datastudio.google.com/embed/reporting/f4ee941b-ebf7-435d-969e-ad7146877bdf/page/MVFCC" frameborder="0" style="border:0" allowfullscreen></iframe>'
-                       }}
-                  />
-                </div>
+              <div className="embed-responsive embed-responsive-16by9">
+                <div className="embed-responsive-item"
+                     dangerouslySetInnerHTML={{
+                       __html:
+                         '<iframe width="520" height="330" src="https://datastudio.google.com/embed/reporting/f4ee941b-ebf7-435d-969e-ad7146877bdf/page/MVFCC" frameborder="0" style="border:0" allowfullscreen></iframe>'
+                     }}
+                />
               </div>
             </div>
           </div>
@@ -426,7 +422,7 @@ class DataDrivenDesign extends Component {
             </div>
           </div>
         </GroupHeader>
-        <GroupHeader title="Auto-install available licenses" eyebrow="The solution">
+        <GroupHeader title="Auto-install licenses for new backups purchases" eyebrow="The solution">
           <div className="row">
             <div className="col-md-6 d-flex flex-column justify-content-between">
               <p>
@@ -442,14 +438,35 @@ class DataDrivenDesign extends Component {
         <SectionTitle step="learn" />
 
         <GroupHeader
-          title="Fixed trap affecting 23% of backups customers"
-          eyebrow="Result"
+          title="Retroactively install licenses for unprotected users"
+          eyebrow="Fast follow"
         >
-          <p>
-            Not only did we start auto-installing all available CodeGuard
-            licenses, we retroactively auto-installed licenses on the 23% of
-            users who had been affected in the past.
-          </p>
+          <div className="row">
+            <div className="col-md-6">
+              <p>
+                Not only did we start auto-installing all available CodeGuard
+                licenses, we retroactively auto-installed licenses on the 23% of
+                users who had been affected in the past.
+              </p>
+            </div>
+          </div>
+        </GroupHeader>
+        <GroupHeader
+          title="What I learned"
+        >
+          <div className="row">
+            <div className="col-md-6">
+              <p>
+                Not to blindly execute on asks from internal stakeholders.
+              </p>
+              <p>
+                Understand the full context of the ask, so I know if and when it is appropriate to push back.
+              </p>
+              <p>
+                Hard numbers resonate stronger than pretty designs and well-articulated opinions.
+              </p>
+            </div>
+          </div>
         </GroupHeader>
       </div>
     );

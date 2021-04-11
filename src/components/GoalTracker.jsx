@@ -7,7 +7,6 @@ import ProblemCarousel from './ProblemCarousel';
 import SolutionCarousel from './SolutionCarousel';
 import Slide from './Slide';
 
-
 class GoalTracker extends React.Component {
   constructor (props) {
     super(props);

@@ -5,6 +5,15 @@ import { faTools } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faSync } from "@fortawesome/free-solid-svg-icons";
 
+export function PageTitle(props) {
+  const { title } = props;
+  return (
+    <div className="col-12 col-md-8 pl-0 mb-5">
+      <h1 className="display-4 page-header pb-md-5">{title}</h1>
+    </div>
+  );
+}
+
 export function GroupHeader(props) {
   const { title, img, children, eyebrow, noContainer } = props;
   return (
