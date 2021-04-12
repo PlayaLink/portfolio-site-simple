@@ -350,20 +350,20 @@ const NoExtraWork = () => (
         </p>
         <img src={automations} alt="" />
       </GroupHeader>
-      <MediaExample
-        subtitle="Solution II"
+      <GroupHeader
+        eyebrow="Solution II"
         className="ml-md-5 pl-md-5"
         title="Leverage calendar to organize meeeting notes"
-        id="calendar-integration"
-        body={
-          <p>
-            Meeting notes live on top of a user's calendar events. Meeting
-            information stays in sync. Cross-linking allows you to find your
-            notes via your calendar.
-          </p>
-        }
-        video={calendar_integration}
-      />
+      >
+        <p>
+          Meeting notes live on top of a user's calendar events. Meeting
+          information stays in sync. Cross-linking allows you to find your
+          notes via your calendar.
+        </p>
+        <div className="">
+          <PlayOnScroll video={calendar_integration} id="calendar-integration" />
+        </div>
+      </GroupHeader>
     </div>
   </div>
 );
