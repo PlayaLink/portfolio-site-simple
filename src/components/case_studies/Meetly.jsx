@@ -43,8 +43,8 @@ const TimelineItem = props => (
 );
 
 const MeetlyIntro = () => (
-  <div className="mt-5">
-    <div className="container">
+  <div className="my-5 bg-light">
+    <div className="container pb-3">
       <div className="col-12 col-md-8 pl-0">
         <h1 className="display-4 page-header">
           Developing an idea into a venture-backed startup
@@ -70,7 +70,7 @@ const MeetlyIntro = () => (
       <div className="mt-md-3" style={{ height: "3rem" }} />
 
       <div className="d-flex flex-column">
-        <h3 className="font-weight-light mb-3">The Web App</h3>
+        <GroupTitle title="The web app"/>
         <div className="mb-5">
           <img
             alt="Meetly"
@@ -81,7 +81,8 @@ const MeetlyIntro = () => (
         </div>
       </div>
       <div className="d-flex flex-column mt-5">
-        <h3 className="font-weight-light">The Chrome Extension</h3>
+        <GroupTitle title="The Chrome extension"/>
+
         <div className="mb-5">
           <img
             alt="Monday integration"
@@ -92,7 +93,8 @@ const MeetlyIntro = () => (
         </div>
       </div>
       <div className="d-flex flex-column mt-5">
-        <h3 className="font-weight-light">The monday.com Integration</h3>
+        <GroupTitle title="The monday.com integration"/>
+
         <div className="mb-5">
           <img
             alt="Monday integration"
@@ -109,7 +111,7 @@ const MeetlyIntro = () => (
 
 const MeetlyBackground = () => (
   <div className="bg-white">
-    <div className="container pt-5">
+    <div className="container">
       <div className="col-12 col-md-8 pl-0">
         <h1 className="display-4 mb-5 page-header">Context</h1>
         <GroupTitle title="How Meetly started" />
@@ -176,7 +178,7 @@ const MeetlyBackground = () => (
 
 const MeetlyResearch = () => (
   <div className="bg-light">
-    <div className="container">
+    <div className="container pt-5">
       <div className="col-12 col-md-8 pl-0">
         <div className="mb-5">
           <h1 className="display-4 mb-3 page-header">Research</h1>
@@ -285,7 +287,7 @@ const MeetlyResearch = () => (
           <div className="row">
             <div className="col-md-9">
               <div className="d-flex flex-wrap flex-lg-nowrap my-4">
-                <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
+                <div className="col-12 col-lg-6 bg-primary-light rounded-circle d-flex flex-column justify-content-center">
                   <div className="p-5">
                     <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal">
                       Self-serve Product
@@ -296,7 +298,7 @@ const MeetlyResearch = () => (
                   </div>
                 </div>
                 <div className="m-2" />
-                <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
+                <div className="col-12 col-lg-6 bg-primary-light rounded-circle d-flex flex-column justify-content-center">
                   <div className="p-5">
                     <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2">
                       Enterprise product
@@ -314,10 +316,76 @@ const MeetlyResearch = () => (
   </div>
 );
 
-const NoExtraWork = () => (
-  <div className="bg-light mt-5">
+const DesignPrinciple1 = () => (
+  <div className="bg-white">
     <div className="container mb-0">
-      <div className="col-12 col-md-9 pl-0">
+      <h1 className="display-4 py-5 page-header">Design principles</h1>
+      {/*Design principle #1*/}
+      <div className="bg-light pt-4 px-3 rounded-big">
+        <GroupHeader
+          eyebrow="Problem"
+          title="Difficult to enforce good meeting structure"
+        >
+          <p>
+            Most people know meetings without agendas are less focused. And that
+            meetings without clear action items are a big no-no.{" "}
+          </p>
+          <p>But it's not easy to get a team to adopt better meeting habits.</p>
+        </GroupHeader>
+        <GroupHeader
+          className="ml-md-5"
+          eyebrow="Design Principle"
+          title="Be prescriptive, but flexible"
+        >
+          <p>
+            We wanted Meetly to be intuitive as a tool, but also "educational"
+            when it comes to good meeting hygiene.
+          </p>
+          <p>
+            When a user clicks on a meeting, it should be immediately obvious
+            what they need to do – both as a user of the tool and as a
+            responsible meeting organizer or participant.
+          </p>
+        </GroupHeader>
+        <GroupHeader
+          eyebrow="Solution I"
+          className="ml-md-5 pl-md-5"
+          title="Default notes structure"
+        >
+          <p>
+            We include cards for agenda, action items, notes and decisions by
+            default. This arrangement&nbsp;
+            <em className="font-weight-bold">
+              encourages meeting best practices
+            </em>{" "}
+            while allowing a user to remove, add or rename cards as needed.
+          </p>
+          <div className="">
+            <PlayOnScroll video={add_remove_cards} id="structured-notes" />
+          </div>
+        </GroupHeader>
+        <GroupHeader
+          eybrow="Solution II"
+          className="ml-md-5 pl-md-5"
+          title="Customizable templates"
+        >
+          <p>
+            Users can create custom card arrangements for different meeting
+            types.
+          </p>
+          <div className="">
+            <PlayOnScroll video={choose_template} id="structured-notes" />
+          </div>
+        </GroupHeader>
+      </div>
+    </div>
+  </div>
+);
+
+const DesignPrinciple2 = () => (
+  <div className="bg-white mt-5">
+    <div className="container mb-0 pt-5">
+      <div className="bg-light pt-4 px-3 rounded-big">
         <GroupHeader eyebrow="Problem" title="App fatigue">
           <p>
             More tools means more logins to manage, more trainings for teams to
@@ -337,33 +405,90 @@ const NoExtraWork = () => (
             The goal was to integration into a users existing meeting workflow,
             so that we bring value without more tools to manage.
           </p>
+          <GroupHeader
+            eyebrow="Solution I"
+            className="ml-md-5 pl-md-5"
+            title="Automate meeting management workflow"
+          >
+            <p>
+              Automations provide organizational value without requiring the
+              meeting organizer to expend any energy.
+            </p>
+            <img src={automations} alt="" />
+          </GroupHeader>
+          <GroupHeader
+            eyebrow="Solution II"
+            className="ml-md-5 pl-md-5"
+            title="Leverage calendar to organize meeeting notes"
+          >
+            <p>
+              Meeting notes live on top of a user's calendar events. Meeting
+              information stays in sync. Cross-linking allows you to find your
+              notes via your calendar.
+            </p>
+            <div className="">
+              <PlayOnScroll
+                video={calendar_integration}
+                id="calendar-integration"
+              />
+            </div>
+          </GroupHeader>
         </GroupHeader>
       </div>
-      <GroupHeader
-        eyebrow="Solution I"
-        className="ml-md-5 pl-md-5"
-        title="Automate meeting management workflow"
-      >
-        <p>
-          Automations provide organizational value without requiring the
-          meeting organizer to expend any energy.
-        </p>
-        <img src={automations} alt="" />
-      </GroupHeader>
-      <GroupHeader
-        eyebrow="Solution II"
-        className="ml-md-5 pl-md-5"
-        title="Leverage calendar to organize meeeting notes"
-      >
-        <p>
-          Meeting notes live on top of a user's calendar events. Meeting
-          information stays in sync. Cross-linking allows you to find your
-          notes via your calendar.
-        </p>
-        <div className="">
-          <PlayOnScroll video={calendar_integration} id="calendar-integration" />
-        </div>
-      </GroupHeader>
+    </div>
+  </div>
+);
+
+const DesignPrinciple3 = () => (
+  <div className="bg-white mt-5">
+    <div className="container mb-0">
+      <div className="bg-light pt-4 px-3 rounded-big">
+        <GroupHeader eyebrow="Problem" title="Siloed information">
+          <p>
+            Another productivity tool means another system to manage, another
+            place for information to be lost, another walled garden that people
+            need to log in to to access.{" "}
+          </p>
+        </GroupHeader>
+        <GroupHeader
+          className="mt-5 ml-md-5"
+          eyebrow="Design Principle"
+          title="Make it easy to find and share notes"
+        >
+          <p>
+            A common complaint we heard was that meeting minutes get shared via
+            email, often as attachments or links to services that require login,
+            making it difficult to reference later and contributes to email
+            clutter.
+          </p>
+        </GroupHeader>
+        <GroupHeader
+          eyebrow="Solution I"
+          className="mt-5 ml-md-5 pl-md-5"
+          title="Robust search"
+        >
+          <p>
+            The ability to search across all notes and meetings makes it easy to
+            reference past topics.
+          </p>
+          <div className="">
+            <PlayOnScroll video={search} id="robust-search" />
+          </div>
+        </GroupHeader>
+        <GroupHeader
+          eyebrow="Solution II"
+          className="ml-md-5 pl-md-5"
+          title="Meeting Groups"
+        >
+          <p>
+            Grouping meetings together around a topic, team or project is
+            another way users could organize and quickly reference content
+          </p>
+          <div className="">
+            <PlayOnScroll video={meeting_groups} id="meeting-groups" />
+          </div>
+        </GroupHeader>
+      </div>
     </div>
   </div>
 );
@@ -393,188 +518,16 @@ class PlayOnScroll extends React.Component {
   }
 }
 
-class MediaExample extends React.Component {
-  render() {
-    const { title, body, video, id, className, subtitle, image } = this.props;
-    return (
-      <div className={`${className}`}>
-        <div className="col-12 col-md-8 pl-0">
-          <SubtitleTitleBody subtitle={subtitle} title={title} body={body} />
-        </div>
-        {!!video && (
-          <div className="">
-            <PlayOnScroll video={video} id={id} />
-          </div>
-        )}
-        {!!image && (
-          <div>
-            <img className="img-fluid" src={image} alt="image" />
-          </div>
-        )}
-      </div>
-    );
-  }
-}
-
-const PrescriptiveButFlexible = () => (
-  <div className="bg-white mt-5">
-    <div className="container mb-0">
-      <h1 className="display-4 pt-5 page-header">Design principles</h1>
-      <div className="col-12 col-md-9 pl-0">
-        <SubtitleTitleBody
-          subtitle="Problem"
-          title="Difficult to enforce good meeting structure"
-          body={[
-            <p>
-              Most people know meetings without agendas are less focused. And
-              that meetings without clear action items are a big no-no.{" "}
-            </p>,
-            <p>
-              But it's not easy to get a team to adopt better meeting habits.
-            </p>
-          ]}
-        />
-        <SubtitleTitleBody
-          className="ml-md-5"
-          subtitle="Design Principle"
-          title="Be prescriptive, but flexible"
-          body={[
-            <p>
-              We wanted Meetly to be intuitive as a tool, but also "educational"
-              when it comes to good meeting hygiene.
-            </p>,
-            <p>
-              When a user clicks on a meeting, it should be immediately obvious
-              what they need to do – both as a user of the tool and as a
-              responsible meeting organizer or participant.
-            </p>
-          ]}
-        />
-      </div>
-      <MediaExample
-        subtitle="Solution I"
-        className="ml-md-5 pl-md-5"
-        title="Default notes structure"
-        id="structured-notes"
-        body={
-          <span>
-            We include cards for agenda, action items, notes and decisions by
-            default. This arrangement&nbsp;
-            <em className="font-weight-bold">
-              encourages meeting best practices
-            </em>{" "}
-            while allowing a user to remove, add or rename cards as needed.
-          </span>
-        }
-        video={add_remove_cards}
-      />
-      <MediaExample
-        subtitle="Solution II"
-        className="ml-md-5 pl-md-5"
-        title="Customizable templates"
-        id="meeting-templates"
-        body={
-          <span>
-            Users can create custom card arrangements for different meeting
-            types.
-          </span>
-        }
-        video={choose_template}
-      />
-    </div>
-  </div>
-);
-
-const EasyToReference = () => (
-  <div className="bg-light pt-5">
-    <div className="container mb-0">
-      <div className="col-12 col-md-9 pl-0">
-        <SubtitleTitleBody
-          subtitle="Problem"
-          title="Siloed information"
-          body={[
-            <p>
-              Another productivity tool means another system to manage, another
-              place for information to be lost, another walled garden that
-              people need to log in to to access.{" "}
-            </p>
-          ]}
-        />
-        <SubtitleTitleBody
-          className="mt-5 ml-md-5"
-          subtitle="Design Principle"
-          title="Make it easy to find and share notes"
-          body={[
-            <p>
-              A common complaint we heard was that meeting minutes get shared
-              via email, often as attachments or links to services that require
-              login, making it difficult to reference later and contributes to
-              email clutter.
-            </p>
-          ]}
-        />
-      </div>
-      <MediaExample
-        subtitle="Solution I"
-        className="mt-5 ml-md-5 pl-md-5"
-        title="Robust search"
-        id="robust-search"
-        body={
-          <span>
-            The ability to search across all notes and meetings makes it easy to
-            reference past topics.
-          </span>
-        }
-        video={search}
-      />
-      <MediaExample
-        subtitle="Solution II"
-        className="ml-md-5 pl-md-5"
-        title="Meeting Groups"
-        id="meeting-groups"
-        body={
-          <span>
-            Grouping meetings together around a topic, team or project is
-            another way users could organize and quickly reference content
-          </span>
-        }
-        video={meeting_groups}
-      />
-    </div>
-  </div>
-);
-
-const SectionTitle = props => {
-  const { heading, title } = props;
-  return (
-    <React.Fragment>
-      <h5 className="text-uppercase text-muted mt-5 mb-3">{heading}</h5>
-      <h2 className="text-uppercase">{title}</h2>
-    </React.Fragment>
-  );
-};
-
-const SubtitleTitleBody = props => {
-  const { subtitle, title, body, className } = props;
-  return (
-    <div className={`mt-5 ${className}`}>
-      <h5 className="text-uppercase text-muted">{subtitle}</h5>
-      <h2 className="text-uppercase">{title}</h2>
-      {body}
-    </div>
-  );
-};
-
 class Meetly extends Component {
   render() {
     return (
-      <div className="">
+      <div className="bg-white pb-5">
         <MeetlyIntro />
         <MeetlyBackground />
         <MeetlyResearch />
-        <PrescriptiveButFlexible />
-        <NoExtraWork />
-        <EasyToReference />
+        <DesignPrinciple1 />
+        <DesignPrinciple2 />
+        <DesignPrinciple3 />
       </div>
     );
   }

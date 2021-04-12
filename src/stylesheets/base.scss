@@ -44,6 +44,12 @@ body {
   font-weight: bold;
 }
 
+.rounded-big {
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  border-radius: 1.5rem;
+}
+
 .horizontal-container {
   margin-left: auto;
   margin-right: auto;
