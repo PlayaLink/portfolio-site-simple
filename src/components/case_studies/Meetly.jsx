@@ -18,6 +18,7 @@ import { Tooltip } from "react-tippy";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Redirect } from "react-router-dom";
+import { GroupHeader, GroupTitle } from "../SharedComponents";
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -111,7 +112,7 @@ const MeetlyBackground = () => (
     <div className="container pt-5">
       <div className="col-12 col-md-8 pl-0">
         <h1 className="display-4 mb-5 page-header">Context</h1>
-        <h3 className="text-uppercase">How Meetly started</h3>
+        <GroupTitle title="How Meetly started" />
         <p className="">
           The idea for Meetly grew out of user research I conducted at POPin, an
           employee survey startup that was running out of runway.
@@ -126,7 +127,7 @@ const MeetlyBackground = () => (
         <div className="col-12 col-md-8 pl-0">
           <div className="row">
             <div className="col-12 col-md-6">
-              <h3 className="text-uppercase">The team</h3>
+              <GroupTitle title="The team" />
               <ul className="ml-4">
                 <li className="my-3">1 technical product manager</li>
                 <li className="my-3">2 back-end engineers</li>
@@ -135,7 +136,7 @@ const MeetlyBackground = () => (
               </ul>
             </div>
             <div className="col-12 col-md-6 mt-5 mt-md-0">
-              <h3 className="text-uppercase">My role</h3>
+              <GroupTitle title="My role" />
               <p className="">
                 I owned the user research efforts and was responsible for the
                 entire user experience, from product design to video tutorials
@@ -151,7 +152,7 @@ const MeetlyBackground = () => (
       </div>
       <div className="d-flex mt-5 pb-5">
         <div className="col-12 col-md-8 pl-0">
-          <h3 className="text-uppercase">Timeline</h3>
+          <GroupTitle title="Timeline" />
           {/*<h5 className="font-weight-light">Most of the greenfield design research occured in spring of 2019.</h5>*/}
           {/*<h5 className="font-weight-light">In June 2019, our team of four left POPin to develop Meetly.</h5>*/}
           <ul className="ml-4 mt-4">
@@ -177,54 +178,64 @@ const MeetlyResearch = () => (
   <div className="bg-light">
     <div className="container">
       <div className="col-12 col-md-8 pl-0">
-        <h1 className="display-4 mb-3 page-header">Research</h1>
-        <p>
-          While conducting greenfield research with POPin users to identify new
-          product opportunities, we discovered people were using our survey tool
-          to <span className="font-weight-bold">solve a problem</span> that was
-          not on our radar:{" "}
-          <span className="font-weight-bold">
-            time wasted in unnecessary or unproductive meetings
-          </span>
-          .
-        </p>
-        <p>
-          Recognizing an opportunity, we stopped asking people about POPin and
-          refocused our research efforts:
-        </p>
-        <h3 className="text-uppercase mt-5 mb-4">Questions</h3>
-        <div className="">
-          <ul className="ml-4 mt-4">
-            <li className="my-3">what makes for a successful meeting?</li>
-            <li className="my-3">
-              what are the impediments to a successful meeting?
-            </li>
-            <li className="my-3">how are people solving these challenges?</li>
-            <li className="my-3">what tools are they using?</li>
-          </ul>
+        <div className="mb-5">
+          <h1 className="display-4 mb-3 page-header">Research</h1>
+          <p>
+            While conducting greenfield research with POPin users to identify
+            new product opportunities, we discovered people were using our
+            survey tool to{" "}
+            <span className="">solve a problem</span> that was
+            not on our radar:{" "}
+            <span className="text-uppercase">
+              time wasted in unnecessary or unproductive meetings
+            </span>
+            .
+          </p>
+          <p>
+            Recognizing an opportunity, we stopped asking people about POPin and
+            refocused our research efforts:
+          </p>
         </div>
-        <h3 className="text-uppercase mt-5 mb-4">
-          Focusing on specific jobs-to-be-done
-        </h3>
+        <GroupHeader title="Questions" noContainer={true}>
+          <div className="">
+            <ul className="ml-4 mt-4">
+              <li className="my-3">what makes for a successful meeting?</li>
+              <li className="my-3">
+                what are the impediments to a successful meeting?
+              </li>
+              <li className="my-3">how are people solving these challenges?</li>
+              <li className="my-3">what tools are they using?</li>
+            </ul>
+          </div>
+        </GroupHeader>
+        <GroupHeader
+          title="Targeting users with specific jobs-to-be-done"
+          noContainer={true}
+        >
+          <div className="col-md-12 pl-0 mb-3">
+            <img
+              className="img-fluid"
+              src={users_interview_screening}
+              alt="User survey"
+            />
+          </div>
+          <div className="col-md-12 ml-0">
+            <img
+              className="img-fluid mt-5"
+              src={screened_respondents}
+              alt="Screened respondents"
+            />
+          </div>
+        </GroupHeader>
+        <GroupHeader title="User interviews"/>
         <div className="col-md-12 pl-0 mb-3">
           <img
             className="img-fluid"
-            src={users_interview_screening}
-            alt="User survey"
+            src={user_interviews}
+            alt="Users inteviews"
           />
         </div>
-        <div className="col-md-12 ml-0">
-          <img
-            className="img-fluid"
-            src={screened_respondents}
-            alt="Screened respondents"
-          />
-        </div>
-        <h3 className="text-uppercase mt-5 mb-4">User Interviews</h3>
-        <div className="col-md-12 pl-0 mb-3">
-          <img className="img-fluid" src={user_interviews} alt="Users inteviews" />
-        </div>
-        <h3 className="text-uppercase mt-5 mb-4">Key Observations</h3>
+        <GroupHeader title="User observations"/>
         <ul className="ml-4">
           <li className="my-3">
             <div className="d-flex flex-column">
@@ -337,7 +348,8 @@ const NoExtraWork = () => (
         id="calendar-integration"
         body={
           <p>
-            Automations provide organizational value without requiring the meeting organizer to expend any energy.
+            Automations provide organizational value without requiring the
+            meeting organizer to expend any energy.
           </p>
         }
         image={automations}
@@ -393,12 +405,12 @@ class MediaExample extends React.Component {
         <div className="col-12 col-md-8 pl-0">
           <SubtitleTitleBody subtitle={subtitle} title={title} body={body} />
         </div>
-        { !!video && (
+        {!!video && (
           <div className="">
             <PlayOnScroll video={video} id={id} />
           </div>
         )}
-        { !! image && (
+        {!!image && (
           <div>
             <img className="img-fluid" src={image} alt="image" />
           </div>
@@ -418,8 +430,8 @@ const PrescriptiveButFlexible = () => (
           title="Difficult to enforce good meeting structure"
           body={[
             <p>
-              Most people know meetings without agendas are less focused. And that meetings without clear
-              action items are a big no-no.{" "}
+              Most people know meetings without agendas are less focused. And
+              that meetings without clear action items are a big no-no.{" "}
             </p>,
             <p>
               But it's not easy to get a team to adopt better meeting habits.
@@ -487,7 +499,8 @@ const EasyToReference = () => (
           body={[
             <p>
               Another productivity tool means another system to manage, another
-              place for information to be lost, another walled garden that people need to log in to to access.{" "}
+              place for information to be lost, another walled garden that
+              people need to log in to to access.{" "}
             </p>
           ]}
         />
@@ -497,9 +510,10 @@ const EasyToReference = () => (
           title="Make it easy to find and share notes"
           body={[
             <p>
-              A common complaint we heard was that meeting minutes get shared via
-              email, often as attachments or links to services that require login, making it difficult to reference
-              later and contributes to email clutter.
+              A common complaint we heard was that meeting minutes get shared
+              via email, often as attachments or links to services that require
+              login, making it difficult to reference later and contributes to
+              email clutter.
             </p>
           ]}
         />
