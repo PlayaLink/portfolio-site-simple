@@ -183,8 +183,7 @@ const MeetlyResearch = () => (
           <p>
             While conducting greenfield research with POPin users to identify
             new product opportunities, we discovered people were using our
-            survey tool to{" "}
-            <span className="">solve a problem</span> that was
+            survey tool to <span className="">solve a problem</span> that was
             not on our radar:{" "}
             <span className="text-uppercase">
               time wasted in unnecessary or unproductive meetings
@@ -212,100 +211,104 @@ const MeetlyResearch = () => (
           title="Targeting users with specific jobs-to-be-done"
           noContainer={true}
         >
-          <div className="col-md-12 pl-0 mb-3">
+          <div className="py-md-3">
+            <div className="">
+              <img
+                className="img-fluid"
+                src={users_interview_screening}
+                alt="User survey"
+              />
+            </div>
+            <div className="">
+              <img
+                className="img-fluid mt-5"
+                src={screened_respondents}
+                alt="Screened respondents"
+              />
+            </div>
+          </div>
+        </GroupHeader>
+        <GroupHeader title="User interviews">
+          <div className="pl-0 mb-3">
             <img
               className="img-fluid"
-              src={users_interview_screening}
-              alt="User survey"
-            />
-          </div>
-          <div className="col-md-12 ml-0">
-            <img
-              className="img-fluid mt-5"
-              src={screened_respondents}
-              alt="Screened respondents"
+              src={user_interviews}
+              alt="Users inteviews"
             />
           </div>
         </GroupHeader>
-        <GroupHeader title="User interviews"/>
-        <div className="col-md-12 pl-0 mb-3">
-          <img
-            className="img-fluid"
-            src={user_interviews}
-            alt="Users inteviews"
-          />
-        </div>
-        <GroupHeader title="User observations"/>
-        <ul className="ml-4">
-          <li className="my-3">
-            <div className="d-flex flex-column">
-              <span>Difficult to enforce proper meeting hygiene</span>
-              <span>
-                e.g. every meeting should have an agenda and action items
-              </span>
-            </div>
-          </li>
-          <li className="my-3">
-            Lack of accountability around tasks assigned / decisions made
-          </li>
-          <li className="my-3">
-            Existing solutions are{" "}
-            <Tooltip
-              // options
-              title="Asana, Monday, Confluence, etc"
-              position="top"
-              trigger="mouseenter"
-              className="text-primary"
-            >
-              too complex
-            </Tooltip>{" "}
-            or too{" "}
-            <Tooltip
-              // options
-              title="Google Docs, Trello"
-              position="top"
-              trigger="mouseenter"
-              className="text-primary"
-            >
-              open-ended
-            </Tooltip>
-          </li>
-          <li className="my-3">
-            People and teams want to be more organized, but not if it creates
-            more work for them
-          </li>
-        </ul>
+
+        <GroupHeader title="Key observations">
+          <ul className="ml-5">
+            <li className="my-3">
+              <div className="d-flex flex-column">
+                <span>Difficult to enforce proper meeting hygiene</span>
+                <span>
+                  e.g. every meeting should have an agenda and action items
+                </span>
+              </div>
+            </li>
+            <li className="my-3">
+              Lack of accountability around tasks assigned / decisions made
+            </li>
+            <li className="my-3">
+              Existing solutions are{" "}
+              <Tooltip
+                // options
+                title="Asana, Monday, Confluence, etc"
+                position="top"
+                trigger="mouseenter"
+                className="text-primary"
+              >
+                too complex
+              </Tooltip>{" "}
+              or too{" "}
+              <Tooltip
+                // options
+                title="Google Docs, Trello"
+                position="top"
+                trigger="mouseenter"
+                className="text-primary"
+              >
+                open-ended
+              </Tooltip>
+            </li>
+            <li className="my-3">
+              People and teams want to be more organized, but not if it creates
+              more work for them
+            </li>
+          </ul>
+        </GroupHeader>
       </div>
       <div className="d-flex mt-5">
-        <div className="col-12 col-md-6">
-          <h3 className="text-uppercase">Hypotheses</h3>
-        </div>
-      </div>
-      <div className="d-flex">
-        <div className="col-12 col-md-9">
-          <div className="d-flex flex-wrap flex-lg-nowrap my-4">
-            <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
-              <div className="p-5">
-                <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal">
-                  Self-serve Product
+        <GroupHeader title="Hypotheses">
+          <div className="row">
+            <div className="col-md-9">
+              <div className="d-flex flex-wrap flex-lg-nowrap my-4">
+                <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
+                  <div className="p-5">
+                    <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal">
+                      Self-serve Product
+                    </div>
+                    There is a consumer need for something simpler than project
+                    management software, but more structured than text docs and
+                    todo lists.
+                  </div>
                 </div>
-                There is a consumer need for something simpler than project
-                management software, but more structured than text docs and todo
-                lists.
-              </div>
-            </div>
-            <div className="m-2" />
-            <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
-              <div className="p-5">
-                <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2">
-                  Enterprise product
+                <div className="m-2" />
+                <div className="col-12 col-lg-6 bg-secondary rounded-circle d-flex flex-column justify-content-center">
+                  <div className="p-5">
+                    <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2">
+                      Enterprise product
+                    </div>
+                    Companies would purchase and force adoption of a tool that
+                    encouraged, tracked, and improved meeting efficiency.
+                  </div>
                 </div>
-                Companies would purchase and force adoption of a tool that
-                encouraged, tracked, and improved meeting efficiency.
               </div>
             </div>
           </div>
-        </div>
+        </GroupHeader>
       </div>
     </div>
   </div>
@@ -315,45 +318,38 @@ const NoExtraWork = () => (
   <div className="bg-light mt-5">
     <div className="container mb-0">
       <div className="col-12 col-md-9 pl-0">
-        <SubtitleTitleBody
-          subtitle="Problem"
-          title="App fatigue"
-          body={
-            <p>
-              More tools means more logins to manage, more trainings for teams
-              to schedule and more information silos.
-            </p>
-          }
-        />
-        <SubtitleTitleBody
-          className={`ml-md-5`}
-          subtitle="Design Principle"
+        <GroupHeader eyebrow="Problem" title="App fatigue">
+          <p>
+            More tools means more logins to manage, more trainings for teams to
+            schedule and more information silos.
+          </p>
+        </GroupHeader>
+        <GroupHeader
+          eyebrow="Design Principle"
           title="More organization, less work"
-          body={[
-            <p>
-              We wanted to leverage energy that users were already putting into
-              their calendars and other productivity tools.
-            </p>,
-            <p>
-              The goal was to integration into a users existing meeting
-              workflow, so that we bring value without more tools to manage.
-            </p>
-          ]}
-        />
+          className="ml-md-5"
+        >
+          <p>
+            We wanted to leverage energy that users were already putting into
+            their calendars and other productivity tools.
+          </p>
+          <p>
+            The goal was to integration into a users existing meeting workflow,
+            so that we bring value without more tools to manage.
+          </p>
+        </GroupHeader>
       </div>
-      <MediaExample
-        subtitle="Solution I"
+      <GroupHeader
+        eyebrow="Solution I"
         className="ml-md-5 pl-md-5"
         title="Automate meeting management workflow"
-        id="calendar-integration"
-        body={
-          <p>
-            Automations provide organizational value without requiring the
-            meeting organizer to expend any energy.
-          </p>
-        }
-        image={automations}
-      />
+      >
+        <p>
+          Automations provide organizational value without requiring the
+          meeting organizer to expend any energy.
+        </p>
+        <img src={automations} alt="" />
+      </GroupHeader>
       <MediaExample
         subtitle="Solution II"
         className="ml-md-5 pl-md-5"

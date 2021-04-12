@@ -15,15 +15,15 @@ export function PageTitle(props) {
 }
 
 export function GroupHeader(props) {
-  const { title, img, children, eyebrow, noContainer } = props;
+  const { title, img, children, eyebrow, noContainer, className } = props;
   return (
-    <React.Fragment>
+    <div className={`${className ? className : ""}`}>
       {!!eyebrow && <EyebrowLabel text={eyebrow} noContainer={noContainer} />}
       <div className={`mb-5 ${noContainer ? "" : "horizontal-container"}`}>
         <GroupTitle title={title} img={img} />
          {children}
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 export function GroupTitle(props) {
