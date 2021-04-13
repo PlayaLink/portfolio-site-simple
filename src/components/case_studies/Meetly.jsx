@@ -414,7 +414,7 @@ const DesignPrinciple2 = () => (
               Automations provide organizational value without requiring the
               meeting organizer to expend any energy.
             </p>
-            <img src={automations} alt="" />
+            <img src={automations} alt="" className="img-fluid" />
           </GroupHeader>
           <GroupHeader
             eyebrow="Solution II"

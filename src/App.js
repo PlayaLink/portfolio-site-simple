@@ -20,6 +20,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/Navbar";
 import ScrollToTop from './util/ScrollToTop';
+import { isMobile } from './utils';
 
 library.add(faArrowRight);
 library.add(faChevronDown);
@@ -31,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="vh-100">
+        <div className={`${isMobile() ? "" : "vh-100"}`}>
           <ScrollToTop/>
           <div className="bg-white fixed-top flex-fill w-100">
             <Navbar />
