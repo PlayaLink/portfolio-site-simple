@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.scss';
 
-const iconStyle = { background: '#3399ff', color: '#d8d8d8' };
+const iconStyle = { background: '#e7530b', color: '#d8d8d8' };
 
 class TimelineCard extends React.Component {
   constructor (props) {
@@ -53,7 +53,7 @@ class Timeline extends React.Component {
   render () {
     return (
       <div className="timeline mt-5 mt-md-3 pr-2">
-        <h1 className="timeline text-primary text-center page-header pt-md-5 px-3" style={{ fontSize: "2rem"}}>My path to product design...</h1>
+        <h1 className="timeline text-white text-center page-header pt-md-5 px-3" style={{ fontSize: "2rem"}}>My path to product design...</h1>
         <VerticalTimeline>
 
           { /*COLLEGE*/ }
