@@ -8,8 +8,8 @@ import { isMobile } from '../utils';
 class Projects extends React.Component {
   render() {
     return (
-      <div className={`bg-black ${isMobile() ? "d-flex flex-fill" : "vh-100 d-flex position-fixed mt-n5"}`}>
-        <div className="row">
+      <div className={`bg-black ${isMobile() ? "d-flex flex-fill w-100" : "vh-100 d-flex position-fixed mt-n5"}`}>
+        <div className="row no-gutters">
           <div className="col-md-6 d-flex flex-column justify-content-center align-items-center px-md-5 mt-5 mt-md-0">
             <img
               className="img-fluid p-3"
