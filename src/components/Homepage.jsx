@@ -14,7 +14,7 @@ class Bio extends React.Component {
     return (
       <div className={`bg-black flex-fill w-100 h-100 ${isMobile() ? "" : "position-fixed"}`}>
         <div
-          className={`row d-flex align-items-center justify-content-around flex-fill w-100 h-100`}
+          className={`row d-flex align-items-center justify-content-around flex-fill w-100 h-100 horizontal-container-large`}
         >
           <div className="col-md-7">
             <img src={glowing_shadow_portrait} style={{ maxWidth: "100%" }} />

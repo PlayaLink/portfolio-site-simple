@@ -129,16 +129,8 @@ class About extends React.Component {
                   className="rounded-lg float-left mr-3 d-md-none pt-2 p-md-0"
                   style={{ width: "45%" }}
                 />
-                <span
-                  className="d-none d-md-block pb-2 mb-1"
-                  style={{ fontSize: "1.7rem", lineHeight: "1.7rem" }}
-                >
-                  I never identified as a technical person.
-                </span>{" "}
-                <span className="d-block d-md-none">
-                  I never identified as a technical person.
-                </span>{" "}
-                I was a humanities guy, obsessed with French and
+                <div>I never identified as a technical person.</div>
+                I was a humanities guy – obsessed with French and
                 Spanish.
               </p>
               <p>
