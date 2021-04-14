@@ -37,7 +37,7 @@ class App extends Component {
           <div className="bg-white fixed-top flex-fill w-100">
             <Navbar />
           </div>
-          <div className="flex-fill w-100 h-100" style={{paddingTop : "5rem"}}>
+          <div className="flex-fill w-100 h-100">
             <Route
               exact
               path={process.env.PUBLIC_URL + "/"}

@@ -521,7 +521,7 @@ class PlayOnScroll extends React.Component {
 class Meetly extends Component {
   render() {
     return (
-      <div className="bg-white pb-5">
+      <div className="bg-white pb-5" style={{paddingTop : "5rem"}}>
         <MeetlyIntro />
         <MeetlyBackground />
         <MeetlyResearch />

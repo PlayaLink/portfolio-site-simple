@@ -37,7 +37,7 @@ const Dot = styled.span`
 
 const Title = () => (
   <div className="mb-5 mt-md-5 py-5">
-    <div className="horizontal-container">
+    <div className="horizontal-container" style={{paddingTop : "5rem"}}>
       <PageTitle title="Data-driven design"/>
       <div className="row">
         <div className="col-md-2">

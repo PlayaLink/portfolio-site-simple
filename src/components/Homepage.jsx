@@ -12,9 +12,9 @@ class Bio extends React.Component {
   componentDidMount() {}
   render() {
     return (
-      <div className={`bg-black flex-fill w-100 h-100 ${isMobile() ? "" : "position-fixed"}`}>
+      <div className={`bg-black flex-fill w-100 h-100 ${isMobile() ? "vh-100" : "position-fixed"}`} style={{paddingTop : "5rem"}}>
         <div
-          className={`row d-flex align-items-center justify-content-around flex-fill w-100 h-100 horizontal-container-large`}
+          className={`row d-flex align-items-center justify-content-around flex-fill w-100 h-100 horizontal-container-large ${isMobile() ? "pt-5" : ""}`}
         >
           <div className="col-md-7">
             <img src={glowing_shadow_portrait} style={{ maxWidth: "100%" }} />
