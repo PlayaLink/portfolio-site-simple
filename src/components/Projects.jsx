@@ -21,7 +21,7 @@ class Projects extends React.Component {
               id="Meetly"
               className="button btn-primary text-center mx-4 mt-2 mt-md-4"
             >
-              <span>Early-stage product development</span>
+              <span className="text-nowrap"><span className="d-none d-lg-inline">Early-stage </span>product development</span>
             </Link>
           </div>
           <div className="col-md-6 d-flex flex-column justify-content-center align-items-center px-md-5 mb-5 mb-md-0 mt-5 mt-md-0 pt-5 pt-md-0">
