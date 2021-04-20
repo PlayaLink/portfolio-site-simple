@@ -48,9 +48,9 @@ export const EyebrowLabel = props => (
   /*<FontAwesomeIcon icon={[`${!!type ? type : 'far'}`, {icon}]}/>*/
 }
 export function SectionTitle(props) {
-  const { step, className } = props;
+  const { step, className, noContainer } = props;
   return (
-    <div className={`horizontal-container mb-5 ${className ? className : ""}`}>
+    <div className={`${noContainer ? "" : "horizontal-container"} mb-5 ${className ? className : ""}`}>
       <div className="border-bottom">
         <span className={`pr-5 mr-5 ${step === "discovery" ? "" : "text-faded d-none d-md-inline"}`}>
           <FontAwesomeIcon icon={faLightbulb} />

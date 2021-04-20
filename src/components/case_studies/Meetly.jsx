@@ -18,7 +18,7 @@ import { Tooltip } from "react-tippy";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Redirect } from "react-router-dom";
-import { GroupHeader, GroupTitle } from "../SharedComponents";
+import { GroupHeader, GroupTitle, SectionTitle } from "../SharedComponents";
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -70,7 +70,7 @@ const MeetlyIntro = () => (
       <div className="mt-md-3" style={{ height: "3rem" }} />
 
       <div className="d-flex flex-column">
-        <GroupTitle title="The web app"/>
+        <GroupTitle title="The web app" />
         <div className="mb-5">
           <img
             alt="Meetly"
@@ -81,7 +81,7 @@ const MeetlyIntro = () => (
         </div>
       </div>
       <div className="d-flex flex-column mt-5">
-        <GroupTitle title="The Chrome extension"/>
+        <GroupTitle title="The Chrome extension" />
 
         <div className="mb-5">
           <img
@@ -93,7 +93,7 @@ const MeetlyIntro = () => (
         </div>
       </div>
       <div className="d-flex flex-column mt-5">
-        <GroupTitle title="The monday.com integration"/>
+        <GroupTitle title="The monday.com integration" />
 
         <div className="mb-5">
           <img
@@ -110,7 +110,7 @@ const MeetlyIntro = () => (
 );
 
 const MeetlyBackground = () => (
-  <div className="bg-white">
+  <div className="bg-light">
     <div className="container">
       <div className="col-12 col-md-8 pl-0">
         <h1 className="display-4 mb-5 page-header">Context</h1>
@@ -179,24 +179,37 @@ const MeetlyBackground = () => (
 const MeetlyResearch = () => (
   <div className="bg-light">
     <div className="container pt-5">
+      <SectionTitle step="discovery" noContainer={true}/>
       <div className="col-12 col-md-8 pl-0">
-        <div className="mb-5">
-          <h1 className="display-4 mb-3 page-header">Research</h1>
-          <p>
-            While conducting greenfield research with POPin users to identify
-            new product opportunities, we discovered people were using our
-            survey tool to <span className="">solve a problem</span> that was
-            not on our radar:{" "}
-            <span className="text-uppercase">
+        <GroupHeader title="Needing to pivot" noContainer={true}>
+          <div className="mb-5">
+            <p>
+              The idea for Meetly occurred while doing greenfield research at
+              POPin, an employee-engagement survey tool for enterprise
+            </p>
+            <p>
+              POPin had not found product market fit, and I was in charge of
+              learning more about our users' POPin-adjacent needs, with the goal
+              of expanding the product offering.
+            </p>
+          </div>
+        </GroupHeader>
+        <GroupHeader title="Identifying an opportunity" noContainer={true}>
+          <div className="mb-5">
+            <p>
+              We discovered people were using our survey tool to{" "}
+              <span className="">solve a problem</span> that was not on our radar:{" "}
+              <span className="text-uppercase">
               time wasted in unnecessary or unproductive meetings
             </span>
-            .
-          </p>
-          <p>
-            Recognizing an opportunity, we stopped asking people about POPin and
-            refocused our research efforts:
-          </p>
-        </div>
+              .
+            </p>
+            <p>
+              Recognizing an opportunity, we stopped asking people about POPin and
+              refocused our research efforts:
+            </p>
+          </div>
+        </GroupHeader>
         <GroupHeader title="Questions" noContainer={true}>
           <div className="">
             <ul className="ml-4 mt-4">
@@ -205,7 +218,7 @@ const MeetlyResearch = () => (
                 what are the impediments to a successful meeting?
               </li>
               <li className="my-3">how are people solving these challenges?</li>
-              <li className="my-3">what tools are they using?</li>
+              <li className="my-3">is organization a tech problem or just a human problem?</li>
             </ul>
           </div>
         </GroupHeader>
@@ -289,7 +302,7 @@ const MeetlyResearch = () => (
               <div className="d-flex flex-wrap flex-lg-nowrap my-4">
                 <div className="col-12 col-lg-6 bg-primary text-white rounded-circle d-flex flex-column justify-content-center">
                   <div className="p-5">
-                    <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal border-bottom">
+                    <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal border-bottom border-white">
                       Self-serve Product
                     </div>
                     There is a consumer need for something simpler than project
@@ -300,7 +313,7 @@ const MeetlyResearch = () => (
                 <div className="m-2" />
                 <div className="col-12 col-lg-6 bg-primary text-white rounded-circle d-flex flex-column justify-content-center">
                   <div className="p-5">
-                    <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2  border-bottom">
+                    <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2  border-bottom border-white">
                       Enterprise product
                     </div>
                     Companies would purchase and force adoption of a tool that
@@ -317,11 +330,11 @@ const MeetlyResearch = () => (
 );
 
 const DesignPrinciple1 = () => (
-  <div className="bg-white">
+  <div className="bg-light">
     <div className="container mb-0">
       <h1 className="display-4 py-5 page-header">Design principles</h1>
       {/*Design principle #1*/}
-      <div className="bg-light pt-4 px-3 rounded-big">
+      <div className="bbg-white pt-4 px-3 rounded-big">
         <GroupHeader
           eyebrow="Problem"
           title="Difficult to enforce good meeting structure"
@@ -383,9 +396,9 @@ const DesignPrinciple1 = () => (
 );
 
 const DesignPrinciple2 = () => (
-  <div className="bg-white mt-5">
+  <div className="bg-light mt-5">
     <div className="container mb-0 pt-5">
-      <div className="bg-light pt-4 px-3 rounded-big">
+      <div className="bg-white pt-4 px-3 rounded-big">
         <GroupHeader eyebrow="Problem" title="App fatigue">
           <p>
             More tools means more logins to manage, more trainings for teams to
@@ -440,9 +453,9 @@ const DesignPrinciple2 = () => (
 );
 
 const DesignPrinciple3 = () => (
-  <div className="bg-white mt-5">
+  <div className="bg-light mt-5">
     <div className="container mb-0">
-      <div className="bg-light pt-4 px-3 rounded-big">
+      <div className="bg-whitet pt-4 px-3 rounded-big">
         <GroupHeader eyebrow="Problem" title="Siloed information">
           <p>
             Another productivity tool means another system to manage, another
@@ -521,7 +534,7 @@ class PlayOnScroll extends React.Component {
 class Meetly extends Component {
   render() {
     return (
-      <div className="bg-white pb-5" style={{paddingTop : "5rem"}}>
+      <div className="bg-light pb-5" style={{ paddingTop: "5rem" }}>
         <MeetlyIntro />
         <MeetlyBackground />
         <MeetlyResearch />
