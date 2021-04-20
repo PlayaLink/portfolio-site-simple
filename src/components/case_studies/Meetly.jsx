@@ -287,9 +287,9 @@ const MeetlyResearch = () => (
           <div className="row">
             <div className="col-md-9">
               <div className="d-flex flex-wrap flex-lg-nowrap my-4">
-                <div className="col-12 col-lg-6 bg-primary-light rounded-circle d-flex flex-column justify-content-center">
+                <div className="col-12 col-lg-6 bg-primary text-white rounded-circle d-flex flex-column justify-content-center">
                   <div className="p-5">
-                    <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal">
+                    <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2 font-weight-normal border-bottom">
                       Self-serve Product
                     </div>
                     There is a consumer need for something simpler than project
@@ -298,9 +298,9 @@ const MeetlyResearch = () => (
                   </div>
                 </div>
                 <div className="m-2" />
-                <div className="col-12 col-lg-6 bg-primary-light rounded-circle d-flex flex-column justify-content-center">
+                <div className="col-12 col-lg-6 bg-primary text-white rounded-circle d-flex flex-column justify-content-center">
                   <div className="p-5">
-                    <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2">
+                    <div className="text-center font-weight-bold text-uppercase mt-n2 mb-2  border-bottom">
                       Enterprise product
                     </div>
                     Companies would purchase and force adoption of a tool that
