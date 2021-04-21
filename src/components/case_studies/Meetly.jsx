@@ -7,12 +7,14 @@ import screened_respondents from "../../img/screened_respondents.png";
 import users_interview_screening from "../../img/users_interview_screening.png";
 import workspace_view from "../../img/workspace_view.jpg";
 import automations from "../../img/automations.jpg";
+import meetly_prototype_feedback from "../../img/meetly_prototype_feedback.jpg";
 import user_interviews from "../../img/user_interviews.jpg";
 import add_remove_cards from "../../img/add_remove_cards.mp4";
 import meetly_original_sketch from "../../img/meetly_original_sketch.jpg";
 import meetly_prototype from "../../img/meetly_prototype.png";
 import choose_template from "../../img/choose_template.mp4";
 import affinity_matching from "../../img/affinity_matching.png";
+import calendar_spinning from "../../img/calendar_spinning.png";
 import calendar_view from "../../img/calendar_view.png";
 import meetly_final_version from "../../img/meetly_final_version.png";
 import meetly_single_instance_narrow from "../../img/meetly_single_instance_narrow.png";
@@ -191,11 +193,7 @@ const MeetlyDiscovery = () => (
         <GroupHeader title="Needing to pivot" noContainer={true}>
           <div className="mb-5">
             <p>
-              The idea for Meetly occurred while doing greenfield research at
-              POPin, an employee-engagement survey tool for enterprise
-            </p>
-            <p>
-              POPin had not found product market fit, and I was in charge of
+              POPin had not found product-market fit, and I was in charge of
               learning more about our users' POPin-adjacent needs, with the goal
               of expanding the product offering.
             </p>
@@ -221,13 +219,13 @@ const MeetlyDiscovery = () => (
         <GroupHeader title="Further questions" noContainer={true}>
           <div className="">
             <ul className="ml-4 mt-4">
-              <li className="my-3">what makes for a successful meeting?</li>
+              <li className="my-3">What makes for a successful meeting?</li>
               <li className="my-3">
-                what are the impediments to a successful meeting?
+                What are the impediments to a successful meeting?
               </li>
-              <li className="my-3">how are people solving these challenges?</li>
+              <li className="my-3">How are people solving these challenges?</li>
               <li className="my-3">
-                is notes organization a tech problem or just a human problem?
+                Is notes organization a tech problem or just a human problem?
               </li>
             </ul>
           </div>
@@ -606,6 +604,35 @@ const MeetlyLearn = () => (
           </div>
         </div>
       </GroupHeader>
+      <GroupHeader title="Guerilla usability testing">
+        <div className="row">
+          <div className="col-md-6">
+            <p>
+              With such a tiny product footprint and a tiny user base, we
+              weren't squeamish about deploying less-than-perfect designs and
+              code to production.
+            </p>
+            <p>
+              Sometimes I would spend the time to build out a highly functional
+              prototype and ask users how they would complete "tasks".
+            </p>
+            <p>
+              But the most valuable feedback I got was when I would set up a
+              call with a user immediately after deploying a change to
+              production. I was able to learn so much more by seeing them interact for the first time with
+              the new feature <span className="font-italic">and</span> their
+              real meetings/notes.
+            </p>
+          </div>
+          <div className="col-md-6">
+          <img
+            src={meetly_prototype_feedback}
+            alt="purchase location"
+            className="img-fluid"
+          />
+        </div>
+        </div>
+      </GroupHeader>
       <GroupHeader title="Designing around technical constraints">
         <div className="row">
           <div className="col-md-8">
@@ -618,7 +645,7 @@ const MeetlyLearn = () => (
         <div className="row">
           <div className="col-md-10">
             <img
-              src={calendar_view}
+              src={calendar_spinning}
               alt="purchase location"
               className="img-fluid"
             />
@@ -682,8 +709,8 @@ const MeetlyLearn = () => (
                 Anecdotal evidence is not definitive proof
               </li>
               <li className="my-3">
-                User needs should inform product direction (true!) but it's
-                also important to have a vision and stick to it until you have
+                User needs should inform product direction (true!) but it's also
+                important to have a vision and stick to it until you have
                 validated that it is (or is not!) on target.
               </li>
             </ul>
