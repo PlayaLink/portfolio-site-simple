@@ -686,7 +686,7 @@ const MeetlyLearn = () => (
             <ul className="ml-4">
               <li className="my-3">
                 The "meeeting groups" feature was a solution in search of a
-                problem. Rather than letting user need guide it's development,
+                problem. Rather than letting user needs guide it's development,
                 we added it because it was an easy technical "win" after we
                 refactored some backend code. That's probably why it didn't
                 catch up.
