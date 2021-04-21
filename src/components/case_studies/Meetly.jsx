@@ -10,6 +10,7 @@ import automations from "../../img/automations.jpg";
 import user_interviews from "../../img/user_interviews.jpg";
 import add_remove_cards from "../../img/add_remove_cards.mp4";
 import choose_template from "../../img/choose_template.mp4";
+import affinity_matching from "../../img/affinity_matching.png";
 import meeting_groups from "../../img/meeting_groups.mp4";
 import search from "../../img/search.mp4";
 import { Waypoint } from "react-waypoint";
@@ -113,7 +114,6 @@ const MeetlyBackground = () => (
   <div className="bg-light">
     <div className="container">
       <div className="col-12 col-md-8 pl-0">
-        <h1 className="display-4 mb-5 page-header">Context</h1>
         <GroupTitle title="How Meetly started" />
         <p className="">
           The idea for Meetly grew out of user research I conducted at POPin, an
@@ -152,7 +152,7 @@ const MeetlyBackground = () => (
           </div>
         </div>
       </div>
-      <div className="d-flex mt-5 pb-5">
+      <div className="d-flex my-3">
         <div className="col-12 col-md-8 pl-0">
           <GroupTitle title="Timeline" />
           {/*<h5 className="font-weight-light">Most of the greenfield design research occured in spring of 2019.</h5>*/}
@@ -162,13 +162,14 @@ const MeetlyBackground = () => (
               date="Spring 2019"
               description="Product manager and I came up with the idea for Meetly while
         conducting research around how POPin users ran
-        meetings."
+        meetings"
             />
             <TimelineItem
               date="May 2019"
-              description="Raised 1st seed round."
+              description="Raised 1st seed round"
             />
-            <TimelineItem date="August 2019" description="Deployed an MVP." />
+            <TimelineItem date="August 2019" description="Deployed an MVP" />
+            <TimelineItem date="March 2020" description="Raised 2nd seed round" />
           </ul>
         </div>
       </div>
@@ -176,7 +177,7 @@ const MeetlyBackground = () => (
   </div>
 );
 
-const MeetlyResearch = () => (
+const MeetlyDiscovery = () => (
   <div className="bg-light">
     <div className="container pt-5">
       <SectionTitle step="discovery" noContainer={true}/>
@@ -210,7 +211,7 @@ const MeetlyResearch = () => (
             </p>
           </div>
         </GroupHeader>
-        <GroupHeader title="Questions" noContainer={true}>
+        <GroupHeader title="Further questions" noContainer={true}>
           <div className="">
             <ul className="ml-4 mt-4">
               <li className="my-3">what makes for a successful meeting?</li>
@@ -218,10 +219,19 @@ const MeetlyResearch = () => (
                 what are the impediments to a successful meeting?
               </li>
               <li className="my-3">how are people solving these challenges?</li>
-              <li className="my-3">is organization a tech problem or just a human problem?</li>
+              <li className="my-3">is notes organization a tech problem or just a human problem?</li>
             </ul>
           </div>
         </GroupHeader>
+      </div>
+    </div>
+  </div>
+);
+const MeetlyResearch = () => (
+  <div className="bg-light">
+    <div className="container pt-5">
+      <SectionTitle step="research" noContainer={true}/>
+      <div className="col-12 col-md-8 pl-0 pt-1">
         <GroupHeader
           title="Targeting users with specific jobs-to-be-done"
           noContainer={true}
@@ -252,7 +262,15 @@ const MeetlyResearch = () => (
             />
           </div>
         </GroupHeader>
-
+        <GroupHeader title="Affinity mapping">
+          <div className="pl-0 mb-3">
+            <img
+              className="img-fluid"
+              src={affinity_matching}
+              alt="Users inteviews"
+            />
+          </div>
+        </GroupHeader>
         <GroupHeader title="Key observations">
           <ul className="ml-5">
             <li className="my-3">
@@ -332,9 +350,10 @@ const MeetlyResearch = () => (
 const DesignPrinciple1 = () => (
   <div className="bg-light">
     <div className="container mb-0">
-      <h1 className="display-4 py-5 page-header">Design principles</h1>
+      <SectionTitle step="design" noContainer={true}/>
+      <h2 className="display-4 py-5 page-header">Design principles</h2>
       {/*Design principle #1*/}
-      <div className="bbg-white pt-4 px-3 rounded-big">
+      <div className="bg-white pt-4 px-3 rounded-big">
         <GroupHeader
           eyebrow="Problem"
           title="Difficult to enforce good meeting structure"
@@ -455,7 +474,7 @@ const DesignPrinciple2 = () => (
 const DesignPrinciple3 = () => (
   <div className="bg-light mt-5">
     <div className="container mb-0">
-      <div className="bg-whitet pt-4 px-3 rounded-big">
+      <div className="bg-white pt-4 px-3 rounded-big">
         <GroupHeader eyebrow="Problem" title="Siloed information">
           <p>
             Another productivity tool means another system to manage, another
@@ -537,6 +556,7 @@ class Meetly extends Component {
       <div className="bg-light pb-5" style={{ paddingTop: "5rem" }}>
         <MeetlyIntro />
         <MeetlyBackground />
+        <MeetlyDiscovery/>
         <MeetlyResearch />
         <DesignPrinciple1 />
         <DesignPrinciple2 />
