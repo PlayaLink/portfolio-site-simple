@@ -9,8 +9,13 @@ import workspace_view from "../../img/workspace_view.jpg";
 import automations from "../../img/automations.jpg";
 import user_interviews from "../../img/user_interviews.jpg";
 import add_remove_cards from "../../img/add_remove_cards.mp4";
+import meetly_original_sketch from "../../img/meetly_original_sketch.jpg";
+import meetly_prototype from "../../img/meetly_prototype.png";
 import choose_template from "../../img/choose_template.mp4";
 import affinity_matching from "../../img/affinity_matching.png";
+import calendar_view from "../../img/calendar_view.png";
+import meetly_final_version from "../../img/meetly_final_version.png";
+import meetly_single_instance_narrow from "../../img/meetly_single_instance_narrow.png";
 import meeting_groups from "../../img/meeting_groups.mp4";
 import search from "../../img/search.mp4";
 import { Waypoint } from "react-waypoint";
@@ -20,6 +25,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Redirect } from "react-router-dom";
 import { GroupHeader, GroupTitle, SectionTitle } from "../SharedComponents";
+import db_report from "../../img/db_report.png";
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -164,12 +170,12 @@ const MeetlyBackground = () => (
         conducting research around how POPin users ran
         meetings"
             />
-            <TimelineItem
-              date="May 2019"
-              description="Raised 1st seed round"
-            />
+            <TimelineItem date="May 2019" description="Raised 1st seed round" />
             <TimelineItem date="August 2019" description="Deployed an MVP" />
-            <TimelineItem date="March 2020" description="Raised 2nd seed round" />
+            <TimelineItem
+              date="March 2020"
+              description="Raised 2nd seed round"
+            />
           </ul>
         </div>
       </div>
@@ -180,7 +186,7 @@ const MeetlyBackground = () => (
 const MeetlyDiscovery = () => (
   <div className="bg-light">
     <div className="container pt-5">
-      <SectionTitle step="discovery" noContainer={true}/>
+      <SectionTitle step="discovery" noContainer={true} />
       <div className="col-12 col-md-8 pl-0">
         <GroupHeader title="Needing to pivot" noContainer={true}>
           <div className="mb-5">
@@ -199,15 +205,16 @@ const MeetlyDiscovery = () => (
           <div className="mb-5">
             <p>
               We discovered people were using our survey tool to{" "}
-              <span className="">solve a problem</span> that was not on our radar:{" "}
+              <span className="">solve a problem</span> that was not on our
+              radar:{" "}
               <span className="text-uppercase">
-              time wasted in unnecessary or unproductive meetings
-            </span>
+                time wasted in unnecessary or unproductive meetings
+              </span>
               .
             </p>
             <p>
-              Recognizing an opportunity, we stopped asking people about POPin and
-              refocused our research efforts:
+              Recognizing an opportunity, we stopped asking people about POPin
+              and refocused our research efforts:
             </p>
           </div>
         </GroupHeader>
@@ -219,7 +226,9 @@ const MeetlyDiscovery = () => (
                 what are the impediments to a successful meeting?
               </li>
               <li className="my-3">how are people solving these challenges?</li>
-              <li className="my-3">is notes organization a tech problem or just a human problem?</li>
+              <li className="my-3">
+                is notes organization a tech problem or just a human problem?
+              </li>
             </ul>
           </div>
         </GroupHeader>
@@ -230,7 +239,7 @@ const MeetlyDiscovery = () => (
 const MeetlyResearch = () => (
   <div className="bg-light">
     <div className="container pt-5">
-      <SectionTitle step="research" noContainer={true}/>
+      <SectionTitle step="research" noContainer={true} />
       <div className="col-12 col-md-8 pl-0 pt-1">
         <GroupHeader
           title="Targeting users with specific jobs-to-be-done"
@@ -350,7 +359,7 @@ const MeetlyResearch = () => (
 const DesignPrinciple1 = () => (
   <div className="bg-light">
     <div className="container mb-0">
-      <SectionTitle step="design" noContainer={true}/>
+      <SectionTitle step="design" noContainer={true} />
       <h2 className="display-4 py-5 page-header">Design principles</h2>
       {/*Design principle #1*/}
       <div className="bg-white pt-4 px-3 rounded-big">
@@ -550,17 +559,153 @@ class PlayOnScroll extends React.Component {
   }
 }
 
+const MeetlyLearn = () => (
+  <div className="bg-light">
+    <div className="container pt-5">
+      <SectionTitle step="learn" noContainer={true} />
+      <GroupHeader title="Rapid iteration">
+        <div className="row">
+          <div className="col-md-8">
+            <p>
+              Product changes were driven by what we were seeing in recorded web
+              sessions, usability tests, user interviews and the need to court
+              investors.
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-6">
+            <img
+              src={meetly_original_sketch}
+              alt="purchase location"
+              className="img-fluid"
+            />
+          </div>
+          <div className="col-md-6">
+            <img
+              src={meetly_prototype}
+              alt="purchase location"
+              className="img-fluid mt-4 mt-md-0"
+            />
+          </div>
+        </div>
+        <div className="row mt-md-4">
+          <div className="col-md-6  d-none d-md-block">
+            <img
+              src={calendar_view}
+              alt="purchase location"
+              className="img-fluid"
+            />
+          </div>
+          <div className="col-md-6">
+            <img
+              src={meetly_single_instance_narrow}
+              alt="meetly single meeting view"
+              className="img-fluid  mt-4 mt-md-0"
+            />
+          </div>
+        </div>
+      </GroupHeader>
+      <GroupHeader title="Designing around technical constraints">
+        <div className="row">
+          <div className="col-md-8">
+            <p>
+              <span className="text-uppercase">Problem: </span>The full-month
+              calendar view load time was lagging when a user had many meetings.
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-10">
+            <img
+              src={calendar_view}
+              alt="purchase location"
+              className="img-fluid"
+            />
+          </div>
+        </div>
+        <div className="row mt-4">
+          <div className="col-md-8">
+            <p>
+              <span className="text-uppercase">Solution: </span>I redesigned the
+              main view so that we only had to load 1 day's worth of events.
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-10">
+            <img
+              src={meetly_final_version}
+              alt="meetly final version"
+              className="img-fluid"
+            />
+          </div>
+        </div>
+        <div className="row mt-4">
+          <div className="col-md-8">
+            <p>
+              <span className="text-uppercase">Outcome: </span>This design cut
+              load times by a factor of 10 and also improved navigation – since
+              the majority of sessions involved a user clicking on a meeting
+              that was occuring on the same day as the session.
+            </p>
+          </div>
+        </div>
+      </GroupHeader>
+      <GroupHeader title="Mistakes made">
+        <div className="row">
+          <div className="col-md-8">
+            {" "}
+            <ul className="ml-4">
+              <li className="my-3">
+                The "meeeting groups" feature was a solution in search of a
+                problem. Rather than letting user need guide it's development,
+                we added it because it was an easy technical "win" after we
+                refactored some backend code. That's probably why it didn't
+                catch up.
+              </li>
+              <li className="my-3">
+                We should not have wasted so much time pursuing enterprise
+                clients early on. We ended up wasting a lot of dev resources on
+                security and privacy, which was less important for self-sserve
+                customers
+              </li>
+            </ul>
+          </div>
+        </div>
+      </GroupHeader>
+      <GroupHeader title="Lessons learned">
+        <div className="row">
+          <div className="col-md-8">
+            <ul className="ml-4">
+              <li className="my-3">
+                Anecdotal evidence is not definitive proof
+              </li>
+              <li className="my-3">
+                User needs should inform product direction (true!) but it's
+                also important to have a vision and stick to it until you have
+                validated that it is (or is not!) on target.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </GroupHeader>
+    </div>
+  </div>
+);
+
 class Meetly extends Component {
   render() {
     return (
       <div className="bg-light pb-5" style={{ paddingTop: "5rem" }}>
         <MeetlyIntro />
         <MeetlyBackground />
-        <MeetlyDiscovery/>
+        <MeetlyDiscovery />
         <MeetlyResearch />
         <DesignPrinciple1 />
         <DesignPrinciple2 />
         <DesignPrinciple3 />
+        <MeetlyLearn />
       </div>
     );
   }
