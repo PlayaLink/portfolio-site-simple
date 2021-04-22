@@ -32,7 +32,7 @@ library.add(faPlusCircle);
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { navbarHeight: 0 };
+    this.state = { navbarHeight: 0, scrollPosition: 0 };
     this.fullNavbar = React.createRef();
   }
   setNavbarHeight = height => {
@@ -57,8 +57,38 @@ class App extends Component {
       this.setNavbarHeight(el.getBoundingClientRect().height);
     }, 100);
   };
+  listenToScrollEvent = () => {
+    document.addEventListener("scroll", () => {
+      requestAnimationFrame(() => {
+        this.calculateScrollDistance();
+      });
+    });
+  }
+
+  calculateScrollDistance = () => {
+    const scrollTop = window.pageYOffset; // how much the user has scrolled by
+    const winHeight = window.innerHeight;
+    const docHeight = this.getDocHeight();
+
+    const totalDocScrollLength = docHeight - winHeight;
+    const scrollPosition = Math.floor(scrollTop / totalDocScrollLength * 100)
+
+    this.setState({
+      scrollPosition,
+    });
+  }
+
+  getDocHeight = () => {
+    return Math.max(
+      document.body.scrollHeight, document.documentElement.scrollHeight,
+      document.body.offsetHeight, document.documentElement.offsetHeight,
+      document.body.clientHeight, document.documentElement.clientHeight
+    );
+  }
+
   componentDidMount = () => {
     this.calculateHeight();
+    this.listenToScrollEvent();
   };
   render() {
     return (
@@ -71,7 +101,7 @@ class App extends Component {
           >
             <Navbar getNavbarHeight={this.getNavbarHeight} />
           </div>
-          <Progress scroll="70%" top={`${this.state.navbarHeight}px`} />
+          <Progress scroll={this.state.scrollPosition + '%'} top={`${this.state.navbarHeight}px`} />
           <div className="flex-fill w-100 h-100">
             <Route
               exact
