@@ -19,9 +19,9 @@ import {
   faPlusCircle
 } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/Navbar";
-import ScrollToTop from './util/ScrollToTop';
-import { isMobile } from './utils';
-import Progress from './components/Progress'
+import ScrollToTop from "./util/ScrollToTop";
+import { isMobile } from "./utils";
+import Progress from "./components/Progress";
 
 library.add(faArrowRight);
 library.add(faChevronDown);
@@ -32,21 +32,46 @@ library.add(faPlusCircle);
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {navbarHeight: 0};
+    this.state = { navbarHeight: 0 };
+    this.fullNavbar = React.createRef();
   }
-  getNavbarHeight = (height)=> {
-    this.setState({navbarHeight: height})
-    console.log("passed height: ", height);
-  }
+  setNavbarHeight = height => {
+    this.setState({ navbarHeight: height });
+  };
+  calculateHeight = () => {
+    const el = this.fullNavbar.current;
+    console.log("initial height", el.getBoundingClientRect().height);
+    let prevValue = JSON.stringify(el.getBoundingClientRect());
+    const start = Date.now();
+    const handle = setInterval(() => {
+      let nextValue = JSON.stringify(el.getBoundingClientRect());
+      if (nextValue === prevValue) {
+        clearInterval(handle);
+        console.log(
+          `height stopped changing in ${Date.now() - start}ms. final height:`,
+          el.getBoundingClientRect().height
+        );
+      } else {
+        prevValue = nextValue;
+      }
+      this.setNavbarHeight(el.getBoundingClientRect().height);
+    }, 100);
+  };
+  componentDidMount = () => {
+    this.calculateHeight();
+  };
   render() {
     return (
       <Router>
         <div className={`${isMobile() ? "" : "vh-100"}`}>
-          <ScrollToTop/>
-          <div className="bg-white fixed-top flex-fill w-100">
+          <ScrollToTop />
+          <div
+            className="bg-white fixed-top flex-fill w-100"
+            ref={this.fullNavbar}
+          >
             <Navbar getNavbarHeight={this.getNavbarHeight} />
           </div>
-          <Progress scroll="70%" top={`8rem`} />
+          <Progress scroll="70%" top={`${this.state.navbarHeight}px`} />
           <div className="flex-fill w-100 h-100">
             <Route
               exact

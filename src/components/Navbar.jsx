@@ -25,41 +25,15 @@ class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.navbar = React.createRef();
-    this.fullNavbar = React.createRef();
   }
   removeActiveClass = () => {
     const el = this.navbar.current;
     $(el).removeClass("show"); //or $('.active').removeClass('active');
   };
-  calculateHeight = () => {
-    const {getNavbarHeight} = this.props;
-    const el = this.fullNavbar.current;
-    console.log("initial height", el.getBoundingClientRect().height);
-    let prevValue = JSON.stringify(el.getBoundingClientRect());
-    const start = Date.now();
-    const handle = setInterval(() => {
-      let nextValue = JSON.stringify(el.getBoundingClientRect());
-      if (nextValue === prevValue) {
-        clearInterval(handle);
-        console.log(
-          `height stopped changing in ${Date.now() -
-          start}ms. final height:`,
-          el.getBoundingClientRect().height
-        );
-      } else {
-        prevValue = nextValue;
-      }
-      getNavbarHeight(el.getBoundingClientRect().height)
-    }, 100);
-  }
-  componentDidMount = () => {
-    this.calculateHeight();
-  }
   render() {
     return (
       <nav
         className="navbar navbar-expand-lg navbar-light bg-white container mb-0 d-flex flex-fill w-100"
-        ref={this.fullNavbar}
       >
         <NavLink
           to="/"
