@@ -21,6 +21,7 @@ import {
 import Navbar from "./components/Navbar";
 import ScrollToTop from './util/ScrollToTop';
 import { isMobile } from './utils';
+import Progress from './components/Progress'
 
 library.add(faArrowRight);
 library.add(faChevronDown);
@@ -29,14 +30,23 @@ library.add(faDownload);
 library.add(faPlusCircle);
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {navbarHeight: 0};
+  }
+  getNavbarHeight = (height)=> {
+    this.setState({navbarHeight: height})
+    console.log("passed height: ", height);
+  }
   render() {
     return (
       <Router>
         <div className={`${isMobile() ? "" : "vh-100"}`}>
           <ScrollToTop/>
           <div className="bg-white fixed-top flex-fill w-100">
-            <Navbar />
+            <Navbar getNavbarHeight={this.getNavbarHeight} />
           </div>
+          <Progress scroll="70%" top={`8rem`} />
           <div className="flex-fill w-100 h-100">
             <Route
               exact
