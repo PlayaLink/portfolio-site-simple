@@ -23,6 +23,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faRefresh } from "@fortawesome/free-solid-svg-icons";
 import backups_user_journey from '../../img/backups_user_journey.png';
 import { PageTitle } from '../SharedComponents';
+import Progress from '../Progress';
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -85,8 +86,11 @@ const Title = () => (
 
 class DataDrivenDesign extends Component {
   render() {
+    const { scroll, top } = this.props;
     return (
-      <div className="mt-md-5">
+      <React.Fragment>
+        <Progress scroll={scroll} top={top} />
+        <div className="mt-md-5">
         <Title />
         <SectionTitle step="discovery" />
 
@@ -290,7 +294,7 @@ class DataDrivenDesign extends Component {
                   }}
                 />
               </div>
-              
+
             </div>
             <div className="col-md-6">
               <p className="mt-3">Most purchased backups for "peace of mind"</p>
@@ -468,7 +472,7 @@ class DataDrivenDesign extends Component {
             </div>
           </div>
         </GroupHeader>
-      </div>
+      </div></React.Fragment>
     );
   }
 }

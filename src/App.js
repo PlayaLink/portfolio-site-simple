@@ -101,7 +101,6 @@ class App extends Component {
           >
             <Navbar getNavbarHeight={this.getNavbarHeight} />
           </div>
-          <Progress scroll={this.state.scrollPosition + '%'} top={`${this.state.navbarHeight}px`} />
           <div className="flex-fill w-100 h-100">
             <Route
               exact
@@ -121,7 +120,9 @@ class App extends Component {
             <Route
               exact
               path={process.env.PUBLIC_URL + "/case-study/data-driven-design"}
-              component={DataDrivenDesign}
+              render={(props) => (
+                <DataDrivenDesign {...props} top={`${this.state.navbarHeight}px`} scroll={this.state.scrollPosition + '%'} />
+              )}
             />
             <Route
               exact
