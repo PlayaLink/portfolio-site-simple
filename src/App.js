@@ -114,7 +114,9 @@ class App extends Component {
             <Route
               exact
               path={process.env.PUBLIC_URL + "/case-study/meetly"}
-              component={Meetly}
+              render={(props) => (
+                <Meetly {...props} top={`${this.state.navbarHeight}px`} scroll={this.state.scrollPosition + '%'} />
+              )}
             />
             <Route
               exact
@@ -141,7 +143,9 @@ class App extends Component {
             <Route
               exact
               path={process.env.PUBLIC_URL + "/about"}
-              component={About}
+              render={(props) => (
+                <About {...props} top={`${this.state.navbarHeight}px`} scroll={this.state.scrollPosition + '%'} />
+              )}
             />
           </div>
         </div>

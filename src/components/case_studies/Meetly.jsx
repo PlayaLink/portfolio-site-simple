@@ -28,6 +28,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Redirect } from "react-router-dom";
 import { GroupHeader, GroupTitle, SectionTitle } from "../SharedComponents";
 import db_report from "../../img/db_report.png";
+import { Progress, ProgressBackground } from "../Progress";
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -619,18 +620,19 @@ const MeetlyLearn = () => (
             <p>
               But the most valuable feedback I got was when I would set up a
               call with a user immediately after deploying a change to
-              production. I was able to learn so much more by seeing them interact for the first time with
-              the new feature <span className="font-italic">and</span> their
-              real meetings/notes.
+              production. I was able to learn so much more by seeing them
+              interact for the first time with the new feature{" "}
+              <span className="font-italic">and</span> their real
+              meetings/notes.
             </p>
           </div>
           <div className="col-md-6">
-          <img
-            src={meetly_prototype_feedback}
-            alt="purchase location"
-            className="img-fluid"
-          />
-        </div>
+            <img
+              src={meetly_prototype_feedback}
+              alt="purchase location"
+              className="img-fluid"
+            />
+          </div>
         </div>
       </GroupHeader>
       <GroupHeader title="Designing around technical constraints">
@@ -723,17 +725,22 @@ const MeetlyLearn = () => (
 
 class Meetly extends Component {
   render() {
+    const { scroll, top } = this.props;
     return (
-      <div className="bg-light pb-5" style={{ paddingTop: "5rem" }}>
-        <MeetlyIntro />
-        <MeetlyBackground />
-        <MeetlyDiscovery />
-        <MeetlyResearch />
-        <DesignPrinciple1 />
-        <DesignPrinciple2 />
-        <DesignPrinciple3 />
-        <MeetlyLearn />
-      </div>
+      <React.Fragment>
+        <Progress scroll={scroll} top={top} />
+        <ProgressBackground scroll="100%" top={top} />
+        <div className="bg-light pb-5" style={{ paddingTop: "5rem" }}>
+          <MeetlyIntro />
+          <MeetlyBackground />
+          <MeetlyDiscovery />
+          <MeetlyResearch />
+          <DesignPrinciple1 />
+          <DesignPrinciple2 />
+          <DesignPrinciple3 />
+          <MeetlyLearn />
+        </div>
+      </React.Fragment>
     );
   }
 }
