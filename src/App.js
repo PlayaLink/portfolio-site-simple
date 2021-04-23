@@ -21,7 +21,6 @@ import {
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./util/ScrollToTop";
 import { isMobile } from "./utils";
-import Progress from "./components/Progress";
 
 library.add(faArrowRight);
 library.add(faChevronDown);

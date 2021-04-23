@@ -23,7 +23,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faRefresh } from "@fortawesome/free-solid-svg-icons";
 import backups_user_journey from '../../img/backups_user_journey.png';
 import { PageTitle } from '../SharedComponents';
-import Progress from '../Progress';
+import {Progress, ProgressBackground } from "../Progress";
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -90,6 +90,7 @@ class DataDrivenDesign extends Component {
     return (
       <React.Fragment>
         <Progress scroll={scroll} top={top} />
+        <ProgressBackground scroll="100%" top={top} />
         <div className="mt-md-5">
         <Title />
         <SectionTitle step="discovery" />
