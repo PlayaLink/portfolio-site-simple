@@ -24,7 +24,7 @@ class Bio extends React.Component {
               <h1 className="text-primary mb-0">
                 <span className="text-nowrap page-header">Product designer</span> <span className="text-white">{" "}+</span>
               </h1>{" "}
-              <h1 className="text-primary mb-0 mb-md-3 text-nowrap page-header">Journalism survivor</h1>{" "}
+              <h1 className="text-primary mb-0 mb-md-3 page-header">Journalism survivor</h1>{" "}
               <h3 className="mt-3">
                 <div className="mb-2">
                   <span>Research | </span>
