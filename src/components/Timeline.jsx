@@ -208,10 +208,10 @@ class Timeline extends React.Component {
               //   "I've learned a lot by doing, wearing many hats on small teams",
               //   "Looking to join a larger company next, where I can collaborate and grow with a team of designers"
               // ] }
-              details={ [
-                'Co-founded a meeting notes automation company',
-                'Lead design efforts that helped raise two rounds of funding',
-              ] }
+              // details={ [
+              //   'Co-founded a meeting notes automation company',
+              //   'Lead design efforts that helped raise two rounds of funding',
+              // ] }
             />
           </VerticalTimelineElement>
         </VerticalTimeline>
