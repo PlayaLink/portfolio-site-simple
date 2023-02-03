@@ -14,6 +14,25 @@ export function PageTitle(props) {
   );
 }
 
+export function ProjectSummarySection(props) {
+  const { title, body } = props;
+  return (
+    <div className="div mb-5">
+      <div className="row">
+        <div className="col-md-2">
+          <GroupTitle title={title} />
+        </div>
+      </div><div className="row">
+        <div className="col-md-6 ml-5">
+          <p className="font-weight-regular">
+            {body.map(e => <div className="mb-2">{e}</div>)}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function GroupHeader(props) {
   const { title, img, children, eyebrow, noContainer, className } = props;
   return (
