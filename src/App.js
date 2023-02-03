@@ -8,6 +8,7 @@ import Meetly from "./components/case_studies/Meetly";
 import DataDrivenDesign from "./components/case_studies/DataDrivenDesign";
 import PopinLive from "./components/PopinLive";
 import IepGoalTracker from "./components/IepGoalTracker";
+import DesignSystem from "./components/case_studies/DesignSystem";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 //Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -123,6 +124,13 @@ class App extends Component {
               path={process.env.PUBLIC_URL + "/case-study/data-driven-design"}
               render={(props) => (
                 <DataDrivenDesign {...props} top={`${this.state.navbarHeight}px`} scroll={this.state.scrollPosition + '%'} />
+              )}
+            />
+            <Route
+              exact
+              path={process.env.PUBLIC_URL + "/case-study/design-system"}
+              render={(props) => (
+                <DesignSystem {...props} top={`${this.state.navbarHeight}px`} scroll={this.state.scrollPosition + '%'} />
               )}
             />
             <Route

@@ -31,13 +31,27 @@ class Projects extends React.Component {
               alt="data-driven design"
             />
             <Link
-              to="/case-study/data-driven-design"
-              id="data-driven-design"
+              to="/case-study/design-system"
+              id="design-system"
               className="button btn-primary text-center mt-2 mt-md-4"
             >
-              <span>Data-driven design</span>
+              <span>Design system</span>
             </Link>
           </div>
+          {/*<div className="col-md-6 d-flex flex-column justify-content-center align-items-center px-md-5 mb-5 mb-md-0 mt-5 mt-md-0 pt-5 pt-md-0">*/}
+            {/*<img*/}
+              {/*className="img-fluid p-3"*/}
+              {/*src={data_design}*/}
+              {/*alt="data-driven design"*/}
+            {/*/>*/}
+            {/*<Link*/}
+              {/*to="/case-study/data-driven-design"*/}
+              {/*id="data-driven-design"*/}
+              {/*className="button btn-primary text-center mt-2 mt-md-4"*/}
+            {/*>*/}
+              {/*<span>Data-driven design</span>*/}
+            {/*</Link>*/}
+          {/*</div>*/}
         </div>
       </div>
     );
