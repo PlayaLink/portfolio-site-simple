@@ -67,8 +67,8 @@ class HomePage extends React.Component {
           </div>
         </div>
         {/*PROJECTS*/}
-        <div className="row no-gutters scroll-section">
-          <div className="col-md-6 d-flex flex-column justify-content-center align-items-center px-md-5 mt-5 mt-md-0 pt-3 pt-md-0">
+        <div className={`row no-gutters my-5 ${isMobile() ? "" : "scroll-section"}`}>
+          <div className={`col-md-6 d-flex flex-column justify-content-center align-items-center ${isMobile() ? "scroll-section p-4" : ""}`}>
             <img
               className="img-fluid m-3 img-rounded"
               src={salamander}
@@ -82,7 +82,7 @@ class HomePage extends React.Component {
               <span className="text-nowrap"><span className="d-none d-lg-inline">Early-stage </span>product development</span>
             </Link>
           </div>
-          <div className="col-md-6 d-flex flex-column justify-content-center align-items-center px-md-5 mb-5 mb-md-0 mt-5 mt-md-0 pt-5 pt-md-0">
+          <div className={`col-md-6 d-flex flex-column justify-content-center align-items-center ${isMobile() ? "scroll-section p-4" : ""}`}>
             <img
               className="img-fluid m-3 img-rounded"
               src={sad_worker}
