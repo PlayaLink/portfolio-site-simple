@@ -15,14 +15,6 @@ import backups_user_journey from "../../img/backups_user_journey.png";
 import { PageTitle, ProjectSummarySection } from "../SharedComponents";
 import { Progress, ProgressBackground } from "../Progress";
 
-const Title = () => (
-  <div className="mb-5 mt-md-5 py-5">
-    <div className="horizontal-container" style={{ paddingTop: "2rem" }}>
-      <PageTitle title="Building a design system from scratch" />
-    </div>
-  </div>
-);
-
 class DesignSystemSection extends Component {
   render() {
     const { title, image, children, imageCaption } = this.props;
@@ -54,7 +46,10 @@ class DesignSystem extends Component {
         <ProgressBackground scroll="100%" top={top} />
         <div className="mb-5 mt-md-5 py-5">
           <div className="horizontal-container" style={{ paddingTop: "2rem" }}>
-            <PageTitle title="Building a design system from scratch" />
+            <PageTitle
+              title="Building a design system from scratch"
+              subtitle="How we built a design system for a 300+ organization"
+            />
             {/*CONTEXT*/}
             <DesignSystemSection
               title="Context"
@@ -67,20 +62,21 @@ class DesignSystem extends Component {
                 noContainer={true}
               >
                 <p>
-                  Previous attempts at a design system had failed to gain
-                  traction, resulting in wide inconsistencies.{" "}
+                  Previous attempts to create a design system at{" "}
+                  <mark className="highlight">SimpleNexus</mark> had failed to
+                  gain traction, resulting in wide inconsistencies.{" "}
                 </p>
               </GroupHeader>
               <GroupHeader title="Lost sales" noContainer={true}>
                 <p>
                   A large deal fell through because our competitor had “better
-                  design”. This got leadership’s attention,
+                  design”. This got leadership’s attention.
                 </p>
               </GroupHeader>
               <GroupHeader title="Supportive leadership" noContainer={true}>
                 <p>
                   Product leadership would allocate Engineering resources if
-                  Design could produce a complete Design System that, crucially,
+                  Design could produce a complete design system that, crucially,
                   all designers were on board with.
                 </p>
               </GroupHeader>
@@ -96,15 +92,20 @@ class DesignSystem extends Component {
             <DesignSystemSection title="Challenges" image={sad_astronaut}>
               <GroupHeader title="Multiple design tools" noContainer={true}>
                 <p>
-                  There was no common design tool when I joined the team, let
-                  alone a fully web-based system like Figma.
+                  There was{" "}
+                  <mark className="highlight">no common design tool</mark> when
+                  I joined the team, let alone a fully web-based system like
+                  Figma.
                 </p>
               </GroupHeader>
               <GroupHeader title="Distrust from Engineering" noContainer={true}>
                 <p>
-                  Previous attempts failed to produce a working design system
-                  because even the designers failed to consistently adopt their
-                  own shared patterns.
+                  Previous attempts to produce a working design system failed
+                  because{" "}
+                  <mark className="highlight">
+                    designers consistently deviated
+                  </mark>{" "}
+                  from their own adopted patterns.
                 </p>
               </GroupHeader>
               <GroupHeader
@@ -112,9 +113,8 @@ class DesignSystem extends Component {
                 noContainer={true}
               >
                 <p>
-                  Three distinct apps – one for each user type – allowed
-                  designers to follow their own patterns without (directly)
-                  impacting other designers.
+                  Three distinct apps – one for each user type – results in
+                  <mark className="highlight">designers creating their own patterns</mark> without coordinating across platforms.
                 </p>
               </GroupHeader>
             </DesignSystemSection>
@@ -192,7 +192,10 @@ class DesignSystem extends Component {
                   Every proposed DS component required review by myself and our
                   DS engineering lead, I knew when designers were working on
                   similar UI and could{" "}
-                  <mark className="highlight">propose merging similar designs</mark>.
+                  <mark className="highlight">
+                    propose merging similar designs
+                  </mark>
+                  .
                 </p>
               </GroupHeader>
               <GroupHeader title="Technical reviewer" noContainer={true}>
@@ -215,8 +218,11 @@ class DesignSystem extends Component {
                   consequences of their design decisions.
                 </p>
                 <p>
-                  I also <mark className="highlight">encouraged Engineers to push back</mark> on designs that broke
-                  with our design standards.
+                  I also{" "}
+                  <mark className="highlight">
+                    encouraged Engineers to push back
+                  </mark>{" "}
+                  on designs that broke with our design standards.
                 </p>
                 <p>
                   Going rogue and not referencing master components hurts the
@@ -308,18 +314,19 @@ class DesignSystem extends Component {
               >
                 <p>
                   The concept of componentization and adages like DRY (Don’t
-                  Repeat Yourself) come from the lessons learned in
-                  engineering, where the{" "}
+                  Repeat Yourself) come from the lessons learned in engineering,
+                  where the{" "}
                   <mark className="highlight">threat of technical debt</mark>{" "}
                   necessitates best practices.
                 </p>
               </GroupHeader>
               <GroupHeader title="Single source of truth" noContainer={true}>
                 <p>
-                  This principle helps avoid confusion,
-                  reduce duplicated efforts and generally{" "}
-                  <mark className="highlight">limits complexity</mark>–– whether it’s a master component file, documentation or a
-                  shared grocery list.
+                  This principle helps avoid confusion, reduce duplicated
+                  efforts and generally{" "}
+                  <mark className="highlight">limits complexity</mark>–– whether
+                  it’s a master component file, documentation or a shared
+                  grocery list.
                 </p>
               </GroupHeader>
             </DesignSystemSection>
