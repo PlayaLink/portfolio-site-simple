@@ -37,7 +37,7 @@ class DesignSystemSection extends Component {
           <div className="col-md-6">
             <div className="d-flex flex-column align-items-center">
               <img className="img-rounded img-fluid d-block" src={image}/>
-              <p className="mt-3 font-italic">Results from an audit of SimpleNexus buttons</p>
+              { !!imageCaption && <p className="mt-3 font-italic">{imageCaption}</p> }
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ class DesignSystem extends Component {
           <div className="horizontal-container" style={ { paddingTop: '2rem' } }>
             <PageTitle title="Building a design system from scratch" />
             {/*CONTEXT*/}
-            <DesignSystemSection title="Context" image={buttons}>
+            <DesignSystemSection title="Context" image={buttons} imageCaption="Results from an audit of SimpleNexus buttons">
               <GroupHeader title="Poor design consistency" img={arrow} noContainer={true}>
                 <p>Previous attempts at a design system had failed to gain traction, resulting in wide inconsistencies. </p>
               </GroupHeader>
