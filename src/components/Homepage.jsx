@@ -18,14 +18,14 @@ class HomePage extends React.Component {
       <div className="bg-black scroll-container">
         <div className={`flex-fill vh-100 scroll-section`} style={{ paddingTop: "5rem" }}>
           <div
-            className={`row d-flex align-items-center justify-content-around flex-fill w-100 h-100 ${
-              isMobile() ? "pt-5" : ""
+            className={`row d-flex align-items-center justify-content-around flex-fill w-100 ${
+              isMobile() ? "pt-5 mt-3" : "h-100"
             }`}
           >
-            <div className="col-md-7">
+            <div className={`col-md-7`}>
               <img src={glowing_shadow_portrait} style={{ maxWidth: "100%" }} />
             </div>
-            <div className="col-md-5">
+            <div className={`col-md-5 ${isMobile() ? "mt-5 pt-3" : ""}`}>
               <div className="my-auto text-light px-4 mr-md-5">
                 <h1 className="mb-0">
                   <span className="text-nowrap page-header">
