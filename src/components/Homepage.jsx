@@ -5,7 +5,7 @@ import glowing_shadow_portrait from "../img/glowing_shadow_portrait.png";
 import { isMobile } from "../utils";
 
 const BIG_TEXT_STYLE = { lineHeight: "1rem" };
-class Bio extends React.Component {
+class HomePage extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -59,4 +59,4 @@ class Bio extends React.Component {
   }
 }
 
-export default Bio;
+export default HomePage;
