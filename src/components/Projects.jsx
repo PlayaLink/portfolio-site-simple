@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.scss";
-import meetly_marketing_site from "../img/meetly_marketing_site.png";
-import data_design from "../img/data_design.png";
+import salamander from "../img/salamander.png";
+import sad_worker from "../img/sad_worker.png";
 import { Link } from "react-router-dom";
 import { isMobile } from '../utils';
 
@@ -13,7 +13,7 @@ class Projects extends React.Component {
           <div className="col-md-6 d-flex flex-column justify-content-center align-items-center px-md-5 mt-5 mt-md-0 pt-3 pt-md-0">
             <img
               className="img-fluid p-3"
-              src={meetly_marketing_site}
+              src={salamander}
               alt="Meetly"
             />
             <Link
@@ -27,7 +27,7 @@ class Projects extends React.Component {
           <div className="col-md-6 d-flex flex-column justify-content-center align-items-center px-md-5 mb-5 mb-md-0 mt-5 mt-md-0 pt-5 pt-md-0">
             <img
               className="img-fluid p-3"
-              src={data_design}
+              src={sad_worker}
               alt="data-driven design"
             />
             <Link
