@@ -5,7 +5,7 @@ export const Progress = styled.div`
   top: ${props => props.top};
   background: linear-gradient(
     to right,
-    #e7530b ${props => props.scroll},
+    #17A6E0 ${props => props.scroll},
     transparent 0
   );
   width: 100%;
