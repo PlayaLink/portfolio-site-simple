@@ -23,19 +23,19 @@ const Title = () => (
 
 class DesignSystemSection extends Component {
   render () {
-    const { title, image } = this.props;
+    const { title, image, children } = this.props;
     return (
-      <div className="row">
-        <div className="col-md-6">
-          <h2 className="text-uppercase mb-4">{title}</h2>
-          <GroupHeader title="Poor design consistency">
-            <p>Previous attempts at a design system had failed to gain traction, resulting in wide inconsistencies. </p>
-          </GroupHeader>
+      <React.Fragment>
+        <h2 className="text-uppercase mb-5">{title}</h2>
+        <div className="row">
+          <div className="col-md-6">
+            {children}
+          </div>
+          <div className="col-md-6">
+            <img className="img-rounded" src={image}/>
+          </div>
         </div>
-        <div className="col-md-6">
-          <img className="img-rounded" src={image}/>
-        </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
@@ -50,7 +50,23 @@ class DesignSystem extends Component {
         <div className="mb-5 mt-md-5 py-5">
           <div className="horizontal-container" style={ { paddingTop: '2rem' } }>
             <PageTitle title="Building a design system from scratch" />
-            <DesignSystemSection title="Context" image={salamander}/>
+            <DesignSystemSection title="Context" image={salamander}>
+              <GroupHeader title="Poor design consistency" noContainer={true}>
+                <p>Previous attempts at a design system had failed to gain traction, resulting in wide inconsistencies. </p>
+              </GroupHeader>
+              <GroupHeader title="Lost sales" noContainer={true}>
+                <p>A large deal fell through because our competitor had “better design”. This got leadership’s attention,</p>
+              </GroupHeader>
+              <GroupHeader title="Lost sales" noContainer={true}>
+                <p>A large deal fell through because our competitor had “better design”. This got leadership’s attention.</p>
+              </GroupHeader>
+              <GroupHeader title="Supportive leadership" noContainer={true}>
+                <p>Product leadership would allocate Engineering resources if Design could produce a complete Design System that, crucially, all designers were on board with.</p>
+              </GroupHeader>
+              <GroupHeader title="Growing design team" noContainer={true}>
+                <p>The design team was growing, from 3 designers to 15 in just over a year.</p>
+              </GroupHeader>
+            </DesignSystemSection>
           </div>
         </div>
 
