@@ -12,28 +12,28 @@ class Projects extends React.Component {
         <div className="row no-gutters">
           <div className="col-md-6 d-flex flex-column justify-content-center align-items-center px-md-5 mt-5 mt-md-0 pt-3 pt-md-0">
             <img
-              className="img-fluid p-3"
+              className="img-fluid m-3 img-rounded"
               src={salamander}
-              alt="Meetly"
+              alt="Surrealist salamander"
             />
             <Link
               to="/case-study/meetly"
               id="Meetly"
-              className="button btn-primary text-center mx-4 mt-2 mt-md-4"
+              className="button btn-gray text-center mx-4 mt-2 mt-md-4"
             >
               <span className="text-nowrap"><span className="d-none d-lg-inline">Early-stage </span>product development</span>
             </Link>
           </div>
           <div className="col-md-6 d-flex flex-column justify-content-center align-items-center px-md-5 mb-5 mb-md-0 mt-5 mt-md-0 pt-5 pt-md-0">
             <img
-              className="img-fluid p-3"
+              className="img-fluid m-3 img-rounded"
               src={sad_worker}
-              alt="data-driven design"
+              alt="Futuristic construction worker"
             />
             <Link
               to="/case-study/design-system"
               id="design-system"
-              className="button btn-primary text-center mt-2 mt-md-4"
+              className="button btn-gray text-center mt-2 mt-md-4"
             >
               <span>Design system</span>
             </Link>
@@ -47,7 +47,7 @@ class Projects extends React.Component {
             {/*<Link*/}
               {/*to="/case-study/data-driven-design"*/}
               {/*id="data-driven-design"*/}
-              {/*className="button btn-primary text-center mt-2 mt-md-4"*/}
+              {/*className="button btn-gray text-center mt-2 mt-md-4"*/}
             {/*>*/}
               {/*<span>Data-driven design</span>*/}
             {/*</Link>*/}
