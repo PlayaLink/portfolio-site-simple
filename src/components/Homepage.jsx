@@ -18,7 +18,7 @@ class HomePage extends React.Component {
       <div className="bg-black scroll-container">
         <div className={`flex-fill vh-100 scroll-section`} style={{ paddingTop: "5rem" }}>
           <div
-            className={`row d-flex align-items-center justify-content-around flex-fill w-100 h-100 horizontal-container-large ${
+            className={`row d-flex align-items-center justify-content-around flex-fill w-100 h-100 ${
               isMobile() ? "pt-5" : ""
             }`}
           >
@@ -26,7 +26,7 @@ class HomePage extends React.Component {
               <img src={glowing_shadow_portrait} style={{ maxWidth: "100%" }} />
             </div>
             <div className="col-md-5">
-              <div className="my-auto text-light px-4 mr-md-5 bg-black">
+              <div className="my-auto text-light px-4 mr-md-5">
                 <h1 className="mb-0">
                   <span className="text-nowrap page-header">
                     Product designer
@@ -46,31 +46,16 @@ class HomePage extends React.Component {
                     <span className="">Javascript </span>
                   </div>
                 </h3>
-                {/*<h5 className="mt-4 mb-3">*/}
-                {/*<span className="text-gray" style={BIG_TEXT}>*/}
-                {/*My product experience*/}
-                {/*</span>{" "}*/}
-                {/*blurs the lines between research, design and frontend*/}
-                {/*development, having spent the last 4 years at small, early stage*/}
-                {/*startups.*/}
-                {/*</h5>*/}
-                {/*<h5 className="mt-4 mb-3">*/}
-                {/*<span className="text-gray" style={BIG_TEXT}>*/}
-                {/*I am a translator*/}
-                {/*</span>{" "}*/}
-                {/*of user needs into product ideas, of ideas into designs, and of*/}
-                {/*designs into code.*/}
-                {/*</h5>*/}
-                <p />
               </div>
             </div>
           </div>
         </div>
         {/*PROJECTS*/}
-        <div className={`row no-gutters my-5 ${isMobile() ? "" : "scroll-section"}`}>
+        <div className={`row no-gutters my-4 ${isMobile() ? "pt-5 mt-3" : "scroll-section"}`} style={{paddingTop: "5rem"}}>
           <div className={`col-md-6 d-flex flex-column justify-content-center align-items-center ${isMobile() ? "scroll-section p-4" : ""}`}>
             <img
               className="img-fluid m-3 img-rounded"
+              style={{maxWidth: "90%"}}
               src={salamander}
               alt="Surrealist salamander"
             />
@@ -85,6 +70,7 @@ class HomePage extends React.Component {
           <div className={`col-md-6 d-flex flex-column justify-content-center align-items-center ${isMobile() ? "scroll-section p-4" : ""}`}>
             <img
               className="img-fluid m-3 img-rounded"
+              style={{maxWidth: "90%"}}
               src={sad_worker}
               alt="Futuristic construction worker"
             />
