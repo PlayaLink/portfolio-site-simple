@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.scss';
 
-const iconStyle = { background: '#e7530b', color: '#d8d8d8' };
+const iconStyle = { background: '#8d8d8d', color: '#d8d8d8' };
 
 class TimelineCard extends React.Component {
   constructor (props) {

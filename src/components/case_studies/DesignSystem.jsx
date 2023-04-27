@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import balance from "../../img/balance.png";
 import arrow from "../../img/arrow.png";
-import salamander from "../../img/salamander.png";
+import circle from "../../img/circle.svg";
 import buttons from "../../img/buttons.png";
 import construction_designer from "../../img/construction_designer.png";
 import construction_girl from "../../img/construction_girl.png";
@@ -330,6 +330,12 @@ class DesignSystem extends Component {
                 </p>
               </GroupHeader>
             </DesignSystemSection>
+            <div className="d-flex justify-content-center my-5">
+              <img className="mr-5"src={circle} style={{height: "1rem", width: "1rem"}} />
+              <img className="mr-5"src={circle} style={{height: "1rem", width: "1rem"}} />
+              <img src={circle} style={{height: "1rem", width: "1rem"}} />
+            </div>
+            <h1 className="d-flex justify-content-center my-5">Want to see more? Get in touch.</h1>
           </div>
         </div>
       </React.Fragment>
