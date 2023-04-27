@@ -61,13 +61,13 @@ const MeetlyIntro = () => (
         </h1>
         <h3 className="font-weight-normal">
           How design research lead to the creation of{" "}
-          <a
-            href="https://www.runmeetly.com"
+          <span
+
             className="text-primary font-weight-bolder"
-            target="_blank"
+
           >
             Meetly
-          </a>
+          </span>
           , a meeting notes automation tool
         </h3>
         {/*<h5 className="font-weight-light mt-4">*/}
