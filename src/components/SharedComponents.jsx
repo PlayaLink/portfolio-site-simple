@@ -6,10 +6,13 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faSync } from "@fortawesome/free-solid-svg-icons";
 
 export function PageTitle(props) {
-  const { title } = props;
+  const { title, subtitle } = props;
   return (
     <div className="col-12 col-md-8 pl-0 mb-5">
       <h1 className="display-4 page-header pb-md-5">{title}</h1>
+      <h3 className="font-weight-normal">
+        {subtitle}
+      </h3>
     </div>
   );
 }
@@ -49,7 +52,7 @@ export function GroupTitle(props) {
   const { title, img } = props;
   return (
     <h3 className="d-flex mb-3 font-weight-bold page-header">
-      {title} {img}
+      {title} <img className="ml-3" src={img}/>
     </h3>
   );
 }

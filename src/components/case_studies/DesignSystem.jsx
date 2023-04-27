@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import add_more_backups from '../../img/add_more_backups.png';
+import balance from '../../img/balance.png';
+import arrow from '../../img/arrow.png';
 import salamander from '../../img/salamander.png';
-import squarespace from '../../img/squarespace.png';
-import checkout from '../../img/checkout.png';
-import db_report from '../../img/db_report.png';
+import buttons from '../../img/buttons.png';
+import construction_designer from '../../img/construction_designer.png';
+import construction_girl from '../../img/construction_girl.png';
+import roadmap from '../../img/roadmap.png';
+import sad_astronaut from '../../img/sad_astronaut.png';
 import 'react-vertical-timeline-component/style.min.css';
 import styled from 'styled-components';
 import { GroupHeader, GroupTitle, SectionTitle } from '../SharedComponents.jsx';
@@ -23,7 +26,7 @@ const Title = () => (
 
 class DesignSystemSection extends Component {
   render () {
-    const { title, image, children } = this.props;
+    const { title, image, children, imageCaption } = this.props;
     return (
       <React.Fragment>
         <h2 className="text-uppercase mb-5">{title}</h2>
@@ -32,7 +35,10 @@ class DesignSystemSection extends Component {
             {children}
           </div>
           <div className="col-md-6">
-            <img className="img-rounded" src={image}/>
+            <div className="d-flex flex-column align-items-center">
+              <img className="img-rounded img-fluid d-block" src={image}/>
+              <p className="mt-3 font-italic">Results from an audit of SimpleNexus buttons</p>
+            </div>
           </div>
         </div>
       </React.Fragment>
@@ -50,7 +56,24 @@ class DesignSystem extends Component {
         <div className="mb-5 mt-md-5 py-5">
           <div className="horizontal-container" style={ { paddingTop: '2rem' } }>
             <PageTitle title="Building a design system from scratch" />
-            <DesignSystemSection title="Context" image={salamander}>
+            {/*CONTEXT*/}
+            <DesignSystemSection title="Context" image={buttons}>
+              <GroupHeader title="Poor design consistency" img={arrow} noContainer={true}>
+                <p>Previous attempts at a design system had failed to gain traction, resulting in wide inconsistencies. </p>
+              </GroupHeader>
+              <GroupHeader title="Lost sales" noContainer={true}>
+                <p>A large deal fell through because our competitor had “better design”. This got leadership’s attention,</p>
+              </GroupHeader>
+              <GroupHeader title="Supportive leadership" noContainer={true}>
+                <p>Product leadership would allocate Engineering resources if Design could produce a complete Design System that, crucially, all designers were on board with.</p>
+              </GroupHeader>
+              <GroupHeader title="Growing design team" noContainer={true}>
+                <p>The design team was growing, from 3 designers to 15 in just over a year.</p>
+              </GroupHeader>
+            </DesignSystemSection>
+
+            {/*CHALLENGES*/}
+            <DesignSystemSection title="Challenges" image={sad_astronaut}>
               <GroupHeader title="Poor design consistency" noContainer={true}>
                 <p>Previous attempts at a design system had failed to gain traction, resulting in wide inconsistencies. </p>
               </GroupHeader>
