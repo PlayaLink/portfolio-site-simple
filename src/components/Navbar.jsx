@@ -59,15 +59,15 @@ class Navbar extends React.Component {
           ref={this.navbar}
         >
           <ul className="navbar-nav">
-            <NavItem
-              onClick={this.removeActiveClass}
-              title="Recent Work"
-              href="/case-studies"
-            />
+            {/*<NavItem*/}
+              {/*onClick={this.removeActiveClass}*/}
+              {/*title="Recent Work"*/}
+              {/*href="/case-studies"*/}
+            {/*/>*/}
             {/*<NavItem title="Journalism" href="/journalism" active={activeTab === TABS.JOURNALISM}/>*/}
             <NavItem
               onClick={this.removeActiveClass}
-              title="About"
+              title="About me"
               href="/about"
             />
           </ul>
