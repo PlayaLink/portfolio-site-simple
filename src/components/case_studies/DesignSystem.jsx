@@ -14,6 +14,7 @@ import { faRefresh } from "@fortawesome/free-solid-svg-icons";
 import backups_user_journey from "../../img/backups_user_journey.png";
 import { PageTitle, ProjectSummarySection } from "../SharedComponents";
 import { Progress, ProgressBackground } from "../Progress";
+import { isMobile } from '../../utils';
 
 class DesignSystemSection extends Component {
   render() {
@@ -21,11 +22,11 @@ class DesignSystemSection extends Component {
     return (
       <div className="mb-5">
         <h1 className="text-uppercase mb-5">{title}</h1>
-        <div className="row">
+        <div className={`row d-flex ${isMobile() ? "flex-column-reverse" : "flex-row"}`}>
           <div className="col-md-6">{children}</div>
           <div className="col-md-6">
-            <div className="d-flex flex-column align-items-center">
-              <img className="img-rounded img-fluid d-block mb-5" src={image} />
+            <div className={`d-flex flex-column align-items-center ${isMobile() ? "mb-5" : ""}`}>
+              <img className={`img-rounded img-fluid d-block ${isMobile() ? "" : "mb-5"}`} src={image} />
               {!!imageCaption && (
                 <p className="mt-3 font-italic">{imageCaption}</p>
               )}
