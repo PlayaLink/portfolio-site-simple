@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import add_more_backups from '../../img/add_more_backups.png';
-import wix from '../../img/wix.png';
+import salamander from '../../img/salamander.png';
 import squarespace from '../../img/squarespace.png';
 import checkout from '../../img/checkout.png';
 import db_report from '../../img/db_report.png';
@@ -12,16 +12,6 @@ import backups_user_journey from '../../img/backups_user_journey.png';
 import { PageTitle, ProjectSummarySection } from '../SharedComponents';
 import { Progress, ProgressBackground } from '../Progress';
 
-const iconStyle = { background: 'rgb(33, 150, 243)', color: '#fff' };
-
-const Dot = styled.span`
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 1rem;
-  padding: 0.25rem;
-  position: relative;
-  top: -0.25rem;
-`;
 
 const Title = () => (
   <div className="mb-5 mt-md-5 py-5">
@@ -31,6 +21,25 @@ const Title = () => (
   </div>
 );
 
+class DesignSystemSection extends Component {
+  render () {
+    const { title, image } = this.props;
+    return (
+      <div className="row">
+        <div className="col-md-6">
+          <h2 className="text-uppercase mb-4">{title}</h2>
+          <GroupHeader title="Poor design consistency">
+            <p>Previous attempts at a design system had failed to gain traction, resulting in wide inconsistencies. </p>
+          </GroupHeader>
+        </div>
+        <div className="col-md-6">
+          <img className="img-rounded" src={image}/>
+        </div>
+      </div>
+    );
+  }
+}
+
 class DesignSystem extends Component {
   render () {
     const { scroll, top } = this.props;
@@ -38,7 +47,13 @@ class DesignSystem extends Component {
       <React.Fragment>
         <Progress scroll={ scroll } top={ top } />
         <ProgressBackground scroll="100%" top={ top } />
-        <Title />
+        <div className="mb-5 mt-md-5 py-5">
+          <div className="horizontal-container" style={ { paddingTop: '2rem' } }>
+            <PageTitle title="Building a design system from scratch" />
+            <DesignSystemSection title="Context" image={salamander}/>
+          </div>
+        </div>
+
       </React.Fragment>
     );
   }
