@@ -176,7 +176,7 @@ class DesignSystem extends Component {
             </DesignSystemSection>
 
             {/*MY ROLE*/}
-            <DesignSystemSection title="My role" image={sad_astronaut}>
+            <DesignSystemSection title="My role" image={construction_girl}>
               <GroupHeader title="Component carpenter" noContainer={true}>
                 <p>
                   I built every component in Figma – regardless of who designed
@@ -227,7 +227,7 @@ class DesignSystem extends Component {
             </DesignSystemSection>
 
             {/*CONTEXT VS CONSISTENCY*/}
-            <DesignSystemSection title="Context vs Consistency" image={roadmap}>
+            <DesignSystemSection title="Context vs Consistency" image={balance}>
               <GroupHeader title="A healthy tension" noContainer={true}>
                 <p>
                   Design systems help us create (and enforce) a{" "}
@@ -273,7 +273,7 @@ class DesignSystem extends Component {
             {/*TEACHING DESIGNERS TO THINK LIKE ENGINEERS*/}
             <DesignSystemSection
               title="Teaching designers to think like engineers"
-              image={roadmap}
+              image={construction_designer}
             >
               <GroupHeader title="Design debt is real" noContainer={true}>
                 <p>
