@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
 import { findDOMNode } from "react-dom";
+import { isMobile } from '../utils';
 
 const TABS = {
   CASE_STUDIES: "/",
@@ -33,17 +34,17 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav
-        className="navbar navbar-expand-lg navbar-light bg-white container mb-0 d-flex flex-fill w-100"
+        className={`navbar navbar-expand-lg navbar-light bg-white  mt-0 mb-0 mt-md-1 d-flex flex-fill w-100 ${isMobile() ? "" : "container"}`}
       >
         <NavLink
           to="/"
           className="navbar-brand text-uppercase font-weight-bold"
         >
-          <h2 className="d-none d-md-flex">Jordan England-Nelson</h2>
-          <h2 className="d-flex d-md-none">J. England-Nelson</h2>
+          <h2 className="d-none d-md-flex mb-0 mb-md-1">Jordan England-Nelson</h2>
+          <h2 className="d-flex d-md-none mb-0">J. England-Nelson</h2>
         </NavLink>
         <button
-          className="navbar-toggler align-self-end mb-3"
+          className="navbar-toggler align-self-end my-1 mb-md-3"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
