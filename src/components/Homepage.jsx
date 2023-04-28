@@ -15,19 +15,22 @@ class HomePage extends React.Component {
   }
   componentDidMount() {}
   render() {
+    const topSpacing = isMobile ? "1rem" : "3.5rem";
     return (
       <div className="bg-black scroll-container">
-        <div className={`flex-fill vh-100 scroll-section`} style={{ paddingTop: "5rem" }}>
+        <div className={`flex-fill vh-100 scroll-section`} >
+          <div style={{ height: topSpacing }}/>
+
           <div
-            className={`row d-flex align-items-center justify-content-around flex-fill w-100 ${
-              isMobile() ? "pt-5 mt-3" : "h-100"
+            className={`row d-flex align-items-center justify-content-around flex-fill w-100 mx-0 ${
+              isMobile() ? "pt-4 mt-5" : "h-100"
             }`}
           >
             <div className={`col-md-7 d-flex justify-content-center`}>
               <img src={survivor} style={{ maxWidth: "100%" }} className="img-rounded" />
             </div>
-            <div className={`col-md-5 ${isMobile() ? "mt-5 pt-3" : ""}`}>
-              <div className="my-auto text-light px-4 mr-md-5">
+            <div className={`col-md-5 ${isMobile() ? "mt-4" : ""}`}>
+              <div className="text-light mr-md-5">
                 <h1 className="mb-0">
                   <span className="text-nowrap page-header">
                     Product designer
