@@ -55,7 +55,7 @@ class App extends Component {
         prevValue = nextValue;
       }
       this.setNavbarHeight(el.getBoundingClientRect().height);
-    }, 100);
+    }, 200);
   };
   listenToScrollEvent = () => {
     document.addEventListener("scroll", () => {
