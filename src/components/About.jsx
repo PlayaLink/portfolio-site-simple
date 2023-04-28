@@ -7,6 +7,8 @@ import email_icon from "../img/email_icon.svg";
 import my_email from "../img/my_email.svg";
 import short_t from "../img/short_t.svg";
 import { Link } from "react-router-dom";
+import { isMobile } from "../utils";
+import glowing_shadow_portrait from "../img/glowing_shadow_portrait.png";
 
 class SocialButtons extends React.Component {
   constructor(props) {
@@ -93,7 +95,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="about bg-black pb-5 flex-fill w-100">
-        <div style={{height: "3rem"}} />
+        <div style={{ height: "3rem" }} />
         <div className="row d-flex justify-content-center pt-md-5 px-3 pb-5 pb-md-2flex-fill w-100">
           <div className="d-none d-md-block col-6 mb-5 mb-md-0 col-md-6 col-lg-3 mr-lg-4">
             <img
@@ -103,23 +105,40 @@ class About extends React.Component {
             />
           </div>
           <div className="col-12 col-md-6 col-lg-4 d-flex align-items-center">
-            {/*<p>*/}
-            {/*I've worked up and down the product stack, from design research to writing code.*/}
-            {/*</p>*/}
-            {/*<p>*/}
-            {/*I'm a T-shaped product designer. Except my T looks more like this{" "}*/}
-            {/*<span>*/}
-            {/*<img src={short_t} className="img-fluid" />*/}
-            {/*</span>{" "}*/}
-            {/*than this{" "}*/}
-            {/*<span>*/}
-            {/*<img src={tall_t} className="img-fluid" />*/}
-            {/*</span>*/}
-            {/*</p>*/}
-            {/*<p>*/}
-            {/*A short T is nothing to be ashamed of. There are plenty of attractive,*/}
-            {/*young companies out there who gladly hire generalists.*/}
-            {/*</p>*/}
+            {/*<div className={`row d-flex align-items-center justify-content-around flex-fill w-100 ${*/}
+                {/*isMobile() ? "pt-5 mt-3" : "h-100"*/}
+              {/*}`}*/}
+            {/*>*/}
+              {/*<div className={`col-md-7`}>*/}
+                {/*<img*/}
+                  {/*src={glowing_shadow_portrait}*/}
+                  {/*style={{ maxWidth: "100%" }}*/}
+                {/*/>*/}
+              {/*</div>*/}
+              {/*<div className={`col-md-5 ${isMobile() ? "mt-5 pt-3" : ""}`}>*/}
+                {/*<div className="my-auto text-light px-4 mr-md-5">*/}
+                  {/*<h1 className="mb-0">*/}
+                    {/*<span className="text-nowrap page-header">*/}
+                      {/*Product designer*/}
+                    {/*</span>{" "}*/}
+                    {/*<span className="text-white"> +</span>*/}
+                  {/*</h1>{" "}*/}
+                  {/*<h1 className="mb-0 mb-md-3 page-header">*/}
+                    {/*Journalism survivor*/}
+                  {/*</h1>{" "}*/}
+                  {/*<h3 className="mt-3 text-gray">*/}
+                    {/*<div className="mb-2">*/}
+                      {/*<span>Interaction design | </span>*/}
+                      {/*<span className="text-nowrap">Systems design | </span>*/}
+                    {/*</div>*/}
+                    {/*<div>*/}
+                      {/*<span className="">Information architecture | </span>*/}
+                      {/*<span className="">Javascript </span>*/}
+                    {/*</div>*/}
+                  {/*</h3>*/}
+                {/*</div>*/}
+              {/*</div>*/}
+            {/*</div>*/}
 
             <div className="d-flex flex-column text-white">
               <p className="pt-5 p-md-0 mt-1">
@@ -129,9 +148,8 @@ class About extends React.Component {
                   className="rounded-lg float-left mr-3 d-md-none pt-2 p-md-0"
                   style={{ width: "45%" }}
                 />
-                <div>I never identified as a technical person.</div>
-                I was a humanities guy – obsessed with French and
-                Spanish.
+                <div>I never identified as a technical person.</div>I was a
+                humanities guy – obsessed with French and Spanish.
               </p>
               <p>
                 And then I realized JavaScript is just a language – a way to

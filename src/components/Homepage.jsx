@@ -6,6 +6,7 @@ import { isMobile } from "../utils";
 import salamander from '../img/salamander.png';
 import { Link } from 'react-router-dom';
 import sad_worker from '../img/sad_worker.png';
+import survivor from '../img/survivor.png';
 
 const BIG_TEXT_STYLE = { lineHeight: "1rem" };
 class HomePage extends React.Component {
@@ -22,8 +23,8 @@ class HomePage extends React.Component {
               isMobile() ? "pt-5 mt-3" : "h-100"
             }`}
           >
-            <div className={`col-md-7`}>
-              <img src={glowing_shadow_portrait} style={{ maxWidth: "100%" }} />
+            <div className={`col-md-7 d-flex justify-content-center`}>
+              <img src={survivor} style={{ maxWidth: "100%" }} className="img-rounded" />
             </div>
             <div className={`col-md-5 ${isMobile() ? "mt-5 pt-3" : ""}`}>
               <div className="my-auto text-light px-4 mr-md-5">
