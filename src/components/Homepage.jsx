@@ -49,6 +49,7 @@ class HomePage extends React.Component {
               </div>
             </div>
           </div>
+          <div className="arrow bounce"/>
         </div>
         {/*PROJECTS*/}
         <div className={`row no-gutters my-4 ${isMobile() ? "pt-5 mt-3" : "scroll-section"}`} style={{paddingTop: "5rem"}}>
