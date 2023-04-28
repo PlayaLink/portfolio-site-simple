@@ -31,27 +31,27 @@ class HomePage extends React.Component {
             </div>
             <div className={`col-md-5 ${isMobile() ? "mt-4" : ""}`}>
               <div className="text-light mr-md-5">
-                <h1 className="mb-0">
+                <h1 className="mb-1">
                   <span className="text-nowrap page-header">
                     Product designer
                   </span>{" "}
                 </h1>{" "}
-                <h2 className="mb-0 page-header">
+                <h3 className="mb-1 page-header">
                   Journalism survivor
-                </h2>{" "}
-                <h3 className="mb-0 mb-md-4 page-header">
+                </h3>{" "}
+                <h3 className="mb-1  page-header">
                   Language lover
                 </h3>{" "}
-                <h3 className="mt-3 text-gray">
-                  <div className="mb-2">
-                    <span>Interaction design | </span>
-                    <span className="text-nowrap">Systems design | </span>
-                  </div>
-                  <div>
-                    <span className="">Information architecture | </span>
-                    <span className="">Javascript </span>
-                  </div>
-                </h3>
+                {/*<h3 className="mt-3 text-gray">*/}
+                  {/*<div className="mb-2">*/}
+                    {/*<span>Interaction design | </span>*/}
+                    {/*<span className="text-nowrap">Systems design | </span>*/}
+                  {/*</div>*/}
+                  {/*<div>*/}
+                    {/*<span className="">Information architecture | </span>*/}
+                    {/*<span className="">Javascript </span>*/}
+                  {/*</div>*/}
+                {/*</h3>*/}
               </div>
             </div>
           </div>
