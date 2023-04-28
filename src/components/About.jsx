@@ -93,18 +93,25 @@ class About extends React.Component {
   componentDidMount() {}
 
   render() {
+    const topSpacing = isMobile ? "6.3rem" : "3.5rem";
     return (
       <div className="about bg-black pb-5 flex-fill w-100">
-        <div style={{ height: "3rem" }} />
+        <div style={{ height: topSpacing }} />
         <div className="row d-flex justify-content-center pt-md-5 px-3 pb-5 pb-md-2flex-fill w-100">
-          <div className="d-none d-md-block col-6 mb-5 mb-md-0 col-md-6 col-lg-3 mr-lg-4">
+          {/*<div className="d-none d-md-block col-6 mb-5 mb-md-0 col-md-6 col-lg-3 mr-lg-4">*/}
+            {/*<img*/}
+              {/*src={jordan_portrait}*/}
+              {/*alt="Jordan England-Nelson"*/}
+              {/*className="img-fluid rounded-lg d-none d-md-block"*/}
+            {/*/>*/}
+          {/*</div>*/}
+          <div className={`col-md-8`}>
             <img
-              src={jordan_portrait}
-              alt="Jordan England-Nelson"
-              className="img-fluid rounded-lg d-none d-md-block"
+              src={glowing_shadow_portrait}
+              style={{ maxWidth: "100%" }}
             />
           </div>
-          <div className="col-12 col-md-6 col-lg-4 d-flex align-items-center">
+          <div className="col-md-4 d-flex align-items-center">
             {/*<div className={`row d-flex align-items-center justify-content-around flex-fill w-100 ${*/}
                 {/*isMobile() ? "pt-5 mt-3" : "h-100"*/}
               {/*}`}*/}
@@ -142,12 +149,6 @@ class About extends React.Component {
 
             <div className="d-flex flex-column text-white">
               <p className="pt-5 p-md-0 mt-1">
-                <img
-                  src={jordan_portrait}
-                  alt="Jordan England-Nelson"
-                  className="rounded-lg float-left mr-3 d-md-none pt-2 p-md-0"
-                  style={{ width: "45%" }}
-                />
                 <div>I never identified as a technical person.</div>I was a
                 humanities guy – obsessed with French and Spanish.
               </p>
