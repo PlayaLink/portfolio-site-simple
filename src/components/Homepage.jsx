@@ -32,11 +32,13 @@ class HomePage extends React.Component {
                   <span className="text-nowrap page-header">
                     Product designer
                   </span>{" "}
-                  <span className="text-white"> +</span>
                 </h1>{" "}
-                <h1 className="mb-0 mb-md-3 page-header">
+                <h2 className="mb-0 page-header">
                   Journalism survivor
-                </h1>{" "}
+                </h2>{" "}
+                <h3 className="mb-0 mb-md-4 page-header">
+                  Language lover
+                </h3>{" "}
                 <h3 className="mt-3 text-gray">
                   <div className="mb-2">
                     <span>Interaction design | </span>
