@@ -46,7 +46,7 @@ class DesignSystem extends Component {
         <Progress scroll={scroll} top={top} />
         <ProgressBackground scroll="100%" top={top} />
         <div className="mb-5 mt-md-5 py-5">
-          <div className="horizontal-container" style={{ paddingTop: "2rem" }}>
+          <div className="horizontal-container" style={{ paddingTop: "4rem" }}>
             <PageTitle
               title="Building a design system from scratch"
               subtitle="How we built a design system for a 300+ organization"
