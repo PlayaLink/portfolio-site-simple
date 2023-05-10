@@ -8,7 +8,7 @@ import { faSync } from "@fortawesome/free-solid-svg-icons";
 export function PageTitle(props) {
   const { title, subtitle } = props;
   return (
-    <div className="col-12 col-md-8 pl-0 mb-5 pb-5">
+    <div className="col-12 col-md-8 pl-0 mb-2 mb-md-5 pb-5">
       <h1 className="display-4 page-header">{title}</h1>
       <h3 className="font-weight-normal">
         {subtitle}

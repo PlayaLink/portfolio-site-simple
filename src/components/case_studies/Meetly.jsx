@@ -53,8 +53,8 @@ const TimelineItem = props => (
 );
 
 const MeetlyIntro = () => (
-  <div className="my-5 bg-light">
-    <div className="container pb-3">
+  <div className="my-4 my-md-5 bg-light">
+    <div className="container">
       <div className="col-12 col-md-8 pl-0">
         <h1 className="display-4 page-header">
           Developing an idea into a venture-backed startup
