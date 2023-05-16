@@ -28,7 +28,7 @@ class DesignSystemSection extends Component {
             <div className={`d-flex flex-column align-items-center ${isMobile() ? "mb-5" : ""}`}>
               <img className={`img-rounded img-fluid d-block ${isMobile() ? "" : "mb-5"}`} src={image} />
               {!!imageCaption && (
-                <p className="mt-3 font-italic">{imageCaption}</p>
+                <p className="mt-3 mt-md-0 font-italic">{imageCaption}</p>
               )}
             </div>
           </div>
