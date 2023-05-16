@@ -61,14 +61,8 @@ const MeetlyIntro = () => (
         </h1>
         <h3 className="font-weight-normal">
           How design research lead to the creation of{" "}
-          <span
-
-            className="text-primary font-weight-bolder"
-
-          >
-            Meetly
-          </span>
-          , a meeting notes automation tool
+          <span className="text-primary font-weight-bolder">Meetly</span>, a
+          meeting notes automation tool
         </h3>
         {/*<h5 className="font-weight-light mt-4">*/}
         {/*Meetly is a <span className="font-weight-bold">calendar automation tool</span> that grew out of user research I conducted at POPin, my former employer.*/}
@@ -123,17 +117,16 @@ const MeetlyBackground = () => (
   <div className="bg-light">
     <div className="container">
       <div className="col-12 col-md-8 pl-0">
-        <GroupHeader title="TL;DR" noContainer={true}>
-          <div className="mb-5 animated-dashed-border">
+        <div className="animated-dashed-border mb-5">
+          <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
             <p>
-              I was a co-founder and only designer at a meeting notes productivity start called Meetly.
+              I was a co-founder and only designer at a meeting notes
+              productivity start called Meetly.
             </p>
             <p>I conducted the user research that lead to the idea.</p>
-            <p>We raised 2 rounds of funding.</p>
-            <p>We failed to find product-market-fit.</p>
-            <p>I learned a lot.</p>
-          </div>
-        </GroupHeader>
+            <p> We raised 2 rounds of funding. I learned a lot.</p>
+          </GroupHeader>
+        </div>
         <GroupTitle title="How Meetly started" />
         <p className="">
           The idea for Meetly grew out of user research I conducted at POPin, an

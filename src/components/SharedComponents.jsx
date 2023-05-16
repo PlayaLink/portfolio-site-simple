@@ -37,11 +37,11 @@ export function ProjectSummarySection(props) {
 }
 
 export function GroupHeader(props) {
-  const { title, img, children, eyebrow, noContainer, className } = props;
+  const { title, img, children, eyebrow, noContainer, className, noBottomMargin } = props;
   return (
     <div className={`${className ? className : ""}`}>
       {!!eyebrow && <EyebrowLabel text={eyebrow} noContainer={noContainer} />}
-      <div className={`mb-5 ${noContainer ? "" : "horizontal-container"}`}>
+      <div className={`${noBottomMargin ? "" : "mb-5"} ${noContainer ? "" : "horizontal-container"}`}>
         <GroupTitle title={title} img={img} />
          {children}
       </div>
