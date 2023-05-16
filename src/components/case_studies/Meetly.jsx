@@ -17,6 +17,7 @@ import calendar_spinning from "../../img/calendar_spinning.png";
 import calendar_view from "../../img/calendar_view.png";
 import meetly_final_version from "../../img/meetly_final_version.png";
 import meetly_single_instance_narrow from "../../img/meetly_single_instance_narrow.png";
+import arrow from "../../img/arrow.svg";
 import meeting_groups from "../../img/meeting_groups.mp4";
 import search from "../../img/search.mp4";
 import { Waypoint } from "react-waypoint";
@@ -24,11 +25,13 @@ import "react-vertical-timeline-component/style.min.css";
 import { Tooltip } from "react-tippy";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { GroupHeader, GroupTitle, SectionTitle } from "../SharedComponents";
 import db_report from "../../img/db_report.png";
 import { Progress, ProgressBackground } from "../Progress";
 import { isMobile } from "../../utils";
+import circle from "../../img/circle.svg";
+import sad_worker from "../../img/sad_worker.png";
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -56,7 +59,9 @@ const MeetlyIntro = () => (
   <div className="my-3 my-md-5 bg-light">
     <div className="container mb-3">
       <div className="col-12 col-md-10 pl-0">
-        <h1 className="display-4 page-header">Early-stage product development</h1>
+        <h1 className="display-4 page-header">
+          Early-stage product development
+        </h1>
         <h3 className="font-weight-normal">
           Or... how we failed to make $500,000 + product idea = viable company
         </h3>
@@ -66,28 +71,30 @@ const MeetlyIntro = () => (
 );
 
 const MeetlyTLDR = () => (
-      <div className="bg-light">
-        <div className="container">
-          <div
-            className={`animated-dashed-border mb-5 ${isMobile() ? "w-100" : ""}`}
-          >
-            <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
-              <p>
-                I was a <mark>co-founder</mark> and <mark>only designer</mark>{" "}
-                at a meeting notes productivity startup called <mark>Meetly</mark>
-                .
-              </p>
-              <p> We raised 2 rounds of funding, and failed to find <mark>product-market fit</mark>.</p>
-              <p>
-                 I conducted the <mark>user research</mark> that lead to the
-                idea, and greatly improved my <mark>interaction design</mark> skills.
-              </p>
-            </GroupHeader>
-          </div>
-        </div>
+  <div className="bg-light">
+    <div className="container">
+      <div
+        className={`animated-dashed-border mb-5 ${isMobile() ? "w-100" : ""}`}
+      >
+        <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
+          <p>
+            I was a <mark>co-founder</mark> and <mark>only designer</mark> at a
+            meeting notes productivity startup called <mark>Meetly</mark>.
+          </p>
+          <p>
+            {" "}
+            We raised 2 rounds of funding, and failed to find{" "}
+            <mark>product-market fit</mark>.
+          </p>
+          <p>
+            I conducted the <mark>user research</mark> that lead to the idea,
+            and greatly improved my <mark>interaction design</mark> skills.
+          </p>
+        </GroupHeader>
       </div>
+    </div>
+  </div>
 );
-
 
 const SomeScreens = () => (
   <div className="bg-light">
@@ -120,13 +127,47 @@ const SomeScreens = () => (
   </div>
 );
 
+const WantToSeeMore = () => (
+  <div className="bg-light">
+    <div className="container vh-100 d-flex flex-column justify-content-center">
+      <div className="row">
+        <div className="col-md-6 d-flex flex-column align-items-center">
+          <h1>Full case study for Meetly</h1>
+          <h2>(keep scrolling)</h2>
+        </div>
+        <div className="col-md-6 d-flex flex-column align-items-center">
+          <h1>Next project <img className="ml-3" src={arrow} /></h1>
+          <Link
+            to="/case-study/design-system"
+            id="design-system"
+            className="d-flex"
+          >
+            <div className="card" style={{ width: "18rem" }}>
+              <img
+                className="img-fluid m-3 img-rounded"
+                src={sad_worker}
+                alt="Futuristic construction worker"
+              />
+              <div className="text-center mx-3 mb-3">
+                <span className="text-decoration-none text-uppercase">Design systems</span>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="col-md-6"></div>
+      </div>
+    </div>
+  </div>
+);
+
 const MeetlyBackground = () => (
   <div className="bg-light">
     <div className="container">
       <div className="col-12 col-md-8 pl-0">
         <GroupTitle title="Context" />
         <p className="">
-          The idea for <mark>Meetly</mark>, a meeting notes automation tool, grew out of user research I conducted at <mark>POPin</mark>, an
+          The idea for <mark>Meetly</mark>, a meeting notes automation tool,
+          grew out of user research I conducted at <mark>POPin</mark>, an
           employee survey startup that was running out of runway.
         </p>
         <p className="">
@@ -141,7 +182,9 @@ const MeetlyBackground = () => (
             <div className="col-12 col-md-6">
               <GroupTitle title="The team" />
               <ul className="ml-4">
-                <li className="my-3">1 <mark>technical product manager</mark></li>
+                <li className="my-3">
+                  1 <mark>technical product manager</mark>
+                </li>
                 <li className="my-3">2 back-end engineers</li>
                 <li className="my-3">1 front-end engineer</li>
                 <li className="my-3">1 technical product designer (me)</li>
@@ -150,13 +193,15 @@ const MeetlyBackground = () => (
             <div className="col-12 col-md-6 mt-5 mt-md-0">
               <GroupTitle title="My role" />
               <p className="">
-                I owned the <mark>user research</mark> efforts and was responsible for the
-                entire user experience, from <mark>product design</mark> to video tutorials
-                and support articles.
+                I owned the <mark>user research</mark> efforts and was
+                responsible for the entire user experience, from{" "}
+                <mark>product design</mark> to video tutorials and support
+                articles.
               </p>
               <p className="">
-                I also helped out on the <mark>frontend engineering</mark>, adding polish and iterating
-                on the design directly in the codebase.
+                I also helped out on the <mark>frontend engineering</mark>,
+                adding polish and iterating on the design directly in the
+                codebase.
               </p>
             </div>
           </div>
@@ -731,11 +776,15 @@ class Meetly extends Component {
       <React.Fragment>
         <Progress scroll={scroll} top={top} />
         <ProgressBackground scroll="100%" top={top} />
-        <div className="bg-light pb-5" style={{ paddingTop: "5rem" }}>
+        <div
+          className="bg-light pb-5"
+          style={{ paddingTop: "5rem" }}
+        >
           <MeetlyIntro />
           <MeetlyTLDR />
           <MeetlyBackground />
-          <SomeScreens/>
+          <SomeScreens />
+          <WantToSeeMore />
           <MeetlyDiscovery />
           <MeetlyResearch />
           <DesignPrinciple1 />

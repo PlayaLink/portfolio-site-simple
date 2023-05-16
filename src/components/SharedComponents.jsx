@@ -48,6 +48,7 @@ export function GroupHeader(props) {
     </div>
   );
 }
+
 export function GroupTitle(props) {
   const { title, img } = props;
   return (
