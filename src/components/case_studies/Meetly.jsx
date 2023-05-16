@@ -120,11 +120,12 @@ const MeetlyBackground = () => (
         <div className="animated-dashed-border mb-5">
           <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
             <p>
-              I was a co-founder and only designer at a meeting notes
+              I was a <mark>co-founder</mark> and <mark>only designer</mark> at a meeting notes
               productivity start called Meetly.
             </p>
-            <p>I conducted the user research that lead to the idea.</p>
-            <p> We raised 2 rounds of funding. I learned a lot.</p>
+            <p>I conducted the <mark>user research</mark> that lead to the idea.</p>
+            <p> We raised 2 rounds of funding.</p>
+            <p>Experienced the challenge of finding <mark>product-market fit</mark></p>
           </GroupHeader>
         </div>
         <GroupTitle title="How Meetly started" />
