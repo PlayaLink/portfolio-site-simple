@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import add_item_and_share from "../../img/add_item_and_share.mp4";
 import calendar_integration from "../../img/calendar_integration.mp4";
 import monday_schedule_view from "../../img/monday_schedule_view.png";
 import chrome_extension_meetly from "../../img/chrome_extension_meetly.png";
@@ -57,12 +56,10 @@ const MeetlyIntro = () => (
     <div className="container">
       <div className="col-12 col-md-8 pl-0">
         <h1 className="display-4 page-header">
-          Developing an idea into a venture-backed startup
+          How we failed
         </h1>
         <h3 className="font-weight-normal">
-          How design research lead to the creation of{" "}
-          <span className="text-primary font-weight-bolder">Meetly</span>, a
-          meeting notes automation tool
+          to make $500,000 + product idea = viable company
         </h3>
         {/*<h5 className="font-weight-light mt-4">*/}
         {/*Meetly is a <span className="font-weight-bold">calendar automation tool</span> that grew out of user research I conducted at POPin, my former employer.*/}
@@ -121,7 +118,7 @@ const MeetlyBackground = () => (
           <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
             <p>
               I was a <mark>co-founder</mark> and <mark>only designer</mark> at a meeting notes
-              productivity start called Meetly.
+              productivity start called <mark>Meetly</mark>.
             </p>
             <p>I conducted the <mark>user research</mark> that lead to the idea.</p>
             <p> We raised 2 rounds of funding.</p>
