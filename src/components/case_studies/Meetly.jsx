@@ -123,6 +123,17 @@ const MeetlyBackground = () => (
   <div className="bg-light">
     <div className="container">
       <div className="col-12 col-md-8 pl-0">
+        <GroupHeader title="TL;DR" noContainer={true}>
+          <div className="mb-5 animated-dashed-border">
+            <p>
+              I was a co-founder and only designer at a meeting notes productivity start called Meetly.
+            </p>
+            <p>I conducted the user research that lead to the idea.</p>
+            <p>We raised 2 rounds of funding.</p>
+            <p>We failed to find product-market-fit.</p>
+            <p>I learned a lot.</p>
+          </div>
+        </GroupHeader>
         <GroupTitle title="How Meetly started" />
         <p className="">
           The idea for Meetly grew out of user research I conducted at POPin, an

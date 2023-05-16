@@ -9,6 +9,24 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.animated-dashed-border {
+  width: max-content;
+  background: linear-gradient(90deg, map-get($theme-colors, "primary") 50%, transparent 50%), linear-gradient(90deg, map-get($theme-colors, "primary") 50%, transparent 50%), linear-gradient(0deg, map-get($theme-colors, "primary") 50%, transparent 50%), linear-gradient(0deg, map-get($theme-colors, "primary") 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 4px, 30px 4px, 4px 30px, 4px 30px;
+  padding: 16px;
+  animation: border-dance 15s infinite linear;
+}
+
+@keyframes border-dance {
+  0% {
+    background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+  }
+  100% {
+    background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+  }
+}
+
 .img-rounded {
   border-radius: 8px;
 }

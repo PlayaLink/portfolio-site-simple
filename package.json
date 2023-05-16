@@ -2,7 +2,7 @@
   "name": "portfolio-site-simple",
   "version": "0.1.0",
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "homepage": "https://young-hamlet-90181.herokuapp.com",
   "private": true,
