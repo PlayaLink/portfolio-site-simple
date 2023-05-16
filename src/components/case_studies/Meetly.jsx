@@ -122,7 +122,7 @@ const MeetlyBackground = () => (
             </p>
             <p>I conducted the <mark>user research</mark> that lead to the idea.</p>
             <p> We raised 2 rounds of funding.</p>
-            <p>Experienced the challenge of finding <mark>product-market fit</mark></p>
+            <p>Experienced the challenge of finding <mark>product-market fit.</mark></p>
           </GroupHeader>
         </div>
         <GroupTitle title="How Meetly started" />
