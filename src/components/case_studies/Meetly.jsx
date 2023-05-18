@@ -73,24 +73,31 @@ const MeetlyIntro = () => (
 const MeetlyTLDR = () => (
   <div className="bg-light">
     <div className="container">
-      <div
-        className={`animated-dashed-border mb-5 ${isMobile() ? "w-100" : ""}`}
-      >
-        <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
-          <p>
-            I was a <mark>co-founder</mark> and <mark>only designer</mark> at a
-            meeting notes productivity startup called <mark>Meetly</mark>.
-          </p>
-          <p>
-            {" "}
-            We raised 2 rounds of funding, and failed to find{" "}
-            <mark>product-market fit</mark>.
-          </p>
-          <p>
-            I conducted the <mark>user research</mark> that lead to the idea,
-            and greatly improved my <mark>interaction design</mark> skills.
-          </p>
-        </GroupHeader>
+      <div className="row">
+        {" "}
+        <div className="col-12 col-md-8"><div
+          className={`animated-dashed-border mb-5 ${isMobile() ? "w-100" : ""}`}
+        >
+          <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
+            <p>
+              I was a <mark>co-founder</mark> and <mark>only designer</mark> at
+              a meeting notes productivity startup called <mark>Meetly</mark>.
+            </p>
+            <p>
+              {" "}
+              We raised <mark>2 rounds</mark> of funding, won a <mark>
+                Best New App
+              </mark>{" "}
+              award in monday.com's App Store, but ultimately failed to find{" "}
+              <mark>product-market fit</mark>.
+            </p>
+            <p>
+              I conducted the <mark>user research</mark> that lead to the idea and
+              <mark>designed experiences</mark> for our web app, Chrome
+              Extension and collaboration with monday.com.
+            </p>
+          </GroupHeader>
+        </div></div>
       </div>
     </div>
   </div>
@@ -136,7 +143,9 @@ const WantToSeeMore = () => (
           <h2>(keep scrolling)</h2>
         </div>
         <div className="col-md-6 d-flex flex-column align-items-center">
-          <h1>Next project <img className="ml-3" src={arrow} /></h1>
+          <h1>
+            Next project <img className="ml-3" src={arrow} />
+          </h1>
           <Link
             to="/case-study/design-system"
             id="design-system"
@@ -149,7 +158,9 @@ const WantToSeeMore = () => (
                 alt="Futuristic construction worker"
               />
               <div className="text-center mx-3 mb-3">
-                <span className="text-decoration-none text-uppercase">Design systems</span>
+                <span className="text-decoration-none text-uppercase">
+                  Design systems
+                </span>
               </div>
             </div>
           </Link>
@@ -776,10 +787,7 @@ class Meetly extends Component {
       <React.Fragment>
         <Progress scroll={scroll} top={top} />
         <ProgressBackground scroll="100%" top={top} />
-        <div
-          className="bg-light pb-5"
-          style={{ paddingTop: "5rem" }}
-        >
+        <div className="bg-light pb-5" style={{ paddingTop: "5rem" }}>
           <MeetlyIntro />
           <MeetlyTLDR />
           <MeetlyBackground />
