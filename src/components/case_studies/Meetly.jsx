@@ -17,7 +17,7 @@ import calendar_spinning from "../../img/calendar_spinning.png";
 import calendar_view from "../../img/calendar_view.png";
 import meetly_final_version from "../../img/meetly_final_version.png";
 import meetly_single_instance_narrow from "../../img/meetly_single_instance_narrow.png";
-import arrow from "../../img/arrow.svg";
+import arrow from "../../img/arrow_white.svg";
 import meeting_groups from "../../img/meeting_groups.mp4";
 import search from "../../img/search.mp4";
 import { Waypoint } from "react-waypoint";
@@ -55,15 +55,15 @@ const TimelineItem = props => (
   </li>
 );
 
-const MeetlyIntro = () => (
+const Title = (props) => (
   <div className="my-3 my-md-5 bg-light">
     <div className="container mb-3">
       <div className="col-12 col-md-10 pl-0">
         <h1 className="display-4 page-header">
-          Early-stage product development
+          {props.title}
         </h1>
         <h3 className="font-weight-normal">
-          Or... how we failed to make $500,000 + product idea = viable company
+          {props.subtitle}
         </h3>
       </div>
     </div>
@@ -75,29 +75,33 @@ const MeetlyTLDR = () => (
     <div className="container">
       <div className="row">
         {" "}
-        <div className="col-12 col-md-8"><div
-          className={`animated-dashed-border mb-5 ${isMobile() ? "w-100" : ""}`}
-        >
-          <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
-            <p>
-              I was a <mark>co-founder</mark> and <mark>only designer</mark> at
-              a meeting notes productivity startup called <mark>Meetly</mark>.
-            </p>
-            <p>
-              {" "}
-              We raised <mark>2 rounds</mark> of funding, won a <mark>
-                Best New App
-              </mark>{" "}
-              award in monday.com's App Store, but ultimately failed to find{" "}
-              <mark>product-market fit</mark>.
-            </p>
-            <p>
-              I conducted the <mark>user research</mark> that lead to the idea and
-              <mark>designed experiences</mark> for our web app, Chrome
-              Extension and collaboration with monday.com.
-            </p>
-          </GroupHeader>
-        </div></div>
+        <div className="col-12 col-md-8">
+          <div
+            className={`animated-dashed-border mb-5 ${
+              isMobile() ? "w-100" : ""
+            }`}
+          >
+            <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
+              <p>
+                I was a <mark>co-founder</mark> and <mark>only designer</mark>{" "}
+                at a meeting notes productivity startup called{" "}
+                <mark>Meetly</mark>.
+              </p>
+              <p>
+                {" "}
+                We raised <mark>2 rounds</mark> of funding, won a{" "}
+                <mark>Best New App</mark> award in monday.com's App Store, but
+                ultimately failed to find <mark>product-market fit</mark>.
+              </p>
+              <p>
+                I conducted the <mark>user research</mark> that lead to the idea
+                and
+                <mark>designed experiences</mark> for our web app, Chrome
+                Extension and collaboration with monday.com.
+              </p>
+            </GroupHeader>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -135,37 +139,49 @@ const SomeScreens = () => (
 );
 
 const WantToSeeMore = () => (
-  <div className="bg-light">
-    <div className="container vh-100 d-flex flex-column justify-content-center">
+  <div className="bg-black">
+    <div className="container d-flex flex-column justify-content-around text-white vh-100 py-5">
       <div className="row">
-        <div className="col-md-6 d-flex flex-column align-items-center">
-          <h1>Full case study for Meetly</h1>
-          <h2>(keep scrolling)</h2>
+        <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">
+          <h1 className="text-center">Want more about Meetly?</h1>
+          <img className="my-5 rotate-90" src={arrow} />
+          <h3>keep scrolling</h3>
         </div>
-        <div className="col-md-6 d-flex flex-column align-items-center">
-          <h1>
-            Next project <img className="ml-3" src={arrow} />
-          </h1>
-          <Link
-            to="/case-study/design-system"
-            id="design-system"
-            className="d-flex"
-          >
-            <div className="card" style={{ width: "18rem" }}>
-              <img
-                className="img-fluid m-3 img-rounded"
-                src={sad_worker}
-                alt="Futuristic construction worker"
-              />
-              <div className="text-center mx-3 mb-3">
-                <span className="text-decoration-none text-uppercase">
-                  Design systems
-                </span>
-              </div>
-            </div>
-          </Link>
-        </div>
+        <div className="col-md-5 d-flex flex-column align-items-center"></div>
         <div className="col-md-6"></div>
+      </div>
+      <div className="row">
+        <div className="col-md-4 d-flex flex-column align-items-center"></div>
+        <div className="col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <div className="row">
+            <div className="col-7 d-flex flex-column align-items-center justify-content-center">
+              <h1 className="text-center mb-5">Ready to move on?</h1>
+              <h3>
+                next case study <img className="ml-3" src={arrow} />
+              </h3>
+            </div>
+            <div className="col-5">
+              <Link
+                to="/case-study/design-system"
+                id="design-system"
+                className="d-flex"
+              >
+                <div className="card" style={{ maxWidth: "29rem" }}>
+                  <img
+                    className="img-fluid m-3 img-rounded"
+                    src={sad_worker}
+                    alt="Futuristic construction worker"
+                  />
+                  <div className="text-center mx-3 mb-3">
+                    <span className="text-decoration-none text-uppercase">
+                      Design systems
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -248,29 +264,25 @@ const MeetlyDiscovery = () => (
     <div className="container pt-5">
       <SectionTitle step="discovery" noContainer={true} />
       <div className="col-12 col-md-8 pl-0">
-        <GroupHeader title="Needing to pivot" noContainer={true}>
+        <GroupHeader title="Discovery" noContainer={true}>
           <div className="mb-5">
+            <p>The idea came while doing research at <mark>POPin</mark>, an employee survey startup.</p>
             <p>
-              POPin had not found product-market fit, and I was in charge of
+              POPin had <mark>no product-market fit</mark>, and I was in charge of
               learning more about our users' POPin-adjacent needs, with the goal
-              of expanding the product offering.
+              to <mark>expand the product offering</mark>.
             </p>
           </div>
         </GroupHeader>
         <GroupHeader title="Identifying an opportunity" noContainer={true}>
           <div className="mb-5">
             <p>
-              We discovered people were using our survey tool to{" "}
-              <span className="">solve a problem</span> that was not on our
-              radar:{" "}
-              <span className="text-uppercase">
-                time wasted in unnecessary or unproductive meetings
-              </span>
-              .
+              People were using the tool in a way we didn't expect.
             </p>
+            <p>They were using it to help them <mark>run meetings</mark> better.</p>
             <p>
               Recognizing an opportunity, we stopped asking people about POPin
-              and refocused our research efforts:
+              and <mark>refocused our research</mark>:
             </p>
           </div>
         </GroupHeader>
@@ -788,11 +800,18 @@ class Meetly extends Component {
         <Progress scroll={scroll} top={top} />
         <ProgressBackground scroll="100%" top={top} />
         <div className="bg-light pb-5" style={{ paddingTop: "5rem" }}>
-          <MeetlyIntro />
+          <Title
+            title="Early-stage product development"
+            subtitle="Or... how we failed to make $500,000 + product idea = viable company"
+          />
           <MeetlyTLDR />
           <MeetlyBackground />
           <SomeScreens />
           <WantToSeeMore />
+          <Title
+            title="Case Study: Meetly"
+            subtitle="From idea to MVP to startup graveyard"
+          />
           <MeetlyDiscovery />
           <MeetlyResearch />
           <DesignPrinciple1 />

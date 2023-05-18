@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import balance from "../../img/balance.png";
-import arrow from "../../img/arrow.svg";
+import arrow from "../../img/arrow_black.svg";
 import circle from "../../img/circle.svg";
 import buttons from "../../img/buttons.png";
 import construction_designer from "../../img/construction_designer.png";
