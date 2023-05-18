@@ -77,7 +77,7 @@ const MeetlyTLDR = () => (
         {" "}
         <div className="col-12 col-md-8">
           <div
-            className={`animated-dashed-border mb-5 ${
+            className={`animated-dashed-border mb-1 mb-md-5 ${
               isMobile() ? "w-100" : ""
             }`}
           >
@@ -154,13 +154,13 @@ const WantToSeeMore = () => (
         <div className="col-md-4 d-flex flex-column align-items-center"></div>
         <div className="col-md-8 d-flex flex-column align-items-center justify-content-center">
           <div className="row">
-            <div className="col-7 d-flex flex-column align-items-center justify-content-center">
-              <h1 className="text-center mb-5">Ready to move on?</h1>
+            <div className="col-6 col-md-7 d-flex flex-column align-items-center justify-content-center text-center">
+              <h1 className="mb-5">Ready to move on?</h1>
               <h3>
                 next case study <img className="ml-3" src={arrow} />
               </h3>
             </div>
-            <div className="col-5">
+            <div className="col-6 col-md-5">
               <Link
                 to="/case-study/design-system"
                 id="design-system"
@@ -168,11 +168,11 @@ const WantToSeeMore = () => (
               >
                 <div className="card" style={{ maxWidth: "29rem" }}>
                   <img
-                    className="img-fluid m-3 img-rounded"
+                    className="img-fluid m-2 m-md-3 img-rounded"
                     src={sad_worker}
                     alt="Futuristic construction worker"
                   />
-                  <div className="text-center mx-3 mb-3">
+                  <div className="text-center mx-1 mb-2 mx-md-3 mb-md-3">
                     <span className="text-decoration-none text-uppercase">
                       Design systems
                     </span>
@@ -428,7 +428,7 @@ const DesignPrinciple1 = () => (
   <div className="bg-light">
     <div className="container mb-0">
       <SectionTitle step="design" noContainer={true} />
-      <h2 className="display-4 py-5 page-header">Design principles</h2>
+      <h2 className="display-4 py-3 py-md-5 page-header">Design principles</h2>
       {/*Design principle #1*/}
       <div className="bg-white pt-4 px-3 rounded-big">
         <GroupHeader
@@ -492,7 +492,7 @@ const DesignPrinciple1 = () => (
 );
 
 const DesignPrinciple2 = () => (
-  <div className="bg-light mt-5">
+  <div className="bg-light mt-md-5">
     <div className="container mb-0 pt-5">
       <div className="bg-white pt-4 px-3 rounded-big">
         <GroupHeader eyebrow="Problem" title="App fatigue">
@@ -549,7 +549,7 @@ const DesignPrinciple2 = () => (
 );
 
 const DesignPrinciple3 = () => (
-  <div className="bg-light mt-5">
+  <div className="bg-light mt-md-5">
     <div className="container mb-0">
       <div className="bg-white pt-4 px-3 rounded-big">
         <GroupHeader eyebrow="Problem" title="Siloed information">
@@ -808,6 +808,7 @@ class Meetly extends Component {
           <MeetlyBackground />
           <SomeScreens />
           <WantToSeeMore />
+          <div style={{ height: "2rem" }} />
           <Title
             title="Case Study: Meetly"
             subtitle="From idea to MVP to startup graveyard"
