@@ -1,98 +1,96 @@
-.about {
-  //display: flex;
-  //flex-direction: column;
-  //align-items: center;
-  //justify-content: center;
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    .title {
-      font-size: 3rem;
-      font-family: Lato;
-      .breakpoint {
-        display: none;
-      }
-      @media (max-width: 425px) {
-        .breakpoint {
-          display: inherit;
-        }
-      }
+//display: flex;
+//flex-direction: column;
+//align-items: center;
+//justify-content: center;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .title {
+    font-size: 3rem;
+    font-family: Lato;
+    .breakpoint {
+      display: none;
     }
-    .icon-list {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      .icon {
-        width: 2rem;
-        height: 2rem;
-        background-size: contain;
-        background-repeat: no-repeat;
-        &.linkedin {
-          background-image: url("../img/linkedin.png");
-          position: relative;
-          top: 0.1rem;
-        }
-        &.github {
-          background-image: url("../img/github.png");
-        }
-        &.twitter {
-          background-image: url("../img/twitter.png");
-          width: 3rem;
-          height: 3rem;
-        }
-        &.email {
-          background-image: url("../img/email_icon.svg");
-          width: 2.3rem;
-        }
-      }
-    }
-    .tagline {
-      margin-top: 1rem;
-      max-width: 20rem;
-    }
-  }
-  .summary {
-    .subtitle {
-      font-size: 1.3rem;
-    }
-  }
-
-  .bar-charts {
-    max-width: 20rem;
-    width: 20rem;
-    height:15rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    .bar {
-      position: relative;
-      width: 3rem;
-      height: 12rem;
-      &.journalism {
-        background-color: red;
-      }
-      &.engineering {
-        background-color: yellow;
-      }
-      &.product {
-        background-color: blue;
-      }
-      .title {
-        position: relative;
-        top: -3rem;
-      }
-    }
-
-  }
-  &.container {
-    max-width: 1200px;
     @media (max-width: 425px) {
-      padding: 1rem;
+      .breakpoint {
+        display: inherit;
+      }
     }
+  }
+  .icon-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      width: 2rem;
+      height: 2rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      &.linkedin {
+        background-image: url("../img/linkedin.png");
+        position: relative;
+        top: 0.1rem;
+      }
+      &.github {
+        background-image: url("../img/github.png");
+      }
+      &.twitter {
+        background-image: url("../img/twitter.png");
+        width: 3rem;
+        height: 3rem;
+      }
+      &.email {
+        background-image: url("../img/email_icon.svg");
+        width: 2.3rem;
+      }
+    }
+  }
+  .tagline {
+    margin-top: 1rem;
+    max-width: 20rem;
+  }
+}
+.summary {
+  .subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+.bar-charts {
+  max-width: 20rem;
+  width: 20rem;
+  height:15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  .bar {
+    position: relative;
+    width: 3rem;
+    height: 12rem;
+    &.journalism {
+      background-color: red;
+    }
+    &.engineering {
+      background-color: yellow;
+    }
+    &.product {
+      background-color: blue;
+    }
+    .title {
+      position: relative;
+      top: -3rem;
+    }
+  }
+
+}
+.container {
+  max-width: 1200px;
+  @media (max-width: 425px) {
+    padding: 1rem;
   }
 }

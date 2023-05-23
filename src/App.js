@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.scss";
 import Projects from "./components/Projects";
 import Cards from "./components/Cards";
-import About from "./components/About";
+import { About } from './components/About';
 import Homepage from "./components/Homepage";
 import Meetly from "./components/case_studies/Meetly";
 import DataDrivenDesign from "./components/case_studies/DataDrivenDesign";

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import balance from "../../img/balance.png";
-import arrow from "../../img/arrow_black.svg";
+import arrow_black from "../../img/arrow_black.svg";
+import arrow_white from "../../img/arrow_white.svg";
+import salamander from '../../img/salamander.png';
 import circle from "../../img/circle.svg";
 import buttons from "../../img/buttons.png";
 import construction_designer from "../../img/construction_designer.png";
@@ -15,6 +17,9 @@ import backups_user_journey from "../../img/backups_user_journey.png";
 import { PageTitle, ProjectSummarySection } from "../SharedComponents";
 import { Progress, ProgressBackground } from "../Progress";
 import { isMobile } from '../../utils';
+import { Link } from 'react-router-dom';
+import sad_worker from '../../img/sad_worker.png';
+import { SocialButtons} from '../About';
 
 class DesignSystemSection extends Component {
   render() {
@@ -38,6 +43,54 @@ class DesignSystemSection extends Component {
   }
 }
 
+const NextCaseStudy = () => (
+  <div className={isMobile() ? "bg-black" : "bg-diagonal-split"}>
+    <div className="container d-flex flex-column justify-content-around text-white vh-100 py-5">
+      <div className="row">
+        <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">
+          <h1 className="text-center">Want to see more?</h1>
+          {/*<img className="my-5 rotate-90" src={arrow_white} />*/}
+          <h1>Get in touch.</h1>
+          <SocialButtons/>
+        </div>
+        <div className="col-md-5 d-flex flex-column align-items-center"></div>
+        <div className="col-md-6"></div>
+      </div>
+      <div className="row">
+        <div className="col-md-4 d-flex flex-column align-items-center"></div>
+        <div className="col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <div className="row">
+            <div className="col-6 col-md-7 d-flex flex-column align-items-center justify-content-center text-center">
+              <h1 className="mb-5">Next case study?</h1>
+              <img className="ml-3" src={arrow_white} />
+            </div>
+            <div className="col-6 col-md-5">
+              <Link
+                to="/case-study/meetly"
+                id="design-system"
+                className="d-flex"
+              >
+                <div className="card" style={{ maxWidth: "29rem" }}>
+                  <img
+                    className="img-fluid m-2 m-md-3 img-rounded"
+                    src={salamander}
+                    alt="Salamander"
+                  />
+                  <div className="text-center mx-1 mb-2 mx-md-3 mb-md-3">
+                    <span className="text-decoration-none text-uppercase">
+                      Product development
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
 class DesignSystem extends Component {
   render() {
     const { scroll, top } = this.props;
@@ -59,7 +112,7 @@ class DesignSystem extends Component {
             >
               <GroupHeader
                 title="Poor design consistency"
-                img={arrow}
+                img={arrow_black}
                 noContainer={true}
               >
                 <p>
@@ -331,13 +384,8 @@ class DesignSystem extends Component {
                 </p>
               </GroupHeader>
             </DesignSystemSection>
-            <div className="d-flex justify-content-center my-5">
-              <img className="mr-5"src={circle} style={{height: "1rem", width: "1rem"}} />
-              <img className="mr-5"src={circle} style={{height: "1rem", width: "1rem"}} />
-              <img src={circle} style={{height: "1rem", width: "1rem"}} />
-            </div>
-            <h1 className="d-flex justify-content-center my-5">Want to see more? Let's chat.</h1>
           </div>
+          <NextCaseStudy/>
         </div>
       </React.Fragment>
     );
