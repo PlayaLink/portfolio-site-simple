@@ -26,16 +26,11 @@ class SocialButtons extends React.Component {
       <div className="header">
         <div className="icon-list">
           <a
-            className="icon linkedin"
-            href="https://www.linkedin.com/in/jordan-england-nelson-05283494/"
+            className="icon linkedin mr-2"
+            href="https://www.linkedin.com/in/jordan-england-nelson/"
             target="_blank"
           />
-          <a
-            className="icon twitter mx-2"
-            href="https://twitter.com/jordanenelson"
-            target="_blank"
-          />
-          <div className="icon my-email">
+          <div className="icon my-email ml-2">
             <img
               onMouseEnter={this.toggleEmail}
               onMouseLeave={this.toggleEmail}
