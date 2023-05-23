@@ -83,7 +83,7 @@ const MeetlyTLDR = () => (
           >
             <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
               <p>
-                I was a <mark>co-founder</mark> and <mark>only designer</mark>{" "}
+                I was a <mark>co-founder</mark> and the <mark>only designer</mark>{" "}
                 at a meeting notes productivity startup called{" "}
                 <mark>Meetly</mark>.
               </p>
@@ -91,7 +91,7 @@ const MeetlyTLDR = () => (
                 {" "}
                 We raised <mark>2 rounds</mark> of funding, won a{" "}
                 <mark>Best New App</mark> award in monday.com's App Store, but
-                ultimately failed to find <mark>product-market fit</mark>.
+                after 2 years we ultimately failed to find <mark>product-market fit</mark>.
               </p>
               <p>
                 I conducted the <mark>user research</mark> that lead to the idea
@@ -139,7 +139,7 @@ const SomeScreens = () => (
 );
 
 const WantToSeeMore = () => (
-  <div className="bg-black">
+  <div className={isMobile() ? "bg-black" : "bg-diagonal-split"}>
     <div className="container d-flex flex-column justify-content-around text-white vh-100 py-5">
       <div className="row">
         <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">

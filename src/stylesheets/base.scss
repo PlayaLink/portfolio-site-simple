@@ -9,6 +9,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.bg-diagonal-split {
+  background-color: #34ADFF;
+  background-image: -webkit-linear-gradient(-30deg, #34ADFF 45%, #4CBFFF 45%);
+  min-height: 400px;
+}
+
 .animated-dashed-border {
   width: auto;
   background: linear-gradient(90deg, map-get($theme-colors, "primary") 50%, transparent 50%), linear-gradient(90deg, map-get($theme-colors, "primary") 50%, transparent 50%), linear-gradient(0deg, map-get($theme-colors, "primary") 50%, transparent 50%), linear-gradient(0deg, map-get($theme-colors, "primary") 50%, transparent 50%);
