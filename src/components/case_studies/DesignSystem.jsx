@@ -44,8 +44,8 @@ class DesignSystemSection extends Component {
 }
 
 const NextCaseStudy = () => (
-  <div className={isMobile() ? "bg-black" : "bg-diagonal-split"}>
-    <div className="container d-flex flex-column justify-content-around text-white vh-100 py-5">
+  <div className={isMobile() ? "" : "bg-diagonal-split"}>
+    <div className="container d-flex flex-column justify-content-around text-white vh-100 pt-5 mb-0">
       <div className="row">
         <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">
           <h1 className="text-center pt-5">Want to see more?</h1>
@@ -67,7 +67,7 @@ const NextCaseStudy = () => (
             <div className="col-6 col-md-5">
               <Link
                 to="/case-study/meetly"
-                id="design-system"
+                id="meetly"
                 className="d-flex"
               >
                 <div className="card" style={{ maxWidth: "29rem" }}>
@@ -98,7 +98,7 @@ class DesignSystem extends Component {
       <React.Fragment>
         <Progress scroll={scroll} top={top} />
         <ProgressBackground scroll="100%" top={top} />
-        <div className="mb-5 mt-md-5 pt-5">
+        <div className="mt-md-5 pt-5">
           <div className="horizontal-container" style={{ paddingTop: "4rem" }}>
             <PageTitle
               title="Building a design system from scratch"

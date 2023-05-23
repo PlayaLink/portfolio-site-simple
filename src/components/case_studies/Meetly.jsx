@@ -17,7 +17,7 @@ import calendar_spinning from "../../img/calendar_spinning.png";
 import calendar_view from "../../img/calendar_view.png";
 import meetly_final_version from "../../img/meetly_final_version.png";
 import meetly_single_instance_narrow from "../../img/meetly_single_instance_narrow.png";
-import arrow from "../../img/arrow_white.svg";
+import arrow_white from "../../img/arrow_white.svg";
 import meeting_groups from "../../img/meeting_groups.mp4";
 import search from "../../img/search.mp4";
 import { Waypoint } from "react-waypoint";
@@ -32,6 +32,8 @@ import { Progress, ProgressBackground } from "../Progress";
 import { isMobile } from "../../utils";
 import circle from "../../img/circle.svg";
 import sad_worker from "../../img/sad_worker.png";
+import { SocialButtons } from '../About';
+import salamander from '../../img/salamander.png';
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -144,7 +146,7 @@ const WantToSeeMore = () => (
       <div className="row">
         <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">
           <h1 className="text-center">Want more about Meetly?</h1>
-          <img className="my-5 rotate-90" src={arrow} />
+          <img className="my-5 rotate-90" src={arrow_white} />
           <h3>keep scrolling</h3>
         </div>
         <div className="col-md-5 d-flex flex-column align-items-center"></div>
@@ -157,7 +159,7 @@ const WantToSeeMore = () => (
             <div className="col-6 col-md-7 d-flex flex-column align-items-center justify-content-center text-center">
               <h1 className="mb-5">Ready to move on?</h1>
               <h3>
-                next case study <img className="ml-3" src={arrow} />
+                next case study <img className="ml-3" src={arrow_white} />
               </h3>
             </div>
             <div className="col-6 col-md-5">
@@ -175,6 +177,54 @@ const WantToSeeMore = () => (
                   <div className="text-center mx-1 mb-2 mx-md-3 mb-md-3">
                     <span className="text-decoration-none text-uppercase">
                       Design systems
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const NextCaseStudy = () => (
+  <div className={isMobile() ? "bg-black" : "bg-diagonal-split"}>
+    <div className="container d-flex flex-column justify-content-around text-white vh-100 pt-5">
+      <div className="row">
+        <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">
+          <h1 className="text-center pt-5">Want to know more?</h1>
+          {/*<img className="my-5 rotate-90" src={arrow_white} />*/}
+          <h1>Get in touch.</h1>
+          <SocialButtons/>
+        </div>
+        <div className="col-md-5 d-flex flex-column align-items-center"></div>
+        <div className="col-md-6"></div>
+      </div>
+      <div className="row">
+        <div className="col-md-4 d-flex flex-column align-items-center"></div>
+        <div className="col-md-8 d-flex flex-column align-items-center justify-content-center">
+          <div className="row">
+            <div className="col-6 col-md-7 d-flex flex-column align-items-center justify-content-center text-center">
+              <h1 className="mb-5">Next case study?</h1>
+              <img className="ml-3" src={arrow_white} />
+            </div>
+            <div className="col-6 col-md-5">
+              <Link
+                to="/case-study/design-system"
+                id="design-system"
+                className="d-flex"
+              >
+                <div className="card" style={{ maxWidth: "29rem" }}>
+                  <img
+                    className="img-fluid m-2 m-md-3 img-rounded"
+                    src={sad_worker}
+                    alt="Future tech worker"
+                  />
+                  <div className="text-center mx-1 mb-2 mx-md-3 mb-md-3">
+                    <span className="text-decoration-none text-uppercase">
+                      Design system
                     </span>
                   </div>
                 </div>
@@ -799,7 +849,7 @@ class Meetly extends Component {
       <React.Fragment>
         <Progress scroll={scroll} top={top} />
         <ProgressBackground scroll="100%" top={top} />
-        <div className="bg-light pb-5" style={{ paddingTop: "5rem" }}>
+        <div className="bg-light" style={{ paddingTop: "5rem" }}>
           <Title
             title="Early-stage product development"
             subtitle="Or... how we failed to make $500,000 + product idea = viable company"
@@ -819,6 +869,7 @@ class Meetly extends Component {
           <DesignPrinciple2 />
           <DesignPrinciple3 />
           <MeetlyLearn />
+          <NextCaseStudy/>
         </div>
       </React.Fragment>
     );
