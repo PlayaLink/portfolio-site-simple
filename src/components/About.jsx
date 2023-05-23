@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { isMobile } from "../utils";
 import glowing_shadow_portrait from "../img/glowing_shadow_portrait.png";
 
-class SocialButtons extends React.Component {
+export class SocialButtons extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -80,7 +80,7 @@ const Summary = () => (
   </div>
 );
 
-class About extends React.Component {
+export class About extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -175,4 +175,3 @@ class About extends React.Component {
   }
 }
 
-export default About;
