@@ -149,8 +149,6 @@ const WantToSeeMore = () => (
           <img className="my-5 rotate-90" src={arrow_white} />
           <h3>keep scrolling</h3>
         </div>
-        <div className="col-md-5 d-flex flex-column align-items-center"></div>
-        <div className="col-md-6"></div>
       </div>
       <div className="row">
         <div className="col-md-4 d-flex flex-column align-items-center"></div>
