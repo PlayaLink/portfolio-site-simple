@@ -44,7 +44,7 @@ class DesignSystemSection extends Component {
 }
 
 const NextCaseStudy = () => (
-  <div className={isMobile() ? "" : "bg-diagonal-split"}>
+  <div className={isMobile() ? "bg-primary" : "bg-diagonal-split"}>
     <div className="container d-flex flex-column justify-content-around text-white vh-100 pt-5 mb-0">
       <div className="row">
         <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">
