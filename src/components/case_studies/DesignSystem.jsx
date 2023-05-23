@@ -48,7 +48,7 @@ const NextCaseStudy = () => (
     <div className="container d-flex flex-column justify-content-around text-white vh-100 py-5">
       <div className="row">
         <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">
-          <h1 className="text-center">Want to see more?</h1>
+          <h1 className="text-center pt-5">Want to see more?</h1>
           {/*<img className="my-5 rotate-90" src={arrow_white} />*/}
           <h1>Get in touch.</h1>
           <SocialButtons/>
@@ -98,7 +98,7 @@ class DesignSystem extends Component {
       <React.Fragment>
         <Progress scroll={scroll} top={top} />
         <ProgressBackground scroll="100%" top={top} />
-        <div className="mb-5 mt-md-5 py-5">
+        <div className="mb-5 mt-md-5 pt-5">
           <div className="horizontal-container" style={{ paddingTop: "4rem" }}>
             <PageTitle
               title="Building a design system from scratch"
