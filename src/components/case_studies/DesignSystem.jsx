@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import balance from "../../img/balance.png";
 import arrow_black from "../../img/arrow_black.svg";
 import arrow_white from "../../img/arrow_white.svg";
-import salamander from '../../img/salamander.png';
+import salamander from "../../img/salamander.png";
 import circle from "../../img/circle.svg";
 import buttons from "../../img/buttons.png";
 import construction_designer from "../../img/construction_designer.png";
@@ -16,10 +16,10 @@ import { faRefresh } from "@fortawesome/free-solid-svg-icons";
 import backups_user_journey from "../../img/backups_user_journey.png";
 import { PageTitle, ProjectSummarySection } from "../SharedComponents";
 import { Progress, ProgressBackground } from "../Progress";
-import { isMobile } from '../../utils';
-import { Link } from 'react-router-dom';
-import sad_worker from '../../img/sad_worker.png';
-import { SocialButtons} from '../About';
+import { isMobile } from "../../utils";
+import { Link } from "react-router-dom";
+import sad_worker from "../../img/sad_worker.png";
+import { SocialButtons } from "../About";
 
 class DesignSystemSection extends Component {
   render() {
@@ -27,11 +27,24 @@ class DesignSystemSection extends Component {
     return (
       <div className="mb-5">
         <h1 className="text-uppercase mb-5">{title}</h1>
-        <div className={`row d-flex ${isMobile() ? "flex-column-reverse" : "flex-row"}`}>
+        <div
+          className={`row d-flex ${
+            isMobile() ? "flex-column-reverse" : "flex-row"
+          }`}
+        >
           <div className="col-md-6">{children}</div>
           <div className="col-md-6">
-            <div className={`d-flex flex-column align-items-center ${isMobile() ? "mb-5" : ""}`}>
-              <img className={`img-rounded img-fluid d-block ${isMobile() ? "" : "mb-5"}`} src={image} />
+            <div
+              className={`d-flex flex-column align-items-center ${
+                isMobile() ? "mb-5" : ""
+              }`}
+            >
+              <img
+                className={`img-rounded img-fluid d-block ${
+                  isMobile() ? "" : "mb-5"
+                }`}
+                src={image}
+              />
               {!!imageCaption && (
                 <p className="mt-3 mt-md-0 font-italic">{imageCaption}</p>
               )}
@@ -44,19 +57,22 @@ class DesignSystemSection extends Component {
 }
 
 const NextCaseStudy = () => (
-  <div className={isMobile() ? "bg-primary" : "bg-diagonal-split"}>
-    <div className="container d-flex flex-column justify-content-around text-white vh-100 pt-5 mb-0">
-      <div className="row">
+  <div className={isMobile() ? "" : "bg-diagonal-split"}>
+    <div
+      className={`container mb-0 pb-0 d-flex flex-column justify-content-around text-white vh-100 ${
+        isMobile() ? "" : "py-5"
+      }`}
+    >
+      <div className={`row ${isMobile() ? "d-flex flex-fill bg-primary" : ""}`}>
         <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">
           <h1 className="text-center pt-5">Want to see more?</h1>
           {/*<img className="my-5 rotate-90" src={arrow_white} />*/}
           <h1>Get in touch.</h1>
-          <SocialButtons/>
+          <SocialButtons />
         </div>
-        <div className="col-md-5 d-flex flex-column align-items-center"></div>
       </div>
-      <div className="row">
-        <div className="col-md-4 d-flex flex-column align-items-center"></div>
+      <div className={`row ${isMobile() ? "d-flex flex-fill bg-black" : ""}`}>
+        <div className="col-md-4 d-none d-md-block"></div>
         <div className="col-md-8 d-flex flex-column align-items-center justify-content-center">
           <div className="row">
             <div className="col-6 col-md-7 d-flex flex-column align-items-center justify-content-center text-center">
@@ -64,11 +80,7 @@ const NextCaseStudy = () => (
               <img className="ml-3" src={arrow_white} />
             </div>
             <div className="col-6 col-md-5">
-              <Link
-                to="/case-study/meetly"
-                id="meetly"
-                className="d-flex"
-              >
+              <Link to="/case-study/meetly" id="meetly" className="d-flex">
                 <div className="card" style={{ maxWidth: "29rem" }}>
                   <img
                     className="img-fluid m-2 m-md-3 img-rounded"
@@ -167,7 +179,10 @@ class DesignSystem extends Component {
               >
                 <p>
                   Three distinct apps – one for each user type – results in
-                  <mark className="highlight">designers creating their own patterns</mark> without coordinating across platforms.
+                  <mark className="highlight">
+                    designers creating their own patterns
+                  </mark>{" "}
+                  without coordinating across platforms.
                 </p>
               </GroupHeader>
             </DesignSystemSection>
@@ -384,7 +399,7 @@ class DesignSystem extends Component {
               </GroupHeader>
             </DesignSystemSection>
           </div>
-          <NextCaseStudy/>
+          <NextCaseStudy />
         </div>
       </React.Fragment>
     );
