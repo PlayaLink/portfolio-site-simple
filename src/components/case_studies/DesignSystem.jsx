@@ -54,7 +54,6 @@ const NextCaseStudy = () => (
           <SocialButtons/>
         </div>
         <div className="col-md-5 d-flex flex-column align-items-center"></div>
-        <div className="col-md-6"></div>
       </div>
       <div className="row">
         <div className="col-md-4 d-flex flex-column align-items-center"></div>
