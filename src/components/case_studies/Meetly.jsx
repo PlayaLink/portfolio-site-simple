@@ -32,8 +32,8 @@ import { Progress, ProgressBackground } from "../Progress";
 import { isMobile } from "../../utils";
 import circle from "../../img/circle.svg";
 import sad_worker from "../../img/sad_worker.png";
-import { SocialButtons } from '../About';
-import salamander from '../../img/salamander.png';
+import { SocialButtons } from "../About";
+import salamander from "../../img/salamander.png";
 
 const iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
 
@@ -57,16 +57,12 @@ const TimelineItem = props => (
   </li>
 );
 
-const Title = (props) => (
+const Title = props => (
   <div className="my-3 my-md-5 bg-light">
     <div className="container mb-3">
       <div className="col-12 col-md-10 pl-0">
-        <h1 className="display-4 page-header">
-          {props.title}
-        </h1>
-        <h3 className="font-weight-normal">
-          {props.subtitle}
-        </h3>
+        <h1 className="display-4 page-header">{props.title}</h1>
+        <h3 className="font-weight-normal">{props.subtitle}</h3>
       </div>
     </div>
   </div>
@@ -85,15 +81,16 @@ const MeetlyTLDR = () => (
           >
             <GroupHeader title="TL;DR" noContainer={true} noBottomMargin={true}>
               <p>
-                I was a <mark>co-founder</mark> and the <mark>only designer</mark>{" "}
-                at a meeting notes productivity startup called{" "}
-                <mark>Meetly</mark>.
+                I was a <mark>co-founder</mark> and the{" "}
+                <mark>only designer</mark> at a meeting notes productivity
+                startup called <mark>Meetly</mark>.
               </p>
               <p>
                 {" "}
                 We raised <mark>2 rounds</mark> of funding, won a{" "}
                 <mark>Best New App</mark> award in monday.com's App Store, but
-                after 2 years we ultimately failed to find <mark>product-market fit</mark>.
+                after 2 years we ultimately failed to find{" "}
+                <mark>product-market fit</mark>.
               </p>
               <p>
                 I conducted the <mark>user research</mark> that lead to the idea
@@ -141,17 +138,21 @@ const SomeScreens = () => (
 );
 
 const WantToSeeMore = () => (
-  <div className={isMobile() ? "bg-black" : "bg-diagonal-split"}>
-    <div className="container d-flex flex-column justify-content-around text-white vh-100 py-5">
-      <div className="row">
+  <div className={isMobile() ? "" : "bg-diagonal-split"}>
+    <div
+      className={`container d-flex flex-column justify-content-around text-white vh-100 ${
+        isMobile() ? "" : "py-5"
+      }`}
+    >
+      <div className={`row ${isMobile() ? "d-flex flex-fill bg-primary" : ""}`}>
         <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">
           <h1 className="text-center">Want more about Meetly?</h1>
           <img className="my-5 rotate-90" src={arrow_white} />
           <h3>keep scrolling</h3>
         </div>
       </div>
-      <div className="row">
-        <div className="col-md-4 d-flex flex-column align-items-center"></div>
+      <div className={`row ${isMobile() ? "d-flex flex-fill bg-black" : ""}`}>
+        <div className="col-md-4 d-none d-md-block"></div>
         <div className="col-md-8 d-flex flex-column align-items-center justify-content-center">
           <div className="row">
             <div className="col-6 col-md-7 d-flex flex-column align-items-center justify-content-center text-center">
@@ -188,19 +189,22 @@ const WantToSeeMore = () => (
 );
 
 const NextCaseStudy = () => (
-  <div className={isMobile() ? "bg-black" : "bg-diagonal-split"}>
-    <div className="container d-flex flex-column justify-content-around text-white vh-100 pt-5">
-      <div className="row">
+  <div className={isMobile() ? "" : "bg-diagonal-split"}>
+    <div
+      className={`container mb-0 pb-0 d-flex flex-column justify-content-around text-white vh-100 ${
+        isMobile() ? "" : "py-5"
+      }`}
+    >
+      <div className={`row ${isMobile() ? "d-flex flex-fill bg-primary" : ""}`}>
         <div className="col-md-7 d-flex flex-column align-items-center justify-content-center">
           <h1 className="text-center pt-5">Want to know more?</h1>
           {/*<img className="my-5 rotate-90" src={arrow_white} />*/}
           <h1>Get in touch.</h1>
-          <SocialButtons/>
+          <SocialButtons />
         </div>
-        <div className="col-md-5 d-flex flex-column align-items-center"></div>
       </div>
-      <div className="row">
-        <div className="col-md-4 d-flex flex-column align-items-center"></div>
+      <div className={`row ${isMobile() ? "d-flex flex-fill bg-black" : ""}`}>
+        <div className="col-md-4 d-none d-md-block"></div>
         <div className="col-md-8 d-flex flex-column align-items-center justify-content-center">
           <div className="row">
             <div className="col-6 col-md-7 d-flex flex-column align-items-center justify-content-center text-center">
@@ -313,20 +317,23 @@ const MeetlyDiscovery = () => (
       <div className="col-12 col-md-8 pl-0">
         <GroupHeader title="Discovery" noContainer={true}>
           <div className="mb-5">
-            <p>The idea came while doing research at <mark>POPin</mark>, an employee survey startup.</p>
             <p>
-              POPin had <mark>no product-market fit</mark>, and I was in charge of
-              learning more about our users' POPin-adjacent needs, with the goal
-              to <mark>expand the product offering</mark>.
+              The idea came while doing research at <mark>POPin</mark>, an
+              employee survey startup.
+            </p>
+            <p>
+              POPin had <mark>no product-market fit</mark>, and I was in charge
+              of learning more about our users' POPin-adjacent needs, with the
+              goal to <mark>expand the product offering</mark>.
             </p>
           </div>
         </GroupHeader>
         <GroupHeader title="Identifying an opportunity" noContainer={true}>
           <div className="mb-5">
+            <p>People were using the tool in a way we didn't expect.</p>
             <p>
-              People were using the tool in a way we didn't expect.
+              They were using it to help them <mark>run meetings</mark> better.
             </p>
-            <p>They were using it to help them <mark>run meetings</mark> better.</p>
             <p>
               Recognizing an opportunity, we stopped asking people about POPin
               and <mark>refocused our research</mark>:
@@ -705,7 +712,7 @@ const MeetlyLearn = () => (
           </div>
         </div>
         <div className="row mt-md-4">
-          <div className="col-md-6  d-none d-md-block">
+          <div className="col-md-6 d-none d-md-block">
             <img
               src={calendar_view}
               alt="purchase location"
@@ -866,7 +873,7 @@ class Meetly extends Component {
           <DesignPrinciple2 />
           <DesignPrinciple3 />
           <MeetlyLearn />
-          <NextCaseStudy/>
+          <NextCaseStudy />
         </div>
       </React.Fragment>
     );
